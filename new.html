@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>What's new in ANNIS3?</title>
+  <link href="ANNIS_site.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body id="new">
+
+
+
+<!-- begin top -->
+<div class="wrapper">
+      <table>
+        <tr>
+          <td><img src="img/annis_logo.png" width="96" alt="ANNIS logo"/></td>
+          <td><h1>ANNIS: Search and Visualization in Multilayer Linguistic Corpora </h1></td>
+    </tr>
+    </table>
+    <br/>
+
+    <ul id="nav2">
+      <li>
+        <a class="project" href="index.html">Project</a>
+        <ul>
+          <li>
+            <a class="home" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="new" href="new.html">What's new?</a>
+          </li>
+          <li>
+            <a class="goals" href="goals.html">Goals</a>
+          </li>
+          <li>
+            <a class="cooperations" href="cooperations.html">Cooperations</a>
+          </li>
+          <li>
+            <a class="students" href="students.html">Students</a>
+          </li>
+          <li>
+            <a class="contact" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="aql" href="aql.html">ANNIS Query Language</a>
+      </li>
+      <li>
+        <a class="visualizations" href="visualizations.html">Visualizations</a>
+        <ul>
+          <li>
+            <a class="vis_overview" href="visualizations.html">Overview</a>
+          </li>
+          <li>
+            <a class="vis_gallery" href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="download" href="download.html">Download</a>
+        <ul>
+          <li>
+            <a class="annis3" href="download.html">ANNIS3</a>
+          </li>
+          <li>
+            <a class="documentation" href="documentation.html">Documentation</a>
+          </li>
+          <li>
+            <a class="older" href="older.html">Older versions</a>
+          </li>
+          <li>
+            <a class="corpora" href="corpora.html">Corpora</a>
+          </li>
+          <li>
+            <a class="tools" href="tools.html">Tools</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="accessing" href="accessing.html">Access</a>
+      </li>
+    </ul>
+
+    <!-- end top -->
+<div id="content"/>
+<br>
+<p><strong style="color:red">New:</strong>
+<span itemprop="softwareVersion">version <a href="download.html"><strong>3.1.6</strong></a></span> has been released <a href="https://github.com/korpling/ANNIS/releases/tag/annis-3.1.6">(github log)</a> - please install the new version</p>
+
+<h2>New features in version 3.1.6</h2>
+<ul>
+<li>Note: this is a bug fix version addressing minor issues in 3.1.4. The features below are available from 3.1.4.</li>
+<li><b>Backend (database):</b></li>
+<ul>
+<li>Support for aggregate queries</li>
+<li>Fetching of full text for documents</li>
+<li>Storage for individual corpus preferences</li>
+<li>Minor performance improvements</li>
+</ul><br>
+<li><b>Frontend (user interface):</b></li>
+<ul>
+<li>New frequency analysis interface (histograms and type counts based on combinations of query elements and their annotations)</li>
+<li>Document browser mode for close reading</li>
+<li>Get more/less context for individual search results</li>
+<li>Re-implemented key-word-in-context (KWIC) for better support of dialogue corpora and gaps</li>
+<li>Better handling of ‘islands’: search results containing very distant areas of a document hide intervening text more intuitively for the grid and KWIC visualizers</li>
+</ul><br>
+<li><b>Query language:</b></li>
+<ul>
+<li>Shortened query form with operators between elements:
+<br>(e.g. <tt>cat="NP" &gt; cat="PP"</tt> or <tt>"hello" . "world"</tt>)
+<li>New non-binding value comparison operators:
+<br><tt>tok . tok & #1 == #2</tt> (finds a sequence of two identical tokens)<br>
+<tt>tok _=_ lemma & #1 != #2</tt> (finds a token that is not identical to its lemma)
+<br><li>Free naming of query nodes, e.g.
+<br><tt>NP#cat="NP" & PP1#cat="PP" . PP2#cat="PP" & #NP &gt; #PP1 & #NP &gt; #PP2</tt>
+<li>Extended support for brackets in disjunctions, e.g.:
+<br><tt>cat="NP" & (head#cat="NP" | head#pos="NN") & #1 &gt;[func="HD"] #head</tt>
+</ul><br>
+</ul>
+(For change logs of previous versions see their respective distributions or user guides)
+
+
+<h2>What's new in ANNIS since ANNIS2?</h2>
+<p>Some of the new features in ANNIS3 include:</p>
+<ul><li><b>Backend (database):</b>
+<ul>
+<li>Support for multiple/overlapping tokenizations (multiple simultaneous speakers, conflicting tokenizations produced by different tools)</li>
+<li>Support for subtokenization (annotations smaller than the reference word form unit)</li>
+<li>Incremental search result fetching</li>
+</ul>
+</li>
+<br>
+<li><b>Frontend (user interface):</b>
+<ul>
+<li>Completely new front-end architecture (using VAADIN)</li>
+<li>Build your own HTML visualization with CSS3</li>
+<li>Support for time-aligned streaming A/V data</li>
+<li>On click navigation from annotations to time-aligned player output</li>
+<li>Page-aligned PDF-viewer</li>
+<li>View KWIC and context using multiple segmentation definitions (e.g. ±5 units of normalized/diplomatic text or ±5 units of speaker1/speaker2/… etc.</li>
+<li>Automatically or manually generated example queries per corpus on welcome screen</li>
+<li>List of available metadata added to Corpus Explorer</li>
+<li>Support for “corpus collections” (thematic groups of corpora in corpora list)</li>
+<li>Support for server-side embedded fonts</li>
+<li>Visualizations can be hidden/shown by default, option to use grid as default view</li>
+</li>
+</ul>
+
+<br>
+<li><b>Query language and query interface:</b>
+<ul>
+<li>Typed precedence operators (e.g. #1 .sentence,1,2 #2)</li>
+<li>Support for user defined and randomly generated example queries</li>
+<li>Virtual keyboard</li>
+<li>Visible query links (copy & paste link from browser)</li>
+<li>Matching document count for search results (e.g. "105 hits in 22 documents")</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+</div>
+</body>
+</html>

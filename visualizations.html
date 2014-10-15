@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Visualizations in ANNIS - Search and Visualization in
+Multilevel Linguistic Corpora</title>
+  <link href="ANNIS_site.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta name="keywords" lang="en" content="corpus, corpora, visualization, ANNIS3, ANNIS">
+</head>
+<body id="vis_overview">
+
+<!-- begin top -->
+<div class="wrapper">
+      <table>
+        <tr>
+          <td><img src="img/annis_logo.png" width="96" alt="ANNIS logo"/></td>
+          <td><h1>ANNIS: Search and Visualization in Multilayer Linguistic Corpora </h1></td>
+    </tr>
+    </table>
+    <br/>
+
+    <ul id="nav2">
+      <li>
+        <a class="project" href="index.html">Project</a>
+        <ul>
+          <li>
+            <a class="home" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="new" href="new.html">What's new?</a>
+          </li>
+          <li>
+            <a class="goals" href="goals.html">Goals</a>
+          </li>
+          <li>
+            <a class="cooperations" href="cooperations.html">Cooperations</a>
+          </li>
+          <li>
+            <a class="students" href="students.html">Students</a>
+          </li>
+          <li>
+            <a class="contact" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="aql" href="aql.html">ANNIS Query Language</a>
+      </li>
+      <li>
+        <a class="visualizations" href="visualizations.html">Visualizations</a>
+        <ul>
+          <li>
+            <a class="vis_overview" href="visualizations.html">Overview</a>
+          </li>
+          <li>
+            <a class="vis_gallery" href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="download" href="download.html">Download</a>
+        <ul>
+          <li>
+            <a class="annis3" href="download.html">ANNIS3</a>
+          </li>
+          <li>
+            <a class="documentation" href="documentation.html">Documentation</a>
+          </li>
+          <li>
+            <a class="older" href="older.html">Older versions</a>
+          </li>
+          <li>
+            <a class="corpora" href="corpora.html">Corpora</a>
+          </li>
+          <li>
+            <a class="tools" href="tools.html">Tools</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="accessing" href="accessing.html">Access</a>
+      </li>
+    </ul>
+
+    <!-- end top -->
+<div id="content">
+<h2>Visualizations - Overview</h2>
+<p>ANNIS uses pluggable JAVA modules to visualize data. A configurable
+resolver module determines how each annotation layer is visualized, so
+that data from different annotation sets can be rendered with either
+different or the same visualizations (e.g. two separate syntax trees
+displayed one after the other for the same sentence). </p>
+<p>To see some examples of data visualized in ANNIS, take a look at our gallery here. The table below provides a list of the currently available visualizers and summarizes some of their features:</p>
+<ul>
+<li><b>hit view/doc view</b> - Visualizers are set to either display a hit view (e.g. ±n tokens around the search result) or a doc view to visualize the entire document the results come from. Many visualizers can do both, and in some cases two variants are available, in which case the document visualizer has the suffix 'doc'. </li>
+<li><b>RTL</b> - Some visualizers also support right-to-left languages such as Arabic or Hebrew, which is shown in the RTL column. </li>
+<li><b>multi-seg</b> - Some visualizers can use an alternate segmentation layer or tokenization to represent basic word forms instead of the default tokenization. These visualizations are suitable for corpora that contain dialogue data, subtokenization or conflicting tokenizations of the same data.</li>
+<li><b>parallel</b> - Visualizers specifically equipped to deal with parallel corpora may display text from multiple aligned sources within the same module. For other visualizers, parallel corpora can trigger multiple instances of the same visualizer (e.g. syntax trees for each aligned language), but there will be no single visualization incorporating data from multiple sources at the same time.</li>
+<li><b>interaction</b> - Visualizers that offer cross-module interactivity can be triggered by other visualizers, such as A/V players that can 'jump' to the
+correct aligned time position when the corresponding annotation is clicked on in the grid or kwic view.</li>
+</ul>
+
+
+<table id="vistable">
+<thead><tr><th>visualizer</th><th>description</th><th>hit view</th><th>doc view</th><th>RTL</th><th>multi-seg</th><th>parallel</th><th>interaction</th></tr></thead>
+<tbody>
+<tr><td>kwic</td><td>classic key-word in context view</td><td>yes</td><td>no</td><td>yes</td><td>yes</td><td>yes</td><td></td></tr>
+<tr><td>tree<sup>1</sup></td><td>constituent syntax tree</td><td>yes</td><td>no</td><td>yes</td><td>no</td><td>no</td><td></td></tr>
+<tr><td>grid</td><td>grid for annotation spans</td><td>yes</td><td>no</td><td>yes</td><td>yes</td><td>no</td><td></td></tr>
+<tr><td>grid_tree</td><td>grid showing a hierarchy of layered spans</td><td>yes</td><td>no</td><td>yes</td><td>yes</td><td>no</td><td></td></tr>
+<tr><td>discourse</td><td>document view underscoring and co-highlighting linked data</td><td>no</td><td>yes</td><td>no</td><td>no</td><td>yes</td><td></td></tr>
+<tr><td>arch_dependency<sup>2</sup></td><td>linear dependencies with arches between words</td><td>yes</td><td>no</td><td>no</td><td>yes</td><td>no</td><td></td></tr>
+<tr><td>html / htmldoc</td><td>custom annotation-triggered HTML/CSS</td><td>yes</td><td>yes</td><td>yes</td><td>yes</td><td>no</td><td></td></tr>
+<tr><td>rst / rstdoc</td><td>rhetorical structure theory tree</td><td>yes</td><td>yes</td><td>no</td><td>no</td><td>no</td><td></td></tr>
+<tr><td>pdf / pdfdoc</td><td>aligned pdf page or document</td><td>yes</td><td>yes</td><td> --</td><td> --</td><td> --</td><td>grid</td></tr>
+<tr><td>audio / video</td><td>aligned A/V data</td><td>yes</td><td>yes</td><td> --</td><td> --</td><td> --</td><td>grid, kwic</td></tr>
+<tr><td>hierarchical_dependency<sup>3</sup></td><td>graphviz-based hierarchical dependencies (vertical)</td><td>yes</td><td>no</td><td>no</td><td>no</td><td>no</td><td></td></tr>
+<tr><td>ordered_dependency<sup>3</sup></td><td>graphviz-based linear-hierarchical dependencies (horizontal)</td><td>yes</td><td>no</td><td>no</td><td>no</td><td>no</td><td></td></tr>
+<tr><td>graph</td><td>graphviz-based annotation graph (for debugging)</td><td>yes</td><td>no</td><td>no</td><td>yes</td><td>yes</td><td></td></tr>
+</tbody>
+</table>
+
+<ol class="note">
+<li>Coded by <a href="http://www.cl.uzh.ch/people/alumni/marek.html" target="new">Torsten Marek</a>, <a href="http://www.cl.uzh.ch/index.html" target="new">Institute of Computational Linguistics of the University of Zurich</a></li>
+<li>Code provided courtesy of <a href="http://gerdes.fr/" target="new">Kim Gerdes</a>, <a href="http://e-ilpga.univ-paris3.fr/" target="new">ILPGA, Paris</a>. Requires SVG capable browser.</li>
+<li>Developed in conjunction with <a href="http://www.hf.uio.no/ifikk/personer/vit/daghaug/index.html" target="new">Dag Haug</a>, <a href="http://www.hf.uio.no/ifikk/english/research/projects/proiel/" target="new">PROIEL project, Oslo</a>. Requires <a href="http://www.graphviz.org/" target="new">Graphviz</a>.</li>
+</ol>
+
+</div>
+</div></body>
+</html>

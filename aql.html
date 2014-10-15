@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>AQL - The ANNIS Query Language for Searching in Multilevel Linguistic Corpora</title>
+<link href="ANNIS_site.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="img/favicon.ico">
+	<meta name="keywords" lang="en" content="corpus, corpora, search, query language, AQL, ANNIS3, ANNIS">
+
+</head>
+
+<body id="aql">
+
+<!-- begin top -->
+<div class="wrapper">
+      <table>
+        <tr>
+          <td><img src="img/annis_logo.png" width="96" alt="ANNIS logo"/></td>
+          <td><h1>ANNIS: Search and Visualization in Multilayer Linguistic Corpora </h1></td>
+    </tr>
+    </table>
+    <br/>
+
+    <ul id="nav2">
+      <li>
+        <a class="project" href="index.html">Project</a>
+        <ul>
+          <li>
+            <a class="home" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="new" href="new.html">What's new?</a>
+          </li>
+          <li>
+            <a class="goals" href="goals.html">Goals</a>
+          </li>
+          <li>
+            <a class="cooperations" href="cooperations.html">Cooperations</a>
+          </li>
+          <li>
+            <a class="students" href="students.html">Students</a>
+          </li>
+          <li>
+            <a class="contact" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="aql" href="aql.html">ANNIS Query Language</a>
+      </li>
+      <li>
+        <a class="visualizations" href="visualizations.html">Visualizations</a>
+        <ul>
+          <li>
+            <a class="vis_overview" href="visualizations.html">Overview</a>
+          </li>
+          <li>
+            <a class="vis_gallery" href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="download" href="download.html">Download</a>
+        <ul>
+          <li>
+            <a class="annis3" href="download.html">ANNIS3</a>
+          </li>
+          <li>
+            <a class="documentation" href="documentation.html">Documentation</a>
+          </li>
+          <li>
+            <a class="older" href="older.html">Older versions</a>
+          </li>
+          <li>
+            <a class="corpora" href="corpora.html">Corpora</a>
+          </li>
+          <li>
+            <a class="tools" href="tools.html">Tools</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a class="accessing" href="accessing.html">Access</a>
+      </li>
+    </ul>
+
+    <!-- end top -->
+	<div id="content">
+<h2>ANNIS Query Language - AQL </h2>
+
+<h3>Nodes and Edges</h3>
+<p>AQL is based on the concept of searching for node elements and edges between them. A search is formulated by defining each token, non-terminal node or annotation being searched for as an element. An element can be a token (simply text between quotes: <tt>&quot;dogs&quot;</tt> or else <tt>tok=&quot;dogs&quot;</tt>) or an attribute-value pair (such as <tt>lemma=&quot;dog&quot;</tt>, or optionally with a namespace: <tt>tiger:cat=&quot;PP&quot;</tt>). Note that different corpora can have completely different annotation names and values - these are not specified by ANNIS. Underspecified tokens or nodes in general may be specified using <tt>tok</tt> and <tt>node</tt> respectively.</p>
+<p>
+Once all elements are declared, relations between the elements (or edges) are specified which must hold between them. The elements are referred back to serially using variable numbers, and linguistic operators bind them together, e.g. <tt>#1 &gt; #2</tt> meaning the first element dominates the second in a tree or graph. Operators define the possible overlap and adjacency relations between annotation spans, as well as recursive hierarchical relations between nodes. Some operators also allow specific labes to be specified in addition to the operator (see the operator list below).
+</p>
+<p>
+The following example, a query searching for German sentences with topicalized objects (i.e. with the word order object-verb-subject), illustrates these ideas in practice: </p>
+<table>
+<tr><td class="code">node &amp; pos="VVFIN" &amp; cat="S" &amp; node &amp; &nbsp;	</td>
+  <td class="comment">//two nodes, a finite verb and a sentence node (S) </td>
+</tr>
+<tr>
+  <td class="code">#3 >[tiger:func="OA"] #1 &amp;					</td><td class="comment">//S dominates node 1 with label OA  </td></tr>
+<tr>
+  <td class="code">#3 >[tiger:func="SB"] #4 &amp;					</td><td class="comment">//S dominates node 4 with label SB </td></tr>
+<tr><td class="code">#3 > #2 &amp;							</td>
+  <td class="comment">//S dominates (&gt;) the verb </td>
+</tr>
+<tr><td class="code">#1 .* #2 &amp;							</td>
+  <td class="comment">//node 1 precedes (.*) the verb </td>
+</tr>
+<tr><td class="code">#2 .* #4								</td>
+  <td class="comment">//the verb precedes (.*) node 4</td>
+</tr>
+
+</table>
+<br>
+<p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=bm9kZSAmIHBvcz0iVlZGSU4iICYgY2F0PSJTIiAmIG5vZGUgJiAgCiMzID5bdGlnZXI6ZnVuYz0iT0EiXSAjMSAmCiMzID5bdGlnZXI6ZnVuYz0iU0IiXSAjNCAmCiMzID4gIzIgJgojMSAuKiAjMiAmCiMyIC4qICM0&_c=cGNjMg&cl=5&cr=5&s=0&l=10" target="_blank">
+Try out this query in the pcc2 corpus in ANNIS3
+</a></p>
+
+<h3>Shortcuts</h3>
+<p>
+Starting in ANNIS 3.1.0, you can also use shortcuts to define the relations between query nodes. You can specify the
+operator that applies between two nodes directly between those nodes. For example, the following two queries are equivalent:
+</p>
+
+<p>
+<table>
+<tr><td class="code">cat="NP" &amp; cat="PP" &amp; #1 &gt; #2</td></tr>
+<tr><td style="padding-left: 10px"><strong>or:</strong></td></tr>
+<tr><td class="code">cat="NP" &gt; cat="PP"</td></tr>
+<table>
+</p>
+
+<p>
+Specifying the dominance operator '&gt;' directly between the NP and PP nodes works the same as declaring the two nodes and
+then stating that the dominance relationshop hold between the first node (#1) and the second one (#2).
+</p>
+
+
+<h3>Naming nodes</h3>
+<p>For complex queries in which the same nodes are involved in multiple relations, it may be easier to name nodes explicitly, rather than using the #1, #2, ... number notation.
+Node names are given to nodes when they are defined and are placed before the '#' sing. The following query illustrates this mechanism:</p>
+
+
+<table>
+<tr><td class="code">NP#cat="NP"  &amp; &nbsp;	</td>
+  <td class="comment">//a nominal phrase which we will call 'NP' </td>
+</tr>
+<tr>
+  <td class="code">#PP1#cat="PP" . PP2#cat="PP" &amp; &nbsp;</td><td class="comment">//two consecutive prepositional phrases named PP1 and PP2  </td></tr>
+<tr>
+  <td class="code">#NP &gt; #PP1 &amp;</td><td class="comment">//the NP node dominates PP1 </td></tr>
+<tr><td class="code">#NP &gt; #PP2 &amp;							</td>
+  <td class="comment">//the same NP node also dominates PP2 </td>
+</tr>
+
+</table>
+
+
+<h3>Metadata</h3>
+<p>
+To specify metadata conditions which must apply to matches, add key-value pairs preceded by the reserved prefix <tt>meta::</tt>. Metadata may apply to corpora, sub-corpora, or individual documents within a corpus. For example, the following query finds sequences of two consecutive adverbs in sports documents (Genre="Sport"):
+</p>
+<table>
+<tr><td class="code">pos="ADV" &amp; pos="ADV" &amp; &nbsp;&nbsp;</td>
+  <td class="comment">//two adverb tags</td>
+</tr>
+<tr>
+  <td class="code">#1 . #2 &amp;					</td><td class="comment">//adverb 1 precedes adverb 2 directly</td></tr>
+
+<tr><td class="code">meta::Genre="Sport"								</td>
+  <td class="comment">//the metadatum Genre must have the value "Sport"</td>
+</tr>
+
+</table>
+<br>
+<p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=cG9zPSJBRFYiICYgcG9zPSJBRFYiICYKIzEgLiAjMiAmCm1ldGE6OkdlbnJlPSJTcG9ydCI&_c=cGNjMg&cl=5&cr=5&s=0&l=10" target="_blank">
+Try out this query in the pcc2 corpus in ANNIS3
+</a></p>
+
+
+
+<h3>Unary Operators</h3>
+<p>Two operators refer to only one matching element, instead of specifying a relationship between two elements: <tt>tokenarity</tt> and <tt>arity</tt>.
+The <tt>tokenarity</tt> operator specifies how many tokens should be covered by the matching element, whereas the <tt>arity</tt> operator determines the amount of directly dominated children the matched node should have.
+For example, the following query searches for nominal phrases that dominate exactly 4 nodes:
+</p>
+<table>
+<tr><td class="code">cat="NP" &amp; &nbsp;&nbsp;</td>
+  <td class="comment">//a syntactic category 'NP' for 'nominal phrase'</td>
+</tr>
+<tr>
+  <td class="code">#1:arity=4</td><td class="comment">//this node should have exactly 4 children </td></tr>
+
+
+</table>
+<br>
+<p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=Y2F0PSJOUCIgJiAjMTphcml0eT00&_c=cGNjMg&cl=5&cr=5&s=0&l=10" target="_blank">
+Try out this query in the pcc2 corpus in ANNIS3
+</a></p>
+
+
+<h3>Query Builder</h3>
+<p>
+  In order to facilitate the formulation of complex queries, a graphical query builder allows users to define their search in a graph. This reflects the nodes and edges in the query directly but gives a more intuitive view of the elements and relations being searched for. </p>
+<table><tr><td><center>
+  <img src="img/annis3_querybuilder_edge.png" border="1" vspace="6" alt="ANNIS3 Query Builder" height="360">
+</center></td></tr><tr><td><center>
+  <strong><font size="-1">The Query Builder allows users to model queries as a graph</font></strong>
+</center></td></tr></table>
+
+<h3>RegEx Support </h3>
+<p>
+ANNIS supports RegEx natively in all token, annotation, edge label and metadata searches. In the query builder simply select <tt>~</tt> instead of <tt>=</tt> as the comparison operator. When entering a query manually use <tt>=</tt> but replace the double quotes around annotation and token values with slashes, e.g. <tt>lemma=/d.g/</tt> finds &quot;dog&quot; and &quot;dig&quot;. </p>
+
+<h3>Example Queries</h3>
+<p>
+Beginning with ANNIS 3.0.0, the possibility to include user-defined example queries within a corpus distribution has been added. The example queries can be entered
+in a separate file, called example_queries.tab within the relANNIS corpus folder. For more information on how to add example queries to your corpus, see the ANNIS User Guide on the <a href="documentation.html">documentation</a> page.
+</p>
+
+<h3>Operators</h3>
+<p>AQL currently includes the following operators:</p>
+      <table border="1">
+	<tr><td height="20"><strong>Operator</strong></td>
+	<td><strong>Description</strong></td>
+	<td colspan="3"><strong>Illustration</strong></td>
+	<td><strong>Notes</strong></td>
+	</tr>
+	<tr><td height="38"><code>.</code></td><td>direct precedence</td><td colspan="3"><center>
+	  <strong>A B</strong>
+	  </center></td><td>For non-terminal nodes, precedence is determined by the right-most and left-most terminal children. In corpora with multiple segmentations the layer on which consecutivity holds may be specified with <code>.layer</code></td></tr>
+	<tr><td height="38"><code>.*</code></td><td>indirect precedence</td><td colspan="3"><center><strong>A</strong> <span class="style1">x y z</span> <strong>B</strong>
+	</center></td><td>For specific sizes of precedence spans, <code>.n,m</code> can be used, e.g. <code>.3,4</code> - between 3 and 4 token distance; the default maximum distance for <code>.*</code> is 50 tokens. As above, segmentation layers may be specified, e.g. <code>.layer,3,4</code></td></tr>
+	<tr><td height="56"><code>&gt;</code></td><td>direct dominance</td><td colspan="3"><center>
+	  <strong>A</strong> <br>
+	  |<br>
+	  <strong>B</strong>
+	  </center></td>
+	<td>A specific edge type may be specified, e.g. <code>&gt;secedge</code> to find secondary edges. Edge labels are specified in brackets, e.g. <code>&gt;[func="OA"]</code> for an edge with the function 'object, accusative'</td>
+	</tr>
+	<tr>
+	  <td height="92"><code>&gt;*</code></td>
+	  <td>indirect dominance</td>
+	  <td colspan="3"><center>
+	    <strong>A</strong><br>
+    |<br>
+    ...  <br>
+	    |<br>
+	    <strong>B</strong>
+	    </center></td>
+	  <td>For specific distance of dominance, <code>&gt;n,m</code> can be used, e.g. <code>&gt;3,4</code> - dominates with 3 to 4 edges distance</td>
+	</tr>
+	<tr><td height="38"><code>_=_</code></td><td>identical coverage</td><td colspan="3"><center><strong>A<br>B</strong></center></td>
+	<td>Applies when two annotations cover the exact same span of tokens </td>
+	</tr>
+	<tr>
+	  <td height="38"><code>_i_</code></td>
+	  <td>inclusion</td>
+	  <td colspan="3"><center>
+	    <strong>AAA<br>
+B	    </strong>
+	  </center></td>
+	  <td>Applies when one annotation covers a span identical to or larger than another </td>
+	</tr>
+	<tr>
+	  <td height="38"><code>_o_</code></td>
+	  <td>overlap</td>
+	  <td colspan="3"><center>
+	    <strong>AAA&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;BBB</strong><strong></strong>
+	  </center></td>
+	  <td>For overlap only on the left or right side, use <code>_ol_</code> and <code>_or_</code> respectively </td>
+	</tr>
+	<tr>
+	  <td height="38"><code>_l_</code></td>
+	  <td>left aligned</td>
+		  <td width="15">&nbsp;</td>
+	  <td colspan="2" valign="top">	      <div align="left"><strong>A</strong><strong>AA<br>
+             BB&nbsp;</strong>
+	        </div></td>
+	  <td>Both elements span an area beginning with the same token </td>
+	</tr>
+		<tr>
+		  <td height="38"><code>_r_</code></td>
+		  <td>right aligned</td>
+		  <td colspan="2" valign="top">	        <div align="right"><strong>AA<br>
+	          BBB
+		        </strong><strong></strong>
+		        </div></td>
+		  <td width="26">&nbsp;</td>
+		  <td>Both elements span an area ending with the same token </td>
+		</tr>
+				<tr>
+		  <td height="38">==</td>
+		  <td>value identity</td>
+		  <td colspan="3"><center>
+		      <strong>A = B</strong>
+		  </center></td>
+		  <td>The value of the annotation or token A is identical to that of B (this operator does not bind, i.e. the nodes must be connected by some other criteria too)</td>
+		  </tr>
+		  	<tr>
+		  <td height="38">!=</td>
+		  <td>value difference</td>
+		  <td colspan="3"><center>
+		      <strong>A &ne; B</strong>
+		  </center></td>
+		  <td>The value of the annotation or token A is different from B (this operator does not bind, i.e. the nodes must be connected by some other criteria too)</td>
+		  </tr>
+
+	<tr>
+	  <td height="38"><code>-&gt;LABEL</code></td>
+	  <td>labeled pointing relation</td>
+	  <td colspan="3"><center>
+<table cellpadding="0" cellspacing="0">
+<tr><td colspan="4" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tt>LABEL</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="padding: 0in 0in 0in 0in; border-left: solid windowtext 1.0pt; border-top: solid windowtext 1.0pt">&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="padding: 0in 0in 0in 0in; border-right: solid windowtext 1.0pt; border-top: solid windowtext 1.0pt">&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td colspan="2" align="center">V</td><td style="border-right: solid windowtext 1.0pt">&nbsp;</td><td align="center">&nbsp;</td></tr>
+<tr><td colspan="2" align="center"><strong>A</strong></td><td colspan="2" align="center">&nbsp;<strong>B</strong></td>
+</table>
+	  </center></td><td>A labeled, directed relationship between two elements. Annotations can be specified with
+<tt>-&gt;LABEL[annotation="VALUE"]</tt>
+</td>
+	</tr>
+
+		<tr>
+		  <td height="38"><code>-&gt;LABEL *</code></td>
+		  <td>indirect pointing relation</td>
+		  <td colspan="3"><center>
+<table cellpadding="0" cellspacing="0">
+<tr><td colspan="6" align="center"><tt>LABEL&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;LABEL</td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="padding: 0in 0in 0in 0in; border-left: solid windowtext 1.0pt; border-top: solid windowtext 1.0pt">&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="padding: 0in 0in 0in 0in; border-top: solid windowtext 1.0pt">&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="padding: 0in 0in 0in 0in; border-right: solid windowtext 1.0pt; border-top: solid windowtext 1.0pt">&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td colspan="4" align="left">&nbsp;&nbsp;&nbsp;V</td><td style="border-right: solid windowtext 1.0pt">&nbsp;</td><td align="center">&nbsp;</td></tr>
+<tr><td colspan="3" align="center"><strong>A</strong></td><td colspan="3" align="center">&nbsp;<strong>B</strong></td>
+</table>
+
+		  </center></td><td>An indirect labeled relationship between two elements. The length of the chain may be specified with
+<tt>-&gt;LABEL n,m</tt> for relation chains of length n to m
+
+	</td>
+	</tr>
+
+
+	<tr>
+	  <td height="38"><code>&gt;@l</code></td>
+	  <td>left-most child</td>
+	  <td colspan="3"><center>
+	    <strong>A</strong> <br>
+/ | \<br>
+<strong>B </strong><span class="style1">x y</span>
+	  </center></td><td>&nbsp;</td>
+	</tr>
+	<tr>
+	  <td height="38"><code>&gt;@r</code></td>
+	  <td>right-most child</td>
+	  <td colspan="3"><center>
+	    <strong>A<br>
+	    </strong>/ | \
+        <br>
+        <span class="style1">x y</span> <strong>B</strong>
+	  </center></td>
+	  <td>&nbsp;</td>
+	</tr>
+	<tr>
+	  <td>$</td>
+	  <td>Common parent node</td>
+	  <td colspan="3"><center>
+	    x<br>
+	      / \<br>
+	      <strong>A B</strong>
+	  </center></td>
+	  <td>&nbsp;</td>
+	  </tr>
+<tr><td>$*</td><td>Common ancestor node</td><td colspan="3"><center>x<br> |<br>
+ ...<br>
+  / \<br>
+  <strong>A B</strong>
+</center></td>
+<td>&nbsp;</td></tr>
+
+ <tr>
+  <td>
+  #x:arity=n
+  </td>
+  <td>
+  Arity
+  </td>
+  <td colspan="3" align="center">
+  x<br>/ | \<br>
+  <b> 1 ... n</b>
+  </td>
+  <td>Specifies the amount of directly dominated children that the searched node has </td>
+ </tr>
+ <tr>
+  <td valign="center">
+  #x:tokenarity=n
+  </td>
+  <td valign="center">
+  Tokenarity
+  </td>
+  <td colspan="3" align="center" valign="center">
+   x<br>...<br> /  \<br>
+  <b>1 ... n</b>
+  </td>
+  <td>Specifies the length of the span of tokens covered by the node</td>
+ </tr>
+
+
+  <tr>
+   <td valign="center">
+   #x:root
+   </td>
+   <td valign="center">
+   Root
+   </td>
+   <td colspan="3" align="center" valign="center">
+    ___<br>x<br>...
+   </td>
+   <td>Specifies that the node is not dominated by any other node within its namespace</td>
+  </tr>
+
+
+	  </table>
+
+  <br>
+
+</div>
+</body>
+</html>
