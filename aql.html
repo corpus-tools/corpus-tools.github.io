@@ -232,8 +232,15 @@ in a separate file, called example_queries.tab within the relANNIS corpus folder
 	<tr><td height="38"><code>.</code></td><td>direct precedence</td><td colspan="3"><center>
 	  <strong>A B</strong>
 	  </center></td><td>For non-terminal nodes, precedence is determined by the right-most and left-most terminal children. In corpora with multiple segmentations the layer on which consecutivity holds may be specified with <code>.layer</code></td></tr>
+	  
 	<tr><td height="38"><code>.*</code></td><td>indirect precedence</td><td colspan="3"><center><strong>A</strong> <span class="style1">x y z</span> <strong>B</strong>
 	</center></td><td>For specific sizes of precedence spans, <code>.n,m</code> can be used, e.g. <code>.3,4</code> - between 3 and 4 token distance; the default maximum distance for <code>.*</code> is 50 tokens. As above, segmentation layers may be specified, e.g. <code>.layer,3,4</code></td></tr>
+	<tr><td height="38"><code>^</code></td><td>directly near</td><td colspan="3"><center>
+	  <strong>A B</strong> or <strong>B A</strong>
+	  </center></td><td>Same as precedence, but in either order. In corpora with multiple segmentations the layer on which consecutivity holds may be specified with <code>^layer</code></td></tr>
+	<tr><td height="38"><code>^*</code></td><td>indirectly near</td><td colspan="3"><center><strong>A</strong> <span class="style1">x y z</span> <strong>B</strong> or <strong>B</strong> <span class="style1">x y z</span> <strong>A</strong>
+	</center></td><td>Like indirect precedence in either order.  The form <code>^n,m</code> can be used, e.g. <code>^3,4</code> - between 3 and 4 token distance; the default maximum distance for <code>^*</code> is 50 tokens. As above, segmentation layers may be specified, e.g. <code>^layer,3,4</code></td></tr>
+
 	<tr><td height="56"><code>&gt;</code></td><td>direct dominance</td><td colspan="3"><center>
 	  <strong>A</strong> <br>
 	  |<br>
