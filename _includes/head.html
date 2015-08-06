@@ -7,8 +7,21 @@
     <meta name="keywords" lang="en" content="corpus, corpora, annotation, information structure, ANNIS3, ANNIS"/>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <link rel="stylesheet" href="{{ "/css/ANNIS_site.css" | prepend: site.baseurl }}">
-    <link rel="shortcut icon" href="{{ "/img/favicon.ico" | prepend: site.baseurl }}"/>
+    <link rel="stylesheet" href="{{ '/css/ANNIS_site.css' | prepend: site.baseurl }}">
+    <link rel="shortcut icon" href="{{ '/img/favicon.ico' | prepend: site.baseurl }}">
+    
+    {% if page.needs_gallery %}
+    
+	<link rel="stylesheet" href="{{ '/css/colorbox.css' | prepend: site.baseurl }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="{{ '/js/jquery.colorbox-min.js' | prepend: site.baseurl }}"></script>
+	<script>
+		$(document).ready(function(){
+			$(".gallery").colorbox({rel:'gallery', width:"50%", height:"75%"});
+
+			});
+	</script>
+    {% endif %}
 	
 
 </head>

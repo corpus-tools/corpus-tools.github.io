@@ -39,11 +39,11 @@ h2{padding-top:20px; color:darkblue}
 
 
 		
-#index #nav2 li a.project, #goals #nav2 li a.project, #contact #nav2 li a.project, #cooperations #nav2 li a.project, #students #nav2 li a.project, #goals #nav2 li a.goals, #aql #nav2 li a.aql, #vis_overview #nav2 li a.vis_overview, #vis_overview #nav2 li a.visualizations, #vis_gallery #nav2 li a.visualizations, #accessing #nav2 li a.accessing,  #annis3 #nav2 li a.download, #documentation #nav2 li a.download, #tools #nav2 li a.download, #corpora #nav2 li a.download, #older #nav2 li a.download, #new #nav2 li a.project
+#index #nav2 li a.project, #goals #nav2 li a.project, #contact #nav2 li a.project, #cooperations #nav2 li a.project, #students #nav2 li a.project, #goals #nav2 li a.goals, #aql #nav2 li a.aql, #vis_overview #nav2 li a.vis_overview, #visualizations #nav2 li a.visualizations, #gallery #nav2 li a.visualizations, #accessing #nav2 li a.accessing,  #download #nav2 li a.download, #documentation #nav2 li a.download, #tools #nav2 li a.download, #corpora #nav2 li a.download, #older #nav2 li a.download, #new #nav2 li a.project
 {
 background: #4183C4; border-left: 1px;
 }
-#index #nav2 ul li a.home, #students #nav2 ul li a.students, #contact #nav2 ul li a.contact, #goals #nav2 ul li a.goals, #cooperations #nav2 ul li a.cooperations, #aql #nav2 ul li a.aql, #visualizations #nav2 ul li a.vis_overview, #accessing #nav2 ul li a.accessing, #vis_gallery #nav2 ul li a.vis_gallery, #annis3 #nav2 ul li a.annis3, #older #nav2 ul li a.older, #tools #nav2 ul li a.tools, #corpora #nav2 ul li a.corpora, #new #nav2 ul li a.new
+#index #nav2 ul li a.home, #students #nav2 ul li a.students, #contact #nav2 ul li a.contact, #goals #nav2 ul li a.goals, #cooperations #nav2 ul li a.cooperations, #aql #nav2 ul li a.aql, #visualizations #nav2 ul li a.vis_overview, #accessing #nav2 ul li a.accessing, #gallery #nav2 ul li a.vis_gallery, #download #nav2 ul li a.annis3, #documentation #nav2 ul li a.documentation, #older #nav2 ul li a.older, #tools #nav2 ul li a.tools, #corpora #nav2 ul li a.corpora, #new #nav2 ul li a.new
 {
 background: #4183C4; border-left: 1px;
 }
