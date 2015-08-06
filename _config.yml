@@ -1,11 +1,10 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: "ANNIS: Search and Visualization in Multilayer Linguistic Corpora"
+email: "annis-admin@ling.uni-potsdam.de"
+description: "ANNIS is a browser-based search and visualization platform for multilayer linguistic corpora, developed at Humboldt University in Berlin and Georgetown University."
 baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://annis-tools.org"
+github_username:  korpling
 
 # Build settings
 markdown: kramdown
