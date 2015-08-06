@@ -5,7 +5,7 @@ title: Home
 ## ANNIS
 
 <div class="image_wrap">
-![screenshot of ANNIS main user interface]({{ site.url }}/img/annis3_full.png){:width="750px"}
+![screenshot of ANNIS main user interface]({{ site.url }}/img/annis3_full.png){:width="750"}
 </div>
 
 ANNIS is an open source, cross platform (Linux, Mac, Windows), 
@@ -39,7 +39,7 @@ annotation tools via [SaltNPepper](http://u.hu-berlin.de/saltnpepper) into the A
 **For detailed information on the latest version of ANNIS see the User Guide under [documentation](documentation.html)**
 
 <div class="image_wrap">
-![Data workflow]({{ site.url }}/img/workflow.png){:width="600px"}
+![Data workflow]({{ site.url }}/img/workflow.png){:width="600"}
 </div>
 
 ### [Contact](contact.html)
@@ -55,6 +55,6 @@ Phone: +49-(0)30-2093-9720
 Fax: +49-(0)30-2093-9729  
 Mail: ![mail address](ann.gif)
 
-[![Logo Universität Potsdam]({{ site.url }}/img/uni_potsdam_logo.png){:height="100px"}](http://www.uni-potsdam.de)
-[![Logo  Georgetown University]({{ site.url }}/img/Georgetown_Logo.png){:height="100px"}](http://www.georgetown.edu/)
-[![Logo Humboldt-Universität zu Berlin]({{ site.url }}/img/hu_logo.gif){:height="100px"}](https://www.hu-berlin.de/)
+[![Logo Universität Potsdam]({{ site.url }}/img/uni_potsdam_logo.png){:height="100"}](http://www.uni-potsdam.de)
+[![Logo  Georgetown University]({{ site.url }}/img/Georgetown_Logo.png){:height="100"}](http://www.georgetown.edu/)
+[![Logo Humboldt-Universität zu Berlin]({{ site.url }}/img/hu_logo.gif){:height="100"}](https://www.hu-berlin.de/)
