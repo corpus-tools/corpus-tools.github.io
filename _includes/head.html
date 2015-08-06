@@ -1,12 +1,14 @@
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>{% if page.title %}{{ site.title }} - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" lang="en" content="{{ site.description }}">
+    <meta name="keywords" lang="en" content="corpus, corpora, annotation, information structure, ANNIS3, ANNIS"/>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/ANNIS_site.css" | prepend: site.baseurl }}">
+    <link rel="shortcut icon" href="{{ "/img/favicon.ico" | prepend: site.baseurl }}"/>
+	
 
 </head>
