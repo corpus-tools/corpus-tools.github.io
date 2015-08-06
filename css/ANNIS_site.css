@@ -129,3 +129,12 @@ text-align:center;
 
 .clearboth { clear: both; }
 .note{color: #669; font-size: 12px;}
+
+.image_wrap {
+	text-align: center;
+}
+.image_wrap img {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
