@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-    <body>
+    <body id="{{ page.path | remove:'.html' | remove:'.md' }}">
 
     {% include header.html %}
 
