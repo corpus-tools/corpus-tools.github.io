@@ -16,7 +16,7 @@ Tomcat](http://tomcat.apache.org/) or <a target="new" href="http://www.mortbay.o
 **Current ANNIS distribution: Version {{site.data.annis.version}}** ([change log](https://github.com/korpling/ANNIS/releases/tag/annis-{{site.data.annis.version}}))
 
 
-* ANNIS Kickstarter: <a href="https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-kickstarter-{{site.data.annis.version}}-distribution.zip" target="_blank">annis-kickstarter-{{site.data.annis.version}}-distribution.zip</a> (local installation for Windows, Linux and Mac)</li>
+* ANNIS Kickstarter: <a href="https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-kickstarter-{{site.data.annis.version}}-distribution.zip" target="_blank">annis-kickstarter-{{site.data.annis.version}}-distribution.zip</a> (local installation for Windows, Linux and Mac)
 * ANNIS server:
   * [annis-gui-{{site.data.annis.version}}.war](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-gui-{{site.data.annis.version}}.war) (server GUI distribution)
   * [annis-service-{{site.data.annis.version}}-distribution.tar.gz](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-service-{{site.data.annis.version}}-distribution.tar.gz) (server service distribution)
