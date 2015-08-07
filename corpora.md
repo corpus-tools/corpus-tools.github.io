@@ -409,7 +409,7 @@ Mambrini / <a href="http://www.perseus.tufts.edu/hopper/"
             </td>
             <td>
                  Nestor
-                      Chronicle - 181,18 - 182,20<o:p></o:p>
+                      Chronicle - 181,18 - 182,20
             </td>
             <td>
                  Old
