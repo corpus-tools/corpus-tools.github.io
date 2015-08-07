@@ -2,14 +2,15 @@
 layout: page
 title: Corpora
 --- 
-<h2>Demo Corpora</h2>
+## Demo Corpora
 
 All corpora are available in the relANNIS database format, which can be
 imported directly into ANNIS, and PAULA XML, which is more readable and editable but
 must be converted to relANNIS using the Pepper converter framework for
-import. Some corpora are offered in other source formats, such as TreeTagger SGML (a.k.a. CWB format) or especially for multimodal corpora, EXMARaLDA XML, which may also be converted to relANNIS or PAULA.<br>
-<br>
-<table id="vistable">
+import. Some corpora are offered in other source formats, such as TreeTagger SGML (a.k.a. CWB format) or especially for multimodal corpora, EXMARaLDA XML, which may also be converted to relANNIS or PAULA.
+
+
+<table class="vistable">
   <tbody>
     <tr>
       <th>
