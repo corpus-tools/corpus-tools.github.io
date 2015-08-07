@@ -127,6 +127,12 @@ padding: 5px;
 text-align:center;
 }
 
+.thumbnail img {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
 .clearboth { clear: both; }
 .note{color: #669; font-size: 12px;}
 
