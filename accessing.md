@@ -31,7 +31,7 @@ Currently three versions can be accessed on-line (
 
 If you are interested in obtaining a login or joining the ANNIS
 user and developer mailing list, please contact us at 
-![ann.gif].
+![ANNIS mailing list address](ann.gif).
 We also welcome [cooperation partners](cooperations.html) interested in
 developing interesting corpora or expansions to the pluggable
 architecture, such as visualization modules and query builder
