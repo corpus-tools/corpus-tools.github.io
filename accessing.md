@@ -24,8 +24,8 @@ Currently three versions can be accessed on-line (
   available corpora in Berlin (also available from the [Demo Corpora](corpora.html) page)
 * The [Georgetown University ANNIS](http://corpling.uis.georgetown.edu/annis-corpora/) runs some freely
   available corpora
-* The [SFB 632](https://annis2.sfb632.uni-potsdam.de) instance for SFB researchers and other partners (login
-  required)
+* The [SFB 632](https://korpling.german.hu-berlin.de/annis3/) instance for SFB researchers and other partners (login
+  required) is now moved to [https://korpling.german.hu-berlin.de/annis3/](https://korpling.german.hu-berlin.de/annis3/).
 * The latest experimental [developer's version](https://korpling.german.hu-berlin.de/annis3-snapshot/) for testing.
 
 
