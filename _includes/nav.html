@@ -14,7 +14,7 @@
           <ul class="nav navbar-nav navbar-right">
 			<li {% if page.url == site.site_home %}class="active" {% endif %}><a href="..{{site.site_home}}"><i class="fa fa-home"></i> Home</a></li>
             <li {% if page.url contains 'annis' %}class="active" {% endif %}><a href="..{{site.site_annis}}"><i class="icon-annis"></i> ANNIS</a></li>
-            <li {% if page.url contains 'atomic' %}class="active" {% endif %}><a href="..{{site.site_atomic}}"><i class="fa fa-plug"></i> Atomic</a></li>
+            <li {% if page.url contains 'atomic' %}class="active" {% endif %}><a href="..{{site.site_atomic}}"><i class="icon-atomic"></i> Atomic</a></li>
             <li class="dropdown{% if page.url contains 'salt' %} active{% endif %}">
               <a href="..{{ site.site_salt_main }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="icon-salt"></span> Salt<span class="caret"></span></a>
               <ul class="dropdown-menu">
