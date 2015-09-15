@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_annis_old
 title: Accessing
 --- 
 ## Accessing ANNIS

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_annis_old
 title: Coorperations
 --- 
 ##Research Projects Employing ANNIS and PAULA
