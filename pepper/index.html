@@ -1,0 +1,235 @@
+---
+layout: default
+---
+<center>
+        <img src="./images/pepper_weapon.jpg" width="80%"/>
+    </center>
+    <article>
+        <div class="page-header">
+            <h1>About Pepper</h1>
+        </div>
+        <div class="content">
+            <p> If you need to convert corpora from one linguistic format into another, Pepper is
+                your swiss-army knife. With Pepper you can don't have to hesitate, when your
+                annotation tool produces a different data format than your analysis tool can read. </p>
+            <ul>
+                <li>Pepper can convert documents in a variety of linguistic formats like: <a
+                        href="http://www.exmaralda.org/">EXMARalDA</a>, <a
+                        href="http://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/TIGERSearch/doc/html/TigerXML.html"
+                        >Tiger XML</a>, <a href="http://mmax2.sourceforge.net/">MMAX2</a>, <a
+                        href="http://www.wagsoft.com/RSTTool/">RST</a>, <a
+                        href="http://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/The_TCF_Format"
+                        >TCF</a>, <a href="http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/"
+                        >TreeTagger format</a>, <a href="http://www.tei-c.org/Guidelines/P5/"
+                        >TEI</a> (subset), <a href="..{{site.annis_site_main}}">ANNIS</a> format, <a
+                        href="https://www.sfb632.uni-potsdam.de/paula.html">PAULA</a> and <a
+                        href="..{{site.site_pepper}}modules.html#allModules">many many more</a>. </li>
+                <li>Pepper comes with a plug-in mechanism to make it easy to extend Pepper for
+                    further formats and data manipulations. </li>
+                <li>Pepper is module-based, that means each mapping is done by a separate module.
+                    That enables each module to be combined with every other module in one single
+                    workflow. </li>
+                <li>Pepper uses the intermediate model <a href="..{{site.site_salt_main}}">Salt</a>,
+                    which reduces the number of mappings to convert <i>n</i> into <i>m</i> formats. </li>
+                <li>Pepper modules like the <a href="">MergingModule</a> allow to merge the data
+                    from different annotation tools together and create multilayer corpora. </li>
+                <li>Pepper can be used as an interactive command line tool, as a command to be
+                    included in scripts or as an api to be integrated in other software products. </li>
+                <li> Pepper is written in <a href="https://java.com/de/download/">Java</a> and can
+                    be run on each operation system, which is ready to run Java (Windows, Mac,
+                    Linux, Unix, ...). </li>
+                <li>Pepper is free and open source software. It is distributed under the
+                    {{site.apache_license}}. </li>
+            </ul> To learn more about Pepper and its architecture, go to <a
+                href="..{{site.site_pepper}}architecture.html">Pepper's architecture</a>. </div>
+    </article>
+    <article id="download">
+        <div class="page-header">
+            <h1>Download</h1>
+        </div>
+        <div class="content"> Here you will find the current stable release, snapshots and even
+            older versions of Pepper including a set of Pepper modules. <ul>
+                <li><a
+                        href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/download/stable/"
+                        >Stable Releases</a></li>
+                <li><a
+                        href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/download/snapshot/"
+                        >Snapshot Releases</a></li>
+            </ul> Pepper is system independent and comes as a ready to run zip archive, so you do
+            not need any installation. But since Pepper is Java based, you need to have Java
+            installed on your system. On most systems, Java is installed by default, but in case it
+            is not please download it from www.oracle.com/technetwork/java/javase/ or
+            http://openjdk.java.net/. To check if Java (or more precisly a Java Runtime Environment)
+            is running, open a command line and run: 
+            <pre>java -version</pre> 
+            You need at least version 1.7.
+        </div>
+    </article>
+    <article>
+        <div class="page-header">
+            <h1>Quick start</h1>
+        </div>
+        <div class="content"> Pepper can be used as an interactive command line tool or as an api to
+            be integrated in other software products. <h2>Interactive command line</h2>
+            <div class="content"> To run Pepper open a command line and enter (for windows):
+                <pre>pepperStart.bat COMMAND</pre> or (for linux, unix and Mac OS):
+                <pre>bash pepperStart.sh COMMAND</pre> Now Pepper starts the interactive command
+                line and welcomes you with the prompt <pre>pepper></pre> To get a list of all
+                available commands, enter 'help': <pre>pepper>help</pre> To get a list of all
+                included modules, enter 'list': <pre>pepper>list</pre> To start a conversion with a
+                predefined workflow, enter 'convert' followed by the workflow description file:
+                <pre>pepper>convert myConversion.pepper</pre> To start the interactive conversion
+                wizard, which helps you to define a workflow description, enter just 'convert':
+                <pre>pepper>convert</pre> To learn more about Pepper's commands and the conversion
+                wizard go to <a href="..{{site.site_pepper}}gettingStarted.html">Getting
+                started</a>. </div>
+            <h2>Embedded Pepper</h2>
+            <div class="content">
+                <p>With the Pepper library, we provide a programmatic access to the Pepper framework
+                    including, the configuration of a conversion workflow, the start of a conversion
+                    and getting information about the registered Pepper modules. Since Pepper bases
+                    on a plugin structure named OSGi (see: <a href="http://www.osgi.org/"
+                        >http://www.osgi.org/</a>), each Pepper module is plugged into the framework
+                    separatly. This goes for running Pepper as CLI and for running Pepper as a
+                    library as well. </p>
+                <p>To learn more about integrating Pepper as a library in other software products go
+                    to <a href="..{{site.site_pepper}}library.html">Pepper as a library</a>.</p>
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="page-header">
+            <h1>Modules</h1>
+        </div>
+        <div class="content">
+            <p> The core of Pepper are the Pepper modules. The modules map data from a format to
+                Salt or Salt to a format. Modules manipulate and enhance the data during the
+                conversion process. Pepper provides to integrate modules via an embedded plug-in
+                mechanism based on the OSGi framework. To install further modules into an existing
+                Pepper instance open the Pepper console and use command 'is':
+                <pre>
+pepper>is PATH_TO_PLUGIN</pre> To update a module, open the Pepper console and
+                use command 'update' <pre>
+update GROUP_ID::ARTIFACT_ID::REPOSITORY</pre>
+            </p>
+            <h2>All known Pepper modules</h2>
+            <div class="content">
+                <p> Please find here a list of <a
+                        href="..{{site.site_pepper}}knownModules.html">all known Pepper
+                        modules</a>.</p>
+            </div>
+            <h2>Create own Pepper modules</h2>
+            <div class="content">
+                <p>If there is no exitsing module, which fullfills your needs, you are free to
+                    implement your own module. With Pepper's plug-in mechanism your module can
+                    easily be integrated into the Pepper plattform. The possibility of combining
+                    your new module with already existing ones lets you create absolutly new
+                    workflows. Please read the <a href="..{{site.site_pepper}}/resources/pepper_modulesDevelopersGuide.pdf">Module Developer's Guide</a> to get a detailed documentation of how to implement a Pepper module.
+            </div>
+        </div>
+    </article>
+    <article id="contributaion">
+        <div class="page-header">
+            <h1>Contribution and License</h1>
+        </div>
+        <div class="content">
+            <p> Pepper is published under the Open Source license {{site.apache_license}}. We want
+                to enable everyone first to use the software with no restrictions and second to
+                enable the community to take part in their developement. </p>
+            <p>
+                <h4>Found a bug or have any feature request?</h4> Please let us know what you have
+                found out or which ideas of enhancements you have. Please leave us an issue on
+                GitHub at <a href="{{ site.github_pepper }}/pepper/issues"><i class="fa fa-github"></i>
+                    Pepper</a> or write us an e-mail: <a href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </p>
+            <p>
+                <h4>Want to contribute the projects?</h4> For both projects Salt and Pepper we
+                published their sources at the plattform GitHub at <a
+                    href="{{ site.github_pepper }}"><i class="fa fa-github"></i> Pepper</a> If you are
+                interested in contributing the projects please feel free to fork or clone them. We
+                are happy for any suggestions, bugreports, bugfixes ans so one. It would be nice,
+                when you keep us informed about your ideas and enhancements, please write us an
+                e-mail to: <a href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </p>
+        </div>
+    </article>
+    <article id="publications">
+        <div class="page-header">
+            <h1>Publications</h1>
+        </div>
+        <div>
+            <ul>
+                <li> F. Zipser, A. Röhrig, A. Lüdeling, M. Klotz,T. Krause, S. Druskat &amp; V.
+                    Voigt (2015).<br/>
+                    <strong>SaltNPepper, ANNIS &amp; Atomic: Eine Infrastruktur für
+                        Mehrebenenkorpora</strong>.<br/>
+                    <i>Digital Humanities“-Tag 2015 – Digitale Ressourcen an der Philosophischen
+                        Fakultät II.</i> Berlin, 21. Mai 2015. [<a
+                        href="http://dx.doi.org/10.5281/zenodo.20714">poster</a>].</li>
+                <li> F. Zipser, T. Krause, A. Lüdeling, A. Neumann, M. Stede, A. Zeldes (2015).<br/>
+                    <strong>ANNIS, SaltNPepper &amp; PAULA: A multilayer corpus
+                        infrastructure</strong>.<br/>
+                    <i>Final Conference of the SFB 632 Information Structure: Advances in
+                        Information Structure Research 2003 - 2015.</i> Berlin, 08. - 09. Mai 2015.
+                        [<a href="http://dx.doi.org/10.5281/zenodo.20713">poster</a>].</li>
+                <li> F. Zipser, M. Klotz &amp; A. Röhrig (2015).<br/>
+                    <strong>From TEI to linguistic corpora using Pepper</strong>.<br/>
+                    <i>37. Jahrestagung der Deutschen Gesellschaft für Sprachwissenschaft.</i>
+                    Leipzig, 04.- 06. März 2015. [<a href="http://dx.doi.org/10.5281/zenodo.16664"
+                        >poster</a>].</li>
+                <li> Zipser, F. (2014).<br/>
+                    <strong>SaltNPepper und das Formatpluriversum</strong>.<br/>
+                    <i>LAUDATIO Workshop 2014</i>. Berlin, 07.- 08.10.2014.<a
+                        href="http://dx.doi.org/10.5281/zenodo.17557">[slides]</a>.</li>
+                <li> F. Zipser, M. Frank &amp; J. Schmolling (2014).<br/>
+                    <strong>Merging data, the essence of creation of multi-layer corpora</strong>.<br/>
+                    <i>36. Jahrestagung der Deutschen Gesellschaft für Sprachwissenschaft.</i>
+                    Marburg, 05.- 07. März 2014. [ <a href="http://dx.doi.org/10.5281/zenodo.15640"
+                        >poster</a>].</li>
+                <li> C. Odebrecht &amp; F. Zipser (2013).<br/>
+                    <strong>LAUDATIO - Eine Infrastruktur zur linguistischen Analyse historischer
+                        Korpora.</strong><br/> DTA-/CLARIN-D Konferenz und -Workshops: Historische
+                    Textkorpora für die Geistes- und Sozialwissenschaften. Fragestellungen und
+                    Nutzungsperspektiven, Berlin 2013.</li>
+                <li> F. Zipser, A. Zeldes, J. Ritz, L. Romary &amp; U. Leser (2011).<br/>
+                    <strong>Pepper: Handling a multiverse of formats</strong>.<br/>
+                    <i>33. Jahrestagung der Deutschen Gesellschaft für Sprachwissenschaft.</i>
+                    Göttingen, 23.- 25. Februar 2011. [ <a
+                        href="http://dx.doi.org/10.5281/zenodo.15638">poster</a>].</li>
+                <li> F. Zipser &amp; L. Romary (2010).<br/>
+                    <strong>A model oriented approach to the mapping of annotation formats using
+                        standards</strong>.<br/> In: <i>Proceedings of the Workshop on Language
+                        Resource and Language Technology Standards, LREC 2010. Malta.</i> URL: <a
+                        href="http://hal.archives-ouvertes.fr/inria-00527799/en/"
+                        >http://hal.archives-ouvertes.fr/inria-00527799/en/</a></li>
+                <li> F. Zipser (2009).<br/>
+                    <strong>Entwicklung eines Konverterframeworks für linguistisch annotierte Daten
+                        auf Basis eines gemeinsamen (Meta-)modells</strong>.<br/> Diplomarbeit,
+                    Humboldt-Universität zu Berlin, Institut für Informatik. URL: <a
+                        href="http://hal.archives-ouvertes.fr/docs/00/60/61/02/PDF/Diplomarbeit_FZ_final.pdf"
+                        >http://hal.archives-ouvertes.fr/docs/00/60/61/02/PDF/Diplomarbeit_FZ_final.pdf</a></li>
+            </ul>
+        </div>
+    </article>
+    <article id="supporters">
+        <div class="page-header">
+            <h1>Supported by</h1>
+        </div>
+        <div><center>
+                <a href="https://www.sfb632.uni-potsdam.de/en/">
+                    <img width="150px" src=".././images/logos/sfb_logo_bridge_new.png"
+                        alt="Sonderforschungsbereich 632, Information structure: The linguistic means for structuring utterances, sentences and texts "
+                    />
+                </a>&nbsp;&nbsp;&nbsp; <a href="http://www.dfg.de/en/">
+                    <img width="250px" src=".././images/logos/dfg_logo_schriftzug_blau.png"/>
+                </a>&nbsp;&nbsp;&nbsp; <a
+                    href="https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&cl=en">
+                    <img width="100px" src=".././images/logos/husiegel_bw_gross.png"
+                        alt="Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology"
+                    />
+                </a>&nbsp;&nbsp;&nbsp; <a href="http://www.inria.fr/en">
+                    <img width="150px" src=".././images/logos/inr_logo_corpo_UK_coul.png"/>
+                </a>&nbsp;&nbsp;&nbsp; <a href="http://de.clarin.eu/en/">
+                    <img width="120px" src=".././images/logos/clarin-d.jpg"/>
+                </a>
+            </center>
+        </div>
+    </article>

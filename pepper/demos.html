@@ -1,0 +1,40 @@
+---
+layout: default
+---
+    <article>
+        <div class="page-header">
+            <h1>Demos</h1>
+        </div>
+        <div class="content">
+			Here we demonstrate some sample workflows.
+		</div>
+	</article>
+	<article>
+        <div class="page-header">
+            <h1>pcc2 - Potsdam Commentary Corpus</h1>
+        </div>
+        <div class="content">
+			<p>The pcc2 corpus is a small excerpt from the <a href="http://angcl.ling.uni-potsdam.de/resources/pcc.html">Potsdam Commentary Corpus</a>. It contains the two documents <i>11299</i> and <i>4282</i>. The corpus is annotated on multiple layers: constituents, dependencies, coreference, rhetorical structure and information structure.</p>
+			<p>The aim of this workflow is to convert the corpus from its source format PAULA into its target format, the ANNIS format.</p>
+			 <table class="table-striped">
+				<tr><td width="30%"><strong>corpus</strong></td><td width="50%"><a href="..{{site.site_corpora}}pcc2.zip"><i class="fa fa-download"></i> Potsdam Commentary Corpus</a></td></tr>
+				<tr><td><strong>importer</strong></td><td><a href="{{site.module_paula}}">{{site.module_paula}}</a></td></tr>
+				<tr><td><strong>exporter</strong></td><td><a href="{{site.module_annis}}">{{site.module_annis}}</a></td></tr>
+			 </table>
+			 <br/>
+			 <center>
+			 <img onclick="window.open('./images/sampleWorkflow_pcc2.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                    class="enlarge" src="./images/sampleWorkflow_pcc2.svg" width="60%"/>
+             </center>
+             <p>The following workflow assumes the source file to be in a folder named <i>paula</i>, which is in the same folder as the workflow description file itself. The target format will be exported to a folder named <i>annis</i>.</p>
+            <pre>
+&lt;?xml version="1.0" ?>
+&lt;?xml-model href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/schema/10/pepper.rnc" 
+               type="application/relax-ng-compact-syntax"?>
+&lt;pepper-job id="" version="1.0">
+	&lt;importer name="PAULAImporter" path="./paula/"/>
+	&lt;exporter name="ANNISExporter" path="./annis/"/>
+&lt;/pepper-job></pre>
+		</div>
+	</article>
+   

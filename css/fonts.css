@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'annistools';
+	src:url('../fonts/annistools.eot?gu6s5');
+	src:url('../fonts/annistools.eot?#iefixgu6s5') format('embedded-opentype'),
+		url('../fonts/annistools.ttf?gu6s5') format('truetype'),
+		url('../fonts/annistools.woff?gu6s5') format('woff'),
+		url('../fonts/annistools.svg?gu6s5#annistools') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'annistools';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pepper-o:before {
+	content: "\e600";
+}
+.icon-salt:before {
+	content: "\e601";
+}
+.icon-pepper-wide-o:before {
+	content: "\e602";
+}
+.icon-pepper:before {
+	content: "\e603";
+}
+.icon-annis:before {
+	content: "\e608";
+}

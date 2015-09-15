@@ -1,0 +1,19 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	<h1>
+		{% if page.url == site.site_home %} annis-tools {% elsif page.url contains 'salt' %} <span class="icon-salt"></span> Salt {% elsif page.url contains 'pepper' %} <span class="icon-pepper-o"></span> Pepper {% elsif page.url contains 'annis' %} ANNIS {% elsif page.url contains 'atomic' %}<i class="fa fa-download"></i> Atomic{% endif %}
+        </h1>
+        <p>
+{% if page.url == site.site_home %}
+A collection of tools to process your linguistic data: annotate, migrate, analyze.
+{% elsif page.url contains 'salt' %}
+A powerful, tagset independent and theory neutral meta model and api for nearly all types of linguistic data to store, manipulate and represent these data.
+{% elsif page.url contains 'pepper' %}
+Pepper is a highly extensible plattform to convert and manipulate linguistic data between an unbound set of formats. Pepper can be used stand alone as command line interface or be integrated as an api into other software products.
+{% elsif page.url contains 'annis' %}
+This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+{% elsif page.url contains 'atomic' %}
+A multilevel corpus annotation tool – and platform – for the desktop.
+{% endif %}
+</p>
+      </div>

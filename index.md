@@ -28,13 +28,13 @@ and a growing set of manual annotation tools
 ([EXMARaLDA](http://exmaralda.org/), [ELAN](http://www.lat-mpi.eu/tools/elan/), 
 [annotate](http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/annotate.html)/[Synpathy](http://www.mpi.nl/tools/synpathy.html), 
 [MMAX](http://mmax2.sourceforge.net/), [RSTTool](http://www.wagsoft.com/RSTTool/), 
-[Arborator](http://arborator.ilpga.fr/), [WebAnno](https://code.google.com/p/webanno/)), and can be 
+[Arborator](http://arborator.ilpga.fr/), [WebAnno](https://code.google.com/p/webanno/), [Atomic]({{site.site_atomic}})), and can be 
 mapped onto an expressive format such as [PAULA](http://www.sfb632.uni-potsdam.de/en/paula-en.html) 
 (Potsdamer Austauschformat Linguistischer Annotationen / Potsdam Interchange Format for Linguistic Annotations, developed in the SFB), 
 a stand-off multilayer XML format, which serves as the basis for further processing. 
 ANNIS provides the means for visualizing and retrieving this data. 
 The diagram below illustrates the data flow from multiple 
-annotation tools via [SaltNPepper](http://u.hu-berlin.de/saltnpepper) into the ANNIS application. 
+annotation tools via [Pepper]({{site.site_pepper}}) into the ANNIS application. 
 
 **For detailed information on the latest version of ANNIS see the User Guide under [documentation](documentation.html)**
 

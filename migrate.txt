@@ -1,0 +1,532 @@
+migrating:
+
+remove folders:
+js/
+img/
+download/
+
+remove files:
+accessing.md
+contact.md
+cooperations.md
+corpora.md
+goals.md
+index.md
+students.md
+download.md
+documentation.html
+gallery.html
+new.html
+older.html
+tools.html
+visualizations.html
+aql.html
+favicon.ico
+feed.xml
+LICENSE
+CNAME
+ann.gif
+
+in folder _includes, remove:
+header_annis_old.html
+head_annis_old.html
+footer_annis_old.html
+
+in folder _layouts remove:
+default_annis_old.html
+page_annis_old.html
+post_annis_old.html
+
+
+in file _config.yml
+
+remove old ANNIS part or merge it
+
+#############################################################################################
+old ANNIS
+
+.
+├── accessing.md
+├── ann.gif
+├── aql.html
+├── CNAME
+├── _config.yml
+├── contact.md
+├── cooperations.md
+├── corpora.md
+├── css
+│   ├── ANNIS_site.css
+│   └── colorbox.css
+├── _data
+│   └── annis.yml
+├── documentation.html
+├── download
+│   ├── 2004annis_suche.pdf
+│   ├── 2004annis_tutorial.pdf
+│   ├── a5.hausa.umarnin.uwa_V2_relANNIS.zip
+│   ├── a5.hausa.umarnin.uwa_V2_TreeTagger.zip
+│   ├── Aeschylus.Persae.L1-18_PAULA.zip
+│   ├── Aeschylus.Persae.L1-18_relAnnis.zip
+│   ├── ANNIS3_multiseg_guide_2013-6.pdf
+│   ├── annis_firstSteps.pdf
+│   ├── ANNIS_HTML_Vis_Guide_1.1.0.pdf
+│   ├── annis_local_v011.zip
+│   ├── ANNIS_User_Guide_3.0.0.pdf
+│   ├── ANNIS_User_Guide_3.0.1.pdf
+│   ├── ANNIS_User_Guide_3.1.4.pdf
+│   ├── ANNIS_User_Guide_3.2.1.pdf
+│   ├── ANNIS_User_Guide_3.3.5.pdf
+│   ├── AQL_short_intro_2up.pdf
+│   ├── b4.tatian2.0_relAnnis.zip
+│   ├── b4.tatian2.0.zip
+│   ├── b7.wolof.web.V2_relANNIS.zip
+│   ├── b7.wolof.web.V2.zip
+│   ├── b7.wolof.wiki.V4_relANNIS.zip
+│   ├── b7.wolof.wiki.V4.zip
+│   ├── d2.20samplesDEU_relAnnis.zip
+│   ├── d2.20samplesDEU.zip
+│   ├── dialog.demo_EXMARaLDA.zip
+│   ├── dialog.demo_relANNIS.zip
+│   ├── fuerstinnenkorrespondenz_exb.zip
+│   ├── fuerstinnenkorrespondenz_relANNIS.zip
+│   ├── Nestorchronik.sample_PAULA.zip
+│   ├── Nestorchronik.sample_relAnnis.zip
+│   ├── OldOccitanPaula.zip
+│   ├── OldOccitanRelAnnis.zip
+│   ├── parallel.sample_relAnnis.zip
+│   ├── parallel.sample.zip
+│   ├── Paula-format-doku_080521.doc
+│   ├── paula.zip
+│   ├── pcc2_PAULA.zip
+│   ├── pcc2_relANNIS.zip
+│   ├── SE_HistorischeKorpora_ANNIS2015-05-06.pdf
+│   ├── SE_HistorischeKorpora_ANNIS2015-05-06.pptx
+│   ├── SMULTRON_Banana_PAULA.zip
+│   ├── SMULTRON_Banana_relAnnis.zip
+│   ├── subtok.demo_PAULA.zip
+│   └── subtok.demo_relANNIS.zip
+├── download.md
+├── favicon.ico
+├── feed.xml
+├── gallery.html
+├── goals.md
+├── img
+│   ├── annis1.png
+│   ├── annis2.gif
+│   ├── annis3_full_o.png
+│   ├── annis3_full.png
+│   ├── annis3_querybuilder_edge.png
+│   ├── annis_logo.png
+│   ├── annotation_tools.png
+│   ├── arabic_RTL_KWIC.png
+│   ├── arch_dependency.png
+│   ├── av1.png
+│   ├── border.png
+│   ├── controls.png
+│   ├── coref.png
+│   ├── dep_arch_dependency_small.GIF
+│   ├── dep_hierarchical_dependency_small.GIF
+│   ├── dep_ordered_dependency_small.GIF
+│   ├── dep_vis.gif
+│   ├── discourse1.PNG
+│   ├── doc_icon.png
+│   ├── doc_list.png
+│   ├── Double-Vorfeld-Tree small.png
+│   ├── favicon.ico
+│   ├── favicon_large.ico
+│   ├── favicon.png
+│   ├── formats.png
+│   ├── freqs.png
+│   ├── Georgetown_Logo.png
+│   ├── grid.png
+│   ├── gridtree.png
+│   ├── hebrew_RTL_tree.png
+│   ├── Hindi.PNG
+│   ├── hu_logo.gif
+│   ├── infstr.png
+│   ├── kwic1.png
+│   ├── kwic_rtl.png
+│   ├── loading_background.png
+│   ├── loading.gif
+│   ├── manuscript.png
+│   ├── meta.png
+│   ├── new_qb.PNG
+│   ├── overlay.png
+│   ├── parallel_discourse.png
+│   ├── parallel_kwic.png
+│   ├── parallel.png
+│   ├── partiture1.png
+│   ├── pdf.png
+│   ├── rst.png
+│   ├── script.png
+│   ├── Thumbs.db
+│   ├── tree1.png
+│   ├── tree.png
+│   ├── tree_w_secedge.png
+│   ├── uni_potsdam_logo.png
+│   ├── video.png
+│   └── workflow.png
+├── _includes
+│   ├── footer_annis_old.html
+│   ├── head_annis_old.html
+│   └── header_annis_old.html
+├── index.md
+├── js
+│   ├── jquery.colorbox.js
+│   └── jquery.colorbox-min.js
+├── _layouts
+│   ├── default_annis_old.html
+│   ├── page_annis_old.html
+│   └── post_annis_old.html
+├── LICENSE
+├── new.html
+├── older.html
+├── _site
+│   ├── accessing.html
+│   ├── ann.gif
+│   ├── aql.html
+│   ├── CNAME
+│   ├── contact.html
+│   ├── cooperations.html
+│   ├── corpora.html
+│   ├── css
+│   │   ├── ANNIS_site.css
+│   │   └── colorbox.css
+│   ├── documentation.html
+│   ├── download
+│   │   ├── 2004annis_suche.pdf
+│   │   ├── 2004annis_tutorial.pdf
+│   │   ├── a5.hausa.umarnin.uwa_V2_relANNIS.zip
+│   │   ├── a5.hausa.umarnin.uwa_V2_TreeTagger.zip
+│   │   ├── Aeschylus.Persae.L1-18_PAULA.zip
+│   │   ├── Aeschylus.Persae.L1-18_relAnnis.zip
+│   │   ├── ANNIS3_multiseg_guide_2013-6.pdf
+│   │   ├── annis_firstSteps.pdf
+│   │   ├── ANNIS_HTML_Vis_Guide_1.1.0.pdf
+│   │   ├── annis_local_v011.zip
+│   │   ├── ANNIS_User_Guide_3.0.0.pdf
+│   │   ├── ANNIS_User_Guide_3.0.1.pdf
+│   │   ├── ANNIS_User_Guide_3.1.4.pdf
+│   │   ├── ANNIS_User_Guide_3.2.1.pdf
+│   │   ├── ANNIS_User_Guide_3.3.5.pdf
+│   │   ├── AQL_short_intro_2up.pdf
+│   │   ├── b4.tatian2.0_relAnnis.zip
+│   │   ├── b4.tatian2.0.zip
+│   │   ├── b7.wolof.web.V2_relANNIS.zip
+│   │   ├── b7.wolof.web.V2.zip
+│   │   ├── b7.wolof.wiki.V4_relANNIS.zip
+│   │   ├── b7.wolof.wiki.V4.zip
+│   │   ├── d2.20samplesDEU_relAnnis.zip
+│   │   ├── d2.20samplesDEU.zip
+│   │   ├── dialog.demo_EXMARaLDA.zip
+│   │   ├── dialog.demo_relANNIS.zip
+│   │   ├── fuerstinnenkorrespondenz_exb.zip
+│   │   ├── fuerstinnenkorrespondenz_relANNIS.zip
+│   │   ├── Nestorchronik.sample_PAULA.zip
+│   │   ├── Nestorchronik.sample_relAnnis.zip
+│   │   ├── OldOccitanPaula.zip
+│   │   ├── OldOccitanRelAnnis.zip
+│   │   ├── parallel.sample_relAnnis.zip
+│   │   ├── parallel.sample.zip
+│   │   ├── Paula-format-doku_080521.doc
+│   │   ├── paula.zip
+│   │   ├── pcc2_PAULA.zip
+│   │   ├── pcc2_relANNIS.zip
+│   │   ├── SE_HistorischeKorpora_ANNIS2015-05-06.pdf
+│   │   ├── SE_HistorischeKorpora_ANNIS2015-05-06.pptx
+│   │   ├── SMULTRON_Banana_PAULA.zip
+│   │   ├── SMULTRON_Banana_relAnnis.zip
+│   │   ├── subtok.demo_PAULA.zip
+│   │   └── subtok.demo_relANNIS.zip
+│   ├── download.html
+│   ├── favicon.ico
+│   ├── feed.xml
+│   ├── gallery.html
+│   ├── goals.html
+│   ├── img
+│   │   ├── annis1.png
+│   │   ├── annis2.gif
+│   │   ├── annis3_full_o.png
+│   │   ├── annis3_full.png
+│   │   ├── annis3_querybuilder_edge.png
+│   │   ├── annis_logo.png
+│   │   ├── annotation_tools.png
+│   │   ├── arabic_RTL_KWIC.png
+│   │   ├── arch_dependency.png
+│   │   ├── av1.png
+│   │   ├── border.png
+│   │   ├── controls.png
+│   │   ├── coref.png
+│   │   ├── dep_arch_dependency_small.GIF
+│   │   ├── dep_hierarchical_dependency_small.GIF
+│   │   ├── dep_ordered_dependency_small.GIF
+│   │   ├── dep_vis.gif
+│   │   ├── discourse1.PNG
+│   │   ├── doc_icon.png
+│   │   ├── doc_list.png
+│   │   ├── Double-Vorfeld-Tree small.png
+│   │   ├── favicon.ico
+│   │   ├── favicon_large.ico
+│   │   ├── favicon.png
+│   │   ├── formats.png
+│   │   ├── freqs.png
+│   │   ├── Georgetown_Logo.png
+│   │   ├── grid.png
+│   │   ├── gridtree.png
+│   │   ├── hebrew_RTL_tree.png
+│   │   ├── Hindi.PNG
+│   │   ├── hu_logo.gif
+│   │   ├── infstr.png
+│   │   ├── kwic1.png
+│   │   ├── kwic_rtl.png
+│   │   ├── loading_background.png
+│   │   ├── loading.gif
+│   │   ├── manuscript.png
+│   │   ├── meta.png
+│   │   ├── new_qb.PNG
+│   │   ├── overlay.png
+│   │   ├── parallel_discourse.png
+│   │   ├── parallel_kwic.png
+│   │   ├── parallel.png
+│   │   ├── partiture1.png
+│   │   ├── pdf.png
+│   │   ├── rst.png
+│   │   ├── script.png
+│   │   ├── Thumbs.db
+│   │   ├── tree1.png
+│   │   ├── tree.png
+│   │   ├── tree_w_secedge.png
+│   │   ├── uni_potsdam_logo.png
+│   │   ├── video.png
+│   │   └── workflow.png
+│   ├── index.html
+│   ├── js
+│   │   ├── jquery.colorbox.js
+│   │   └── jquery.colorbox-min.js
+│   ├── LICENSE
+│   ├── new.html
+│   ├── older.html
+│   ├── students.html
+│   ├── tools.html
+│   └── visualizations.html
+├── students.md
+├── tools.html
+└── visualizations.html
+
+
+#############################################################################################################################################
+new annis-tools
+
+.
+├── annis
+├── atomic
+│   └── index.html
+├── bootstrap
+│   └── dist
+│       ├── css
+│       │   ├── bootstrap.css
+│       │   ├── bootstrap.css.map
+│       │   ├── bootstrap.min.css
+│       │   ├── bootstrap-theme.css
+│       │   ├── bootstrap-theme.css.map
+│       │   └── bootstrap-theme.min.css
+│       ├── fonts
+│       │   ├── glyphicons-halflings-regular.eot
+│       │   ├── glyphicons-halflings-regular.svg
+│       │   ├── glyphicons-halflings-regular.ttf
+│       │   ├── glyphicons-halflings-regular.woff
+│       │   └── glyphicons-halflings-regular.woff2
+│       └── js
+│           ├── bootstrap.js
+│           ├── bootstrap.min.js
+│           └── npm.js
+├── _config.yml
+├── corpora
+│   └── pcc2.zip
+├── css
+│   ├── fonts.css
+│   ├── main.css
+│   └── theme.css
+├── fonts
+│   ├── annistools.eot
+│   ├── annistools.svg
+│   ├── annistools.ttf
+│   └── annistools.woff
+├── home
+│   ├── images
+│   │   └── logos
+│   │       ├── clarin-d.jpg
+│   │       ├── dfg_logo_schriftzug_blau.png
+│   │       ├── husiegel_bw_gross.png
+│   │       ├── inr_logo_corpo_UK_coul.png
+│   │       └── sfb_logo_bridge_new.png
+│   └── index.html
+├── images
+│   ├── favicon.ico
+│   └── logos
+│       ├── clarin-d.jpg
+│       ├── dfg_logo_schriftzug_blau.png
+│       ├── husiegel_bw_gross.png
+│       ├── inr_logo_corpo_UK_coul.png
+│       └── sfb_logo_bridge_new.png
+├── _includes
+│   ├── footer.html
+│   ├── header.html
+│   ├── head.html
+│   └── nav.html
+├── _layouts
+│   └── default.html
+├── pepper
+│   ├── architecture.html
+│   ├── demos.html
+│   ├── gettingStarted.html
+│   ├── images
+│   │   ├── arrow_left2right.svg
+│   │   ├── pepper_architecture.odg
+│   │   ├── pepper_architecture.svg
+│   │   ├── pepper_formats.png
+│   │   ├── pepper_formats_salt.png
+│   │   ├── pepper_weapon.jpg
+│   │   ├── pepper_workflow01.svg
+│   │   ├── pepper_workflow02.svg
+│   │   ├── pepper_workflow03.svg
+│   │   ├── pepper_workflow04.odg
+│   │   ├── pepper_workflow04.svg
+│   │   ├── sampleWorkflow_pcc2.odg
+│   │   └── sampleWorkflow_pcc2.svg
+│   ├── index.html
+│   ├── knownModules.html
+│   ├── library.html
+│   └── resources
+│       └── pepper_modulesDevelopersGuide.pdf
+├── salt
+│   ├── images
+│   │   ├── arrow_left2right.svg
+│   │   ├── arrow.svg
+│   │   ├── salt_const.odg
+│   │   ├── salt_const.svg
+│   │   ├── salt_graph.png
+│   │   ├── salt_KWIC.odg
+│   │   ├── salt_KWIC.svg
+│   │   ├── salt_partitur.odg
+│   │   ├── salt_partitur.svg
+│   │   ├── sample_const.svg
+│   │   ├── sample_coref.svg
+│   │   ├── sample_dep.svg
+│   │   ├── sample_kwic.svg
+│   │   ├── sample_span_graph.png
+│   │   ├── sample_span.png
+│   │   ├── sample_span.svg
+│   │   └── userGuide
+│   │       ├── corpusStructure.png
+│   │       ├── sample_pointingRel.png
+│   │       ├── sample_span.png
+│   │       ├── sample_tokenization.png
+│   │       └── traversingExample.jpg
+│   ├── index.html
+│   ├── resources
+│   │   └── salt_modelGuide.pdf
+│   └── userGuide.md
+└── _site
+    ├── atomic
+    │   └── index.html
+    ├── bootstrap
+    │   └── dist
+    │       ├── css
+    │       │   ├── bootstrap.css
+    │       │   ├── bootstrap.css.map
+    │       │   ├── bootstrap.min.css
+    │       │   ├── bootstrap-theme.css
+    │       │   ├── bootstrap-theme.css.map
+    │       │   └── bootstrap-theme.min.css
+    │       ├── fonts
+    │       │   ├── glyphicons-halflings-regular.eot
+    │       │   ├── glyphicons-halflings-regular.svg
+    │       │   ├── glyphicons-halflings-regular.ttf
+    │       │   ├── glyphicons-halflings-regular.woff
+    │       │   └── glyphicons-halflings-regular.woff2
+    │       └── js
+    │           ├── bootstrap.js
+    │           ├── bootstrap.min.js
+    │           └── npm.js
+    ├── corpora
+    │   └── pcc2.zip
+    ├── css
+    │   ├── fonts.css
+    │   ├── main.css
+    │   └── theme.css
+    ├── fonts
+    │   ├── icomoon.eot
+    │   ├── icomoon.svg
+    │   ├── icomoon.ttf
+    │   └── icomoon.woff
+    ├── home
+    │   ├── images
+    │   │   └── logos
+    │   │       ├── clarin-d.jpg
+    │   │       ├── dfg_logo_schriftzug_blau.png
+    │   │       ├── husiegel_bw_gross.png
+    │   │       ├── inr_logo_corpo_UK_coul.png
+    │   │       └── sfb_logo_bridge_new.png
+    │   └── index.html
+    ├── images
+    │   ├── favicon.ico
+    │   └── logos
+    │       ├── clarin-d.jpg
+    │       ├── dfg_logo_schriftzug_blau.png
+    │       ├── husiegel_bw_gross.png
+    │       ├── inr_logo_corpo_UK_coul.png
+    │       └── sfb_logo_bridge_new.png
+    ├── pepper
+    │   ├── architecture.html
+    │   ├── demos.html
+    │   ├── gettingStarted.html
+    │   ├── images
+    │   │   ├── arrow_left2right.svg
+    │   │   ├── pepper_architecture.odg
+    │   │   ├── pepper_architecture.svg
+    │   │   ├── pepper_formats.png
+    │   │   ├── pepper_formats_salt.png
+    │   │   ├── pepper_weapon.jpg
+    │   │   ├── pepper_workflow01.svg
+    │   │   ├── pepper_workflow02.svg
+    │   │   ├── pepper_workflow03.svg
+    │   │   ├── pepper_workflow04.odg
+    │   │   ├── pepper_workflow04.svg
+    │   │   ├── sampleWorkflow_pcc2.odg
+    │   │   └── sampleWorkflow_pcc2.svg
+    │   ├── index.html
+    │   ├── knownModules.html
+    │   ├── library.html
+    │   └── resources
+    │       └── pepper_modulesDevelopersGuide.pdf
+    └── salt
+        ├── images
+        │   ├── arrow_left2right.svg
+        │   ├── arrow.svg
+        │   ├── salt_const.odg
+        │   ├── salt_const.svg
+        │   ├── salt_graph.png
+        │   ├── salt_KWIC.odg
+        │   ├── salt_KWIC.svg
+        │   ├── salt_partitur.odg
+        │   ├── salt_partitur.svg
+        │   ├── sample_const.svg
+        │   ├── sample_coref.svg
+        │   ├── sample_dep.svg
+        │   ├── sample_kwic.svg
+        │   ├── sample_span_graph.png
+        │   ├── sample_span.png
+        │   ├── sample_span.svg
+        │   └── userGuide
+        │       ├── corpusStructure.png
+        │       ├── sample_pointingRel.png
+        │       ├── sample_span.png
+        │       ├── sample_tokenization.png
+        │       └── traversingExample.jpg
+        ├── index.html
+        ├── resources
+        │   └── salt_modelGuide.pdf
+        └── userGuide.html
+
+

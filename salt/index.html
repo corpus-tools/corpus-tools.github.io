@@ -1,0 +1,284 @@
+---
+layout: default
+title: Salt
+---
+<article>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h2><i class="fa fa-language"></i> language-independent</h2>
+                    <p>Salt supports a hug set of languages and typesets. Each language which can be expressed in UTF-8 is supported by Salt.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2><i class="fa fa-book"></i> theory-neutral</h2>
+                    <p>Salt an open for any linguistic school or theory and is not limited to a
+                        specific one.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2><i class="fa fa-list"></i> tagset independent</h2>
+                    <p>Salt is not bound to a tagset, annotations are represented as attribute-value pairs and can
+                        be freely choosen. 
+                        </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2><i class="fa fa-creative-commons"></i> open source</h2>
+                    <p>Salt is licensed under the {{site.apache_license}} and published on Github.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2><i class="fa fa-video-camera"></i> multimedia support</h2>
+                    <p>Salt is a text based model, but also supports the modelling of audio and
+                        video corpora.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2><i class="fa fa-lightbulb-o"></i> annotation layer independent</h2>
+                    <p>Salt is not limited to a specific set of annotation layers. Since Salt is a graph based model, you can model many different structures
+                        like tree structures, span annotations, coreference chains and so on.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="page-header">
+            <h1>About Salt</h1>
+        </div>
+        <div class="content"> With Salt we provide an easily understandable meta model for
+            linguistic data and an open source api to store, manipulate and represent data. Salt is
+            an abstract model, poor of linguistic semantics. As a result, it is free of any
+            linguistic schools or theories. The core model is graph-based and therefore keeps the
+            structural restrictions very low and allows for a wide range of possible linguistic
+            annotations like syntactic, morphological, coreferential annotations and many more. You
+            can even model your own very personal annotation as long as it fits into a graph
+            structure (and so far we have not seen a linguistic annotation which does not).
+            Furthermore, Salt does not depend on a specific linguistic tagset which allows you to
+            use every tagset you like. </div>
+    </article>
+    <article>
+        <div class="page-header">
+            <h1>One common model</h1>
+        </div>
+        <div class="content">
+            <p> Linguistic corpora show a nearly unlimited set of different kinds of annotation to
+                desciribe linguistic pehonomena. That means, not only the number of tagsets is
+                unbound, there is even a huge set of different structures to describe these
+                phenomena. For instance part-of-speech or lemmatizations can be added to a token,
+                tokens can also be grouped together to annotate them as one entity, like names in
+                named entity recognitions. Furthermore, the annotation of constituents or the
+                rhetorical structure theory build an entire tree-like structure above the tokens. In
+                dialugue data we need to model multiple texts belonging to different speakers and a
+                linking to an audio stream. Coreferences or anaphoric chains need to interlink
+                tokens, which are srpead via the entire text. Many tools and models (like formats)
+                address these annotations one by one, so there are formats to address syntctical
+                data (like Tiger XML or the Penn Treebank format), or coreferences (like the MMAX2
+                format) or dialogue data (like the EXMARaLDA basic transcription, the ELAN format)
+                and many many more. But developements in the last years have shown, that a lot of
+                linguistic phenomena are spread over different kinds of annotations. So more and
+                more corpora have been created which are annotated on multiple annotation layers
+                like the PCC or the TUEBA-D/Z corpus. The aim of Salt is to model all named kinds of
+                annotations in a single model. For doing so we need a powerful base structure, which
+                can cover all the different necessities at once. A very well known and powerful
+                structure in mathematics and informatics is the common graph, which is widely used
+                to model very differnt kinds of data. The graph structure has a further benefit,
+                with its small set of different model elements it helps us to keep the model simple.
+                Our graph structure is rather simple, it only contains four model elements: node,
+                relation, label and layer. <center>
+                    <img src="./images/salt_graph.png"/>
+                </center> Graphs are very flexible and abstract structures, but not very specialised
+                to a linguistic purpose. So we need to abstract over linguistic data to map them
+                into such a structure. </p>
+            <p style="margin-left:40px;"> To give a simple explanation of what a graph is, let us
+                forget linguistics for a moment and think about humans and their relationships.
+                Imagine a set of humans for instance your family or friends. In a graph, each of
+                these humans will represent one node. The relationship, for instance between exactly
+                two humans then is defined as an relation. In other words, an edge connects two
+                nodes. Now the relations between humans can be very different, so for instance the
+                relation between a couple can be described as a love relation, whereas the relation
+                between an employee and her/his boss could be described as a work relation. A
+                relation can also have a direction imagine for instance a person and a car are
+                modeled as nodes and a relation with the semantic drive. Than a person can drive a
+                car, but not the way around. The examples have shown that edges between nodes can be
+                very different, as well as human relations could be. To differentiate the types of
+                edges, they can be labeled. The same goes for the nodes: they also could be labeled,
+                for instance with the human's name it represents. </p>
+            <p> Returning to linguistics, this means, when we can model humans and their
+                relationships as a graph, we can also model linguistic artifacts as a graph. For
+                instance we can model texts, tokens etc. as nodes, linguistic categorization as
+                labels and relations between them as relations. </p>
+        </div>
+    </article>
+    <article>
+        <div class="page-header">
+            <h1>Transforming linguistic data into a graph</h1>
+        </div>
+        <div class="content"> Let's give some examples how linguistic data can be modelled in a
+            graph-based world. We start with a text and model it as the label of a node. <div
+                class="page-header">
+                <h3>kwic</h3>
+            </div>
+            <div id="sample_kwic">
+                <center>
+                    <img
+                        onclick="window.open('./images/sample_kwic.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                        class="salt_sample" src="./images/sample_kwic.svg" width="40%"/>
+                    <img src="./images/arrow_left2right.svg" width="10%"/>
+                    <img
+                        onclick="window.open('./images/salt_KWIC.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                        class="salt_sample" src="./images/salt_KWIC.svg" width="40%"/>
+                </center>
+            </div>
+            <div class="page-header">
+                <h3>grid</h3>
+            </div>
+            <div id="sample_grid">
+                <center>
+                    <img src="./images/sample_span.svg"
+                        onclick="window.open('./images/sample_span.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                        class="salt_sample" width="40%"/>
+                    <img src="./images/arrow_left2right.svg" width="10%"/>
+                     <img
+                        onclick="window.open('./images/salt_partitur.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                        class="salt_sample" src="./images/salt_partitur.svg" width="40%"/>
+                </center>
+            </div>
+            <div class="page-header">
+                <h3>constituencies</h3>
+            </div>
+            <div id="sample_const">
+                <center>
+                    <img src="./images/sample_const.svg"
+                        onclick="window.open('./images/sample_const.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                        class="salt_sample" width="40%"/>
+                    <img src="./images/arrow_left2right.svg" width="10%"/>
+                   <img
+                        onclick="window.open('./images/salt_const.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                        class="salt_sample" src="./images/salt_const.svg" width="40%"/>
+                </center>
+            </div>
+            <div class="page-header">
+                <h3>dependencies</h3>
+            </div>
+            <div id="sample_dep">
+                <center>
+                    <img src="./images/sample_dep.svg"
+                        onclick="window.open('./images/sample_dep.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                        class="salt_sample" width="40%"/>
+                    <img src="./images/arrow_left2right.svg" width="10%"/>
+                    <img class="salt_sample" src="./images/sample_span_graph.png" width="40%"/>
+                </center>
+            </div>
+            <div class="page-header">
+                <h3>coreference</h3>
+            </div>
+            <div id="sample_coref">
+                <center>
+                    <img src="./images/sample_coref.svg"
+                        onclick="window.open('./images/sample_coref.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                        class="salt_sample" width="40%"/>
+                    <img src="./images/arrow_left2right.svg" width="10%"/>
+                    <img class="salt_sample" src="./images/sample_span_graph.png" width="40%"/>
+                </center>
+            </div>
+        </div>
+    </article>
+    <article id="download">
+        <div class="page-header">
+            <h1>Download</h1>
+        </div>
+        <div class="content">
+            <p>Salt is published in the maven central repository. To use maven via maven, just add
+                the following lines into your pom.xml:</p>
+            <pre>
+&lt;groupId>de.hu_berlin.german.korpling.saltnpepper&lt;/groupId>
+&lt;artifactId>salt&lt;/artifactId>
+&lt;version>VERSION&lt;/version>
+</pre>
+            The sources of Salt can be downloaded from github under <a href="{{ github_salt }}">{{ github_salt }}</a>. </div>
+    </article>
+    <article id="documentation">
+        <div class="page-header">
+            <h1>Documentation</h1>
+        </div>
+        <div class="content">
+            <ul>
+                <li><a href="..{{site.site_salt}}userGuide.html">Salt quick user guide</a> - a short
+                    quide to introduce the Salt API</li>
+                <li><a href="..{{site.site_salt}}resources/salt_modelGuide.pdf">Salt model guide</a>
+                    - a guide describing the model of Salt</li>
+            </ul>
+        </div>
+    </article>
+    <article id="contributaion">
+        <div class="page-header">
+            <h1>Contribution and License</h1>
+        </div>
+        <div class="content">
+            <p> Salt is published under the Open Source license <a
+                    href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version
+                    2.0</a>. We want to enable everyone first to use the software with no
+                restrictions and second to enable the community to take part in their developement. </p>
+            <p>
+                <h4>Found a bug or have any feature request?</h4> Please let us know what you have
+                found out or which ideas of enhancements you have. Please leave us an issue on
+                GitHub at <a href="{{ site.github_salt }}/salt/issues"><i class="fa fa-github"></i>
+                    Salt</a> or write us an e-mail: <a href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </p>
+            <p>
+                <h4>Want to contribute the projects?</h4> 
+                We published the sources of Salt at the plattform GitHub at <a href="{{ site.github_salt }}"
+                        ><i class="fa fa-github"></i> Salt</a> If you are interested in contributing
+                the projects please feel free to fork or clone them. We are happy for any
+                suggestions, bugreports, bugfixes ans so one. It would be nice, when you keep us
+                informed about your ideas and enhancements, please write us an e-mail to: <a
+                    href="mailto:{{ site.email_snp }}">{{ site.emai_snp }}</a>. </p>
+        </div>
+    </article>
+    <article id="publications">
+        <div class="page-header">
+            <h1>Publications</h1>
+        </div>
+        <div>
+            <ul>
+				                <li> Zipser, F. (2014).<br/>
+                    <strong>SaltNPepper und das Formatpluriversum</strong>.<br/>
+                    <i>LAUDATIO Workshop 2014</i>. Berlin, 07.- 08.10.2014.<a
+                        href="http://dx.doi.org/10.5281/zenodo.17557">[slides]</a>.</li>
+                <li> F. Zipser &amp; L. Romary (2010).<br/>
+                    <strong>A model oriented approach to the mapping of annotation formats using
+                        standards</strong>.<br/> In: <i>Proceedings of the Workshop on Language
+                        Resource and Language Technology Standards, LREC 2010. Malta.</i> URL: <a
+                        href="http://hal.archives-ouvertes.fr/inria-00527799/en/"
+                        >http://hal.archives-ouvertes.fr/inria-00527799/en/</a></li>
+                <li> F. Zipser (2009).<br/>
+                    <strong>Entwicklung eines Konverterframeworks für linguistisch annotierte Daten
+                        auf Basis eines gemeinsamen (Meta-)modells.</strong>.<br/> Diplomarbeit,
+                    Humboldt-Universität zu Berlin, Institut für Informatik. URL: <a
+                        href="http://hal.archives-ouvertes.fr/docs/00/60/61/02/PDF/Diplomarbeit_FZ_final.pdf"
+                        >http://hal.archives-ouvertes.fr/docs/00/60/61/02/PDF/Diplomarbeit_FZ_final.pdf</a></li>
+            </ul>
+        </div>
+    </article>
+    <article id="supporters">
+        <div class="page-header">
+            <h1>Supported by</h1>
+        </div>
+        <div class="funders"><center class="funders">
+                <a href="https://www.sfb632.uni-potsdam.de/en/">
+                    <img width="150px" src=".././images/logos/sfb_logo_bridge_new.png"
+                        alt="Sonderforschungsbereich 632, Information structure: The linguistic means for structuring utterances, sentences and texts "
+                    />
+                </a>&nbsp;&nbsp;&nbsp; <a href="http://www.dfg.de/en/">
+                    <img width="250px" src=".././images/logos/dfg_logo_schriftzug_blau.png"/>
+                </a>&nbsp;&nbsp;&nbsp; <a
+                    href="https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&cl=en">
+                    <img width="100px" src=".././images/logos/husiegel_bw_gross.png"
+                        alt="Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology"
+                    />
+                </a>&nbsp;&nbsp;&nbsp; <a href="http://www.inria.fr/en">
+                    <img width="150px" src=".././images/logos/inr_logo_corpo_UK_coul.png"/>
+                </a>&nbsp;&nbsp;&nbsp; <a href="http://de.clarin.eu/en/">
+                    <img width="120px" src=".././images/logos/clarin-d.jpg"/>
+                </a>
+            </center>
+        </div>
+    </article>
