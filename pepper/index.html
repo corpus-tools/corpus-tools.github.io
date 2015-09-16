@@ -10,10 +10,9 @@ layout: default
         </div>
         <div class="content">
             <p> If you need to convert corpora from one linguistic format into another, Pepper is
-                your swiss-army knife. With Pepper you can don't have to hesitate, when your
-                annotation tool produces a different data format than your analysis tool can read. </p>
+                your swiss-army knife. When your annotation tool produces a different data format from the one your analysis tool can read, Pepper is there to the rescue.</p>
             <ul>
-                <li>Pepper can convert documents in a variety of linguistic formats like: <a
+                 <li>Pepper can convert documents in a variety of linguistic formats, such as: <a
                         href="http://www.exmaralda.org/">EXMARalDA</a>, <a
                         href="http://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/TIGERSearch/doc/html/TigerXML.html"
                         >Tiger XML</a>, <a href="http://mmax2.sourceforge.net/">MMAX2</a>, <a
@@ -21,22 +20,22 @@ layout: default
                         href="http://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/The_TCF_Format"
                         >TCF</a>, <a href="http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/"
                         >TreeTagger format</a>, <a href="http://www.tei-c.org/Guidelines/P5/"
-                        >TEI</a> (subset), <a href="..{{site.annis_site_main}}">ANNIS</a> format, <a
+                        >TEI</a> (subset), <a href="..">ANNIS</a> format, <a
                         href="https://www.sfb632.uni-potsdam.de/paula.html">PAULA</a> and <a
-                        href="..{{site.site_pepper}}modules.html#allModules">many many more</a>. </li>
-                <li>Pepper comes with a plug-in mechanism to make it easy to extend Pepper for
+                        href="..{{site.site_pepper}}allModules.html">many many more</a>. </li>
+                <li>Pepper comes with a plug-in mechanism which makes it easy to extend it for
                     further formats and data manipulations. </li>
-                <li>Pepper is module-based, that means each mapping is done by a separate module.
-                    That enables each module to be combined with every other module in one single
+                <li>Pepper is module-based, each mapping is done by a separate module.
+                    This enables each module to be combined with every other module in one single
                     workflow. </li>
                 <li>Pepper uses the intermediate model <a href="..{{site.site_salt_main}}">Salt</a>,
                     which reduces the number of mappings to convert <i>n</i> into <i>m</i> formats. </li>
-                <li>Pepper modules like the <a href="">MergingModule</a> allow to merge the data
+                <li>Pepper modules, such as the <a href="">MergingModule</a>, allow to merge the data
                     from different annotation tools together and create multilayer corpora. </li>
                 <li>Pepper can be used as an interactive command line tool, as a command to be
-                    included in scripts or as an api to be integrated in other software products. </li>
+                    included in scripts, or as an API to be integrated in other software products. </li>
                 <li> Pepper is written in <a href="https://java.com/de/download/">Java</a> and can
-                    be run on each operation system, which is ready to run Java (Windows, Mac,
+                    be run on all operation systems which are ready to run Java (Windows, Mac,
                     Linux, Unix, ...). </li>
                 <li>Pepper is free and open source software. It is distributed under the
                     {{site.apache_license}}. </li>
@@ -47,18 +46,18 @@ layout: default
         <div class="page-header">
             <h1>Download</h1>
         </div>
-        <div class="content"> Here you will find the current stable release, snapshots and even
-            older versions of Pepper including a set of Pepper modules. <ul>
+        <div class="content"> Here you will find the current stable release, snapshots, and also
+            older versions of Pepper, including a set of Pepper modules. <ul>
                 <li><a
                         href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/download/stable/"
                         >Stable Releases</a></li>
                 <li><a
                         href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/download/snapshot/"
                         >Snapshot Releases</a></li>
-            </ul> Pepper is system independent and comes as a ready to run zip archive, so you do
-            not need any installation. But since Pepper is Java based, you need to have Java
+            </ul> Pepper is system-independent and comes as a ready-to-run zip archive, so you do
+            not need any installation. But since Pepper is Java-based, you need to have Java
             installed on your system. On most systems, Java is installed by default, but in case it
-            is not please download it from www.oracle.com/technetwork/java/javase/ or
+            is not, please download it from www.oracle.com/technetwork/java/javase/ or
             http://openjdk.java.net/. To check if Java (or more precisly a Java Runtime Environment)
             is running, open a command line and run: 
             <pre>java -version</pre> 
@@ -69,29 +68,29 @@ layout: default
         <div class="page-header">
             <h1>Quick start</h1>
         </div>
-        <div class="content"> Pepper can be used as an interactive command line tool or as an api to
+        <div class="content"> Pepper can be used as an interactive command line tool or as an API to
             be integrated in other software products. <h2>Interactive command line</h2>
-            <div class="content"> To run Pepper open a command line and enter (for windows):
-                <pre>pepperStart.bat COMMAND</pre> or (for linux, unix and Mac OS):
+            <div class="content"> To run Pepper, open a command line and enter (for Windows):
+                <pre>pepperStart.bat COMMAND</pre> or (for Linux, Unix and Mac OS):
                 <pre>bash pepperStart.sh COMMAND</pre> Now Pepper starts the interactive command
                 line and welcomes you with the prompt <pre>pepper></pre> To get a list of all
                 available commands, enter 'help': <pre>pepper>help</pre> To get a list of all
                 included modules, enter 'list': <pre>pepper>list</pre> To start a conversion with a
                 predefined workflow, enter 'convert' followed by the workflow description file:
                 <pre>pepper>convert myConversion.pepper</pre> To start the interactive conversion
-                wizard, which helps you to define a workflow description, enter just 'convert':
+                wizard, which helps you define a workflow description, enter just 'convert':
                 <pre>pepper>convert</pre> To learn more about Pepper's commands and the conversion
                 wizard go to <a href="..{{site.site_pepper}}gettingStarted.html">Getting
                 started</a>. </div>
             <h2>Embedded Pepper</h2>
             <div class="content">
-                <p>With the Pepper library, we provide a programmatic access to the Pepper framework
-                    including, the configuration of a conversion workflow, the start of a conversion
-                    and getting information about the registered Pepper modules. Since Pepper bases
-                    on a plugin structure named OSGi (see: <a href="http://www.osgi.org/"
+                <p>With the Pepper library, we provide a programmatic access to the Pepper framework,
+                    including the configuration of a conversion workflow, the start of a conversion
+                    and getting information about the registered Pepper modules. Since Pepper is based
+                    on a plugin structure called OSGi (see: <a href="http://www.osgi.org/"
                         >http://www.osgi.org/</a>), each Pepper module is plugged into the framework
-                    separatly. This goes for running Pepper as CLI and for running Pepper as a
-                    library as well. </p>
+                    separately, whether running Pepper as CLI, or running it as a
+                    library. </p>
                 <p>To learn more about integrating Pepper as a library in other software products go
                     to <a href="..{{site.site_pepper}}library.html">Pepper as a library</a>.</p>
             </div>
@@ -103,8 +102,8 @@ layout: default
         </div>
         <div class="content">
             <p> The core of Pepper are the Pepper modules. The modules map data from a format to
-                Salt or Salt to a format. Modules manipulate and enhance the data during the
-                conversion process. Pepper provides to integrate modules via an embedded plug-in
+                Salt or from Salt to a format. Modules manipulate and enhance the data during the
+                conversion process. Pepper provides the integration of modules via an embedded plug-in
                 mechanism based on the OSGi framework. To install further modules into an existing
                 Pepper instance open the Pepper console and use command 'is':
                 <pre>
@@ -120,10 +119,10 @@ update GROUP_ID::ARTIFACT_ID::REPOSITORY</pre>
             </div>
             <h2>Create own Pepper modules</h2>
             <div class="content">
-                <p>If there is no exitsing module, which fullfills your needs, you are free to
+                <p>If there is no exitsing module which fulfills your needs, you are free to
                     implement your own module. With Pepper's plug-in mechanism your module can
                     easily be integrated into the Pepper plattform. The possibility of combining
-                    your new module with already existing ones lets you create absolutly new
+                    your new module with already existing ones lets you create completely new
                     workflows. Please read the <a href="..{{site.site_pepper}}/resources/pepper_modulesDevelopersGuide.pdf">Module Developer's Guide</a> to get a detailed documentation of how to implement a Pepper module.
             </div>
         </div>
@@ -133,22 +132,20 @@ update GROUP_ID::ARTIFACT_ID::REPOSITORY</pre>
             <h1>Contribution and License</h1>
         </div>
         <div class="content">
-            <p> Pepper is published under the Open Source license {{site.apache_license}}. We want
-                to enable everyone first to use the software with no restrictions and second to
-                enable the community to take part in their developement. </p>
+            <p> Pepper is published under the Open Source license {{site.apache_license}}. We want to enable everyone to use the software without
+                restrictions, and also enable the community to take part in its developement. </p>
             <p>
-                <h4>Found a bug or have any feature request?</h4> Please let us know what you have
-                found out or which ideas of enhancements you have. Please leave us an issue on
+                 <h4>Found a bug or have any feature request?</h4> Please let us know what you have
+                found, or which ideas for enhancements you have. Please leave us an issue on
                 GitHub at <a href="{{ site.github_pepper }}/pepper/issues"><i class="fa fa-github"></i>
                     Pepper</a> or write us an e-mail: <a href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </p>
             <p>
-                <h4>Want to contribute the projects?</h4> For both projects Salt and Pepper we
-                published their sources at the plattform GitHub at <a
-                    href="{{ site.github_pepper }}"><i class="fa fa-github"></i> Pepper</a> If you are
-                interested in contributing the projects please feel free to fork or clone them. We
-                are happy for any suggestions, bugreports, bugfixes ans so one. It would be nice,
-                when you keep us informed about your ideas and enhancements, please write us an
-                e-mail to: <a href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </p>
+                <h4>Want to contribute to the project?</h4> For both Salt and Pepper, we have published the source code at the GitHub platform at <a
+                    href="{{ site.github_pepper }}"><i class="fa fa-github"></i> Pepper</a>. If you are interested in contributing
+                to the project, please feel free to fork or clone it. We are happy about any
+                suggestions, bug reports, bug fixes, and so on. It would be nice if you keep us
+                informed about your ideas and enhancements: Please write us an e-mail: <a
+                    href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </p>
         </div>
     </article>
     <article id="publications">
