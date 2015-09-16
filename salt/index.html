@@ -8,17 +8,17 @@ title: Salt
             <div class="row">
                 <div class="col-md-4">
                     <h2><i class="fa fa-language"></i> language-independent</h2>
-                    <p>Salt supports a hug set of languages and typesets. Each language which can be expressed in UTF-8 is supported by Salt.</p>
+                    <p>Salt supports a huge set of languages and typesets. Each language which can be expressed in UTF-8 is supported by Salt.</p>
                 </div>
                 <div class="col-md-4">
                     <h2><i class="fa fa-book"></i> theory-neutral</h2>
-                    <p>Salt an open for any linguistic school or theory and is not limited to a
+                    <p>Salt is open to any linguistic school or theory, not limited to a
                         specific one.</p>
                 </div>
                 <div class="col-md-4">
                     <h2><i class="fa fa-font"></i> tagset independent</h2>
-                    <p>Salt is not bound to a tagset, annotations are represented as attribute-value pairs and can
-                        be freely choosen. 
+                    <p>Salt is not bound to a tagset. Annotations are represented as attribute-value pairs and can
+                        be chosen freely. 
                         </p>
                 </div>
             </div>
@@ -29,13 +29,12 @@ title: Salt
                 </div>
                 <div class="col-md-4">
                     <h2><i class="fa fa-video-camera"></i> multimedia support</h2>
-                    <p>Salt is a text based model, but also supports the modelling of audio and
+                    <p>Salt is a text-based model, but also supports the modeling of audio and
                         video corpora.</p>
                 </div>
                 <div class="col-md-4">
                     <h2><i class="fa fa-picture-o"></i> annotation layer independent</h2>
-                    <p>Salt is not limited to a specific set of annotation layers. Since Salt is a graph based model, you can model many different structures
-                        like tree structures, span annotations, coreference chains and so on.</p>
+                    <p>Salt is not limited to a specific set of annotation layers. Since Salt is a graph-based model, you can model many different structures, such as tree structures, span annotations, coreference chains and so on.</p>
                 </div>
             </div>
         </div>
@@ -45,11 +44,11 @@ title: Salt
             <h1>About Salt</h1>
         </div>
         <div class="content"> With Salt we provide an easily understandable meta model for
-            linguistic data and an open source api to store, manipulate and represent data. Salt is
-            an abstract model, poor of linguistic semantics. As a result, it is free of any
-            linguistic schools or theories. The core model is graph-based and therefore keeps the
-            structural restrictions very low and allows for a wide range of possible linguistic
-            annotations like syntactic, morphological, coreferential annotations and many more. You
+            linguistic data and an open source API for storing, manipulating and representing data. Salt is
+            an abstract model, poor in linguistic semantics. As a result, it is independent of any
+            linguistic schools or theories. The core model is graph-based, thereby keeping the
+            structural restrictions very low and allowing for a wide range of possible linguistic
+            annotations, such as syntactic, morphological, coreferential annotations and many more. You
             can even model your own very personal annotation as long as it fits into a graph
             structure (and so far we have not seen a linguistic annotation which does not).
             Furthermore, Salt does not depend on a specific linguistic tagset which allows you to
@@ -60,51 +59,50 @@ title: Salt
             <h1>One common model</h1>
         </div>
         <div class="content">
-            <p> Linguistic corpora show a nearly unlimited set of different kinds of annotation to
-                desciribe linguistic pehonomena. That means, not only the number of tagsets is
-                unbound, there is even a huge set of different structures to describe these
+            <p> Linguistic corpora show a nearly unlimited set of different kinds of annotations to
+                describe linguistic phenomena. That means, not only is the number of tagsets
+                unbound, there is also a huge set of different structures to describe these
                 phenomena. For instance part-of-speech or lemmatizations can be added to a token,
-                tokens can also be grouped together to annotate them as one entity, like names in
-                named entity recognitions. Furthermore, the annotation of constituents or the
+                tokens can also be grouped together to annotate them as one entity, such as names in
+                named entity recognition. Furthermore, the annotation of constituents or the
                 rhetorical structure theory build an entire tree-like structure above the tokens. In
-                dialugue data we need to model multiple texts belonging to different speakers and a
-                linking to an audio stream. Coreferences or anaphoric chains need to interlink
-                tokens, which are srpead via the entire text. Many tools and models (like formats)
-                address these annotations one by one, so there are formats to address syntctical
+                dialogue data we need to model multiple texts belonging to different speakers, as well as a
+                link to an audio stream. Coreferences or anaphoric chains need to interlink
+                tokens, which may be spread across the entire text. Many tools and models (e.g., formats)
+                address these annotations one by one: There are formats to address syntactical
                 data (like Tiger XML or the Penn Treebank format), or coreferences (like the MMAX2
-                format) or dialogue data (like the EXMARaLDA basic transcription, the ELAN format)
-                and many many more. But developements in the last years have shown, that a lot of
+                format), or dialogue data (like the EXMARaLDA basic transcription, the ELAN format),
+                and many many more. But developements in the last years have shown that a lot of
                 linguistic phenomena are spread over different kinds of annotations. So more and
                 more corpora have been created which are annotated on multiple annotation layers
-                like the PCC or the TUEBA-D/Z corpus. The aim of Salt is to model all named kinds of
-                annotations in a single model. For doing so we need a powerful base structure, which
-                can cover all the different necessities at once. A very well known and powerful
+                like the PCC or the TUEBA-D/Z corpus. The aim of Salt is to consolidate all kinds of
+                annotations within a single model. For doing so we need a powerful base structure, which
+                can cover all the different necessities at once. A very well-known and powerful
                 structure in mathematics and informatics is the common graph, which is widely used
-                to model very differnt kinds of data. The graph structure has a further benefit,
-                with its small set of different model elements it helps us to keep the model simple.
+                for modeling very different kinds of data. The graph structure has a further benefit in that
+                it helps to keep the model simple with its small set of different model elements.
                 Our graph structure is rather simple, it only contains four model elements: node,
                 relation, label and layer. <center>
                     <img src="./images/salt_graph.png"/>
-                </center> Graphs are very flexible and abstract structures, but not very specialised
+                </center> Graphs are very flexible and abstract structures, but not very specialized
                 to a linguistic purpose. So we need to abstract over linguistic data to map them
                 into such a structure. </p>
             <p style="margin-left:40px;"> To give a simple explanation of what a graph is, let us
                 forget linguistics for a moment and think about humans and their relationships.
-                Imagine a set of humans for instance your family or friends. In a graph, each of
+                Imagine a set of humans, for instance your family or friends. In a graph, each of
                 these humans will represent one node. The relationship, for instance between exactly
-                two humans then is defined as an relation. In other words, an edge connects two
-                nodes. Now the relations between humans can be very different, so for instance the
+                two humans, then is defined as a relation. In other words, an edge connects two
+                nodes. Now, the relations between humans can be very different, so for instance the
                 relation between a couple can be described as a love relation, whereas the relation
                 between an employee and her/his boss could be described as a work relation. A
-                relation can also have a direction imagine for instance a person and a car are
-                modeled as nodes and a relation with the semantic drive. Than a person can drive a
-                car, but not the way around. The examples have shown that edges between nodes can be
-                very different, as well as human relations could be. To differentiate the types of
-                edges, they can be labeled. The same goes for the nodes: they also could be labeled,
-                for instance with the human's name it represents. </p>
-            <p> Returning to linguistics, this means, when we can model humans and their
-                relationships as a graph, we can also model linguistic artifacts as a graph. For
-                instance we can model texts, tokens etc. as nodes, linguistic categorization as
+                relation can also have a direction: Imagine, for instance, that a person and a car are
+                modeled as nodes, linked by relation with the semantic "drive". This way, a person can drive a
+                car, but not the other way round. These examples show that edges between nodes can be
+                very different, similar to human relations. To differentiate between the types of
+                edges, they can be labeled. The same goes for nodes: they can also labeled,
+                for instance with the name of the human that node represents. </p>
+            <p> Re-applied to linguistics, this means that if we can model humans and their
+                relationships as a graph, we can also model linguistic artifacts as a graph. E.g., we can model texts, tokens etc. as nodes, linguistic categorization as
                 labels and relations between them as relations. </p>
         </div>
     </article>
@@ -112,7 +110,7 @@ title: Salt
         <div class="page-header">
             <h1>Transforming linguistic data into a graph</h1>
         </div>
-        <div class="content"> Let's give some examples how linguistic data can be modelled in a
+        <div class="content"> Let's look at some examples for how linguistic data can be modelled in a
             graph-based world. We start with a text and model it as the label of a node. <div
                 class="page-header">
                 <h3>kwic</h3>
@@ -143,7 +141,7 @@ title: Salt
                 </center>
             </div>
             <div class="page-header">
-                <h3>constituencies</h3>
+                <h3>constituents</h3>
             </div>
             <div id="sample_const">
                 <center>
@@ -189,14 +187,14 @@ title: Salt
             <h1>Download</h1>
         </div>
         <div class="content">
-            <p>Salt is published in the maven central repository. To use maven via maven, just add
-                the following lines into your pom.xml:</p>
+            <p>Salt is published in the maven central repository. To use Salt via maven, just add
+                the following lines to your pom.xml:</p>
             <pre>
 &lt;groupId>de.hu_berlin.german.korpling.saltnpepper&lt;/groupId>
 &lt;artifactId>salt&lt;/artifactId>
 &lt;version>VERSION&lt;/version>
 </pre>
-            The sources of Salt can be downloaded from github under <a href="{{ github_salt }}">{{ github_salt }}</a>. </div>
+            The Salt source code can be downloaded from GitHub at <a href="{{ site.github_salt }}">{{ site.github_salt }}</a>. </div>
     </article>
     <article id="documentation">
         <div class="page-header">
@@ -205,7 +203,7 @@ title: Salt
         <div class="content">
             <ul>
                 <li><a href="..{{site.site_salt}}userGuide.html">Salt quick user guide</a> - a short
-                    quide to introduce the Salt API</li>
+                    guide introducing the Salt API</li>
                 <li><a href="..{{site.site_salt}}resources/salt_modelGuide.pdf">Salt model guide</a>
                     - a guide describing the model of Salt</li>
             </ul>
@@ -216,23 +214,21 @@ title: Salt
             <h1>Contribution and License</h1>
         </div>
         <div class="content">
-            <p> Salt is published under the Open Source license <a
-                    href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version
-                    2.0</a>. We want to enable everyone first to use the software with no
-                restrictions and second to enable the community to take part in their developement. </p>
+            <p> Salt is published under the Open Source license {{site.apache_license}}. We want to enable everyone to use the software without
+                restrictions, and also enable the community to take part in its developement. </p>
             <p>
                 <h4>Found a bug or have any feature request?</h4> Please let us know what you have
-                found out or which ideas of enhancements you have. Please leave us an issue on
+                found, or which ideas for enhancements you have. Please leave us an issue on
                 GitHub at <a href="{{ site.github_salt }}/salt/issues"><i class="fa fa-github"></i>
                     Salt</a> or write us an e-mail: <a href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </p>
             <p>
-                <h4>Want to contribute the projects?</h4> 
-                We published the sources of Salt at the plattform GitHub at <a href="{{ site.github_salt }}"
-                        ><i class="fa fa-github"></i> Salt</a> If you are interested in contributing
-                the projects please feel free to fork or clone them. We are happy for any
-                suggestions, bugreports, bugfixes ans so one. It would be nice, when you keep us
-                informed about your ideas and enhancements, please write us an e-mail to: <a
-                    href="mailto:{{ site.email_snp }}">{{ site.emai_snp }}</a>. </p>
+                <h4>Want to contribute to the project?</h4> 
+                We published the Salt source code on the GitHub platform at <a href="{{ site.github_salt }}"
+                        ><i class="fa fa-github"></i> Salt</a>. If you are interested in contributing
+                to the project, please feel free to fork or clone it. We are happy about any
+                suggestions, bug reports, bug fixes, and so on. It would be nice if you keep us
+                informed about your ideas and enhancements: Please write us an e-mail: <a
+                    href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </p>
         </div>
     </article>
     <article id="publications">
