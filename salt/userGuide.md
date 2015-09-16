@@ -2,33 +2,33 @@
 layout: default
 title: Quick User Guide
 ---
-# Quick User guide
+# Quick User Guide
 
-This article gives a brief overview over the Java API of the linguistic meta model Salt and explains how to use and how to work with it's model elements. We only describe the use of the meta model SaltCommon here, which is one of three meta models coming with the Salt project. 
-For giving a short but concise feeling of what Salt is made for, we give an example in Java Code, followed by explanations. The description exemplifies the creation of a new corpus, starting from modeling it's structure, the primary data, the tokenization, adding annotations, hierarchies and so on. At the end of this article, we show how such a corpus model can be stored into SaltXML and loaded into main memory again. We also provide a sample project as part of Salt. This sample project is located in salt-saltCommon under the package de.hu_berlin.german.korpling.saltnpepper.salt.samples . Take a look into the source code to get more code examples.
+This article gives a brief overview over the Java API of the linguistic meta model Salt and explains how to use and how to work with its model elements. We only describe the use of the meta model SaltCommon here, which is one of three meta models coming with the Salt project. 
+For giving a short but concise feeling of what Salt is made for, we give examples in Java code, followed by explanations. The description exemplifies the creation of a new corpus, starting from modeling its structure, the primary data, the tokenization, adding annotations, hierarchies and so on. At the end of this article, we show how such a corpus model can be stored as SaltXML and loaded into main memory again. We also provide a sample project as part of Salt. This sample project is located in salt-saltCommon under the package de.hu_berlin.german.korpling.saltnpepper.salt.samples. Have a look at the source code to get more code examples.
 
-Salt is a graph-based meta model, and therefore each model element in Salt is either a node, an edge (relation), a graph, a label or a layer. This means nodes can be connected via relations. Nodes and relations are contained in a graph. They also can be contained in layers, which define kinds of sub-graphs. A layer itself is also contained in a graph. Each element can be labeled, and even a label can be labeled by another label.
+Salt is a graph-based meta model, and therefore each model element in Salt is either a node, an edge (relation), a graph, a label, or a layer. This means nodes can be connected via relations. Nodes and relations are contained in a graph. They also can be contained in layers, which define kinds of sub-graphs. A layer itself is also contained in a graph. Each element can be labeled, even labels can have labels.
 
-In the following we start creating a Salt model along a very tiny and simple example described in [The Sample](#sample). First we will create a corpus structure in [Corpus Structure](#corpusStructure) and fill one document with content in [Document structure](#documentStructure). After creating the sample, we gonna show how to access its elements in [Accessing a Salt model](#accessing). Finally we will show how to store and load a model into its serialization SaltXML in [Persist and Load a model](#persistAndLoad).
+In the following we start creating a Salt model along a very tiny and simple example described in [The Sample](#sample). First we will create a corpus structure in [Corpus Structure](#corpusStructure) and fill one document with content in [Document structure](#documentStructure). After creating the sample, we are going to show how to access its elements in [Accessing a Salt model](#accessing). Finally we will show how to store and load a model into its serialization SaltXML in [Persist and Load a Model](#persistAndLoad).
 
 ### <a name="sample">The Sample</a>
 
-In this article, we present only a very simple example to show the main components of Salt in a very brief way. The example is just used to clarify the mechanisms of Salt and therefore does not claim to advocate to a specific linguistic school. In general, Salt is able to contain very complex corpus structures (which means the inner organization of a corpus), having a recursive sub-corpus - super-corpus structure with a lot of primary data. For simplifying the example, we decided to use just a single corpus object (which is also the root corpus) containing one document. The document contains the primary text "Is this example more complicated than it appears to be?".  After showing how to create a corpus structure in section [Corpus Structure](#corpusStructure), we show a tokenization of the primary text by adding one token for each word of that sentence in [Tokenization](#tokenization). We illustrate how to annotate these words with part-of-speech and lemma annotations. In [Hierarchies](#hierarchies), we show the modeling of higher hierarchies having a part-of relationship in Salt, we decided to model a syntax analysis above the given sentence.  In Salt, there also exists a second way of creating aggregations of tokens called 'spans'. The semantics of spans is slightly different compared to that of hierarchies. In contrast to hierarchies, spans aggregate tokens to a set to be annotated once. You might, for instance, not want to annotate a single token only, but a whole structure containing a set of possibly discontinuous tokens. The use of spans is shown in [Spans](#spans) and demonstrated with the use case of an information structure analysis. The last type of model elements we show here is a loose relation or edge between tokens and/or other structures called pointing relation. To show the use of pointing relations in [Pointing Relations](#pointingRelations), we use an anaphoric annotation to connect the word "it" with the words "this example". 
+In this article, we present only a very simple example to show the main components of Salt in a very brief way. The example is given to clarify the mechanisms of Salt and therefore does not claim to advocate a specific linguistic school. In general, Salt is able to contain very complex corpus structures (which means the inner organization of a corpus), having a recursive sub-corpus - super-corpus structure with a lot of primary data. For simplifying the example, we decided to use just a single corpus object (which is also the root corpus) containing one document. The document contains the primary text "Is this example more complicated than it appears to be?".  After showing how to create a corpus structure in section [Corpus Structure](#corpusStructure), we show a tokenization of the primary text by adding one token for each word of that sentence in [Tokenization](#tokenization). We also illustrate how to annotate these words with part-of-speech and lemma annotations. In [Hierarchies](#hierarchies), we show the modeling of higher hierarchies having a part-of relationship in Salt, modeling a syntax analysis above the given sentence.  In Salt, there is also a second way of creating aggregations of tokens called 'spans'. The semantics of spans is slightly different compared to that of hierarchies. In contrast to hierarchies, spans aggregate tokens to a set to be annotated once. You might, for instance, not want to annotate a single token only, but a whole structure containing a set of possibly discontinuous tokens. The use of spans is shown in [Spans](#spans) and demonstrated with the use case of an information structure analysis. The last type of model element we show here is a loose relation, or edge, between tokens and/or other structures called pointing relation. To show the use of pointing relations in [Pointing Relations](#pointingRelations), we use an anaphoric annotation to connect the word "it" with the words "this example". 
 
 ### <a name="corpusStructure">Corpus Structure</a>
 
-Due to it´s graph-based structure, even sub- and super-corpora are modeled as nodes having relations connecting them and creating a containment relationship. The only element not following the graph approach is the element _SaltProject_. This element serves as container for a set of corpus structures represented via the model element _SCorpusGraph_. Such a corpus structure is organized as a graph and contains corpora and documents. Salt distinguishes between a corpus (which can contain other corpora and documents) and documents (which only contain the document structure). The document structure itself is organized as a graph called _SDocumentGraph_. The _SDocumentGraph_ is the element containing the primary data and the linguistic analysis. The corpus structure is just for organizing a complex linguistic project. A corpus in Salt is represented by the element _SCorpus_ and a document is represented by the element _SDocument_. 
-In this section, we create a simple corpus structure having one corpus and one document. Since corpora and documents are nodes, they can be labeled. To show this mechanism, we create a meta-annotation, defining the annotator of that corpus. A meta-annotation is represented via the element _SMetaAnnotation_. The corpus structure created here is shown in the figure.
+Due to its graph-based structure, even sub- and super-corpora are modeled as nodes having relations connecting them and creating a containment relationship. The only element not following the graph approach is the element _SaltProject_. This element serves as container for a set of corpus structures represented via the model element _SCorpusGraph_. Such a corpus structure is organized as a graph and contains corpora and documents. Salt distinguishes between a corpus (which can contain other corpora and documents) and documents (which only contain the document structure). The document structure itself is organized as a graph called _SDocumentGraph_. The _SDocumentGraph_ is the element containing the primary data and the linguistic analysis. The corpus structure is just for organizing a complex linguistic project. A corpus in Salt is represented by the element _SCorpus_ and a document is represented by the element _SDocument_. 
+In this section, we create a simple corpus structure having one corpus and one document. Since corpora and documents are nodes, they can be labeled. To show this mechanism, we create a meta annotation, defining the annotator of that corpus. A meta annotation is represented via the element _SMetaAnnotation_. The corpus structure created here is shown in the figure below.
 
 ![](./images/userGuide/corpusStructure.png)
 
-The following snippet shows the creation of the container object _SaltProject_, which shall contain our corpus model:
+The following snippet shows the creation of the container object _SaltProject_, which shall contain our corpus model.
 
 <pre><code class="language-html" data-lang="java">
 SaltProject saltProject= SaltFactory.eINSTANCE.createSaltProject();
 </code></pre>
 
-The next snippet illustrates the creation of the corpus structure by creating a corpus graph, a corpus named 'sampleCorpus' and a document named 'sampleDocument'. Afterwards, the creation of the corpus is shown, followed by a meta annotation declaring it´s annotator.
+The next snippet illustrates the creation of the corpus structure by creating a corpus graph, a corpus named 'sampleCorpus' and a document named 'sampleDocument'. Afterwards, the creation of the corpus is shown, followed by a meta annotation declaring its annotator.
 
 <pre>
 SCorpusGraph sCorpGraph= SaltFactory.eINSTANCE.createSCorpusGraph();
@@ -36,14 +36,14 @@ saltProject.getSCorpusGraphs().add(sCorpGraph);
 SCorpus sampleCorpus= sCorpGraph.createSCorpus(URI.createURI("/sampleCorpus"));
 </pre>
 
-The meta annotation is created via the method _createSMetaAnnotation()_. This method takes three arguments: a nameBLANK which is optional and can be used to take further information, the name of the annotation and the value of the annotation.
+The meta annotation is created via the method _createSMetaAnnotation()_. This method takes three arguments: a namespace which is optional and can be used to take up further information, the name of the annotation and the value of the annotation.
 
 <pre>
 //creates a meta annotation on the corpus sampleCorpus
 sampleCorpus.createSMetaAnnotation(null, "annotator", "A. Nyone");
 </pre>
 
-We now create the document that will later contain a primary text and all of it's annotations. We present two ways of creating a document. First an easier way, where we use helpful methods provided by Salt and second an alternative, where we do it manually.
+We now create the document that will later contain a primary text and all of its annotations. We present two ways of creating a document. First an easier way, where we use helpful methods provided by Salt and second an alternative, where we do it manually.
 
 <pre>
 SDocument sampleDocument= SaltFactory.eINSTANCE.createSDocument();
@@ -73,7 +73,7 @@ sCorpGraph.addSRelation(sRelation);
 
 ### <a name="documentStructure">Document Structure</a>
 
-Now we are leaving the corpus structure and going to the document structure. The difference between both is that the corpus structure groups corpora and documents to super and sub corpora and documents and the document structure contains primary data and their annotations. Therefore we need to add a SDocumentGraph object to the SDocument, which acts as container for the primary data and linguistic annotationns.
+Now we are leaving the corpus structure and go to the document structure. The difference between both is that the corpus structure groups corpora and documents to super- and sub-corpora and documents, and the document structure contains primary data and their annotations. Therefore we need to add an _SDocumentGraph_ object to the _SDocument_, which acts as container for the primary data and linguistic annotations.
 
 <pre>
 sampleDocument.setSDocumentGraph(SaltFactory.eInstance.createSDocumentGraph);
@@ -87,7 +87,7 @@ We now show how to add a primary text like "Is this example more complicated tha
 STextualDS primaryText = sampleDocument.getSDocumentGraph().createSTextualDS("Is this example more complicated than it appears to be?");
 </pre>
 
-Even the primary text and in general the primary data in Salt are modelled as nodes with labels. The specific node, which is the container for the primary text is the node _STextualDS_, which is a subclass of _SSequentialDS_. The _String_ representing the text is stored in a label of that node, which can be accessed via _STextualDS.getSText()_ or _STextualDS.setSText(text)_.
+Even the primary text and in general the primary data in Salt are modeled as nodes with labels. The specific node, which is the container for the primary text is the node _STextualDS_, which is a subclass of _SSequentialDS_. The _String_ representing the text is stored in a label of that node, which can be accessed via _STextualDS.getSText()_ or _STextualDS.setSText(text)_.
 
 #### Alternative
 
@@ -101,7 +101,7 @@ sampleDocument.getSDocumentGraph().addSNode(primaryText);
 
 ### <a name="tokenization">Tokenization</a>
 
-As for some reasons it might be necessary to tokenize a text by yourself. For instance if you don't want to have a word tokenization or for historical text, where separators are missing.
+Sometimes it might be necessary to manually tokenize a text yourself. For instance if you don't want to have a word tokenization, or for historical text, where separators are missing.
 
 A token in Salt is not bound to a linguistic unit - in this example we show how to tokenize words, although tokenizations by characters, syllables or sentences and so on are possible, too. The following figure shows an excerpt of the document graph we want to model in Salt. The figure only shows the tokens overlapping the words 'Is', 'this', 'example' and '.'.
 
@@ -118,9 +118,9 @@ For tokenizing a primary text, we need the character offset of the start and the
 </tr>
 </table>
 
-In the given table BLANK is an alias for the blank character (' ').
+In the given table, BLANK is an alias for the whitespace character (' ').
 
-Salt provides a tokenizer to tokenize a primary text. This tokenizer is along the TreeTaggers tokenizer (see: http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/). The tokenizer uses blanks and punctuations (regarding abbreviations) and so on to separate words. The using of the tokenizer is quite simple as the following snippet shows: 
+Salt provides a tokenizer to tokenize a primary text. This tokenizer is an adaptation of the TreeTagger tokenizer (see: http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/). The tokenizer uses blanks and punctuation (taking  abbreviations into account), and so on, to separate words. The usage of the tokenizer is quite simple as the following snippet shows: 
 
 <pre>
 sampleDocument.getSDocumentGraph().tokenize();
@@ -154,7 +154,7 @@ SToken tok_be= sampleDocument.getSDocumentGraph().createSToken(primaryText, 52, 
 SToken tok_PUNC= sampleDocument.getSDocumentGraph().createSToken(primaryText, 54, 55);
 </pre>
 
-Now the token will be added to the morphology layer. A layer in Salt is represented by the element _SLayer_ and defines a kind of a sub-graph, for instance for clustering nodes to a specific linguistic analysis. The snippet also shows the annotation of tokens with part-of-speech and lemma annotations using the element _SAnnotation_.
+Now the token will be added to the morphology layer. A layer in Salt is represented by the element _SLayer_ and defines a kind of a sub-graph, for instance for clustering nodes in a specific linguistic analysis. The snippet also shows the annotation of tokens with part-of-speech and lemma annotations using the element _SAnnotation_.
 
 <pre>
 //creating a layer named morphology
@@ -172,11 +172,11 @@ tok_is.createSAnnotation(null, "lemma", "be");
 //...
 </pre>
 
-Again, we did not explicitly create the relations: their creation is hidden in the method _createSToken()_. But in the background Salt creates a node of type _SToken_ for the token and a relation called _STextualRelation_ which connects the token and the primary data node. Since Salt does not know any further elements other than the graph elements mentioned, the character positions, to which the tokens refer to are stored as labels of the edges. For such a kind of label we use a special type named _SFeature_. When just working with Salt and not creating an own derived meta model, the mechanism is not important. It is just important, that the positions can be set and retrieved via the methods _STextualRelation.getSStart()_ or _STextualRelation.setSStart(value)_. The same goes for the end position _SEnd_.
+Again, we did not explicitly create the relations: their creation is hidden in the method _createSToken()_. But in the background Salt creates a node of type _SToken_ for the token and a relation called _STextualRelation_ which connects the token and the primary data node. Since Salt does not know any further elements other than the graph elements mentioned, the character positions, to which the tokens refer, are stored as labels of the edges. For such a kind of label we use a special type named _SFeature_. When just working with Salt and not creating an own derived meta model, the mechanism is not important. It is just important, that the positions can be set and retrieved via the methods _STextualRelation.getSStart()_ or _STextualRelation.setSStart(value)_. The same goes for the end position _SEnd_.
 
 ### <a name="hierarchies">Hierarchies</a>
 
-In Salt, you can create hierarchies for instance to model syntactic annotations like constituencies. These hierarchies are realized via the node _SStructure_ and can be connected to each other via edges of type _SDominanceRelation_. A relation of that type has the semantics of a part-of relation, which means that the target of that relation is a part of the source of that relation. In this example, we want to create a syntactic analysis as part of a syntactic layer. The following figure shows the structure we will create in this step of the example.
+In Salt you can create hierarchies, e.g., in order to model syntactic annotations such as constituents. These hierarchies are realized via the node _SStructure_ and can be connected to each other via edges of type _SDominanceRelation_. A relation of that type has the semantics of a part-of relation, which means that the target of that relation is a part of the source of that relation. In this example, we want to create a syntactic analysis as part of a syntactic layer. The following figure shows the structure we will create in this step of the example.
 
 <pre>
                       ROOT-----------------                  
@@ -203,7 +203,7 @@ In Salt, you can create hierarchies for instance to model syntactic annotations 
 The following snippet gives an impression of how to create that hierarchy. We just show the creation of the left NP node and the SQ node.
 
 <pre>
-//creating a list of nodes, which shall be overlapping by NP-node
+//creating a list of nodes, which shall be overlapped by the NP-node
 EList&lt;SStructuredNode> overlappingNodes= new BasicEList&lt;SStructuredNode>();
 overlappingNodes.add(tok_this);
 overlappingNodes.add(tok_example);
@@ -232,7 +232,7 @@ syntaxLayer.getNodes().add(sq);
 </pre>
 
 
-For annotating a dominance relation or each other relation, you can access it by querying all edges between two nodes:
+For annotating a dominance relation or any other relation, you can access it by querying all edges between two nodes:
 
 <pre>
 ((SRelation)getSDocument().getSDocumentGraph().getEdges(np_1.getSId(), tok_is.getSId()).get(0)).createSAnnotation(...);
@@ -240,7 +240,7 @@ For annotating a dominance relation or each other relation, you can access it by
 
 #### Alternative
 
-Alternatively, you can create a hierarchy on step by step. The following snippet examplifies this process for the same sample (the token for 'is' and the SQ node):
+Alternatively, you can create a hierarchy one step after another. The following snippet exemplifies this process for the same sample (the token for 'is' and the SQ node):
 
 <pre>
 SStructure sq= SaltFactory.eINSTANCE.createSStructure();
@@ -255,7 +255,7 @@ docGraph.addSRelation(domRel);
 
 ### <a name="spans">Spans</a>
 
-If a whole (possibly discontinuous) set of nodes has to be annotated with the very same annotation, a Span can be used to aggregate the nodes. Instead of an annotation for each node, a single annotation for the Span can be created then. This annotation belongs to the set of nodes (the Span), but not to any of the single nodes. In our example we show the use of spans building an information structure analysis. Spans in Salt are realized by nodes of the type _SSpan_, they are connected to _SToken_ nodes via edges of type _SSpanningRelation_. The following figure shows the information structure analysis to be modeled.
+If a whole (possibly discontinuous) set of nodes has to be annotated with the very same annotation, a span can be used to aggregate the nodes. Instead of an annotation for each node, a single annotation for the span can be created then. This annotation belongs to the set of nodes (the span), but not to any of the single nodes. In our example we show the use of spans building an information structure analysis. Spans in Salt are realized by nodes of the type _SSpan_, they are connected to _SToken_ nodes via edges of type _SSpanningRelation_. The following figure shows the information structure analysis to be modeled.
 
 ![](./images/userGuide/sample_span.png)
 
@@ -286,7 +286,7 @@ topic.createSAnnotation(null, "inf-struct", "topic");
 </pre>
 
 #### Alternative
-Alternatively to using the method createSSpan(...) you can create the span and the corresponding _SSpanningRelations_ on your own. The following snippet gives an impression, how to create the same span as in the last example step by step:
+Alternatively to using the method createSSpan(...) you can create the span and the corresponding _SSpanningRelations_ on your own. The following snippet gives an impression of how to create the same span as in the last example, step by step:
 
 <pre>
 SSpan contrast_focus= SaltFactory.eINSTANCE.createSSpan();
@@ -300,7 +300,7 @@ docGraph.addSRelation(spanRel);
 
 ### <a name="pointingRelations">Pointing Relations</a>
 
-Now we will show another type of edge, which renders a more loose relation between nodes. In contrast to _SSpanningRelations_ and _SDominanceRelations_, which can only connect specific kinds of nodes, the type _SPointingRelation_ can connect _SToken_, _SSpan_ and _SStructure_ nodes with each other and vice versa. These edges for instance can be used to model anaphoric relations between words, phrases, sentences and so on. Edges in general can be typed with a linguistic meaning by setting their attribute _SType_. We illustrate that by connecting the token covering the word "it" to the set of tokens "the" and "example". To bundle the words "the" and "example", we first have to create a span covering both tokens "the" and "example" following the same mechanism as shown in section [spans](#spans).
+Now we will show another type of edge, which renders a more loose relation between nodes. In contrast to _SSpanningRelations_ and _SDominanceRelations_, which can only connect specific kinds of nodes, the type _SPointingRelation_ can connect _SToken_, _SSpan_ and _SStructure_ nodes with each other and vice versa. These edges for instance can be used to model anaphoric relations between words, phrases, sentences and so on. Edges in general can be typed with a linguistic meaning by setting their attribute _SType_. We illustrate that by connecting the token covering the word "it" to the set of tokens "the" and "example". To bundle the words "the" and "example", we first have to create a span covering both tokens "the" and "example" following the same mechanism as shown in section [Spans](#spans).
 
 <img src="./images/userGuide/sample_pointingRel.png" width="30%">
 
@@ -325,7 +325,7 @@ sampleDocument.getSDocumentGraph().addSRelation(sPointingRelation);
 sPointingRelation.addSType("anaphoric");
 </pre>
 
-### <a name="accessing">Accessing a Salt model</a>
+### <a name="accessing">Accessing a Salt Model</a>
 
 After we have shown how to create a Salt model, we now show some methods to access its data.
 If you start reading from here, and did not already have a Salt model, you can use the class SampleGenerator, to generate predefined sample models.
@@ -334,7 +334,7 @@ SDocument sampleDocument= SaltFactory.eINSTANCE.createSDocument();
 	SampleGenerator.createSDocumentStructure(sampleDocument);
 SDocumentGraph docGraph= sampleDocument.getSDocumentGraph();
 </pre>
-The following snippet examplifies accessing a Salt model. If you copy the following lines and run the code you won't see anything. There are no outputs in the code below.
+The following snippet exemplifies accessing a Salt model. If you copy the following lines and run the code you won't see anything. There are no outputs in the code below.
 
 <pre>
 //accessing all primary text nodes (getting a list)
@@ -392,13 +392,13 @@ So far we havn't talked about how to traverse the document graph. This is done i
 
 ### <a name="persistAndLoad">Persist and Load a Model<a>
 
-Persisting a model is very easy: only a nonempty _SaltProject_ object and a valid local URI are needed. The following snippet shows how to persist an entire model.
+Persisting a model is very easy: Only a nonempty _SaltProject_ object and a valid local URI are needed. The following snippet shows how to persist an entire model.
 
 <pre>
 saltProject.saveSaltProject(URI);
 </pre>
 
-Please note, that the URI used as parameter is not a URI of type java.net.Uri - it is of type org.eclipse.emf.common.util.URI.
+Please note, that the URI used as parameter is **not** a URI of type _java.net.URI_ - it is of type _org.eclipse.emf.common.util.URI_.
 
 To load a valid SaltXML document, create an empty _SaltProject_ object and call the load method as shown in the following snippet.
 
@@ -423,7 +423,7 @@ Each node, edge, graph and layer in Salt gets a unique identifier called _SEleme
 [scheme:][//authority][path][?query][#fragment]
 </pre>
 
-The scheme of these identifiers is 'salt', in the current version, the Salt ids also does not support an authority or a query. The path is organized following the tree structure of the corpus structure, starting with the name (_SName_ value) of the root corpus, via an unbound number of sub corpora and ends with the document. The identifier for each element is computed automatically by extending the identifier of its parent element. For instance the identifier of a sub corpus named 'corp2' is computed by extending the identifier of its parent corpus 'corp1'. For instance the identifier for a document named 'doc1', being contained in corpus 'corp2', which is contained in corpus 'corp1' (which is the root) would look like this:
+The scheme of these identifiers is 'salt', in the current version, the Salt ids also does not support an authority or a query. The path is organized following the tree structure of the corpus structure, starting with the name (_SName_ value) of the root corpus, via an unbound number of sub-corpora, and ends with the document. The identifier for each element is computed automatically by extending the identifier of its parent element. For instance the identifier of a sub corpus named 'corp2' is computed by extending the identifier of its parent corpus 'corp1'. For instance the identifier for a document named 'doc1', being contained in corpus 'corp2', which is contained in corpus 'corp1' (which is the root) would look like this:
 
 <pre>
 salt:/corp1/corp2/doc1
@@ -435,7 +435,7 @@ The same mechanism of creating identifiers of the corpus structure is used for e
 salt:/corp1/corp2/doc1#tok1
 </pre>
 
-The same holds for relations. These URI's or _SElementId_'s can be used to identify and search for elements in the corresponding graphs. You can access the id by calling:
+The same holds for relations. These URIs or _SElementId_s can be used to identify and search for elements in the corresponding graphs. You can access the id by calling:
 
 <pre>
 tok1.getSElementId();
@@ -457,7 +457,7 @@ When working with Salt, it is often necessary
 
 For all of these purposes, we offer the generic possibility to traverse a graph object (e.g. a _SCorpusGraph_ or a _SDocumentGraph_ object). 
 
-A traversal can be done in two directions: __top-down__ and __bottom-up__. When using the top-down method, the traversal will follow the relation direction (e.g. _a_ -> _b>: node _a_ will be visited first, followed by node _b_). When using the bottom-up method, the traversal will follow the inverse of the relation direction (e.g. _a_ -> _b_: node _b_ will be visited before node _a_).
+A traversal can be done in two directions: __top-down__ and __bottom-up__. When using the top-down method, the traversal will follow the relation direction (e.g. _a_ -> _b>_: node _a_ will be visited first, followed by node _b_). When using the bottom-up method, the traversal will follow the inverse of the relation direction (e.g. _a_ -> _b_: node _b_ will be visited before node _a_).
 
 Additionally, you can choose the order in which nodes will be traversed. For this, we provide two modes: __depth-first__ and __breadth-first__. In depth-first mode, the sub-graph of node _b_ will be traversed, before its siblings will be visited. Imagine the following tree structure: 
 <pre>
@@ -502,7 +502,7 @@ public void nodeLeft(           GRAPH_TRAVERSE_TYPE traversalType,
                                 long order);
 </pre>
 
-When the traversal reaches a new node, the method _checkConstraint(...)_ is called. It checks whether the following nodes and their sub-graphs should be processed any further. When this method returns true, the method _nodeReached(...)_ is called next. Before a node is left, the method _nodeLeft(...)_ is called. Note, that the order of the method invocations depends on the traversal type used.
+When the traversal reaches a new node, the method _checkConstraint(...)_ is called. It checks whether the following nodes and their sub-graphs should be processed any further. When this method returns true, the method _nodeReached(...)_ is called next. Before a node is left, the method _nodeLeft(...)_ is called. Note that the order of the method invocations depends on the traversal type used.
 
 The following example shows the order of calls for the sample graph given in the following figure.
 
