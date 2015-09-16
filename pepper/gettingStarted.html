@@ -6,9 +6,9 @@ layout: default
         <h1>Getting started</h1>
     </div>
     <div class="content">
-       To run Pepper open a command line and enter (for windows):
+       To run Pepper open a command line and enter (for Windows):
         <pre>pepperStart.bat COMMAND</pre>
-        or (for linux, unix and Mac OS):
+        or (for Linux, Unix and Mac OS):
         <pre>bash pepperStart.sh COMMAND</pre>
         Now Pepper starts the interactive command line and welcomes you with the prompt
         <pre>pepper></pre>
@@ -24,12 +24,12 @@ layout: default
 </article>
 <article>
     <div class="page-header">
-        <h2>Conversion Wizzard</h2>
+        <h2>Conversion Wizard</h2>
     </div>
     <div class="content">
         <ol>
         <li>Enter the path of the corpus to import e.g. 'C:\myCorpus\':
-        <pre>pepper/wizzard/importer>C:\myCorpus\</pre>
+        <pre>pepper/wizard/importer>C:\myCorpus\</pre>
         </li>
             <li>
         Now Pepper displays a list of all available importers and asks you to choose one of them.
@@ -41,8 +41,8 @@ layout: default
 |   2  | SaltXMLImporter               | (SaltXML, 1.0)                           |
 |   3  | DoNothingImporter             | (doNothing, 0.0)                         |
         </pre>
-        A '*' next to the number of the importer shows, that this importer is recommended. Recommended means that the passed path contains files in a format, the importer is able to process. To choose an importer, just enter its number or its name.
-        <pre>pepper/wizzard/importer>1</pre>
+        A '*' next to the number of the importer shows, that this importer is recommended. Recommended means that the passed path contains files in a format the importer is able to process. To choose an importer, just enter its number or its name.
+        <pre>pepper/wizard/importer>1</pre>
         </li>
         <li>
         Some importers provide a list of properties to customize the import. If this is the case, Pepper displays a list of all available customization properties.
@@ -55,35 +55,35 @@ layout: default
 ...
         </pre>
         To use a property, enter its number or name, followed by '=' and the value of the property.
-        <pre>pepper/wizzard/importer>1=anyValue</pre>
+        <pre>pepper/wizard/importer>1=anyValue</pre>
         <p>
         Pepper keeps asking you to enter further customization properties until you enter an empty line.
             </li>
             <li>
-        Since it is possible to use more than one importers for one workflow, Pepper asks you to enter a further corpus path. To skip that press just 'enter'.
+        Since it is possible to use more than one importer for one workflow, Pepper asks you to enter a further corpus path. To skip that just press 'enter'.
             </li>
 				<li>
-       In Pepper you have the possibility to manipulate the data between the im- and the export phase. Therefore Pepper displays a list of all available manipulators and asks you to enter the number or name of a manipulator. To skip adding a manipulator press just 'enter'.
+       In Pepper you have the possibility to manipulate the data between the im- and the export phase. Therefore Pepper displays a list of all available manipulators and asks you to enter the number or name of a manipulator. To skip adding a manipulator just press 'enter'.
             </li>
             <li>
-        Also manipulators can be customized and when the choosen manipulator provides properties for customization Pepper displays them and asks you for entering such a property.
+        Also, manipulators can be customized. When the chosen manipulator provides properties for customization, Pepper displays them and asks you to enter such a property.
             </li><li>
-        To skip the adding of further manipulators press just 'enter'.
+        To skip adding further manipulators just press 'enter'.
             </li><li>
-        The last thing remains is to choose an exporter. Pepper shows a list of all available exporters. To choose one of them enter its number or its name.
+        Finally, choose an exporter. Pepper shows a list of all available exporters. To choose one of them enter its number or its name.
             </li><li>
        Again you have the chance to customize the export by adding some customization properties, if provided. To do so, enter the number or name of a property followed by '=' and the value.
             </li><li>
         Along with importers and manipulators, you can add more than one exporter. To stop adding exporters, enter an empty line.
             </li>
             <li>
-        To save the workflow enter 'save' followed by a path where to store the file (.pepper). pepper/wizzard>C:\myCorpus\myWorkflow.pepper
+        To save the workflow, enter 'save' followed by a path where to store the file (.pepper). pepper/wizard>C:\myCorpus\myWorkflow.pepper
             </li><li>
         To start the conversion enter 'start'.
-        <pre>pepper/wizzard>start</pre>
+        <pre>pepper/wizard>start</pre>
             </li>
             <li>
-        To exit and abort the conversion enter 'exit'.
+        To exit and abort the conversion, enter 'exit'.
         </li>
         </ol>
     </div>
@@ -93,15 +93,15 @@ layout: default
         <h2>Configuring Pepper</h2>
     </div>
     <div class="content">
-<p>The Pepper home folder contains a folder named 'conf/', here you find two files to adapt the behavior of Pepper. First you can change the logging behavior by adapting the file logback.xml. The default configuation is configured using the INFO log level:</p>
+<p>The Pepper home folder contains a folder named 'conf/', here you find two files to adapt the behavior of Pepper. First you can change the logging behavior by adapting the file logback.xml. The default configuration is configured using the INFO log level:</p>
 <pre>&lt;root level="info">
    ...
 &lt;/root></pre>
 <p>
-A log level determines, which types of log messages are printed. The hierarchy is the following (ascending): trace, debug, info, warn, error. That means, when setting the log level to info, even warn and error messages are printed, but no trace and debug messages.
+A log level determines which types of log messages are printed. The hierarchy is the following (ascending): trace, debug, info, warn, error. That means, when setting the log level to info, warn and error messages are printed, but no trace and debug messages.
 </p>
 <p>
-Second by adapting the file 'pepper.properties' you can change the processing behavior of Pepper. This file has a key-value notion, which mean an entry has a key, followed by the qual sign and the corresponding value. Here is an excerpt of that file:
+Secondly, by adapting the file 'pepper.properties' you can change the processing behavior of Pepper. This file has a key-value notation, which mean an entry has a key, followed by the equal sign and the corresponding value. Here is an excerpt of that file:
 </p>
 <pre>
 ##########
@@ -130,7 +130,7 @@ pepper.removeSDocumentAfterProcessing=true
             <h2>Workflow File</h2>
         </div>
         <div class="content">
-        In Pepper you have the chance to store a workflow in a workflow file (.pepper). This offers you to redo and reuse a congigured workflow. You can also add this file to a version control system, to keep the details how a corpus was processed. A workflow is stored in an xml file following the Pepper scheme. A workflow consists of three phases: import pahse, manipulation phase and export phase. The notation of the workflow file follows this structure. To identify a Pepper module realizing a step, you have to describe that module by its name or the formats name and version, the corpus is in. The following sample consists of three steps, one importer, one manipulator and one exporter:
+        In Pepper you have the chance to store a workflow in a workflow file (.pepper). This allows you to redo and reuse a configured workflow. You can also add this file to a version control system, to persist the details of how a corpus was processed. A workflow is stored in an xml file following the Pepper scheme. A workflow consists of three phases: import phase, manipulation phase and export phase. The notation of the workflow file follows this structure. To identify a Pepper module realizing a step, you have to describe that module by its name or the format's name and version. The following sample consists of three steps, one importer, one manipulator and one exporter:
         <pre>
 &lt;?xml version="1.0" encoding="UTF-8"?>
 &lt;?xml-model href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/schema/10/pepper.rnc" type="application/relax-ng-compact-syntax"?>
@@ -149,13 +149,13 @@ pepper.removeSDocumentAfterProcessing=true
 	&lt;exporter name="EXPORTER_NAME" path="TARGET_PATH"/>
 &lt;/pepper-job>
         </pre>
-        The importer in contrast to the exporter is identified by the formats name (FORMAT_NAME) and the formats version (FORMAT_VERSION). The exporter and the manipulator are identified by the module names (MANIPULATOR_NAME and EXPORTER_NAME). To customize the workflow some modules provide a set of properties. A property consists of a name-value pair. A description of properties can be found on the modules site or when entering the command 'list' followed by the modules name in the pepper console, for instance:
+        The importer - in contrast to the exporter - is identified by the format's name (FORMAT_NAME) and the format's version (FORMAT_VERSION). The exporter and the manipulator are identified by the module names (MANIPULATOR_NAME and EXPORTER_NAME). To customize the workflow, some modules provide a set of properties. A property consists of a name-value pair. A description of properties can be found on the modules site or when entering the command 'list' followed by the module name in the pepper console, for instance:
         <pre>pepper>list MANIPULATOR_NAME</pre>
-        An importer and an exporter need a source or a target path to address where to find the corpus or where to store it. Such a path can be addressed relative or absolute. A relative path can start with './' for current directory or '../' for the parent directory for instance:
+        An importer and an exporter need a source or a target path to address where to find the corpus or where to store it. Such a path can be addressed relative or absolute. A relative path can start with './' for current directory or '../' for the parent directory, for instance:
         <pre>./corpus</pre>
         or
         <pre>../corpus</pre>
-        An absolute path could start with the file scheme like:
+        An absolute path could start with the file scheme, e.g.:
         <pre>file:/C:/format1/corpus1/</pre>
         or
         <pre>file:///C:/format1/corpus1/</pre>
