@@ -1,167 +1,106 @@
 ---
 layout: default
+title: Atomic
+custom_js:
+- mail
 ---
 
 <div class="alert alert-success">
-    <p class="center"><span style="font-size:2em">Atomic 0.2.0 has been released on 24 June 2015!</span><br><span style="font-size:1.4em">Go to <a href="#download">Download</a> to get the version for your operating system.</span></p>
+    <p class="center"><span style="font-size:2em">Atomic {{site.data.atomic.version}} has been released on {{site.data.atomic.release-date | page.date | date: '%d %B %Y'}}!</span><br><span style="font-size:1.4em">Go to <a href="#download">Download</a> to get the version for your operating system.</span></p>
     <p class="center">This release adds corpus navigation to the Annotation Graph Editor. With this new feature you can navigate the annotation document by selecting one or more sentences/levels to view and edit.</p>
 </div>
 
 
 
-<section id="services"> <!--class="midnight-blue"-->
+<article>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-6">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="fa fa-sitemap icon-md"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">What is Atomic?</h3>
-                        <p><strong>Atomic</strong> is a multilevel corpus annotation tool &ndash; and platform &ndash; for the desktop, developed within the LinkType research project at the Friedrich Schiller University Jena.</p>
-                        <p><strong>Atomic</strong> is based on the Eclipse Rich Client Platform and written in Java.</p>
-                        <p><strong>Atomic</strong> is easily extensible, platform-independent, and supports different corpus formats.</p>
-                    </div>
-                </div>
-            </div><!--/.col-md-4-->
-            <div class="col-md-4 col-sm-6">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="fa fa-link icon-md"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">LinkType</h3>
-                        <p><strong>Towards a corpus-based typology of clause linkage - An analytical framework and case studies on non-local dependencies</strong> (<strong>LinkType</strong>) is a <a class="fa fa-external-link" href="http://www.dfg.de/" target="blank"> DFG</a>-funded linguistic research project that is jointly carried out by the universities of <a class="fa fa-external-link" href="http://www.linguistik.uzh.ch/index_en.html"> Zurich</a> and <a class="fa fa-external-link" href="http://www2.uni-jena.de/fsu/anglistik"> Jena</a>.</p>
-                        <p>The project aims at statistically modeling linguistic variation in the area of complex sentences. It is based on the investigation of corpora from genealogically and geographically diverse languages that have been richly annotated.</p>
-                        <p><a class="fa fa-external-link" href="http://linktype.iaa.uni-jena.de/"> LinkType homepage</a></p>
-                    </div>
-                </div>
-            </div><!--/.col-md-4-->
-            <div class="col-md-4 col-sm-6">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="fa fa-github-alt icon-md"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Atomic at GitHub</h3>
-                        <p>The public <strong>Atomic</strong> repository is located at <span style="color:#998F4D;" class="fa fa-external-link"> </span><a href="https://github.com/infraling/atomic"> <strong>https://github.com/infraling/atomic</strong></a>. At GitHub you can:</p>
+            <div class="col-md-4">
+                <h2><i class="icon-atomic"></i> What is Atomic?</h2>
+                <p><strong>Atomic</strong> is a multilevel corpus annotation tool &ndash; and platform &ndash; for the desktop, developed within the LinkType research project at the Friedrich Schiller University Jena.</p>
+                <p><strong>Atomic</strong> is based on the Eclipse Rich Client Platform and written in Java.</p>
+                <p><strong>Atomic</strong> is easily extensible, platform-independent, and supports different corpus formats.</p>
+            </div>
+            <div class="col-md-4">
+                <h2><i class="icon-linktype"></i> LinkType</h2>
+                <p><strong>Towards a corpus-based typology of clause linkage - An analytical framework and case studies on non-local dependencies</strong> (<strong>LinkType</strong>) is a <a class="fa fa-external-link" href="http://www.dfg.de/" target="blank"> DFG</a>-funded linguistic research project that is jointly carried out by the universities of <a class="fa fa-external-link" href="http://www.linguistik.uzh.ch/index_en.html"> Zurich</a> and <a class="fa fa-external-link" href="http://www2.uni-jena.de/fsu/anglistik"> Jena</a>.</p>
+                <p>The project aims at statistically modeling linguistic variation in the area of complex sentences. It is based on the investigation of corpora from genealogically and geographically diverse languages that have been richly annotated.</p>
+                <p><a class="fa fa-external-link" href="http://linktype.iaa.uni-jena.de/"> LinkType homepage</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2><i class="fa fa-github"></i> Open Source</h2>
+                <p>Atomic is open source under the <a class="fa fa-external-link" href="http://www.apache.org/licenses/LICENSE-2.0.html"> Apache License, Version 2.0</a>, the code is published on <span style="color:#998F4D;" class="fa fa-external-link"> </span><a href="https://github.com/infraling/atomic">GitHub.</a></p>
+                <p>At GitHub you can:</p>
                         <ul>
                             <li><a href="https://github.com/infraling/atomic/issues/new">File a bug report</a></li>
                             <li><a href="https://github.com/infraling/atomic/issues/new">Request a feature</a></li>
                             <li><a href="https://github.com/infraling/atomic">Browse</a> and <a href="https://github.com/infraling/atomic/releases/latest">download</a> the source code</li>
                         </ul>
-                        <p><img src='http://linktype.iaa.uni-jena.de/jenkins/job/atomic-master-v2/badge/icon'></p>
-                    </div>
-                </div>
-            </div><!--/.col-md-4-->
+            </div>
         </div>
     </div>
-</section><!--/#services-->
+</article>
 
-<section id="about" class="midnight-blue">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h3>About Atomic</h3>
-                <p><strong>Atomic</strong> is an open source annotation software for multi-level deep linguistic annotation of text corpora.</p>
-                <p>It is based on the Eclipse RCP, a modular rich client platform.</p>
-                <p>It features a graphical editor which can be controlled via keyboard, mouse, and command shell (with the native annotation language AtomicAL).</p>
-                <p>It works on a concrete implementation of the generic graph-based meta-model Salt, and embeds its complementary conversion framework Pepper, allowing for n : m mapping between data formats (<a class="fa fa-external-link" href="https://korpling.german.hu-berlin.de/saltnpepper/"> SaltNPepper homepage</a>).</p>
+<article>
+    <div class="page-header">
+        <h1>About Atomic</h1>
+        </div>
+            <p><strong>Atomic</strong> is an open source annotation software for multi-level deep linguistic annotation of text corpora.</p>
+            <p>It is based on the Eclipse RCP, a modular rich client platform.</p>
+            <p>It features a graphical editor which can be controlled via keyboard, mouse, and command shell (with the native annotation language AtomicAL).</p>
+            <p>It works on a concrete implementation of the generic graph-based meta-model Salt, and embeds its complementary conversion framework Pepper, allowing for n : m mapping between data formats (<a class="fa fa-external-link" href="{{ site.site_pepper }}"> Pepper page</a>).</p>
                 <!--<p class="gap"></p>-->
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="images/app_window.png" alt="">
-            </div>
-        </div><!--/.row-->
-    </div>
-</section><!--/#recent-works-->
+            <img class="img-responsive" src="./images/app_window.png" alt="">
+</article>
 
-<section id="download">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div>
-                    <h2>Download</h2>
-                    <p>To install <strong>Atomic</strong>, just unzip the downloaded file into a directory of your choice. To run, simply click on the executable file called "atomic".</p>
-                    <p>To receive updates about releases, please subscribe to the <strong>Atomic</strong> users mailing list: <a class="fa fa-external-link" href="https://lserv.uni-jena.de/mailman/listinfo/atomic-user"> atomic-user</a>.</p>
-                    <p>Latest stable release: <strong>Atomic</strong> 0.2.0 
-                        (Release date: June 2015, <a href="./download/doc/CHANGELOG.txt" target="_blank">CHANGELOG</a>)</p>
-                    <p>System requirements: Java Runtime Environment 1.6 or higher.</p>
-                    <div class="gap"></div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 emerald" style="padding:50px;">
-                <div class="media">
-                    <div class="pull-left">
-                        <i style="color: #002673; background-color:white;" class="fa fa-windows icon-md"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Windows</h3>
-                        <p><a class="fa fa-download" style="color:white;" href=./download/latest/atomic-0.2.0-win32.win32.x86.zip target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '0.2.0', 'win32-x86']);"> 32-bit</a></p>
-                                <p><a class="fa fa-download" style="color:white;"  href=./download/latest/atomic-0.2.0-win32.win32.x86_64.zip target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '0.2.0', 'win32-x86_64']);"> 64-bit</a></p>
-                    </div>
-                </div>
-            </div><!--/.col-md-4-->
-            <div class="col-md-4 col-sm-6 emerald" style="padding:50px;">
-                <div class="media">
-                    <div class="pull-left">
-                        <i style="color: #002673; background-color:white;" class="fa fa-linux icon-md"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Linux</h3>
-                        <p><a class="fa fa-download" style="color:white;" href=./download/latest/atomic-0.2.0-linux.gtk.x86.zip target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '0.2.0', 'linux-x86']);"> 32-bit</a></p>
-                                <p><a class="fa fa-download" style="color:white;" href=./download/latest/atomic-0.2.0-linux.gtk.x86_64.zip target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '0.2.0', 'linux-x86_64']);"> 64-bit</a></p>
-                    </div>
-                </div>
-            </div><!--/.col-md-4-->
-            <div class="col-md-4 col-sm-6 emerald" style="padding:50px;">
-                <div class="media">
-                    <div class="pull-left">
-                        <i style="color: #002673; background-color:white;" class="fa fa-apple icon-md"></i>
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">Mac OS X</h3>
-                        <p><a class="fa fa-download" style="color:white;" href=./download/latest/atomic-0.2.0-macosx.cocoa.x86.zip target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '0.2.0', 'macosx-x86']);"> 32-bit</a></p>
-                                <p><a class="fa fa-download" style="color:white;" href=./download/latest/atomic-0.2.0-macosx.cocoa.x86_64.zip target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '0.2.0', 'macosx-x86_64']);"> 64-bit</a></p>
-                    </div>
-                </div>
-            </div><!--/.col-md-4-->
+<article id="download">
+    <div class="page-header">
+        <h1>Download</h1>
         </div>
-        <div class="gap"></div>
+            <p>To install <strong>Atomic</strong>, just unzip the downloaded file into a directory of your choice. To run, simply click on the executable file called "atomic".</p>
+            <p>To receive updates about releases, please subscribe to the <strong>Atomic</strong> users mailing list: <a class="fa fa-external-link" href="https://lserv.uni-jena.de/mailman/listinfo/atomic-user"> atomic-user</a>.</p>
+            <p>Latest stable release: <strong>Atomic</strong> {{ site.data.atomic.version}} (Release date: {{ site.data.atomic.release-date | date: '%B %Y'}}, <a href="http://linktype.iaa.uni-jena.de/atomic/download/doc/CHANGELOG.txt" target="_blank">CHANGELOG</a>)</p>
+            <p>System requirements: Java Runtime Environment 1.6 or higher.</p>
 
-    </div>
-</div>
-</div>
-</section><!--/#testimonial-->
-
-<section id="doc" class="midnight-blue">
-    <div class="container">
+    <div class="alert alert-success">
         <div class="row">
-            <div class="col-lg-12">
-                <div>
-                    <h2>Documentation</h2>
-                    <h3>Installation</h3>
+            <div class="col-md-4" style="text-align:center">
+                <h1 class="icon-windows"> Windows</h1>
+                <p><a href="http://linktype.iaa.uni-jena.de/atomic/download/latest/atomic-{{ site.data.atomic.version}}-win32.win32.x86.zip" target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '{{ site.atomic.data.version}}', 'win32-x86']);"><h2 class="fa fa-download fa-2x"> 32-bit</h2></a></p>
+                <p><a href="http://linktype.iaa.uni-jena.de/atomic/download/latest/atomic-{{ site.data.atomic.version}}-win32.win32.x86_64.zip" target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '{{ site.atomic.data.version}}', 'win32-x86_64']);"><h2 class="fa fa-download fa-2x"> 64-bit</h2></a></p>
+            </div>
+            <div class="col-md-4" style="text-align:center">
+                <h1 class="icon-linux"> Linux</h1>
+                <p><a href="http://linktype.iaa.uni-jena.de/atomic/download/latest/atomic-{{ site.data.atomic.version}}-linux.gtk.x86.zip" target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '{{ site.atomic.data.version}}', 'linux-gtk-x86']);"><h2 class="fa fa-download fa-2x"> 32-bit</h2></a></p>
+                <p><a href="http://linktype.iaa.uni-jena.de/atomic/download/latest/atomic-{{ site.data.atomic.version}}-linux.gtk.x86_64.zip" target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '{{ site.atomic.data.version}}', 'linux-gtk-x86_64']);"><h2 class="fa fa-download fa-2x"> 64-bit</h2></a></p>
+            </div>
+            <div class="col-md-4" style="text-align:center">
+                <h1 class="icon-mac"> Mac OS X</h1>
+                <p><a href="http://linktype.iaa.uni-jena.de/atomic/download/latest/atomic-{{ site.data.atomic.version}}-macosx.cocoa.x86.zip" target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '{{ site.atomic.data.version}}', 'macosx-cocoa-x86']);"><h2 class="fa fa-download fa-2x"> 32-bit</h2></a></p>
+                <p><a href="http://linktype.iaa.uni-jena.de/atomic/download/latest/atomic-{{ site.data.atomic.version}}-macosx.cocoa.x86_64.zip" target="_blank" onClick="_gaq.push(['_trackEvent', 'Downloads', '{{ site.atomic.data.version}}', 'macosx-cocoa-x86_64']);"><h2 class="fa fa-download fa-2x"> 64-bit</h2></a></p>
+            </div>
+        </div>
+    </div>
+</article>
+
+<article id="documentation">
+    <div class="page-header">
+                    <h1>Documentation</h1>
+                    </div>
+                    <h2>Installation</h2>
                     <p>There is no installation necessary. Once you have downloaded the zip archive for your operating system, simply extract it into a location of your choice, and run the <strong>Atomic</strong> executable.</p>
-                    <h3>Guides</h3>
-                    <p>The <strong>Atomic</strong> User Guide is available in the following formats: <a class="fa fa-html5" href="download/doc/html5/index.xhtml"> HTML</a> (for viewing online), <a class="fa fa-file-pdf-o" href="download/doc/atomic-user-guide.pdf"> PDF</a>, <a class="fa fa-book" href="download/doc/atomic-user-guide.epub"> EPUB</a> (for reading on your ebook reader).</p>
+                    <h2>Guides</h2>
+                    <p>The <strong>Atomic</strong> User Guide is available in the following formats: <a class="fa fa-html5" href="http://linktype.iaa.uni-jena.de/atomic/download/doc/html5/index.xhtml"> HTML</a> (for viewing online), <a class="fa fa-file-pdf-o" href="http://linktype.iaa.uni-jena.de/atomic/download/doc/atomic-user-guide.pdf"> PDF</a>, <a class="fa fa-book" href="http://linktype.iaa.uni-jena.de/atomic/download/doc/atomic-user-guide.epub"> EPUB</a> (for reading on your ebook reader).</p>
                     <p>The user guide is also available from Atomic's Help menu.</p>
-                    <h3>Reference</h3>
+                    <h2>Reference</h2>
                     <p>If you use <strong>Atomic</strong> in your scientific work, please cite it as follows.</p>
                     <p><span class="fa fa-book"></span> <strong>Druskat, Stephan, Lennart Bierkandt, Volker Gast, Christoph Rzymski &amp; Florian Zipser. 2014. <i>Atomic: an open-source software platform for multi-level corpus annotation</i>.</strong> In Josef Ruppert and Gertrud Faaß (eds.): Proceedings of the 12th Konferenz zur Verarbeitung natürlicher Sprache (KONVENS 2014), Hildesheim, October 2014. 228&ndash;234. ISBN 978-3-934105-46-1. <a class="fa fa-file-pdf-o" href="http://nbn-resolving.de/urn:nbn:de:gbv:hil2-opus-2866"> PDF</a></p>
-                </div>
-                <div class="gap"></div>
-            </div>
-        </div>
-    </div>
-</section><!--/#testimonial-->
+</article>
 
-    <section id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div>
-                        <h2>FAQ</h2>
+    <article id="faq">
+        <div class="page-header">
+                        <h1>FAQ</h1>
+                        </div>
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -175,7 +114,7 @@ layout: default
                             <p>In order to solve this issue, you need to install the correct JRE. Go to <a class="fa fa-external-link" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank"> http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>, and download the <b>Java Platform, Standard Edition <i>&quot;JRE&quot;</i></b> (<i>not</i> the &quot;Server JRE&quot;) for your operating system. If applicable, uninstall the existing JRE. Install the new JRE from the file you have just downloaded (probably called <i>jre-8u25-windows-x64.exe</i> or similar). You should now be able to run Atomic. If the error persists, please create a new issue at <a class="fa fa-external-link" href="https://github.com/infraling/atomic/issues" target="_blank"> https://github.com/infraling/atomic/issues</a>.</p>
                             <p><i>Explanation:</i> There are two different Java Virtual Machines, the Java HotSpot&trade; <b>Client</b> VM, and the Java HotSpot&trade; <b>Server</b> VM. The different versions relate to two different compilers (cf. the <a class="fa fa-external-link" href="http://www.oracle.com/technetwork/java/hotspotfaq-138619.html#compiler_types" target="_blank"> HotSpot FAQ</a>), and Atomic uses the server system compiler, which is optimized for overall performance.</p>
                             <p><i>Telling which one you have:</i> If you have installed Java via the online installer (available via the <i>java.com</i> start page and at <i>http://java.com/download</i>) you will probably have got the <i>client</i> VM. You can check this by calling <span style="font-family:monospace;">java -version</span> from the command line. The third line of the output will give you something similar to <span style="font-family:monospace;">Java HotSpot(TM) Client</span> (or indeed <span style="font-family:monospace;">Server</span>) <span style="font-family:monospace;">VM</span>.</p>
-                            <p><img src="images/vm_issue.png" border="0"></p>
+                            <p><img src="./images/vm_issue.png" border="0"></p>
                                     </div>
                                 </div>
                             </div>
@@ -192,38 +131,49 @@ layout: default
                                 </div>
                             </div>
                         </div>
-                        <div class="gap"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/#testimonial-->
+    </article>
 
-
-
-    <section id="bottom" class="midnight-blue">
-        <div class="container">
+    <article>
             <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Contact</h2>
+                <div class="col-md-6">
+                    <h2><i class="fa fa-envelope"></i> Contact</h2>
                     <h3>Atomic</h3>
                     <p>For Atomic-related questions, please write a message to the atomic-user mailing list:</p>
-                    <span class="fa fa-envelope"></span><a onmouseover="setEmailStatus('atomic-user', 'listserv.uni-jena', 'de'); return true;" onmouseout="status=''; return true;" onclick="sendEmail('atomic-user', 'listserv.uni-jena', 'de', ''); return false;" href="javascript:sendEmail('atomic-user',%20'listserv.uni-jena',%20'de',%20'')" target="_self"> atomic-user @ listserv . uni-jena . de</a>
+                    <span class="fa fa-envelope-o"></span><a onmouseover="setEmailStatus('atomic-user', 'listserv.uni-jena', 'de'); return true;" onmouseout="status=''; return true;" onclick="sendEmail('atomic-user', 'listserv.uni-jena', 'de', ''); return false;" href="javascript:sendEmail('atomic-user',%20'listserv.uni-jena',%20'de',%20'')" target="_self"> atomic-user @ listserv . uni-jena . de</a>
                     <h3>LinkType</h3>
                     <p>For questions related to the LinkType research project, please consult the project website:</p>
                     <a class="fa fa-external-link" href="http://linktype.iaa.uni-jena.de/"> http://linktype.iaa.uni-jena.de/</a>
-                    <h3>Keep up to date</h3>
-                    <p>Subscribe to the Atomic users mailing list:<br><a class="fa fa-external-link" href="https://lserv.uni-jena.de/mailman/listinfo/atomic-user"> atomic-user</a></p>
-                    <p>Subscribe to the Atomic developers mailing list:<br><a class ="fa fa-external-link" href="https://lserv.uni-jena.de/mailman/listinfo/atomic-dev"> atomic-dev</a></p>
+                    <h2><i class="fa fa-fast-forward"></i> Keep up to date</h2>
+                    <p>Subscribe to the Atomic users mailing list: <a class="fa fa-external-link" href="https://lserv.uni-jena.de/mailman/listinfo/atomic-user"> atomic-user</a>.</p>
+                    <p>Subscribe to the Atomic developers mailing list: <a class ="fa fa-external-link" href="https://lserv.uni-jena.de/mailman/listinfo/atomic-dev"> atomic-dev</a>.</p>
                 </div><!--/.col-md-3-->
 
-                <div class="col-md-6 col-sm-12">
-                    <h2>Impressum</h2>
+                <div class="col-md-6">
+                    <h2><i class="fa fa-info-circle"></i> Impressum</h2>
                     <div>
                         <p>The following information (Impressum) is required under German law.</p>
-                        <p>Responsible for the content of this site:<br>Volker Gast<br>Friedrich Schiller University Jena<br>Institut für Anglistik und Amerikanistik<br>Ernst-Abbe-Platz 8<br>07743 Jena<br>Germany<br>Tel: +49 (0)3641 944500<br><span class="fa fa-envelope"></span> <a onmouseover="setEmailStatus('stephan.druskat', 'uni-jena', 'de'); return true;" onmouseout="status=''; return true;" onclick="sendEmail('stephan.druskat', 'uni-jena', 'de', ''); return false;" href="javascript:sendEmail('stephan.druskat',%20'uni-jena',%20'de',%20'')" target="_self">stephan . druskat @ uni-jena . de</a></p>
+                        <p>Responsible for the content of this site:<br>Volker Gast<br>Friedrich Schiller University Jena<br>Institut für Anglistik und Amerikanistik<br>Ernst-Abbe-Platz 8<br>07743 Jena<br>Germany<br>Tel: +49 (0)3641 944500<br><span class="fa fa-envelope-o"></span> <a onmouseover="setEmailStatus('stephan.druskat', 'uni-jena', 'de'); return true;" onmouseout="status=''; return true;" onclick="sendEmail('stephan.druskat', 'uni-jena', 'de', ''); return false;" href="javascript:sendEmail('stephan.druskat',%20'uni-jena',%20'de',%20'')" target="_self">stephan . druskat @ uni-jena . de</a></p>
                     </div>
                 </div><!--/.col-md-3-->
             </div>
-        </div>
-    </section>
+    </article>
+
+<article id="supporters">
+<div class="page-header">
+        <h1>Supported by</h1>
+      </div>
+<div class="funders"><center class="funders">
+<a href="http://www.uni-jena.de/en/start.html">
+                    <img width="100px" src="../home/images/logos/fsu-trans.png" />
+                  </a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.dfg.de/en/">
+                    <img width="250px" src="../home/images/logos/dfg_logo_schriftzug_blau.png" />
+                  </a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&cl=en">
+                    <img width="100px" src="../home/images/logos/husiegel_bw_gross.png" alt="Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology"/>
+                  </a>
+
+
+</center>
+</div>
+</article>
