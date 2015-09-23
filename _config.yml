@@ -20,6 +20,8 @@ apache_license: <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache Lice
 
 module_paula: https://github.com/korpling/pepperModules-PAULAModules
 module_annis: https://github.com/korpling/pepperModules-ANNISModules
+module_exmaralda: https://github.com/korpling/pepperModules-EXMARaLDAModules
+module_saltInfo: https://github.com/korpling/pepperModules-SaltInfoModules
 # Build settings
 markdown: kramdown
 

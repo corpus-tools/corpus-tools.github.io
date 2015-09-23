@@ -11,7 +11,7 @@ layout: default
 	</article>
 	<article>
         <div class="page-header">
-            <h1>pcc2 - Potsdam Commentary Corpus</h1>
+            <h1>PAULA -> ANNIS</h1>
         </div>
         <div class="content">
 			<p>The pcc2 corpus is a small excerpt from the <a href="http://angcl.ling.uni-potsdam.de/resources/pcc.html">Potsdam Commentary Corpus</a>. It contains the two documents <i>11299</i> and <i>4282</i>. The corpus is annotated on multiple layers: constituents, dependencies, coreference, rhetorical structure and information structure.</p>
@@ -31,10 +31,40 @@ layout: default
 &lt;?xml version="1.0" ?>
 &lt;?xml-model href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/schema/10/pepper.rnc" 
                type="application/relax-ng-compact-syntax"?>
-&lt;pepper-job id="" version="1.0">
+&lt;pepper-job version="1.0">
 	&lt;importer name="PAULAImporter" path="./paula/"/>
 	&lt;exporter name="ANNISExporter" path="./annis/"/>
 &lt;/pepper-job></pre>
 		</div>
 	</article>
-   
+		<article>
+        <div class="page-header">
+            <h1>EXMARaLDA -> corpus homepage</h1>
+        </div>
+        <div class="content">
+			<p>The Tatian Corpus of Deviating Examples T-CODEX 2.1, provides morpho-syntactic and information structural annotation of parts of the Old High German translation attested in the MS St. Gallen Cod. 56, traditionally called the OHG Tatian, one of the largest prose texts from the classical OHG period. This corpus was designed and annotated by Project B4 of Collaborative Research Center on Information Structure at Humboldt University Berlin. .</p>
+			<p>The aim of this workflow is to create a homepage for this corpus. This is done by the SaltInfoExporter, which produces an xml output for further processing and an html output. The html output is an overview of all annotations (names, values, occurences) used in the corpus. </p>
+			 <table class="table-striped">
+				<tr><td width="30%"><strong>corpus</strong></td><td width="50%"><a href="..{{site.site_corpora}}b4.tatian.zip"><i class="fa fa-download"></i> b4.tatian</a></td></tr>
+				<tr><td><strong>importer</strong></td><td><a href="{{site.module_exmaralda}}">{{site.module_exmaralda}}</a></td></tr>
+				<tr><td><strong>exporter</strong></td><td><a href="{{site.module_saltInfo}}">{{site.module_saltInfo}}</a></td></tr>
+			 </table>
+			 <br/>
+			 <center>
+			 <img onclick="window.open('./images/sampleWorkflow_tatian.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                    class="enlarge" src="./images/sampleWorkflow_tatian.svg" width="60%"/>
+             </center>
+             <p>The following workflow assumes the source corpus to be in a folder named <i>exmaralda</i>, which is in the same folder as the workflow description file itself. The corpus homepage will be exported to a folder named <i>site</i>. Since the corpus homepage can be customized by adapting the file <i>customization.json</i>, this file and referred images are stored in a folder named <i>custom</i>. At the end of the conversion process, these files are copied into the target folder <i>site</i>. This is done by the customization property <i>pepper.after.copyRes</i>, which copies any files from a source to a target folder (source -> target) when the conversion process was done.</p>
+            <pre>
+&lt;?xml version="1.0" ?>
+&lt;?xml-model href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/schema/10/pepper.rnc" 
+               type="application/relax-ng-compact-syntax"?>
+&lt;pepper version="1.0">
+	&lt;importer name="EXMARaLDAImporter" path="./exmaralda/b4.tatian"/>
+	&lt;exporter name="SaltInfoExporter" path="./site">
+		&lt;property key="theme">historic&lt;/property>
+  		&lt;property key="pepper.after.copyRes">./custom/customization.json->./site/;./custom/impressum.html->./site/;./custom/faksi1.png->./site/img/;./custom/faksi2.png->./site/img/&lt;/property>
+	&lt;/exporter>
+&lt;/pepper></pre>
+		</div>
+	</article>
