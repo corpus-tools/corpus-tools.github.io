@@ -22,6 +22,9 @@ module_paula: https://github.com/korpling/pepperModules-PAULAModules
 module_annis: https://github.com/korpling/pepperModules-ANNISModules
 module_exmaralda: https://github.com/korpling/pepperModules-EXMARaLDAModules
 module_saltInfo: https://github.com/korpling/pepperModules-SaltInfoModules
+
+nav_toplevel: [home, annis, atomic, salt, pepper]
+
 # Build settings
 markdown: kramdown
 
