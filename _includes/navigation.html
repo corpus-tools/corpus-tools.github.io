@@ -19,7 +19,7 @@
             {% for p in site.pages %}
               {% assign path = {{p.url | split:"/"}} %}
               {% if path[1] == top  and path[2] == "index.html" %}
-                <li><a href="..{{p.url}}"><i class="fa icon-{{p.title}}"></i> {{p.title}}</a></li>
+                <li><a href="..{{p.url}}">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}</a></li>
               {% endif %}
             {% endfor %}
           {% endfor %}
