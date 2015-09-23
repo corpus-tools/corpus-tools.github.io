@@ -29,6 +29,7 @@
                 {%endfor%}
                 
                 <ul class="dropdown-menu">
+                <li><a href="{{p.url}}">{{p.title}}</a></li>
                 {%include subnavigation.html parent_url=parent_url page=p %}
                 </ul>
               {%else%}
