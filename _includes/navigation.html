@@ -14,14 +14,14 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           
-          {% for top in site.nav_toplevel %}
-            {% for p in site.pages %}
-              {% assign path = {{p.url | split:"/"}} %}
-              {% if path[1] == top  and path[2] == "index.html" %}
-                <li {%if path[1] == current_path[1]}} %}class="active"{%endif%}><a href="{{p.url}}">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}</a></li>
-              {% endif %}
-            {% endfor %}
+          {% assign toppages = site.pages | sort:"toppage_idx" %}
+          {% for p in toppages %}
+            {% assign path = {{p.url | split:"/"}} %}
+            {% if p.toppage_idx %}
+              <li {%if path[1] == current_path[1]}} %}class="active"{%endif%}><a href="{{p.url}}">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}</a></li>
+            {% endif %}
           {% endfor %}
+        
         </ul>
       </div><!--/.nav-collapse -->
     </div>
