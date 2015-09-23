@@ -1,0 +1,13 @@
+{%comment%}
+This does not support sub-sub pages yet but it could be implemented with a recursive inclusion
+{%endcomment%}
+
+{% for s in include.page.subpages %}
+  {% assign subpage_url = {{include.parent_url | append:"/" | append:s}} %}
+
+  {% for p in site.pages %}
+      {%if p.url == subpage_url%}
+      <li><a href="{{p.url}}">{{p.title}}</a></li>
+      {%endif%}
+  {% endfor %}
+{%endfor%}

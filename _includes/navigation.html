@@ -18,7 +18,23 @@
           {% for p in toppages %}
             {% assign path = {{p.url | split:"/"}} %}
             {% if p.toppage_idx %}
-              <li {%if path[1] == current_path[1]}} %}class="active"{%endif%}><a href="{{p.url}}">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}</a></li>
+              {%if p.subpages %}
+                <li {%if path[1] == current_path[1]}} %}class="active"{%endif%}><a href="{{p.url}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}<span class="caret"></span></a>
+
+                {% assign parent_url = "" %}
+                {%for pathelement in path %}
+                  {%unless forloop.last or pathelement == "" %}
+                    {% assign parent_url = parent_url | append:"/" | append:pathelement %}
+                  {%endunless%}
+                {%endfor%}
+                
+                <ul class="dropdown-menu">
+                {%include subnavigation.html parent_url=parent_url page=p %}
+                </ul>
+              {%else%}
+                <li {%if path[1] == current_path[1]}} %}class="active"{%endif%}><a href="{{p.url}}">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}</span></a>
+              {%endif%}
+                </li>
             {% endif %}
           {% endfor %}
         
