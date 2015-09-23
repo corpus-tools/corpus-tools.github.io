@@ -1,5 +1,4 @@
-{% assign pages_title = {{site.pages | map:"title"}} %}
-{% assign pages_url = {{site.pages | map:"url"}} %}
+{% assign current_path = page.url | split:"/"  %}
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -19,7 +18,7 @@
             {% for p in site.pages %}
               {% assign path = {{p.url | split:"/"}} %}
               {% if path[1] == top  and path[2] == "index.html" %}
-                <li><a href="{{p.url}}">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}</a></li>
+                <li {%if path[1] == current_path[1]}} %}class="active"{%endif%}><a href="{{p.url}}">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}</a></li>
               {% endif %}
             {% endfor %}
           {% endfor %}
