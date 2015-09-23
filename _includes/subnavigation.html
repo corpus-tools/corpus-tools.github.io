@@ -2,16 +2,19 @@
 This does not support sub-sub pages yet but it could be implemented with a recursive inclusion
 {%endcomment%}
 
-{% for s in include.page.subpages %}
+{% for subpage_def in include.page.subpages %}
   
-  {% for e in s %}     
-    {% if e[1] %}
+  {%comment%} There should be only one hash per list element but with the loop we can intepret both hashes and non-hashes in the same way {%endcomment%}
+  {% for e in subpage_def %}
+    {% if e == "|" %}
+      <li role="separator" class="divider"></li>
+    {% elsif e[1] %}
       {%comment%} This is a map from the name to the actual link {%endcomment%}
       <li><a href="{{e[1]}}">{{e[0]}}</a></li>
     {% else %}
       
       {%comment%} We only got the internal sub-url and have the get the page (with the title) by ourself {%endcomment%}
-      {% assign subpage_url = {{include.parent_url | append:"/" | append:s}} %}
+      {% assign subpage_url = {{include.parent_url | append:"/" | append:subpage_def}} %}
 
       {% for p in site.pages %}
           {%if p.url == subpage_url%}
