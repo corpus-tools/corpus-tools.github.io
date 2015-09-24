@@ -3,6 +3,11 @@ layout: default
 title: ANNIS
 toppage_idx: 2
 icon: icon-annis
+subpages:
+- download.html
+- "|"
+- documentation.html
+- aql.html
 ---
 
 
