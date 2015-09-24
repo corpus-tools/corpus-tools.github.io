@@ -1,0 +1,92 @@
+---
+layout: default
+title: Download
+---
+<article>
+<div class="page-header">
+<h1>Download ANNIS</h1>
+</div>
+
+<div>
+ANNIS is an open source project
+distributed under the Apache Public License, Version 2.0. The system
+requires a <a href="http://www.postgresql.org/">PostgreSQL</a>
+installation to run, and <strong>the server version</strong>
+also requires a running web-server (e.g. <a href="http://tomcat.apache.org/">Apache
+Tomcat</a> or <a  href="http://www.mortbay.org/jetty/">Jetty</a>).
+</div>
+
+<h2>ANNIS</h2> 
+
+<h3>Current ANNIS distribution: Version {{site.data.annis.version}} </h3>
+
+<p>
+For installation instructions see the <a href="documentation.html">documentation</a> (especially the ANNIS User Guide). 
+There are two editions of ANNIS, one for the local use on a desktop computer (ANNIS Kickstarter) and one which is only needed when running a web-server.
+</p>
+<ul>
+<li>ANNIS Kickstarter: <a href="https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-kickstarter-{{site.data.annis.version}}-distribution.zip" target="_blank">annis-kickstarter-{{site.data.annis.version}}-distribution.zip</a> (local installation for Windows, Linux and Mac)</li> 
+<li>ANNIS server:
+	<ul>
+  <li><a href="https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-gui-{{site.data.annis.version}}.war">annis-gui-{{site.data.annis.version}}.war</a> (server GUI distribution)</li>
+  <li><a href="https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-service-{{site.data.annis.version}}-distribution.tar.gz">annis-service-{{site.data.annis.version}}-distribution.tar.gz</a> (server service distribution)</li>
+  </ul>
+  </li>
+</ul>
+<p>
+See the <a href="https://github.com/korpling/ANNIS/releases/tag/annis-{{site.data.annis.version}}">change log</a> for detailled information on what was changed in this version.
+</p>
+
+
+<p>
+Source code (including the latest experimental developments) is available 
+together with our bugtracker/feature requests ('issues') at our <a href="http://github.com/korpling/ANNIS/"><i class="fa fa-github"></i> GitHub project</a>.
+</p>
+
+<h3>Older distributions</h3>
+
+<p>
+Older versions of ANNIS can be downloaded from <a href="https://github.com/korpling/ANNIS/releases">https://github.com/korpling/ANNIS/releases</a>.
+</p>
+
+</article>
+
+<article>
+<div class="page-header">
+<h1>Tools</h1>
+</div>
+
+<h2>Converters</h2>
+<p>
+For corpora to be imported
+into the system, they must be converted into it's
+native relational database format using the <a href="../pepper/index.html">Pepper converter</a>. 
+</p>
+
+<b>Other Converters:</b><br>
+<ul>
+   <li><a href="resources/catRelAnnis.pl">Concatenation script</a>
+in Perl to merge multiple relAnnis corpora (creates one big corpus containing input relANNIS corpora as subcorpora)</li>
+  <li><a
+ href="http://www.exmaralda.org/en_exceladdin.html"
+ target="_blank">Excel Plugin</a>
+(EXMARaLDA
+&lt;&gt; Excel and Excel to PAULA XML; Windows only)</li>
+</ul>
+Further documentation on the PAULA XML format may be found <a
+ href="http://www.sfb632.uni-potsdam.de/en/paula.html" target="new">here</a>.<br>
+ <h2>Annotation Tools</h2>
+ <p>ANNIS data is produced using a variety of annotation tools. Some tools that have been successfully used to create corpora for ANNIS in the past include (non-exhaustive list):</p>
+ <ul>
+ <li><a href="http://www.exmaralda.org/partitureditor.html">EXMARaLDA Partitur Editor</a></li>
+  <li><a href="http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/">TreeTagger</a></li>
+  <li><a href="http://arborator.ilpga.fr/">Arborator</a></li>
+  <li><a href="http://tla.mpi.nl/tools/tla-tools/elan/">ELAN</a></li>
+  <li><a href="http://sourceforge.net/projects/mmax2/">MMAX2</a></li>
+  <li><a href="http://www.wagsoft.com/RSTTool/">RST Tool</a></li>
+  <li><a href="http://corpling.uis.georgetown.edu/rstweb/info/">rstWeb</a></li>
+  <li><a href="https://webanno.github.io/webanno/">WebAnno</a></li>
+ <li>MS Excel</li>
+ </ul>
+
+</article>
