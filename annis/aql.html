@@ -8,9 +8,9 @@ title: ANNIS Query Language - AQL
 </div>
 
 <h2>Nodes and Edges</h2>
-<p>AQL is based on the concept of searching for node elements and edges between them. A search is formulated by defining each token, non-terminal node or annotation being searched for as an element. An element can be a token (simply text between quotes: <tt>&quot;dogs&quot;</tt> or else <tt>tok=&quot;dogs&quot;</tt>) or an attribute-value pair (such as <tt>lemma=&quot;dog&quot;</tt>, or optionally with a namespace: <tt>tiger:cat=&quot;PP&quot;</tt>). Note that different corpora can have completely different annotation names and values - these are not specified by ANNIS. Underspecified tokens or nodes in general may be specified using <tt>tok</tt> and <tt>node</tt> respectively.</p>
+<p>AQL is based on the concept of searching for node elements and edges between them. A search is formulated by defining each token, non-terminal node or annotation being searched for as an element. An element can be a token (simply text between quotes: <code>&quot;dogs&quot;</code> or else <code>tok=&quot;dogs&quot;</code>) or an attribute-value pair (such as <code>lemma=&quot;dog&quot;</code>, or optionally with a namespace: <code>tiger:cat=&quot;PP&quot;</code>). Note that different corpora can have completely different annotation names and values - these are not specified by ANNIS. Underspecified tokens or nodes in general may be specified using <code>tok</code> and <code>node</code> respectively.</p>
 <p>
-Once all elements are declared, relations between the elements (or edges) are specified which must hold between them. The elements are referred back to serially using variable numbers, and linguistic operators bind them together, e.g. <tt>#1 &gt; #2</tt> meaning the first element dominates the second in a tree or graph. Operators define the possible overlap and adjacency relations between annotation spans, as well as recursive hierarchical relations between nodes. Some operators also allow specific labes to be specified in addition to the operator (see the operator list below).
+Once all elements are declared, relations between the elements (or edges) are specified which must hold between them. The elements are referred back to serially using variable numbers, and linguistic operators bind them together, e.g. <code>#1 &gt; #2</code> meaning the first element dominates the second in a tree or graph. Operators define the possible overlap and adjacency relations between annotation spans, as well as recursive hierarchical relations between nodes. Some operators also allow specific labes to be specified in addition to the operator (see the operator list below).
 </p>
 <p>
 The following example, a query searching for German sentences with topicalized objects (i.e. with the word order object-verb-subject), illustrates these ideas in practice: </p>
@@ -80,7 +80,7 @@ Node names are given to nodes when they are defined and are placed before the '#
 
 <h2>Metadata</h2>
 <p>
-To specify metadata conditions which must apply to matches, add key-value pairs preceded by the reserved prefix <tt>meta::</tt>. Metadata may apply to corpora, sub-corpora, or individual documents within a corpus. For example, the following query finds sequences of two consecutive adverbs in sports documents (Genre="Sport"):
+To specify metadata conditions which must apply to matches, add key-value pairs preceded by the reserved prefix <code>meta::</code>. Metadata may apply to corpora, sub-corpora, or individual documents within a corpus. For example, the following query finds sequences of two consecutive adverbs in sports documents (Genre="Sport"):
 </p>
 <table>
 <tr><td class="code">pos="ADV" &amp; pos="ADV" &amp; &nbsp;&nbsp;</td>
@@ -132,7 +132,7 @@ Try out this query in the pcc2 corpus in ANNIS3
 
 <h2>RegEx Support </h2>
 <p>
-ANNIS supports RegEx natively in all token, annotation, edge label and metadata searches. In the query builder simply select <tt>~</tt> instead of <tt>=</tt> as the comparison operator. When entering a query manually use <tt>=</tt> but replace the double quotes around annotation and token values with slashes, e.g. <tt>lemma=/d.g/</tt> finds &quot;dog&quot; and &quot;dig&quot;. </p>
+ANNIS supports RegEx natively in all token, annotation, edge label and metadata searches. In the query builder simply select <code>~</code> instead of <code>=</code> as the comparison operator. When entering a query manually use <code>=</code> but replace the double quotes around annotation and token values with slashes, e.g. <code>lemma=/d.g/</code> finds &quot;dog&quot; and &quot;dig&quot;. </p>
 
 <h2>Example Queries</h2>
 <p>
@@ -241,13 +241,13 @@ B	    </strong>
 	  <td>labeled pointing relation</td>
 	  <td colspan="3"><center>
 <table cellpadding="0" cellspacing="0">
-<tr><td colspan="4" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tt>LABEL</tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+<tr><td colspan="4" align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>LABEL</code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="padding: 0in 0in 0in 0in; border-left: solid windowtext 1.0pt; border-top: solid windowtext 1.0pt">&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="padding: 0in 0in 0in 0in; border-right: solid windowtext 1.0pt; border-top: solid windowtext 1.0pt">&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
 <tr><td colspan="2" align="center">V</td><td style="border-right: solid windowtext 1.0pt">&nbsp;</td><td align="center">&nbsp;</td></tr>
 <tr><td colspan="2" align="center"><strong>A</strong></td><td colspan="2" align="center">&nbsp;<strong>B</strong></td>
 </table>
 	  </center></td><td>A labeled, directed relationship between two elements. Annotations can be specified with
-<tt>-&gt;LABEL[annotation="VALUE"]</tt>
+<code>-&gt;LABEL[annotation="VALUE"]</code>
 </td>
 	</tr>
 
@@ -256,14 +256,14 @@ B	    </strong>
 		  <td>indirect pointing relation</td>
 		  <td colspan="3"><center>
 <table cellpadding="0" cellspacing="0">
-<tr><td colspan="6" align="center"><tt>LABEL&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;LABEL</td></tr>
+<tr><td colspan="6" align="center"><code>LABEL&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;LABEL</code></td></tr>
 <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="padding: 0in 0in 0in 0in; border-left: solid windowtext 1.0pt; border-top: solid windowtext 1.0pt">&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="padding: 0in 0in 0in 0in; border-top: solid windowtext 1.0pt">&nbsp;&nbsp;&nbsp;&nbsp;</td><td style="padding: 0in 0in 0in 0in; border-right: solid windowtext 1.0pt; border-top: solid windowtext 1.0pt">&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
 <tr><td colspan="4" align="left">&nbsp;&nbsp;&nbsp;V</td><td style="border-right: solid windowtext 1.0pt">&nbsp;</td><td align="center">&nbsp;</td></tr>
 <tr><td colspan="3" align="center"><strong>A</strong></td><td colspan="3" align="center">&nbsp;<strong>B</strong></td>
 </table>
 
 		  </center></td><td>An indirect labeled relationship between two elements. The length of the chain may be specified with
-<tt>-&gt;LABEL n,m</tt> for relation chains of length n to m
+<code>-&gt;LABEL n,m</code> for relation chains of length n to m
 
 	</td>
 	</tr>
@@ -290,7 +290,7 @@ B	    </strong>
 	  <td>&nbsp;</td>
 	</tr>
 	<tr>
-	  <td>$</td>
+	  <td><code>$</code></td>
 	  <td>Common parent node</td>
 	  <td colspan="3"><center>
 	    x<br>
@@ -299,7 +299,7 @@ B	    </strong>
 	  </center></td>
 	  <td>&nbsp;</td>
 	  </tr>
-<tr><td>$*</td><td>Common ancestor node</td><td colspan="3"><center>x<br> |<br>
+<tr><td><code>$*</code></td><td>Common ancestor node</td><td colspan="3"><center>x<br> |<br>
  ...<br>
   / \<br>
   <strong>A B</strong>
@@ -308,7 +308,7 @@ B	    </strong>
 
  <tr>
   <td>
-  #x:arity=n
+  <code>#x:arity=n</code>
   </td>
   <td>
   Arity
@@ -321,7 +321,7 @@ B	    </strong>
  </tr>
  <tr>
   <td valign="center">
-  #x:tokenarity=n
+  <code>#x:tokenarity=n</code>
   </td>
   <td valign="center">
   Tokenarity
@@ -336,7 +336,7 @@ B	    </strong>
 
   <tr>
    <td valign="center">
-   #x:root
+   <code>#x:root</code>
    </td>
    <td valign="center">
    Root
