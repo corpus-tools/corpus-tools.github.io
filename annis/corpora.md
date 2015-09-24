@@ -2,6 +2,9 @@
 layout: default
 title: Corpora
 category: ANNIS
+redirect_from: 
+- "/corpora.html"
+- "/accessing.html"
 --- 
 <div class="page-header">
 # Public ANNIS installations
