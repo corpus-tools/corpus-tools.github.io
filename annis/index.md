@@ -43,14 +43,15 @@ The data from multiple annotations is imported via [Pepper]({{site.site_pepper}}
 
 **For detailed information on the latest version of ANNIS see the User Guide under [documentation](documentation.html)**
 
-<article id="supporters"
+<article id="supporters">
 
 <div class="page-header">
 ## Supported by
 </div>
 
 </article>
-
+<div class="funders">
 [![Logo Universität Potsdam]({{ site.url }}/img/uni_potsdam_logo.png){:height="100"}](http://www.uni-potsdam.de)
 [![Logo  Georgetown University]({{ site.url }}/img/Georgetown_Logo.png){:height="100"}](http://www.georgetown.edu/)
 [![Logo Humboldt-Universität zu Berlin]({{ site.url }}/img/hu_logo.gif){:height="100"}](https://www.hu-berlin.de/)
+</div>
