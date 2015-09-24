@@ -4,7 +4,11 @@ title: ANNIS
 toppage_idx: 2
 icon: icon-annis
 ---
+
+
+<div class="page-header">
 # ANNIS
+</div>
 
 <div class="image_wrap">
 ![screenshot of ANNIS main user interface]({{ site.url }}/img/annis3_full.png){:width="750"}
@@ -35,27 +39,17 @@ mapped onto an expressive format such as [PAULA](http://www.sfb632.uni-potsdam.d
 (Potsdamer Austauschformat Linguistischer Annotationen / Potsdam Interchange Format for Linguistic Annotations, developed in the SFB), 
 a stand-off multilayer XML format, which serves as the basis for further processing. 
 ANNIS provides the means for visualizing and retrieving this data. 
-The diagram below illustrates the data flow from multiple 
-annotation tools via [Pepper]({{site.site_pepper}}) into the ANNIS application. 
+The data from multiple annotations is imported via [Pepper]({{site.site_pepper}}) into the ANNIS application. 
 
 **For detailed information on the latest version of ANNIS see the User Guide under [documentation](documentation.html)**
 
-<div class="image_wrap">
-![Data workflow]({{ site.url }}/img/workflow.png){:width="600"}
+<article id="supporters"
+
+<div class="page-header">
+## Supported by
 </div>
 
-### [Contact](contact.html)
-
-Korpuslinguistik  
-Institut für deutsche Sprache und Linguistik  
-Humboldt-Universität zu Berlin  
-Unter den Linden 6  
-10099 Berlin  
-
-Office: Dorotheenstrasse 24, Room 3.333  
-Phone: +49-(0)30-2093-9720  
-Fax: +49-(0)30-2093-9729  
-Mail: ![mail address](ann.gif)
+</article>
 
 [![Logo Universität Potsdam]({{ site.url }}/img/uni_potsdam_logo.png){:height="100"}](http://www.uni-potsdam.de)
 [![Logo  Georgetown University]({{ site.url }}/img/Georgetown_Logo.png){:height="100"}](http://www.georgetown.edu/)
