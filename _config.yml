@@ -3,7 +3,7 @@
 email_snp: saltnpepper@lists.hu-berlin.de
 email_atomic: atomic-user@listserv.uni-jena.de
 baseurl: ""
-url: "http://annis-tools.org"
+url: "http://corpus-tools.org"
 bootstrap_dist: ../bootstrap/dist
 site_home: /home/index.html
 site_salt: /salt/

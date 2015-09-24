@@ -156,8 +156,8 @@ Former developers of ANNIS3 include Mario Frank, Tom Ruette and Benjamin Weißen
 </div>
 
 <div class="funders">
-[![Sonderforschungsbereich 632, Information structure: The linguistic means for structuring utterances, sentences and texts]({{ site.url }}/images/logos/sfb_logo_bridge_new.png){:width="150"}](https://www.sfb632.uni-potsdam.de/en/)
-[![Georgetown University]({{ site.url }}/images/logos/georgetownlogo.png){:width="120"}](https://corpling.uis.georgetown.edu/)
-[![Deutsche Forschungsgemeinschaft (DFG)]({{ site.url }}/images/logos/dfg_logo_schriftzug_blau.png){:width="250"}](http://www.dfg.de/en/)
-[![Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology]({{ site.url }}/images/logos/husiegel_bw_gross.png){:width="100"}](https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&amp;cl=en)
+[![Sonderforschungsbereich 632, Information structure: The linguistic means for structuring utterances, sentences and texts](.././images/logos/sfb_logo_bridge_new.png){:width="150"}](https://www.sfb632.uni-potsdam.de/en/)
+[![Georgetown University](.././images/logos/georgetownlogo.png){:width="120"}](https://corpling.uis.georgetown.edu/)
+[![Deutsche Forschungsgemeinschaft (DFG)](.././images/logos/dfg_logo_schriftzug_blau.png){:width="250"}](http://www.dfg.de/en/)
+[![Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology](.././images/logos/husiegel_bw_gross.png){:width="100"}](https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&amp;cl=en)
 </div>
