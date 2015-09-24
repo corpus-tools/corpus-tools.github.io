@@ -12,7 +12,7 @@ This does not support sub-sub pages yet but it could be implemented with a recur
       {%comment%} This is a map from the name to the actual link {%endcomment%}
       {% assign firstCharOfLink = e[1] | truncate:1,"" %}
       {% if firstCharOfLink == "#" %}
-      <li><a href="{{include.page.url}}{{e[1]}}">{{e[0]}}</a></li>
+      <li><a href="{{include.page.url | prepend: site.baseurl }}{{e[1]}}">{{e[0]}}</a></li>
       {% else %}
       <li><a href="{{e[1]}}">{{e[0]}}</a></li>
       {% endif %}
@@ -23,7 +23,7 @@ This does not support sub-sub pages yet but it could be implemented with a recur
 
       {% for p in site.pages %}
           {%if p.url == subpage_url%}
-          <li><a href="{{p.url}}">{{p.title}}</a></li>
+          <li><a href="{{p.url | prepend: site.baseurl}}">{{p.title}}</a></li>
           {%endif%}
       {% endfor %}
     {% endif %}
