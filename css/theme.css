@@ -21,6 +21,11 @@ body {
  color: #ffffff;
  text-shadow: 2px 2px 4px #0d3e2e;
 }
+.jumbotron h1 {
+ background: #21b384;
+ color: #ffffff;
+ text-shadow: 2px 2px 4px #0d3e2e;
+}
 
 a{
  color: #21b384;
@@ -30,6 +35,12 @@ a{
  color: #21b384;
  text-shadow: 2px 2px 4px #EEEBEB;
 }
+
+h1, h3, h3, h4, h5, h6{
+ color: #21b384;
+ text-shadow: 2px 2px 4px #EEEBEB;
+}
+
 img {
     vertical-align: text-top;
 }
@@ -86,4 +97,13 @@ background-color: #222;
 
 .funders{
 	vertical-align: middle;
+}
+
+.image_wrap {
+	text-align: center;
+}
+.image_wrap img {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
 }
