@@ -18,7 +18,7 @@ subpages:
 </div>
 
 <div class="image_wrap">
-![screenshot of ANNIS main user interface]({{ site.url }}/img/annis3_full.png){:width="750"}
+![screenshot of ANNIS main user interface](images/annis3_full.png){:width="750"}
 </div>
 
 ANNIS is an open source, cross platform (Linux, Mac, Windows), 
@@ -51,10 +51,10 @@ The data from multiple annotations is imported via [Pepper]({{site.site_pepper}}
 **For detailed information on the latest version of ANNIS see the User Guide under [documentation](documentation.html)**
 
 <article>
+
 <div class="page-header">
 # Challenges and Goals
 </div>
-</article>
 
 ## Diversity of primary data
 
@@ -151,7 +151,8 @@ Former developers of ANNIS3 include Mario Frank, Tom Ruette and Benjamin Weißen
 </div>
 
 <div class="funders">
-[![Logo Universität Potsdam]({{ site.url }}/img/uni_potsdam_logo.png){:height="100"}](http://www.uni-potsdam.de)
-[![Logo  Georgetown University]({{ site.url }}/img/Georgetown_Logo.png){:height="100"}](http://www.georgetown.edu/)
-[![Logo Humboldt-Universität zu Berlin]({{ site.url }}/img/hu_logo.gif){:height="100"}](https://www.hu-berlin.de/)
+[![Sonderforschungsbereich 632, Information structure: The linguistic means for structuring utterances, sentences and texts]({{ site.url }}/images/logos/sfb_logo_bridge_new.png){:width="150"}](https://www.sfb632.uni-potsdam.de/en/)
+[![Georgetown University]({{ site.url }}/images/logos/georgetownlogo.png){:width="120"}](https://corpling.uis.georgetown.edu/)
+[![Deutsche Forschungsgemeinschaft (DFG)]({{ site.url }}/images/logos/dfg_logo_schriftzug_blau.png){:width="250"}](http://www.dfg.de/en/)
+[![Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology]({{ site.url }}/images/logos/husiegel_bw_gross.png){:width="100"}](https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&amp;cl=en)
 </div>
