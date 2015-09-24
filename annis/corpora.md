@@ -83,9 +83,9 @@ information status, TEI structure
       <td>
       pcc2<br/>
 [<a
- href="resources/pcc2_PAULA.zip">PAULA</a>,
+ href="../corpora/pcc2_PAULA.zip">PAULA</a>,
       <a
- href="resources/pcc2_relANNIS.zip" >ANNIS</a>]
+ href="../corpora/pcc2_relANNIS.zip" >ANNIS</a>]
       </td>
       <td>
   Potsdam
@@ -111,9 +111,9 @@ information structure
       <td>
       subtok.demo<br/>
 [<a
- href="resources/subtok.demo_PAULA.zip">PAULA</a>,
+ href="../corpora/subtok.demo_PAULA.zip">PAULA</a>,
       <a
- href="resources/subtok.demo_relANNIS.zip">ANNIS</a>]
+ href="../corpora/subtok.demo_relANNIS.zip">ANNIS</a>]
       </td>
       <td>
   Subtoken Demo
@@ -136,9 +136,9 @@ information structure
       <td>
       dialog.demo<br/>
 [<a
- href="resources/dialog.demo_EXMARaLDA.zip">EXMARaLDA</a>,
+ href="../corpora/dialog.demo_EXMARaLDA.zip">EXMARaLDA</a>,
       <a
- href="resources/dialog.demo_relANNIS.zip"
+ href="../corpora/dialog.demo_relANNIS.zip"
  >ANNIS</a>]
       </td>
       <td>
@@ -162,9 +162,9 @@ information structure
       <td>
 parallel.sample <br>
 [<a 
- href="resources/parallel.sample.zip">PAULA</a>,
+ href="../corpora/parallel.sample.zip">PAULA</a>,
       <a
- href="resources/parallel.sample_relAnnis.zip"
+ href="../corpora/parallel.sample_relAnnis.zip"
  >ANNIS</a>]
       </td>
       <td>
@@ -192,9 +192,9 @@ alignment type (good/fuzzy)
 		                    a5.hausa.umarnin.uwa<br>
 		                    [<a
 		                         
-		                         href="resources/a5.hausa.umarnin.uwa_V2_TreeTagger.zip">TreeTagger</a>,
+		                         href="../corpora/a5.hausa.umarnin.uwa_V2_TreeTagger.zip">TreeTagger</a>,
 		                         <a
-		                              href="resources/a5.hausa.umarnin.uwa_V2_relANNIS.zip"
+		                              href="../corpora/a5.hausa.umarnin.uwa_V2_relANNIS.zip"
 		                              >ANNIS</a>]
 		               </td>
 		               <td>
@@ -224,9 +224,9 @@ b4.tatian2.0
 <br>
 [<a
  
- href="resources/b4.tatian2.0.zip">PAULA</a>,
+ href="../corpora/b4.tatian2.0.zip">PAULA</a>,
       <a
- href="resources/b4.tatian2.0_relAnnis.zip"
+ href="../corpora/b4.tatian2.0_relAnnis.zip"
  >ANNIS</a>]
       </td>
       <td>
@@ -259,9 +259,9 @@ b7.wolof.web.V2
 <br>
 [<a
  
- href="resources/b7.wolof.web.V2.zip">TreeTagger</a>,
+ href="../corpora/b7.wolof.web.V2.zip">TreeTagger</a>,
       <a
- href="resources/b7.wolof.web.V2_relANNIS.zip"
+ href="../corpora/b7.wolof.web.V2_relANNIS.zip"
  >ANNIS</a>]
       </td>
       <td>
@@ -292,9 +292,9 @@ b7.wolof.wiki.V4
 <br>
 [<a
  
- href="resources/b7.wolof.wiki.V4.zip">TreeTagger</a>,
+ href="../corpora/b7.wolof.wiki.V4.zip">TreeTagger</a>,
       <a
- href="resources/b7.wolof.wiki.V4_relANNIS.zip"
+ href="../corpora/b7.wolof.wiki.V4_relANNIS.zip"
  >ANNIS</a>]
       </td>
       <td>
@@ -324,9 +324,9 @@ sentence segmentation, English translations
       d2.20samplesDEU<br>
       [<a
  
- href="resources/d2.20samplesDEU.zip">PAULA</a>,
+ href="../corpora/d2.20samplesDEU.zip">PAULA</a>,
       <a
- href="resources/d2.20samplesDEU_relAnnis.zip"
+ href="../corpora/d2.20samplesDEU_relAnnis.zip"
  >ANNIS</a>]
       </td>
       <td>
@@ -355,9 +355,9 @@ grammatical function, morphology
       <td style="white-space:nowrap">
       Aeschylus.Persae.L1-18<br>
       [<a
- href="resources/Aeschylus.Persae.L1-18_PAULA.zip">PAULA</a>,
+ href="../corpora/Aeschylus.Persae.L1-18_PAULA.zip">PAULA</a>,
       <a
- href="resources/Aeschylus.Persae.L1-18_relAnnis.zip"
+ href="../corpora/Aeschylus.Persae.L1-18_relAnnis.zip"
  >ANNIS</a>]
       </td>
       <td>
@@ -388,9 +388,9 @@ Mambrini / <a href="http://www.perseus.tufts.edu/hopper/"
                  fuerstinnenkorrespondenz<br>
                  [<a
                       
-                      href="resources/fuerstinnenkorrespondenz_exb.zip">EXMARaLDA</a>,
+                      href="../corpora/fuerstinnenkorrespondenz_exb.zip">EXMARaLDA</a>,
                       <a
-                           href="resources/fuerstinnenkorrespondenz_relANNIS.zip"
+                           href="../corpora/fuerstinnenkorrespondenz_relANNIS.zip"
                            >ANNIS</a>]
             </td>
             <td>
@@ -419,9 +419,9 @@ Mambrini / <a href="http://www.perseus.tufts.edu/hopper/"
                  Nestorchronik.sample<br>
                  [<a
                       
-                      href="resources/Nestorchronik.sample_PAULA.zip">PAULA</a>,
+                      href="../corpora/Nestorchronik.sample_PAULA.zip">PAULA</a>,
                       <a
-                           href="resources/Nestorchronik.sample_relAnnis.zip"
+                           href="../corpora/Nestorchronik.sample_relAnnis.zip"
                            >ANNIS</a>]
             </td>
             <td>
@@ -453,9 +453,9 @@ Mambrini / <a href="http://www.perseus.tufts.edu/hopper/"
                  SMULTRON_Banana<br>
                  [<a
                       
-                      href="resources/SMULTRON_Banana_PAULA.zip">PAULA</a>,
+                      href="../corpora/SMULTRON_Banana_PAULA.zip">PAULA</a>,
                       <a
-                           href="resources/SMULTRON_Banana_relAnnis.zip"
+                           href="../corpora/SMULTRON_Banana_relAnnis.zip"
                            >ANNIS</a>]
             </td>
             <td>
@@ -510,9 +510,9 @@ Mambrini / <a href="http://www.perseus.tufts.edu/hopper/"
                 Align1_992<br>
                  [<a
                       
-                      href="resources/OldOccitanPaula.zip">PAULA</a>,
+                      href="../corpora/OldOccitanPaula.zip">PAULA</a>,
                       <a
-                           href="resources/OldOccitanRelAnnis.zip"
+                           href="../corpora/OldOccitanRelAnnis.zip"
                            >ANNIS</a>]
             </td>
             <td>
