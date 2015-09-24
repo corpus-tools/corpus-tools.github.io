@@ -110,6 +110,7 @@ A token in Salt is not bound to a linguistic unit - in this example we show how 
 For tokenizing a primary text, we need the character offset of the start and the end position for each token in the text. The word "Is" in the sample text, for instance, has the start position 0 and the end position 1. Note that the positions are counted **between** two characters.
 
 <table>
+<tr>
 <td></td><td>Is</td><td></td><td>BLANK</td><td></td><td>this</td><td></td><td>BLANK</td><td></td><td>example</td><td></td><td>BLANK</td><td></td><td>more</td><td></td><td>BLANK</td><td></td><td>complicated</td><td></td><td>BLANK</td><td></td><td>than</td><td></td><td>BLANK</td><td></td><td>it</td><td></td><td>BLANK</td><td></td><td>appears</td><td></td><td>BLANK</td><td></td><td>to</td><td></td><td>BLANK</td><td></td><td>be</td><td></td><td>?</td><td></td>
 </tr>
 <tr>
@@ -302,7 +303,7 @@ docGraph.addSRelation(spanRel);
 
 Now we will show another type of edge, which renders a more loose relation between nodes. In contrast to _SSpanningRelations_ and _SDominanceRelations_, which can only connect specific kinds of nodes, the type _SPointingRelation_ can connect _SToken_, _SSpan_ and _SStructure_ nodes with each other and vice versa. These edges for instance can be used to model anaphoric relations between words, phrases, sentences and so on. Edges in general can be typed with a linguistic meaning by setting their attribute _SType_. We illustrate that by connecting the token covering the word "it" to the set of tokens "the" and "example". To bundle the words "the" and "example", we first have to create a span covering both tokens "the" and "example" following the same mechanism as shown in section [Spans](#spans).
 
-<img src="./images/userGuide/salt_pointRel.svg" width="30%">
+<img src="./images/userGuide/salt_pointRel.svg" style="width:30%" alt="Salt graph pointing relations">
 
 The following snippet shows the creation of the model shown in the figure.
 
@@ -390,7 +391,7 @@ List&lt;SRelation> in= (List&lt;SRelation>)(List&lt;? extends SRelation>)docGrap
 </pre>
 So far we havn't talked about how to traverse the document graph. This is done in section [Traversing graphs](#traversing). 
 
-### <a name="persistAndLoad">Persist and Load a Model<a>
+### <a name="persistAndLoad">Persist and Load a Model</a>
 
 Persisting a model is very easy: Only a nonempty _SaltProject_ object and a valid local URI are needed. The following snippet shows how to persist an entire model.
 
