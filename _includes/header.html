@@ -3,7 +3,7 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>
-		{% if page.url == site.site_home %} annis-tools {% elsif {{path[1]}} == 'salt' %} <span class="icon-salt"></span> Salt {% elsif {{path[1]}} == 'pepper' %} <span class="icon-pepper-o"></span> Pepper {% elsif {{path[1]}} == 'annis' %}<span class="icon-annis"></span> ANNIS {% elsif {{path[1]}}  ==  'atomic' %}<i class="icon-atomic"></i> Atomic{% endif %}
+		{% if page.url == site.site_home %} {{site.title}} {% elsif {{path[1]}} == 'salt' %} <span class="icon-salt"></span> Salt {% elsif {{path[1]}} == 'pepper' %} <span class="icon-pepper-o"></span> Pepper {% elsif {{path[1]}} == 'annis' %}<span class="icon-annis"></span> ANNIS {% elsif {{path[1]}}  ==  'atomic' %}<i class="icon-atomic"></i> Atomic{%else%}{{site.title}}{% endif %}
         </h1>
         <p>
 {% if page.url == site.site_home %}

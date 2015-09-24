@@ -23,15 +23,11 @@ module_annis: https://github.com/korpling/pepperModules-ANNISModules
 module_exmaralda: https://github.com/korpling/pepperModules-EXMARaLDAModules
 module_saltInfo: https://github.com/korpling/pepperModules-SaltInfoModules
 
-# Build settings
-markdown: kramdown
-
-# ######################################### annis_old #######################################
 
 # Site settings
 email: "annis-admin@ling.uni-potsdam.de"
-title: "ANNIS: Search and Visualization in Multilayer Linguistic Corpora"
-description: "ANNIS is a browser-based search and visualization platform for multilayer linguistic corpora, developed at Humboldt University in Berlin and Georgetown University."
+title: "corpus-tools.org"
+description: "A collection of tools to process your linguistic data: annotation, conversion, analysis"
 github_username:  korpling
 
 # Build settings
