@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Corpora
+category: ANNIS
 --- 
 <div class="page-header">
 # Public ANNIS installations

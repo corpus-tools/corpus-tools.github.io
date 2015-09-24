@@ -5,7 +5,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>{{page.title}}</title>
+    <title>{%if page.category %}{{page.category}}: {% endif %}{{page.title}} ({{site.title}}) </title>
     <!-- annis-tools icon -->
     <link rel="icon" href="./images/favicon.ico"/>
     <!-- Bootstrap core CSS -->

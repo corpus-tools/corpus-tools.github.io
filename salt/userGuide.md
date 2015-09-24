@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Quick User Guide
+category: Salt
 ---
 # Quick User Guide
 

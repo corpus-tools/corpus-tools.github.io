@@ -11,7 +11,7 @@ site_salt_main: /salt/index.html
 site_corpora: /corpora/
 site_pepper: /pepper/
 site_pepper_main: /pepper/index.html
-site_annis: /index.html
+site_annis: /annis/
 site_atomic: /atomic/index.html
 css_url: ../css
 github_pepper: https://github.com/korpling/pepper
