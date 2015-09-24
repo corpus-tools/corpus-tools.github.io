@@ -18,15 +18,16 @@ title: Demos
 			<p>The pcc2 corpus is a small excerpt from the <a href="http://angcl.ling.uni-potsdam.de/resources/pcc.html">Potsdam Commentary Corpus</a>. It contains the two documents <i>11299</i> and <i>4282</i>. The corpus is annotated on multiple layers: constituents, dependencies, coreference, rhetorical structure and information structure.</p>
 			<p>The aim of this workflow is to convert the corpus from its source format PAULA into its target format, the ANNIS format.</p>
 			 <table class="table-striped">
-				<tr><td width="30%"><strong>corpus</strong></td><td width="50%"><a href="..{{site.site_corpora}}pcc2.zip"><i class="fa fa-download"></i> Potsdam Commentary Corpus</a></td></tr>
+				<tr><td style="width:30%;"><strong>corpus</strong></td><td style="width:50%;"><a href="..{{site.site_corpora}}pcc2.zip"><i class="fa fa-download"></i> Potsdam Commentary Corpus</a></td></tr>
 				<tr><td><strong>importer</strong></td><td><a href="{{site.module_paula}}">{{site.module_paula}}</a></td></tr>
 				<tr><td><strong>exporter</strong></td><td><a href="{{site.module_annis}}">{{site.module_annis}}</a></td></tr>
 			 </table>
 			 <br/>
-			 <center>
+			 <div style="text-align:center">
 			 <img onclick="window.open('./images/sampleWorkflow_pcc2.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
-                    class="enlarge" src="./images/sampleWorkflow_pcc2.svg" width="60%"/>
-             </center>
+                    class="enlarge" src="./images/sampleWorkflow_pcc2.svg" style="width:60%;"
+                    alt="Workflow PAULA -> ANNIS"/>
+             </div>
              <p>The following workflow assumes the source file to be in a folder named <i>paula</i>, which is in the same folder as the workflow description file itself. The target format will be exported to a folder named <i>annis</i>.</p>
             <pre>
 &lt;?xml version="1.0" ?>
@@ -46,15 +47,16 @@ title: Demos
 			<p>The Tatian Corpus of Deviating Examples T-CODEX 2.1, provides morpho-syntactic and information structural annotation of parts of the Old High German translation attested in the MS St. Gallen Cod. 56, traditionally called the OHG Tatian, one of the largest prose texts from the classical OHG period. This corpus was designed and annotated by Project B4 of Collaborative Research Center on Information Structure at Humboldt University Berlin. .</p>
 			<p>The aim of this workflow is to create a homepage for this corpus. This is done by the SaltInfoExporter, which produces an xml output for further processing and an html output. The html output is an overview of all annotations (names, values, occurences) used in the corpus. </p>
 			 <table class="table-striped">
-				<tr><td width="30%"><strong>corpus</strong></td><td width="50%"><a href="..{{site.site_corpora}}b4.tatian.zip"><i class="fa fa-download"></i> b4.tatian</a></td></tr>
+				<tr><td style="width:30%;"><strong>corpus</strong></td><td style="width:50%;"><a href="..{{site.site_corpora}}b4.tatian.zip"><i class="fa fa-download"></i> b4.tatian</a></td></tr>
 				<tr><td><strong>importer</strong></td><td><a href="{{site.module_exmaralda}}">{{site.module_exmaralda}}</a></td></tr>
 				<tr><td><strong>exporter</strong></td><td><a href="{{site.module_saltInfo}}">{{site.module_saltInfo}}</a></td></tr>
 			 </table>
 			 <br/>
-			 <center>
+			 <div style="text-align:center;">
 			 <img onclick="window.open('./images/sampleWorkflow_tatian.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
-                    class="enlarge" src="./images/sampleWorkflow_tatian.svg" width="60%"/>
-             </center>
+                    class="enlarge" src="./images/sampleWorkflow_tatian.svg" style="width:60%"
+                    alt="Workflow EXMARaLDA -> corpus homepage"/>
+             </div>
              <p>The following workflow assumes the source corpus to be in a folder named <i>exmaralda</i>, which is in the same folder as the workflow description file itself. The corpus homepage will be exported to a folder named <i>site</i>. Since the corpus homepage can be customized by adapting the file <i>customization.json</i>, this file and referred images are stored in a folder named <i>custom</i>. At the end of the conversion process, these files are copied into the target folder <i>site</i>. This is done by the customization property <i>pepper.after.copyRes</i>, which copies any files from a source to a target folder (source -> target) when the conversion process was done.</p>
             <pre>
 &lt;?xml version="1.0" ?>

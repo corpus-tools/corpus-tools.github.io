@@ -11,9 +11,9 @@ subpages:
 - library.html
 - demos.html
 ---
-<center>
-        <img src="./images/sir_pepper.svg" width="80%"/>
-    </center>
+<div style="text-align:center;">
+	<img src="./images/sir_pepper.svg" style="width:80%;" alt="The knight Sir Pepper fighting against the format monster" />
+</div>
     <article>
         <div class="page-header">
             <h1>About Pepper</h1>
@@ -111,7 +111,7 @@ subpages:
             <h1>Modules</h1>
         </div>
         <div class="content">
-            <p> The core of Pepper are the Pepper modules. The modules map data from a format to
+            <div> The core of Pepper are the Pepper modules. The modules map data from a format to
                 Salt or from Salt to a format. Modules manipulate and enhance the data during the
                 conversion process. Pepper provides the integration of modules via an embedded plug-in
                 mechanism based on the OSGi framework. To install further modules into an existing
@@ -120,7 +120,7 @@ subpages:
 pepper>is PATH_TO_PLUGIN</pre> To update a module, open the Pepper console and
                 use command 'update' <pre>
 update GROUP_ID::ARTIFACT_ID::REPOSITORY</pre>
-            </p>
+            </div>
             <h2>All known Pepper modules</h2>
             <div class="content">
                 <p> Please find here a list of <a
@@ -144,18 +144,18 @@ update GROUP_ID::ARTIFACT_ID::REPOSITORY</pre>
         <div class="content">
             <p> Pepper is published under the Open Source license {{site.apache_license}}. We want to enable everyone to use the software without
                 restrictions, and also enable the community to take part in its developement. </p>
-            <p>
+            <div>
                  <h4>Found a bug or have any feature request?</h4> Please let us know what you have
                 found, or which ideas for enhancements you have. Please leave us an issue on
                 GitHub at <a href="{{ site.github_pepper }}/pepper/issues"><i class="fa fa-github"></i>
-                    Pepper</a> or write us an e-mail: <a href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </p>
-            <p>
+                    Pepper</a> or write us an e-mail: <a href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </div>
+            <div>
                 <h4>Want to contribute to the project?</h4> For both Salt and Pepper, we have published the source code at the GitHub platform at <a
                     href="{{ site.github_pepper }}"><i class="fa fa-github"></i> Pepper</a>. If you are interested in contributing
                 to the project, please feel free to fork or clone it. We are happy about any
                 suggestions, bug reports, bug fixes, and so on. It would be nice if you keep us
                 informed about your ideas and enhancements: Please write us an e-mail: <a
-                    href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </p>
+                    href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>. </div>
         </div>
     </article>
     <article id="publications">
@@ -220,23 +220,22 @@ update GROUP_ID::ARTIFACT_ID::REPOSITORY</pre>
         <div class="page-header">
             <h1>Supported by</h1>
         </div>
-        <div><center>
-                <a href="https://www.sfb632.uni-potsdam.de/en/">
-                    <img width="150px" src=".././images/logos/sfb_logo_bridge_new.png"
-                        alt="Sonderforschungsbereich 632, Information structure: The linguistic means for structuring utterances, sentences and texts "
-                    />
-                </a>&nbsp;&nbsp;&nbsp; <a href="http://www.dfg.de/en/">
-                    <img width="250px" src=".././images/logos/dfg_logo_schriftzug_blau.png"/>
-                </a>&nbsp;&nbsp;&nbsp; <a
-                    href="https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&cl=en">
-                    <img width="100px" src=".././images/logos/husiegel_bw_gross.png"
-                        alt="Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology"
-                    />
-                </a>&nbsp;&nbsp;&nbsp; <a href="http://www.inria.fr/en">
-                    <img width="150px" src=".././images/logos/inr_logo_corpo_UK_coul.png"/>
-                </a>&nbsp;&nbsp;&nbsp; <a href="http://de.clarin.eu/en/">
-                    <img width="120px" src=".././images/logos/clarin-d.jpg"/>
-                </a>
-            </center>
+        <div class="funders">
+			
+		<a href="https://www.sfb632.uni-potsdam.de/en/">
+			<img width="150" src=".././images/logos/sfb_logo_bridge_new.png" alt="Sonderforschungsbereich 632, Information structure: The linguistic means for structuring utterances, sentences and texts "/>
+		</a>
+		
+		<a href="http://www.dfg.de/en/">
+			<img width="250" src=".././images/logos/dfg_logo_schriftzug_blau.png" alt="Deutsche Forschungsgemeinschaft (DFG)" />
+		</a>
+		
+		<a href="https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&amp;cl=en">
+			<img width="100" src=".././images/logos/husiegel_bw_gross.png" alt="Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology"/>
+		</a>
+		
+		<a href="http://www.inria.fr/en">
+			<img width="150" src=".././images/logos/inr_logo_corpo_UK_coul.png" alt="INRIA"/>
+		</a>
         </div>
     </article>
