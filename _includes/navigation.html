@@ -33,7 +33,7 @@
                 {%include subnavigation.html parent_url=parent_url page=p %}
                 </ul>
               {%else%}
-                <li {%if path[1] == current_path[1]}} %}class="active"{%endif%}><a href="{{p.url}}">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}</span></a>
+                <li {%if path[1] == current_path[1]}} %}class="active"{%endif%}><a href="{{p.url}}">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}</a>
               {%endif%}
                 </li>
             {% endif %}
