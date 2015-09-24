@@ -9,6 +9,7 @@ subpages:
 - "|"
 - documentation.html
 - aql.html
+- visualizations.html
 ---
 
 
