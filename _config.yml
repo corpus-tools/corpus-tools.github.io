@@ -3,7 +3,7 @@
 email_snp: saltnpepper@lists.hu-berlin.de
 email_atomic: atomic-user@listserv.uni-jena.de
 baseurl: ""
-url: "http://annis-tools.org"
+url: "http://corpus-tools.org"
 bootstrap_dist: ../bootstrap/dist
 site_home: /home/index.html
 site_salt: /salt/
@@ -11,7 +11,7 @@ site_salt_main: /salt/index.html
 site_corpora: /corpora/
 site_pepper: /pepper/
 site_pepper_main: /pepper/index.html
-site_annis: /index.html
+site_annis: /annis/
 site_atomic: /atomic/index.html
 css_url: ../css
 github_pepper: https://github.com/korpling/pepper
@@ -22,17 +22,17 @@ module_paula: https://github.com/korpling/pepperModules-PAULAModules
 module_annis: https://github.com/korpling/pepperModules-ANNISModules
 module_exmaralda: https://github.com/korpling/pepperModules-EXMARaLDAModules
 module_saltInfo: https://github.com/korpling/pepperModules-SaltInfoModules
-# Build settings
-markdown: kramdown
 
-# ######################################### annis_old #######################################
 
 # Site settings
 email: "annis-admin@ling.uni-potsdam.de"
-title: "ANNIS: Search and Visualization in Multilayer Linguistic Corpora"
-description: "ANNIS is a browser-based search and visualization platform for multilayer linguistic corpora, developed at Humboldt University in Berlin and Georgetown University."
+title: "corpus-tools.org"
+description: "A collection of tools to process your linguistic data: annotation, conversion, analysis"
 github_username:  korpling
 
 # Build settings
 kramdown: 
   parse_block_html: true
+
+gems:
+  - jekyll-redirect-from

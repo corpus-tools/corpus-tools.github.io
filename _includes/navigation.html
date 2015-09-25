@@ -1,0 +1,45 @@
+{% assign current_path = page.url | split:"/"  %}
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/home/">{{site.title}}</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          {% assign toppages = site.pages | sort:"toppage_idx" %}
+          {% for p in toppages %}
+            {% assign path = {{p.url | split:"/"}} %}
+            {% if p.toppage_idx %}
+              {%if p.subpages %}
+                <li {%if path[1] == current_path[1]}} %}class="active"{%endif%}><a href="{{p.url}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}<span class="caret"></span></a>
+
+                {% assign parent_url = "" %}
+                {%for pathelement in path %}
+                  {%unless forloop.last or pathelement == "" %}
+                    {% assign parent_url = parent_url | append:"/" | append:pathelement %}
+                  {%endunless%}
+                {%endfor%}
+                
+                <ul class="dropdown-menu">
+                <li><a href="{{p.url | prepend: site.baseurl}}">{{p.title}}</a></li>
+                {%include subnavigation.html parent_url=parent_url page=p %}
+                </ul>
+              {%else%}
+                <li {%if path[1] == current_path[1]}} %}class="active"{%endif%}><a href="{{p.url | prepend: site.baseurl }}">{%if p.icon %} <i class="fa {{p.icon}}"></i> {%endif%}{{p.title}}</a>
+              {%endif%}
+                </li>
+            {% endif %}
+          {% endfor %}
+        
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>

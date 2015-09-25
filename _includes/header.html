@@ -1,19 +1,22 @@
+{% assign path = page.url | split:"/"  %}
+
 <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>
-		{% if page.url == site.site_home %} annis-tools {% elsif page.url contains 'salt' %} <span class="icon-salt"></span> Salt {% elsif page.url contains 'pepper' %} <span class="icon-pepper-o"></span> Pepper {% elsif page.url contains 'annis' %} ANNIS {% elsif page.url contains 'atomic' %}<i class="icon-atomic"></i> Atomic{% endif %}
+		{% if page.url == site.site_home %} {{site.title}} {% elsif {{path[1]}} == 'salt' %} <span class="icon-salt"></span> Salt {% elsif {{path[1]}} == 'pepper' %} <span class="icon-pepper-o"></span> Pepper {% elsif {{path[1]}} == 'annis' %}<span class="icon-annis"></span> ANNIS {% elsif {{path[1]}}  ==  'atomic' %}<i class="icon-atomic"></i> Atomic{%else%}{{site.title}}{% endif %}
         </h1>
         <p>
 {% if page.url == site.site_home %}
 A collection of tools to process your linguistic data: <em>annotation</em>, <em>conversion</em>, <em>analysis</em>
-{% elsif page.url contains 'salt' %}
+{% elsif {{path[1]}} == 'salt' %}
 A powerful, tagset-independent and theory-neutral meta model and API for storing, manipulating, and representing nearly all types of linguistic data
-{% elsif page.url contains 'pepper' %}
+{% elsif {{path[1]}} == 'pepper' %}
 A highly extensible plattform for conversion and manipulation of linguistic data between an unbound set of formats. Pepper can be used stand-alone as a command line interface, or be integrated as an API into other software products.
-{% elsif page.url contains 'annis' %}
-This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-{% elsif page.url contains 'atomic' %}
+{% elsif {{path[1]}} == 'annis' %}
+A web browser-based search and visualization architecture for complex multilayer linguistic corpora with diverse types of annotation. 
+{% elsif {{path[1]}} == 'atomic' %}
 A multilevel corpus annotation tool – and platform – for the desktop
 {% endif %}
+
 </p>
       </div>

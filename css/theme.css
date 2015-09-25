@@ -21,6 +21,15 @@ body {
  color: #ffffff;
  text-shadow: 2px 2px 4px #0d3e2e;
 }
+.jumbotron h1 {
+ background: #21b384;
+ color: #ffffff;
+ text-shadow: 2px 2px 4px #0d3e2e;
+}
+
+footer.jumbotron {
+ margin-top: 10px;
+}
 
 a{
  color: #21b384;
@@ -30,6 +39,12 @@ a{
  color: #21b384;
  text-shadow: 2px 2px 4px #EEEBEB;
 }
+
+h1, h3, h3, h4, h5, h6{
+ color: #21b384;
+ text-shadow: 2px 2px 4px #EEEBEB;
+}
+
 img {
     vertical-align: text-top;
 }
@@ -88,3 +103,32 @@ background-color: #222;
 	vertical-align: middle;
 	text-align: center;
 }
+
+.image_wrap {
+	text-align: center;
+}
+.image_wrap img {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+.thumbnail
+{
+float: left;
+border: 1px solid #999;
+margin: 0 15px 15px 0;
+padding: 5px;
+text-align:center;
+}
+
+.thumbnail img {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.clearboth { clear: both; }
+.note{color: #669; font-size: 12px;}
+
+.code { font-family:monospace;}
