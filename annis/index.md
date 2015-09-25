@@ -23,7 +23,7 @@ redirect_from:
 </div>
 
 <div class="image_wrap">
-![screenshot of ANNIS main user interface](images/annis3_full.png){:width="750"}
+![screenshot of ANNIS main user interface](images/annis3_full.png){:style="width:75%"}
 </div>
 
 ANNIS is an open source, cross platform (Linux, Mac, Windows), 
