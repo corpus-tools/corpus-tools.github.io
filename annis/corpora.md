@@ -104,7 +104,7 @@ information structure
       </td>
       <td>
       <a
- href="http://www.sfb632.uni-potsdam.de/en/cprojects/d1.html" SFB632/D1</a>
+ href="http://www.sfb632.uni-potsdam.de/en/cprojects/d1.html"> SFB632/D1</a>
       </td>
     </tr>
 	   <tr>
