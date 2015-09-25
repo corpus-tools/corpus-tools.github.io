@@ -1,12 +1,12 @@
 <footer class="site-footer text-center jumbotron">
 {% if page.url == site.site_home %}
-<a href="mailto:{{ site.email }}">Contact</a>&nbsp;|&nbsp;<a href="/home/imprint.html">Imprint</a>
+<a href="mailto:{{ site.email }}">Contact</a>&nbsp;|&nbsp;<a href="{{'/home/imprint.html' | prepend: site.baseurl }}">Imprint</a>
 <br/>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 <br/>
 © 2015 Humboldt-Universität zu Berlin, Corpus Linguistics and Morphology &amp;<br/>Friedrich Schiller University Jena, Dept. of English and American Studies
 {% elsif page.url != site.site_atomic %} 
-<a href="mailto:{{ site.email }}">Contact</a>&nbsp;|&nbsp;<a href="/home/imprint.html">Imprint</a>
+<a href="mailto:{{ site.email }}">Contact</a>&nbsp;|&nbsp;<a href="{{'/home/imprint.html' | prepend: site.baseurl }}">Imprint</a>
 <br/>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 <br/>
