@@ -6,19 +6,6 @@ redirect_from:
 - "/corpora.html"
 - "/accessing.html"
 --- 
-<div class="page-header">
-# Public ANNIS installations
-</div>
-
-ANNIS can be installed locally on your computer but there are also public available installations which can be used without any installation.
-
-* [Humboldt-Universität zu Berlin, Corpus Linguistics and Morphology ](https://korpling.german.hu-berlin.de/annis3/) has a number of mostly smaller corpora available without a login.
-* The [Georgetown University ANNIS](http://corpling.uis.georgetown.edu/annis-corpora/) runs some freely
-  available corpora
-* The [SFB 632](https://korpling.german.hu-berlin.de/annis3/) instance for SFB researchers and other partners (login
-  required) is now moved to [https://korpling.german.hu-berlin.de/annis3/](https://korpling.german.hu-berlin.de/annis3/).
-* The latest experimental [developer's version](https://korpling.german.hu-berlin.de/annis3-snapshot/) for testing.
-
 
 <div class="page-header">
 # Demo Corpora for download

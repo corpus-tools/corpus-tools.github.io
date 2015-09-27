@@ -19,11 +19,11 @@ redirect_from:
 
 
 <div class="page-header">
-# ANNIS
+# About ANNIS
 </div>
 
 <div class="image_wrap">
-![screenshot of ANNIS main user interface](images/annis3_full.png){:width="750"}
+![screenshot of ANNIS main user interface](images/annis3_full.png){:style="width:75%"}
 </div>
 
 ANNIS is an open source, cross platform (Linux, Mac, Windows), 
@@ -39,21 +39,30 @@ areas as syntax, semantics, morphology, prosody, referentiality,
 lexis and more. For projects working with spoken language, support 
 for audio / video annotations is also required.
 
-A number of different projects collect and annotate data according to the 
-common SFB Annotation Standard, but many annotation schemes have been implemented 
-in ANNIS. Data is often annotated using both automatic taggers/parsers 
+Data is often annotated using both automatic taggers/parsers 
 and a growing set of manual annotation tools 
-([EXMARaLDA](http://exmaralda.org/), [ELAN](http://www.lat-mpi.eu/tools/elan/), 
+(e.g. [EXMARaLDA](http://exmaralda.org/), [ELAN](http://www.lat-mpi.eu/tools/elan/), 
 [annotate](http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/annotate.html)/[Synpathy](http://www.mpi.nl/tools/synpathy.html), 
 [MMAX](http://mmax2.sourceforge.net/), [RSTTool](http://www.wagsoft.com/RSTTool/), 
-[Arborator](http://arborator.ilpga.fr/), [WebAnno](https://code.google.com/p/webanno/), [Atomic]({{site.site_atomic}})), and can be 
-mapped onto an expressive format such as [PAULA](http://www.sfb632.uni-potsdam.de/en/paula-en.html) 
-(Potsdamer Austauschformat Linguistischer Annotationen / Potsdam Interchange Format for Linguistic Annotations, developed in the SFB), 
-a stand-off multilayer XML format, which serves as the basis for further processing. 
+[Arborator](http://arborator.ilpga.fr/), [WebAnno](https://code.google.com/p/webanno/), [Atomic]({{site.site_atomic}})),
 ANNIS provides the means for visualizing and retrieving this data. 
-The data from multiple annotations is imported via [Pepper]({{site.site_pepper}}) into the ANNIS application. 
+[Pepper]({{site.site_pepper}}) is used to import the multiple annotation formats into the ANNIS application. 
 
 **For detailed information on the latest version of ANNIS see the User Guide under [documentation](documentation.html)**
+
+<div class="page-header">
+# Public ANNIS installations
+</div>
+
+ANNIS can be installed locally on your computer but there are also public available installations which can be used without any installation.
+
+* [Humboldt-Universität zu Berlin, Corpus Linguistics and Morphology ](https://korpling.german.hu-berlin.de/annis3/) has a number of mostly smaller corpora available without a login.
+* The [Georgetown University ANNIS](http://corpling.uis.georgetown.edu/annis-corpora/) runs some freely
+  available corpora
+* The [SFB 632](https://korpling.german.hu-berlin.de/annis3/) instance for SFB researchers and other partners (login
+  required) is now moved to [https://korpling.german.hu-berlin.de/annis3/](https://korpling.german.hu-berlin.de/annis3/).
+* The latest experimental [developer's version](https://korpling.german.hu-berlin.de/annis3-snapshot/) for testing.
+
 
 <article>
 
@@ -137,19 +146,32 @@ as well as native RegEx support.
 # Contact
 </div>
 
-ANNIS development is led by [Thomas Krause](http://u.hu-berlin.de/korpling-thomaskrause) in cooperation with 
-the [SaltNPepper](https://korpling.german.hu-berlin.de/saltnpepper), [LAUDATIO](http://www.laudatio-repository.org/), 
-[Georgetown Corpus Linguistics](http://corpling.uis.georgetown.edu/) and [DDD/Referenzkorpus Altdeutsch](http://www.deutschdiachrondigital.de/) teams.
+For enquiries or to subscribe to the <b>ANNIS mailing list</b>, e-mail us at: <a href="mailto:annis-admin@ling.uni-potsdam.de">annis-admin@ling.uni-potsdam.de</a>
+
+</article>
+
+<article>
+<div class="page-header">
+# Credits
+</div>
+
+Current team:
 
 * [Thomas Krause](http://u.hu-berlin.de/korpling-thomaskrause) (LAUDATIO, Humboldt-Universität zu Berlin)
 * [Amir Zeldes](http://corpling.uis.georgetown.edu/amir) (Georgetown University)
 * [Shuo Zhang](http://zangsir.weebly.com/) (Georgetown University)
 * [Florian Zipser](http://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/mitarbeiter-innen/florian/) (LAUDATIO, Humboldt-Universität zu Berlin)
 
-The first version of the ANNIS2 web front-end was developed by Karsten Hütter and the backend was originally developed by Viktor Rosenfeld. 
-Former developers of ANNIS3 include Mario Frank, Tom Ruette and Benjamin Weißenfels. For enquiries or to subscribe to the <b>ANNIS mailing list</b>, e-mail us at: <a href="mailto:annis-admin@ling.uni-potsdam.de">annis-admin@ling.uni-potsdam.de</a>
+Former developers:
 
+* Benjamin Weißenfels
+* Karsten Hütter
+* Martin Klotz
+* Tom Ruette
+* Viktor Rosenfeld
+* and several other [contributors](https://github.com/korpling/ANNIS/graphs/contributors)
 </article>
+
 
 <div class="page-header">
 ## Supported by
