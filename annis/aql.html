@@ -10,52 +10,51 @@ redirect_from: "/aql.html"
 </div>
 
 <h2>Nodes and Edges</h2>
-<p>AQL is based on the concept of searching for node elements and edges between them. A search is formulated by defining each token, non-terminal node or annotation being searched for as an element. An element can be a token (simply text between quotes: <code>&quot;dogs&quot;</code> or else <code>tok=&quot;dogs&quot;</code>) or an attribute-value pair (such as <code>lemma=&quot;dog&quot;</code>, or optionally with a namespace: <code>tiger:cat=&quot;PP&quot;</code>). Note that different corpora can have completely different annotation names and values - these are not specified by ANNIS. Underspecified tokens or nodes in general may be specified using <code>tok</code> and <code>node</code> respectively.</p>
+<p>AQL is based on the concept of searching for node elements and edges between them. A search is formulated by defining each token, non-terminal node or annotation being searched for as an element. An element can be a token (simply text between quotes: <code><span class="s">&quot;dogs&quot;</span></code> or else <code><span class="nv">tok</span>=<span class="s">&quot;dogs&quot;</span></code>) or an attribute-value pair (such as <code><span class="nv">tok</span>=<span class="s">&quot;dogs&quot;</span></code>, or optionally with a namespace: <code><span class="nv">tiger:cat</span>=<span class="s">&quot;PP&quot;</span></code>). Note that different corpora can have completely different annotation names and values - these are not specified by ANNIS. Underspecified tokens or nodes in general may be specified using <code><span class="nv">tok</span></code> and <code><span class="nv">node</span></code> respectively.</p>
 <p>
 Once all elements are declared, relations between the elements (or edges) are specified which must hold between them. The elements are referred back to serially using variable numbers, and linguistic operators bind them together, e.g. <code>#1 &gt; #2</code> meaning the first element dominates the second in a tree or graph. Operators define the possible overlap and adjacency relations between annotation spans, as well as recursive hierarchical relations between nodes. Some operators also allow specific labes to be specified in addition to the operator (see the operator list below).
 </p>
 <p>
-The following example, a query searching for German sentences with topicalized objects (i.e. with the word order object-verb-subject), illustrates these ideas in practice: </p>
-<table>
-<tr><td class="code">node &amp; pos="VVFIN" &amp; cat="S" &amp; node &amp; &nbsp;	</td>
-  <td class="comment">//two nodes, a finite verb and a sentence node (S) </td>
+The following example, a query searching for German sentences with topicalized objects (i.e. with the word order object-verb-subject), illustrates these ideas in practice as a complete example: </p>
+<table class="table">
+<tr>
+<th>Query</th><th>Explanation</th>
 </tr>
 <tr>
-  <td class="code">#3 >[tiger:func="OA"] #1 &amp;					</td><td class="comment">//S dominates node 1 with label OA  </td></tr>
-<tr>
-  <td class="code">#3 >[tiger:func="SB"] #4 &amp;					</td><td class="comment">//S dominates node 4 with label SB </td></tr>
-<tr><td class="code">#3 > #2 &amp;							</td>
-  <td class="comment">//S dominates (&gt;) the verb </td>
+	<td>
+<div class="highlight"><pre><span class="nv">node</span> <span class="o">&amp;</span> <span class="nv">pos</span>=<span class="s">&quot;VVFIN&quot;</span> <span class="o">&amp;</span> <span class="nv">cat</span>=<span class="s">&quot;S&quot;</span> <span class="o">&amp;</span> <span class="nv">node</span> <span class="o">&amp;</span>
+<span class="nl">#3</span> <span class="o">&gt;</span>[<span class="nv">tiger:func</span>=<span class="s">&quot;OA&quot;</span>] <span class="nl">#1</span> <span class="o">&amp;</span>
+<span class="nl">#3</span> <span class="o">&gt;</span>[<span class="nv">tiger:func</span>=<span class="s">&quot;SB&quot;</span>] <span class="nl">#4</span> <span class="o">&amp;</span>
+<span class="nl">#3</span> <span class="o">&gt; </span><span class="nl">#2</span> <span class="o">&amp;</span>
+<span class="nl">#1</span> <span class="o">.*</span> <span class="nl">#2</span> <span class="o">&amp;</span>
+<span class="nl">#2</span> <span class="o">.*</span> <span class="nl">#4</span>
+</pre></div>
+	</td>
+	<td>
+	<pre>two nodes are defined, a finite verb and a sentence node (S)
+S dominates node 1 with label OA
+S dominates node 4 with label SB
+S dominates (>) the verb
+node 1 precedes (.*) the verb
+the verb precedes (.*) node 4</pre>
+	</td>
 </tr>
-<tr><td class="code">#1 .* #2 &amp;							</td>
-  <td class="comment">//node 1 precedes (.*) the verb </td>
-</tr>
-<tr><td class="code">#2 .* #4								</td>
-  <td class="comment">//the verb precedes (.*) node 4</td>
-</tr>
-
 </table>
-<br>
 <p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=bm9kZSAmIHBvcz0iVlZGSU4iICYgY2F0PSJTIiAmIG5vZGUgJiAgCiMzID5bdGlnZXI6ZnVuYz0iT0EiXSAjMSAmCiMzID5bdGlnZXI6ZnVuYz0iU0IiXSAjNCAmCiMzID4gIzIgJgojMSAuKiAjMiAmCiMyIC4qICM0&_c=cGNjMg&cl=5&cr=5&s=0&l=10" target="_blank">
 Try out this query in the pcc2 corpus in ANNIS3
 </a></p>
-
 <h2>Shortcuts</h2>
 <p>
 Starting in ANNIS 3.1.0, you can also use shortcuts to define the relations between query nodes. You can specify the
 operator that applies between two nodes directly between those nodes. For example, the following two queries are equivalent:
 </p>
-
+<div class="highlight"><pre><span class="nv">cat</span>=<span class="s">&quot;NP&quot;</span> <span class="o">&amp;</span> <span class="nv">cat</span>=<span class="s">&quot;PP&quot;</span> <span class="o">&amp;</span> <span class="nl">#1</span> <span class="o">&gt; </span><span class="nl">#2</span>
+</pre></div>
+<p><strong>or</strong></p>
+<div class="highlight"><pre><span class="nv">cat</span>=<span class="s">&quot;NP&quot;</span> <span class="o">&gt; </span><span class="nv">cat</span>=<span class="s">&quot;PP&quot;</span>
+</pre></div>
 <p>
-<table>
-<tr><td class="code">cat="NP" &amp; cat="PP" &amp; #1 &gt; #2</td></tr>
-<tr><td style="padding-left: 10px"><strong>or:</strong></td></tr>
-<tr><td class="code">cat="NP" &gt; cat="PP"</td></tr>
-<table>
-</p>
-
-<p>
-Specifying the dominance operator '&gt;' directly between the NP and PP nodes works the same as declaring the two nodes and
+Specifying the dominance operator <code>&gt;</code> directly between the NP and PP nodes works the same as declaring the two nodes and
 then stating that the dominance relationshop hold between the first node (#1) and the second one (#2).
 </p>
 
@@ -64,41 +63,56 @@ then stating that the dominance relationshop hold between the first node (#1) an
 <p>For complex queries in which the same nodes are involved in multiple relations, it may be easier to name nodes explicitly, rather than using the #1, #2, ... number notation.
 Node names are given to nodes when they are defined and are placed before the '#' sing. The following query illustrates this mechanism:</p>
 
-
-<table>
-<tr><td class="code">NP#cat="NP"  &amp; &nbsp;	</td>
-  <td class="comment">//a nominal phrase which we will call 'NP' </td>
+<table class="table">
+<tr>
+<th>Query</th><th>Explanation</th>
 </tr>
 <tr>
-  <td class="code">PP1#cat="PP" . PP2#cat="PP" &amp; &nbsp;</td><td class="comment">//two consecutive prepositional phrases named PP1 and PP2  </td></tr>
-<tr>
-  <td class="code">#NP &gt; #PP1 &amp;</td><td class="comment">//the NP node dominates PP1 </td></tr>
-<tr><td class="code">#NP &gt; #PP2 &amp;							</td>
-  <td class="comment">//the same NP node also dominates PP2 </td>
+	<td>
+<div class="highlight"><pre><span class="nv">NP</span><span class="nl">#cat</span>=<span class="s">&quot;NP&quot;</span> <span class="o">&amp;</span>  
+<span class="nv">PP1</span><span class="nl">#cat</span>=<span class="s">&quot;PP&quot;</span> <span class="o">. </span><span class="nv">PP2</span><span class="nl">#cat</span>=<span class="s">&quot;PP&quot;</span> <span class="o">&amp;</span>
+<span class="nl">#NP</span> <span class="o">&gt; </span><span class="nl">#PP1</span> <span class="o">&amp;</span>
+<span class="nl">#NP</span> <span class="o">&gt; </span><span class="nl">#PP2</span>
+</pre></div>
+	</td>
+	<td>
+	<pre>a nominal phrase which we will call 'NP' 
+two consecutive prepositional phrases named PP1 and PP2 
+the NP node dominates PP1
+the same NP node also dominates PP2 </pre>
+	</td>
 </tr>
-
 </table>
+<p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=TlAjY2F0PSJOUCIgJiAgClBQMSNjYXQ9IlBQIiAuIFBQMiNjYXQ9IlBQIiAmCiNOUCA-ICNQUDEgJgojTlAgPiAjUFAy&_c=R1VN&cl=5&cr=5&s=0&l=10" target="_blank">
+Try out this query in the GUM corpus in ANNIS3
+</a></p>
 
 
 <h2>Metadata</h2>
 <p>
 To specify metadata conditions which must apply to matches, add key-value pairs preceded by the reserved prefix <code>meta::</code>. Metadata may apply to corpora, sub-corpora, or individual documents within a corpus. For example, the following query finds sequences of two consecutive adverbs in sports documents (Genre="Sport"):
 </p>
-<table>
-<tr><td class="code">pos="ADV" &amp; pos="ADV" &amp; &nbsp;&nbsp;</td>
-  <td class="comment">//two adverb tags</td>
+<table class="table">
+<tr>
+<th>Query</th><th>Explanation</th>
 </tr>
 <tr>
-  <td class="code">#1 . #2 &amp;					</td><td class="comment">//adverb 1 precedes adverb 2 directly</td></tr>
-
-<tr><td class="code">meta::Genre="Sport"								</td>
-  <td class="comment">//the metadatum Genre must have the value "Sport"</td>
+	<td>
+<div class="highlight"><pre><span class="nv">pos</span>=<span class="s">&quot;ADV&quot;</span> <span class="o">&amp;</span> <span class="nv">pos</span>=<span class="s">&quot;ADV&quot;</span> <span class="o">&amp;</span>
+<span class="nl">#1</span> <span class="o">. </span><span class="nl">#2</span> <span class="o">&amp;</span>
+<span class="nv">meta</span>::<span class="nv">Genre</span>=<span class="s">&quot;Sport&quot;</span>
+</pre></div>
+	</td>
+	<td>
+	<pre>two adverb tags
+adverb 1 precedes adverb 2 directly
+the metadatum Genre must have the value "Sport"</pre>
+	</td>
 </tr>
-
 </table>
 <br>
 <p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=cG9zPSJBRFYiICYgcG9zPSJBRFYiICYKIzEgLiAjMiAmCm1ldGE6OkdlbnJlPSJTcG9ydCI&_c=cGNjMg&cl=5&cr=5&s=0&l=10" target="_blank">
-Try out this query in the pcc2 corpus in ANNIS3
+Try out this query in the pcc2 corpus in ANNIS
 </a></p>
 
 
@@ -108,18 +122,25 @@ Try out this query in the pcc2 corpus in ANNIS3
 The <tt>tokenarity</tt> operator specifies how many tokens should be covered by the matching element, whereas the <tt>arity</tt> operator determines the amount of directly dominated children the matched node should have.
 For example, the following query searches for nominal phrases that dominate exactly 4 nodes:
 </p>
-<table>
-<tr><td class="code">cat="NP" &amp; &nbsp;&nbsp;</td>
-  <td class="comment">//a syntactic category 'NP' for 'nominal phrase'</td>
+<table class="table">
+<tr>
+<th>Query</th><th>Explanation</th>
 </tr>
 <tr>
-  <td class="code">#1:arity=4</td><td class="comment">//this node should have exactly 4 children </td></tr>
-
-
+	<td>
+<div class="highlight"><pre><span class="nv">cat</span>=<span class="s">&quot;NP&quot;</span> 
+<span class="o">&amp;</span> <span class="nl">#1</span>:<span class="nv">arity</span>=4
+</pre></div>
+	</td>
+	<td>
+	<pre>a syntactic category 'NP' for 'nominal phrase'
+this node should have exactly 4 children </pre>
+	</td>
+</tr>
 </table>
 <br>
 <p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=Y2F0PSJOUCIgJiAjMTphcml0eT00&_c=cGNjMg&cl=5&cr=5&s=0&l=10" target="_blank">
-Try out this query in the pcc2 corpus in ANNIS3
+Try out this query in the pcc2 corpus in ANNIS
 </a></p>
 
 
@@ -222,7 +243,7 @@ B	    </strong>
 		  <td>Both elements span an area ending with the same token </td>
 		</tr>
 				<tr>
-		  <td height="38">==</td>
+		  <td height="38"><code>==</code></td>
 		  <td>value identity</td>
 		  <td colspan="3"><center>
 		      <strong>A = B</strong>
@@ -230,7 +251,7 @@ B	    </strong>
 		  <td>The value of the annotation or token A is identical to that of B (this operator does not bind, i.e. the nodes must be connected by some other criteria too)</td>
 		  </tr>
 		  	<tr>
-		  <td height="38">!=</td>
+		  <td height="38"><code>!=</code></td>
 		  <td>value difference</td>
 		  <td colspan="3"><center>
 		      <strong>A &ne; B</strong>
