@@ -20,7 +20,7 @@ category: Pepper
         mapping approach, to <i>2n</i> mappings. 
     </p>
     <div>
-        <div id="formats" style="text-align:center;">
+        <div id="formats" style="text-align:center;margin-bottom:20px;">
 			<img
 				onclick="window.open('./images/pepper_formats.png', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
 				class="salt_sample" src="./images/pepper_formats.png" style="width:40%;"
@@ -59,7 +59,7 @@ category: Pepper
         divided into several steps. The import and export phase must contain at least one step each, whereas the manipulation phase can contain any number of steps. Each Pepper module realizes
         exactly one step. 
         </div>
-        <div style="text-align:center;">
+        <div style="text-align:center;margin-bottom:10px;margin-top:10px;">
         <img onclick="window.open('./images/pepper_workflow01.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
                     class="enlarge" src="./images/pepper_workflow01.svg" style="width:60%;"
                     alt="Pepper workflow importer -> exporter"/>
@@ -70,7 +70,7 @@ category: Pepper
         For instance the import of data in the EXMARaLDA format is done by a
         module called EXMARaLDAImporter and the export into the ANNIS format is done by a module called ANNISExporter. 
         </p>
-        <div style="text-align:center;">
+        <div style="text-align:center;margin-bottom:10px;margin-top:10px;">
         <img onclick="window.open('./images/pepper_workflow02.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
                     class="enlarge" src="./images/pepper_workflow02.svg" style="width:60%;"
                     alt="Pepper workflow EXMARaLDAImporter -> ANNISExporter"/>
@@ -81,14 +81,14 @@ category: Pepper
         <p>The modules can be freely combined, e.g., we can exchange the EXMARaLDAImporter with the TigerImporter and still export the data to ANNIS. <strong>But</strong> you have to take care, that the target format can handle those data, otherwise they will be ignored. For instance converting data coming from the Tiger format to EXMARaLDA does not make a lot of sense, since EXMARaLDA can not handle syntax trees. Nevertheless, even such transformations are allowed in Pepper.</p>
         <p>As described above, a Pepper workflow contains three phases: the import phase, the manipulation phase and the export phase. During the manipulation phase you can choose modules ("manipulators"), for instance to enhance the data for further information, such as creating sentences.
         </p>
-        <div style="text-align:center;">
+        <div style="text-align:center;margin-bottom:10px;margin-top:10px;">
         <img onclick="window.open('./images/pepper_workflow03.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
                     class="enlarge" src="./images/pepper_workflow03.svg" style="width:60%;"
                     alt="Pepper workflow with manipulator"/>
         </div>
         <p>A Pepper workflow can get very complex, for instance when multiple source formats are included, a long manipulation chain is used and/or the data shall be exported to multiple formats at once.
         </p>
-        <div style="text-align:center;">
+        <div style="text-align:center;margin-bottom:10px;margin-top:10px;">
         <img onclick="window.open('./images/pepper_workflow04.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
                     class="enlarge" src="./images/pepper_workflow04.svg" style="width:60%;"
                     alt="Pepper workflow with merger"/>
