@@ -4,4 +4,6 @@ https://help.github.com/articles/using-jekyll-with-pages/
 
 To run the site locally install ruby bundler and run:
 
+```
 bundle exec jekyll serve
+```
