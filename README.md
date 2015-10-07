@@ -8,7 +8,7 @@ To run the site locally install ruby bundler and run:
 bundle exec jekyll serve
 ```
 
-##### Avoid the nav bar overlapping headers in the content (in-document links) - #5
+##### Avoid the nav bar overlapping headers in the content (in-document links) - [#5](/../../issues/5)
 
 This is achieved by the following CSS snippet in [theme.css](css/theme.css). It introduces an invisible pseudo element before the element in question.
 
