@@ -132,3 +132,13 @@ text-align:center;
 .note{color: #669; font-size: 12px;}
 
 .code { font-family:monospace;}
+
+/* Use a pseudo-element to add space at the beginning of the element. 
+To use this, assign class "anchor" to targeted element. */
+.anchor:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -30px; 
+  height: 30px;
+  visibility: hidden; 
+}
