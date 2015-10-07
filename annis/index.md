@@ -27,7 +27,7 @@ redirect_from:
 </div>
 
 ANNIS is an open source, cross platform (Linux, Mac, Windows), 
-web browser-based search and visualization architecture for complex multilayer 
+web browser-based search and visualization architecture for complex multi-layer 
 linguistic corpora with diverse types of annotation. ANNIS, which stands for ANNotation 
 of Information Structure, was originally designed to provide access to the data of 
 the [SFB 632](http://www.sfb632.uni-potsdam.de/) - "Information Structure: The Linguistic Means for Structuring Utterances, 
@@ -109,7 +109,7 @@ tools, i.e. different tool formats have to be supported. In order to ensure
 compatibility with as many formats as possible, we use the [Pepper converter framework](../pepper/index.html),
 which maps a large number of formats via the metamodel Salt into the native format of ANNIS.
 
-## Multilayer Annotation
+## Multi-layer Annotation
 A very central requirement is support for visualizing and querying
 annotations on multiple layers, each layer representing one type of
 information, e.g. morphemic transcription, grammatical functions, pitch
