@@ -142,3 +142,20 @@ To use this, assign class "anchor" to targeted element. */
   height: 30px;
   visibility: hidden; 
 }
+.carousel-inner .item {border: 1px solid navy;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 6px;
+	perspective: 1px;
+	overflow:hidden;
+}
+.carousel-inner .item img, #carousel-example-generic, .carousel-inner{
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 6px;
+	perspective: 1px;
+overflow:hidden;
+}
+#carousel-example-generic{perspective: 1px;}
