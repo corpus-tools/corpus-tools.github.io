@@ -23,6 +23,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-open-source:before {
+	content: "\e800";
+}
 .icon-annis:before {
 	content: "\e608";
 }
