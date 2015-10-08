@@ -27,8 +27,9 @@ module_saltInfo: https://github.com/korpling/pepperModules-SaltInfoModules
 # Site settings
 email: "annis-admin@ling.uni-potsdam.de"
 title: "corpus-tools.org"
-description: "A collection of tools to process your linguistic data: annotation, conversion, analysis"
+description: "A collection of tools for processing your linguistic data: annotation, conversion, analysis"
 github_username:  korpling
+publisher: Humboldt-Universität zu Berlin, Friedrich Schiller University Jena
 
 # Build settings
 kramdown: 
