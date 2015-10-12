@@ -10,6 +10,8 @@ subpages:
 - documentation.html
 - aql.html
 - visualizations.html
+- "|"
+- cooperations.html
 redirect_from: 
 - "/goals.html"
 - "/contact.html"
