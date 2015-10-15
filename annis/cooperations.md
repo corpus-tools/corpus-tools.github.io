@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Coorperations
+title: Cooperations
 --- 
 ##Research Projects Employing ANNIS and PAULA
 
