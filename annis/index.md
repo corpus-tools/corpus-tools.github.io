@@ -85,18 +85,32 @@ script languages, such as Arabic and Hebrew. This includes **right-to-left
 tree layouting** for treebanks in
 these languages.
 
-<div class="image_wrap" style="text-align:center; width:420px; float:left;">
-![Hindi data in ANNIS](images/Hindi.PNG){:width="400"} 
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6">
+<div class="row">
+<div class="col-md-12 image_wrap" style="text-align:center">
+![Hindi data in ANNIS](images/Hindi.PNG){:style="width:100%"} 
+
 **ANNIS supports Unicode in both visualization and search,
-including Regular Expressions**  
-![Right-to-left Arabic data in the KWIC view](images/arabic_RTL_KWIC.png){:width="400"} 
+including Regular Expressions** 
+</div>
+<div class="col-md-12 image_wrap" style="text-align:center">
+![Right-to-left Arabic data in the KWIC view](images/arabic_RTL_KWIC.png){:style="width:100%"} 
+
 **Right-to-left Arabic data in the KWIC view**
 </div>
-<div class="image_wrap" style="width:375px; float: right;">
-![Right-to-left layouting for trees in Hebrew](images/hebrew_RTL_tree.png){:width="370"} 
+</div>
+</div>
+<div class="col-md-6" style="text-align:center">
+![Right-to-left layouting for trees in Hebrew](images/hebrew_RTL_tree.png){:style="width:100%} 
+
 **Right-to-left layouting for trees in Hebrew**
 </div>
-<div style="clear:both;"></div>
+</div>
+</div>
+
+
 
 ## Diversity of Annotation
 
@@ -122,7 +136,7 @@ necessary (see [ANNIS Query Language - AQL](aql.html)).
 The system also supports parallel corpora aligned at all levels (i.e. words, sentences, syntactic phrases etc. can be aligned), and each aligned language may have its own annotation layers.
 
 <div class="image_wrap" style="text-align:center;">
-![Parallel aligned data with a separate syntax tree for each language](images/parallel.png){:width="600"}  
+![Parallel aligned data with a separate syntax tree for each language](images/parallel.png){:style="width:52%"}  
 **Parallel aligned data with a separate syntax tree for each language**  
 </div>
 
