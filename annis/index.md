@@ -102,7 +102,7 @@ including Regular Expressions**
 </div>
 </div>
 </div>
-<div class="col-md-6" style="text-align:center">
+<div class="col-md-6 image_wrap" style="text-align:center">
 ![Right-to-left layouting for trees in Hebrew](images/hebrew_RTL_tree.png){:style="width:100%"} 
 
 **Right-to-left layouting for trees in Hebrew**
