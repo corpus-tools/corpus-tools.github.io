@@ -21,7 +21,7 @@ module_paula: https://github.com/korpling/pepperModules-PAULAModules
 module_annis: https://github.com/korpling/pepperModules-ANNISModules
 module_exmaralda: https://github.com/korpling/pepperModules-EXMARaLDAModules
 module_saltInfo: https://github.com/korpling/pepperModules-SaltInfoModules
-
+module_tei: https://github.com/korpling/pepperModules-TEIModules
 
 # Site settings
 email: "annis-admin@ling.uni-potsdam.de"

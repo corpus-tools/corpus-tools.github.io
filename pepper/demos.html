@@ -72,3 +72,42 @@ category: Pepper
 &lt;/pepper></pre>
 		</div>
 	</article>
+	<article>
+        <div class="page-header">
+            <h1>TEI -> ANNIS</h1>
+        </div>
+        <div class="content">
+			<p>The MaKoHiZZ Corpus is a historical newspaper corpus build by the IDS Mannheim. The test corpus contains just one document “khz01001” which is encoded in TEI XML.</p>
+			<p>The aim of this workflow is to convert the corpus from TEI XML to ANNIs format.</p>
+			 <table class="table-striped">
+				<tr><td style="width:30%;"><strong>corpus</strong></td><td style="width:50%;"><a href="..{{site.site_corpora}}MaKoHiZZ.zip"><i class="fa fa-download"></i> MaKoHiZZ</a></td></tr>
+				<tr><td><strong>importer</strong></td><td><a href="{{site.module_tei}}">{{site.module_tei}}</a></td></tr>
+				<tr><td><strong>exporter</strong></td><td><a href="{{site.module_annis}}">{{site.module_annis}}</a></td></tr>
+			 </table>
+			 <br/>
+			 <div style="text-align:center;">
+			 <img onclick="window.open('./images/sampleWorkflow_MaKoHiZZ.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();"
+                    class="enlarge" src="./images/sampleWorkflow_MaKoHiZZ.svg" style="width:60%"
+                    alt="Workflow EXMARaLDA -> corpus homepage"/>
+             </div>
+             <p>The following workflow assumes the source file to be in a folder named /testMaKoHiZZ/, which is in the same folder as the workflow description file itself. The target format will be exported to a folder named /ANNIS/.</p>
+             <p>The metadata in the teiHeader are customized in two ways. Some XML paths are ignored in the workflow and some are replaced with shorter keys.</p>
+            <pre>
+&lt;?xml version="1.0" ?>
+&lt;pepper-job version="1.0">
+	&lt;importer name="TEIImporter" path=".\testMaKoHiZZ\">
+		&lt;customization>
+			&lt;property key="token.tokenize">true&lt;/property>
+			&lt;property key="token.tokenize.lang">de&lt;/property>
+			&lt;property key="annotation.token.span">true&lt;/property>
+			&lt;property key="element.generic.node">span&lt;/property>
+			&lt;property key="element.generic.attribute">true&lt;/property>
+			&lt;property key="metadata.remove">true&lt;/property>
+			&lt;property key="metadata.remove.list">/fileDesc/publicationStmt/idno;/fileDesc/publicationStmt/idno/@type;/fileDesc/publicationStmt/date/@when;/fileDesc/sourceDesc/p;/profileDesc/creation/name/@type;/profileDesc/creation/date/@when;/encodingDesc/editorialDecl/p;&lt;/property>
+			&lt;property key="metadata.rename">/fileDesc/titleStmt/respStmt/resp:Conversion;/profileDesc/creation/date:Creationdate;/profileDesc/creation/name:Creationname;/fileDesc/publicationStmt/date:Date;/encodingDesc/editorialDecl/hyphenation/p:Description;/fileDesc/titleStmt/respStmt/name:Editor;/encodingDesc/editorialDecl/p[2]:Editorialdeclaration;/fileDesc/titleStmt/funder:Funder;fileDesc/publicationStmt/idno:Identificationnumber;/fileDesc/publicationStmt/availability/p:Licence;/encodingDesc/editorialDecl/p[3]:Normalization;/fileDesc/titleStmt/sponsor:Project;/fileDesc/publicationStmt/pubPlace:Publicationplace;/fileDesc/sourceDesc/p[2]:Sourcedescription;title:Title&lt;/property>
+		&lt;/customization>
+	&lt;/importer>
+	&lt;exporter name="ANNISExporter" path=".\ANNIS\"/>
+&lt;/pepper-job> </pre>
+		</div>
+	</article>
