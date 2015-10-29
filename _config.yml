@@ -1,5 +1,4 @@
 # Site settings
-#title: "A collection of tools to process your linguistic data: annotate, migrate, analyze."
 email_snp: saltnpepper@lists.hu-berlin.de
 email_atomic: atomic-user@listserv.uni-jena.de
 baseurl: ""

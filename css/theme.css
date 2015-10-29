@@ -142,3 +142,12 @@ To use this, assign class "anchor" to targeted element. */
   height: 30px;
   visibility: hidden; 
 }
+
+/* This class defines a FAQ entry */
+.faqentry>h4::before{
+  content:"Q: "
+}
+.faqanswer{
+  margin-left:20px;
+  margin-bottom:40px;
+}
