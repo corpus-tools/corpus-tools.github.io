@@ -5,15 +5,25 @@ category: Pepper
 ---
 <article>
   <div class="page-header">
-    <h1>Known modules</h1>
+    <h1>Pepper modules</h1>
   </div>
   <div class="content">
-    There are many modules for Pepper out there. This is a list of modules we now, which can be integrated into Pepper.
-
+    <p>There are many modules for Pepper out there. Here we try to list all these modules we know about. If you have further modules or know about further modules, please let us know and write an email to <a href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>.</p> 
+    <div>
+    To install further modules into an existing Pepper instance open the Pepper console and use command 'is':
+                <pre>
+pepper>is PATH_TO_PLUGIN</pre> To update a module, open the Pepper console and
+                use command 'update' <pre>
+update GROUP_ID::ARTIFACT_ID::REPOSITORY</pre>
+    </div>   
+	<p>If there is no exitsing module which fulfills your needs, you are free to
+                    implement your own module. With Pepper's plug-in mechanism your module can
+                    easily be integrated into the Pepper plattform. The possibility of combining
+                    your new module with already existing ones lets you create completely new
+                    workflows. Please read the <a class="fa fa-file-pdf-o" href="..{{site.site_pepper}}/resources/pepper_modulesDevelopersGuide.pdf"> Module Developer's Guide</a> to get a detailed documentation of how to implement a Pepper module.</p>
+    </div>
     <h1>Importers</h1>
-    Importers are modules which map data from a fromat X to a Salt model. For more information about the architecture of Pepper please read
-    <a href="../pepper/architecture.html">Pepper's architecture</a>
-    .
+    Importers are modules which map data from a fromat X to a Salt model. For more information about a Pepper's workflow please take a look into <a href="./userGuide.html">Pepper's user guide</a>.
     <table class="table" style="margin-top:20px">
       <!-- Was: <table class="table-striped"> -->
       <tr>

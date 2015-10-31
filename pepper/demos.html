@@ -17,7 +17,7 @@ needs_gallery: true
             <h1>PAULA -> ANNIS</h1>
         </div>
         <div class="content">
-			<p>The pcc2 corpus is a small excerpt from the <a href="http://angcl.ling.uni-potsdam.de/resources/pcc.html">Potsdam Commentary Corpus</a>. It contains the two documents <i>11299</i> and <i>4282</i>. The corpus is annotated on multiple layers: constituents, dependencies, coreference, rhetorical structure and information structure.</p>
+			<p>The pcc2 corpus is a small excerpt from the {{site.link_pcc}}. It contains the two documents <i>11299</i> and <i>4282</i>. The corpus is annotated on multiple layers: constituents, dependencies, coreference, rhetorical structure and information structure.</p>
 			<p>The aim of this workflow is to convert the corpus from its source format PAULA into its target format, the ANNIS format.</p>
 			 <table class="table-striped">
 				<tr><td style="width:30%;"><strong>corpus</strong></td><td style="width:50%;"><a href="..{{site.site_corpora}}pcc2.zip"><i class="fa fa-download"></i> Potsdam Commentary Corpus</a></td></tr>
@@ -95,8 +95,10 @@ needs_gallery: true
              <p>The metadata in the teiHeader are customized in two ways. Some XML paths are ignored in the workflow and some are replaced with shorter keys.</p>
             <pre>
 &lt;?xml version="1.0" ?>
+&lt;?xml-model href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/schema/10/pepper.rnc" 
+               type="application/relax-ng-compact-syntax"?>
 &lt;pepper-job version="1.0">
-	&lt;importer name="TEIImporter" path=".\testMaKoHiZZ\">
+	&lt;importer name="TEIImporter" path="./testMaKoHiZZ/">
 		&lt;customization>
 			&lt;property key="token.tokenize">true&lt;/property>
 			&lt;property key="token.tokenize.lang">de&lt;/property>
@@ -108,7 +110,7 @@ needs_gallery: true
 			&lt;property key="metadata.rename">/fileDesc/titleStmt/respStmt/resp:Conversion;/profileDesc/creation/date:Creationdate;/profileDesc/creation/name:Creationname;/fileDesc/publicationStmt/date:Date;/encodingDesc/editorialDecl/hyphenation/p:Description;/fileDesc/titleStmt/respStmt/name:Editor;/encodingDesc/editorialDecl/p[2]:Editorialdeclaration;/fileDesc/titleStmt/funder:Funder;fileDesc/publicationStmt/idno:Identificationnumber;/fileDesc/publicationStmt/availability/p:Licence;/encodingDesc/editorialDecl/p[3]:Normalization;/fileDesc/titleStmt/sponsor:Project;/fileDesc/publicationStmt/pubPlace:Publicationplace;/fileDesc/sourceDesc/p[2]:Sourcedescription;title:Title&lt;/property>
 		&lt;/customization>
 	&lt;/importer>
-	&lt;exporter name="ANNISExporter" path=".\ANNIS\"/>
+	&lt;exporter name="ANNISExporter" path="./ANNIS/"/>
 &lt;/pepper-job> </pre>
 		</div>
 	</article>

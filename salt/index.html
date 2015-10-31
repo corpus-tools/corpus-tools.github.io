@@ -17,7 +17,7 @@ subpages:
                     <p>Salt supports a huge set of languages and typesets. Each language which can be expressed in UTF-8 is supported by Salt.</p>
                 </div>
                 <div class="col-md-4">
-                    <h2><i class="fa fa-book"></i> theory-neutral</h2>
+                    <h2><i class="fa fa-tags"></i> theory-neutral</h2>
                     <p>Salt is open to any linguistic school or theory, not limited to a
                         specific one.</p>
                 </div>
@@ -30,7 +30,7 @@ subpages:
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <h2><i class="fa fa-creative-commons"></i> open source</h2>
+                    <h2><i class="icon-open-source"></i> open source</h2>
                     <p>Salt is licensed under the {{site.apache_license}} and published on Github.</p>
                 </div>
                 <div class="col-md-4">
@@ -39,7 +39,7 @@ subpages:
                         video corpora.</p>
                 </div>
                 <div class="col-md-4">
-                    <h2><i class="fa fa-picture-o"></i> annotation layer independent</h2>
+                    <h2><i class="fa fa-align-right"></i> multi-layer</h2>
                     <p>Salt is not limited to a specific set of annotation layers. Since Salt is a graph-based model, you can model many different structures, such as tree structures, span annotations, coreference chains and so on.</p>
                 </div>
             </div>
@@ -49,7 +49,8 @@ subpages:
         <div class="page-header">
             <h1>About Salt</h1>
         </div>
-        <div class="content"> With Salt we provide an easily understandable meta model for
+        <div class="content">
+			<p> With Salt we provide an easily understandable meta model for
             linguistic data and an open source API for storing, manipulating and representing data. Salt is
             an abstract model, poor in linguistic semantics. As a result, it is independent of any
             linguistic schools or theories. The core model is graph-based, thereby keeping the
@@ -58,7 +59,10 @@ subpages:
             can even model your own very personal annotation as long as it fits into a graph
             structure (and so far we have not seen a linguistic annotation which does not).
             Furthermore, Salt does not depend on a specific linguistic tagset which allows you to
-            use every tagset you like. </div>
+            use every tagset you like. 
+            </p>
+            <p>Salt serves as an underlying model for the tools <a href="../annis">ANNIS</a>, <a href="../atomic">Atomic</a> and <a href="../pepper">Pepper</a>.</p>
+            </div>
     </article>
     <article>
         <div class="page-header">
@@ -76,12 +80,12 @@ subpages:
                 link to an audio stream. Coreferences or anaphoric chains need to interlink
                 tokens, which may be spread across the entire text. Many tools and models (e.g., formats)
                 address these annotations one by one: There are formats to address syntactical
-                data (like Tiger XML or the Penn Treebank format), or coreferences (like the MMAX2
-                format), or dialogue data (like the EXMARaLDA basic transcription, the ELAN format),
+                data (like {{site.link_tigerxml}} or the {{site.link_ptb}} format), or coreferences (like the {{site.link_mmax2}}
+                format), or dialogue data (like the {{site.link_exmaralda}} basic transcription, the {{site.link_elan}} format),
                 and many many more. But developements in the last years have shown that a lot of
                 linguistic phenomena are spread over different kinds of annotations. So more and
                 more corpora have been created which are annotated on multiple annotation layers
-                like the PCC or the TUEBA-D/Z corpus. The aim of Salt is to consolidate all kinds of
+                like the {{site.link_pcc}} or the {{site.link_tuebadz}}. The aim of Salt is to consolidate all kinds of
                 annotations within a single model. For doing so we need a powerful base structure, which
                 can cover all the different necessities at once. A very well-known and powerful
                 structure in mathematics and informatics is the common graph, which is widely used
@@ -119,9 +123,9 @@ subpages:
         <div class="page-header">
             <h1>Transforming linguistic data into a graph</h1>
         </div>
-        <div class="content"> Let's look at some examples for how linguistic data can be modelled in a
-            graph-based world. We start with a text and model it as the label of a node. <div
-                class="page-header">
+        <div class="content"> <p>Let's look at some examples for how linguistic data can be modelled in a
+            graph-based world. A fundamental concept in Salt is the token. A token in Salt is used as the smallest annotatable unit. For instance a token bundles a range of characters to a word, a syllable, a sentence etc. together.</p>
+                <class="page-header">
                 <h3>kwic</h3>
             </div>
             <div id="sample_kwic" style="text-align:center">
