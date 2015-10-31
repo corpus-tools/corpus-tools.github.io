@@ -8,7 +8,7 @@ category: Pepper
 			<h1>User Guide</h1>
 		</div>
 		<div>
-			The Pepper workflow is separated into three different
+			The conversion process in Pepper is defined by a workflow. Such a workflow is normally stored in an xml file and is separated into three different
 			phases: 
 			<ul>
 				<li>the import phase (mapping data from a given format to Salt),</li>
@@ -88,7 +88,10 @@ category: Pepper
         <h2>Conversion Wizard</h2>
     </div>
     <div class="content">
-        <ol>
+		<p>To run a conversion process with Pepper, you need to define, which modules should be used. This is usually done in a workflow. Remember, the Pepper workflow is separated into three different
+			phases: the import phase (mapping data from a given format to Salt), the optional manipulation phase (manipulating or enhancing data in Salt) and
+					the export phase (mapping data from Salt to a given format).</p>
+		<p>The conversion wizzard should help you to create a Pepper workflow, but you can also create such a workflow in an xml file as described in <a href="#workflow_file">workflow file</a>. The wizzard will guide you step by step through the creation of a workflow and will let you store the created workflow to disk when you are done. </p>
         <li>Enter the path of the corpus to import e.g. 'C:\myCorpus\':
         <pre>pepper/wizard/importer>C:\myCorpus\</pre>
         </li>
@@ -138,7 +141,9 @@ category: Pepper
         Along with importers and manipulators, you can add more than one exporter. To stop adding exporters, enter an empty line.
             </li>
             <li>
-        To save the workflow, enter 'save' followed by a path where to store the file (.pepper). pepper/wizard>C:\myCorpus\myWorkflow.pepper
+        To save the workflow, enter 'save' followed by a path where to store the file (.pepper). 
+        <pre>pepper/wizard>C:\myCorpus\myWorkflow.pepper</pre>
+        A workflow file is stored as an xml file and is structured as described in <a href="#workflow_file">workflow file</a>.
             </li><li>
         To start the conversion enter 'start'.
         <pre>pepper/wizard>start</pre>
@@ -187,7 +192,7 @@ pepper.removeSDocumentAfterProcessing=true
 	</pre>
 	</div>
 </article>
-<article id="workflow_file">
+<article class="anchor" id="workflow_file">
         <div class="page-header">
             <h2>Workflow File</h2>
         </div>
