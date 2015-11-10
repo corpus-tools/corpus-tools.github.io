@@ -193,7 +193,7 @@ The following snippet gives an impression of how to create that hierarchy. We ju
 
 <pre>
 //create a list of nodes, which shall be overlapped by the NP-node
-List<SStructuredNode> overlappingNodes= new ArrayList<>();
+List&lt;SStructuredNode> overlappingNodes= new ArrayList&lt;>();
 overlappingNodes.add(tok_this);
 overlappingNodes.add(tok_example);
 //adding NP-Node to graph and automatically creating relations to overlapping nodes
@@ -202,7 +202,7 @@ np_1.createAnnotation(null, "cat", "NP");
 //...
 
 //create a list of nodes, which shall be overlapping by SQ-node
-overlappingNodes= new ArrayList<>();
+overlappingNodes= new ArrayList&lt;>();
 overlappingNodes.add(tok_is);
 overlappingNodes.add(np_1);
 SStructure sq= sampleDocument.getDocumentGraph().createStructure(overlappingNodes);
@@ -256,7 +256,7 @@ SSpan contrast_focus= sampleDocument.getDocumentGraph().createSpan(tok_is);
 contrast_focus.createAnnotation(null, "inf-struct", "contrast-focus");
 		
 //create a list of tokens taking part in the set to be annotated as a bundle
-List<SToken> overlappingTokens= new ArrayList<>();
+List&lt;SToken> overlappingTokens= new ArrayList&lt;>();
 overlappingTokens.add(tok_this);
 overlappingTokens.add(tok_example);
 overlappingTokens.add(tok_more);
@@ -295,7 +295,7 @@ The following snippet shows the creation of the model shown in the figure.
 
 <pre>
 //create a span covering the words "the" and "example"
-overlappingTokens= new ArrayList<>();
+overlappingTokens= new ArrayList&lt;>();
 overlappingTokens.add(tok_this);
 overlappingTokens.add(tok_example);
 SSpan span= sampleDocument.getDocumentGraph().createSpan(overlappingTokens);
@@ -371,9 +371,9 @@ docGraph.getNodes();
 docGraph.getRelations();
 		
 //access all outgoing relations of a node (the first structure node)
-List<SRelation<SNode, SNode>> out= docGraph.getOutRelations(docGraph.getStructures().get(0).getId());
+List&lt;SRelation&lt;SNode, SNode>> out= docGraph.getOutRelations(docGraph.getStructures().get(0).getId());
 //access all incoming relations of a node (the first structure node)
-List<SRelation<SNode, SNode>> in= docGraph.getInRelations(docGraph.getStructures().get(0).getId());
+List&lt;SRelation&lt;SNode, SNode>> in= docGraph.getInRelations(docGraph.getStructures().get(0).getId());
 </pre>
 So far we havn't talked about how to traverse the document graph. This is done in section [Traversing graphs](#traversing). 
 
