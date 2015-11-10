@@ -378,16 +378,6 @@ List&lt;SRelation&lt;SNode, SNode>> in= docGraph.getInRelations(docGraph.getStru
 So far we havn't talked about how to traverse the document graph. This is done in section [Traversing graphs](#traversing). 
 
 
-
-
-********************************************
---> come till here
-********************************************
-
-
-
-
-
 ### <a name="persistAndLoad">Persist and Load a Model</a>
 
 Persisting a model is very easy: Only a nonempty _SaltProject_ object and a valid local URI are needed. The following snippet shows how to persist an entire model.
@@ -540,10 +530,10 @@ void traverse(     List&lt;? extends SNode> startNodes,
 </pre>
 
 
-* _startNodes_ represents a list of nodes, which shall be the entry point for traversal, 
-* _traverseType_ is the combination of traversal direction and order explained above, 
+* __startNodes__ represents a list of nodes, which shall be the entry point for traversal, 
+* __traverseType__ is the combination of traversal direction and order explained above, 
 * __traverseid__ is an identifier which can be used to identify the specific traversal job (this can be helpful if more than one is running at the same time) and 
-* _traverseHandler_, is the object which will be used for callback. 
+* __traverseHandler__, is the object which will be used for callback. 
 
 Additionally, you can set a flag to protect the traversal engine from running in cycles. Per default, this flag is set to __false__ and your _traverseHandler_ has to deal with cyclic graphs itself.
 
