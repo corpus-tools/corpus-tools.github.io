@@ -5,6 +5,7 @@ toppage_idx: 2
 icon: icon-annis
 subpages:
 - download.html
+- "Public ANNIS Installations": "#access"
 - corpora.html
 - "|"
 - documentation.html
@@ -52,8 +53,9 @@ ANNIS provides the means for visualizing and retrieving this data.
 
 **For detailed information on the latest version of ANNIS see the User Guide under [documentation](documentation.html)**
 
+<article class="anchor" id="access">
 <div class="page-header">
-# Public ANNIS installations
+# Public ANNIS installations 
 </div>
 
 ANNIS can be installed locally on your computer but there are also public available installations which can be used without any installation.
@@ -64,7 +66,7 @@ ANNIS can be installed locally on your computer but there are also public availa
 * The [SFB 632](https://korpling.german.hu-berlin.de/annis3/) instance for SFB researchers and other partners (login
   required) is now moved to [https://korpling.german.hu-berlin.de/annis3/](https://korpling.german.hu-berlin.de/annis3/).
 * The latest experimental [developer's version](https://korpling.german.hu-berlin.de/annis3-snapshot/) for testing.
-
+</article>
 
 <article>
 
