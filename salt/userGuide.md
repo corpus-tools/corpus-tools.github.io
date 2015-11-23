@@ -40,7 +40,7 @@ SCorpusGraph corpGraph= saltProject.createCorpusGraph();
 SCorpus sampleCorpus= corpGraph.createCorpus(URI.createURI("/sampleCorpus")).get(0);
 {% endhighlight %}
 
-The meta annotation is created via the method _createSMetaAnnotation()_. This method takes three arguments: a namespace which is optional and can be used to take up further information, the name of the annotation and the value of the annotation.
+The meta annotation is created via the method _createMetaAnnotation()_. This method takes three arguments: a namespace which is optional and can be used to take up further information, the name of the annotation and the value of the annotation.
 
 {% highlight java %}
 //creates a meta annotation on the corpus sampleCorpus
