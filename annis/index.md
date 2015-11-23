@@ -26,7 +26,9 @@ redirect_from:
 </div>
 
 <div class="image_wrap">
+<a href="https://korpling.org/annis3/?id=2aec4d6c-1097-4462-8c66-347e2516b11e" target="_blank">
 ![screenshot of ANNIS main user interface](images/annis3_full.png){:style="width:75%"}
+</a>
 </div>
 
 ANNIS is an open source, cross platform (Linux, Mac, Windows), 
