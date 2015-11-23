@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Cooperations
+description: "Projects using ANNIS."
 --- 
 ##Research Projects Employing ANNIS and PAULA
 

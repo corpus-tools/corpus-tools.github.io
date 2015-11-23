@@ -1,6 +1,7 @@
 ---
 layout: default
 title: ANNIS
+description: "ANNIS is an open source, cross platform (Linux, Mac, Windows), web browser-based search and visualization architecture for complex multi-layer linguistic corpora with diverse types of annotation."
 toppage_idx: 2
 icon: icon-annis
 subpages:

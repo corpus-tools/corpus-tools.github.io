@@ -2,6 +2,7 @@
 layout: default
 title: Quick User Guide
 category: Salt
+description: "Quick user guide on howto use the Salt meta model API."
 ---
 # Quick User Guide
 

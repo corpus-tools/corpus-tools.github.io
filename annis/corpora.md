@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Corpora
+description: "List of demo corpora for ANNIS including download links."
 category: ANNIS
 redirect_from: 
 - "/corpora.html"
