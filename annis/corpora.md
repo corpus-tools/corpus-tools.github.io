@@ -16,7 +16,7 @@ imported directly into ANNIS, and PAULA XML, which is more readable and editable
 must be converted to ANNIS using the [Pepper converter framework](/pepper/index.html) for
 import. Some corpora are offered in other source formats, such as TreeTagger SGML (a.k.a. CWB format) or especially for multimodal corpora, EXMARaLDA XML, which may also be converted to relANNIS or PAULA.
 
-
+<div class="table-responsive">
 <table class="table">
   <tbody>
     <tr>
@@ -577,8 +577,7 @@ Mambrini / <a href="http://www.perseus.tufts.edu/hopper/"
 
   </tbody>
 </table>
-
-
+</div>
 
 
 
