@@ -14,10 +14,36 @@
 
 	{% include footer.html %}
 </div>
+	<script src="{{ '/js/jquery-1.11.3.min.js' | prepend: site.baseurl }}"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- 
+    For using custom .js files for only one page, simply copy the .js file to ../js/
+    and include the following in the templates yaml head, where 'example' references
+    a javascript file called example.js:
+    custom_js:
+      - example
+    -->
+    {% if page.custom_js %} {% for js_file in page.custom_js %}
+    <script src="../js/{{ js_file }}.js" type="text/javascript"></script> {% endfor %} {% endif %} 
+    
+    {% if page.needs_gallery %}
+    <script src="{{ '/js/jquery.colorbox-min.js' | prepend: site.baseurl }}"></script>
+	<script>
+		$(document).ready(function(){
+			$(".gallery").colorbox({rel:'gallery', width:"50%", height:"75%"});
+
+			});
+	</script>
+    {% endif %}
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{ site.bootstrap_dist }}/js/bootstrap.min.js"></script>
+	<script src="{{ site.bootstrap_dist }}/js/bootstrap.min.js"></script>
     <!--<script src="{{ site.bootstrap_dist }}/assets/js/docs.min.js"></script>-->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--<script src="{{ site.bootstrap_dist }}/assets/js/ie10-viewport-bug-workaround.js"></script>-->
