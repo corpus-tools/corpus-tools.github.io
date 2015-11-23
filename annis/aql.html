@@ -16,6 +16,7 @@ Once all elements are declared, relations between the elements (or edges) are sp
 </p>
 <p>
 The following example, a query searching for German sentences with topicalized objects (i.e. with the word order object-verb-subject), illustrates these ideas in practice as a complete example: </p>
+<div class="table-responsive">
 <table class="table">
 <tr>
 <th>Query</th><th>Explanation</th>
@@ -40,6 +41,7 @@ the verb precedes (.*) node 4</pre>
 	</td>
 </tr>
 </table>
+</div>
 <p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=bm9kZSAmIHBvcz0iVlZGSU4iICYgY2F0PSJTIiAmIG5vZGUgJiAgCiMzID5bdGlnZXI6ZnVuYz0iT0EiXSAjMSAmCiMzID5bdGlnZXI6ZnVuYz0iU0IiXSAjNCAmCiMzID4gIzIgJgojMSAuKiAjMiAmCiMyIC4qICM0&_c=cGNjMg&cl=5&cr=5&s=0&l=10" target="_blank">
 Try out this query in the pcc2 corpus in ANNIS3
 </a></p>
@@ -63,6 +65,7 @@ then stating that the dominance relationshop hold between the first node (#1) an
 <p>For complex queries in which the same nodes are involved in multiple relations, it may be easier to name nodes explicitly, rather than using the #1, #2, ... number notation.
 Node names are given to nodes when they are defined and are placed before the '#' sing. The following query illustrates this mechanism:</p>
 
+<div class="table-responsive">
 <table class="table">
 <tr>
 <th>Query</th><th>Explanation</th>
@@ -83,6 +86,7 @@ the same NP node also dominates PP2 </pre>
 	</td>
 </tr>
 </table>
+</div>
 <p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=TlAjY2F0PSJOUCIgJiAgClBQMSNjYXQ9IlBQIiAuIFBQMiNjYXQ9IlBQIiAmCiNOUCA-ICNQUDEgJgojTlAgPiAjUFAy&_c=R1VN&cl=5&cr=5&s=0&l=10" target="_blank">
 Try out this query in the GUM corpus in ANNIS3
 </a></p>
@@ -92,6 +96,7 @@ Try out this query in the GUM corpus in ANNIS3
 <p>
 To specify metadata conditions which must apply to matches, add key-value pairs preceded by the reserved prefix <code>meta::</code>. Metadata may apply to corpora, sub-corpora, or individual documents within a corpus. For example, the following query finds sequences of two consecutive adverbs in sports documents (Genre="Sport"):
 </p>
+<div class="table-responsive">
 <table class="table">
 <tr>
 <th>Query</th><th>Explanation</th>
@@ -110,6 +115,7 @@ the metadatum Genre must have the value "Sport"</pre>
 	</td>
 </tr>
 </table>
+</div>
 <br>
 <p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=cG9zPSJBRFYiICYgcG9zPSJBRFYiICYKIzEgLiAjMiAmCm1ldGE6OkdlbnJlPSJTcG9ydCI&_c=cGNjMg&cl=5&cr=5&s=0&l=10" target="_blank">
 Try out this query in the pcc2 corpus in ANNIS
@@ -122,6 +128,7 @@ Try out this query in the pcc2 corpus in ANNIS
 The <tt>tokenarity</tt> operator specifies how many tokens should be covered by the matching element, whereas the <tt>arity</tt> operator determines the amount of directly dominated children the matched node should have.
 For example, the following query searches for nominal phrases that dominate exactly 4 nodes:
 </p>
+<div class="table-responsive">
 <table class="table">
 <tr>
 <th>Query</th><th>Explanation</th>
@@ -138,6 +145,7 @@ this node should have exactly 4 children </pre>
 	</td>
 </tr>
 </table>
+</div>
 <br>
 <p><a href="https://korpling.german.hu-berlin.de/annis3/#_q=Y2F0PSJOUCIgJiAjMTphcml0eT00&_c=cGNjMg&cl=5&cr=5&s=0&l=10" target="_blank">
 Try out this query in the pcc2 corpus in ANNIS
@@ -146,12 +154,17 @@ Try out this query in the pcc2 corpus in ANNIS
 
 <h2>Query Builder</h2>
 <p>
-  In order to facilitate the formulation of complex queries, a graphical query builder allows users to define their search in a graph. This reflects the nodes and edges in the query directly but gives a more intuitive view of the elements and relations being searched for. </p>
-<table><tr><td><center>
-  <img src="images/annis3_querybuilder_edge.png" border="1" vspace="6" alt="ANNIS3 Query Builder" height="360">
-</center></td></tr><tr><td><center>
-  <strong><font size="-1">The Query Builder allows users to model queries as a graph</font></strong>
-</center></td></tr></table>
+ In order to facilitate the formulation of complex queries, a graphical query builder allows users to define their search in a graph. This reflects the nodes and edges in the query directly but gives a more intuitive view of the elements and relations being searched for.
+ </p>
+<div class="image_wrap" style="text-align:center;">
+![Parallel aligned data with a separate syntax tree for each language](images/parallel.png){:style="width:52%"}  
+**Parallel aligned data with a separate syntax tree for each language**  
+</div>
+<div class="image_wrap" style="text-align:center;">
+  <img src="images/annis3_querybuilder_edge.png" alt="ANNIS3 Query Builder" style="width:30%;">
+  <div><strong>The Query Builder allows users to model queries as a graph</strong></div>
+</div>
+
 
 <h2>RegEx Support </h2>
 <p>
@@ -165,7 +178,9 @@ in a separate file, called example_queries.tab within the relANNIS corpus folder
 
 <h2>Operators</h2>
 <p>AQL currently includes the following operators:</p>
-      <table border="1">
+
+<div class="table-responsive">
+      <table border="1" class="table">
 	<tr><td height="20"><strong>Operator</strong></td>
 	<td><strong>Description</strong></td>
 	<td colspan="3"><strong>Illustration</strong></td>
@@ -370,3 +385,4 @@ B	    </strong>
    <td>Specifies that the node is not dominated by any other node within its namespace</td>
   </tr>
 </table>
+</div>
