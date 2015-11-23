@@ -8,7 +8,7 @@ category: Salt
 This article gives a brief overview over the Java API of Salt.
 For giving a short but concise feeling of what Salt is made for, we give examples in Java code, followed by explanations. 
 The description exemplifies the creation of a new corpus, starting from modeling its structure, the primary data, the tokenization, adding annotations, hierarchies and so on. At the end of this article, we show how such a corpus model can be stored as SaltXML and loaded into main memory again. 
-You can download the demonstrated code via github under [https://github.com/korpling/saltDemo](https://github.com/korpling/saltDemo). 
+You can download the demonstrated code via GitHub under [https://github.com/korpling/saltDemo](https://github.com/korpling/saltDemo). 
 The code samples are written for version 3 of the Salt API which is the current development version.
 More code samples can be found in Salt's [sample package](https://github.com/korpling/salt/tree/develop/salt-api/src/main/java/org/corpus_tools/salt/samples). 
 
