@@ -6,8 +6,11 @@ category: Salt
 # Quick User Guide
 
 This article gives a brief overview over the Java API of Salt.
-For giving a short but concise feeling of what Salt is made for, we give examples in Java code, followed by explanations. The description exemplifies the creation of a new corpus, starting from modeling its structure, the primary data, the tokenization, adding annotations, hierarchies and so on. At the end of this article, we show how such a corpus model can be stored as SaltXML and loaded into main memory again. 
-You can download the demonstrated code via github under https://github.com/korpling/saltDemo. More code samples can be found in Salt's sample package. 
+For giving a short but concise feeling of what Salt is made for, we give examples in Java code, followed by explanations. 
+The description exemplifies the creation of a new corpus, starting from modeling its structure, the primary data, the tokenization, adding annotations, hierarchies and so on. At the end of this article, we show how such a corpus model can be stored as SaltXML and loaded into main memory again. 
+You can download the demonstrated code via github under [https://github.com/korpling/saltDemo](https://github.com/korpling/saltDemo). 
+The code samples are written for version 3 of the Salt API which is the current development version.
+More code samples can be found in Salt's [sample package](https://github.com/korpling/salt/tree/develop/salt-api/src/main/java/org/corpus_tools/salt/samples). 
 
 Salt is a graph-based meta model, and therefore each model element in Salt is either a node, a relation, a graph, a label, or a layer. This means nodes can be connected via relations. Nodes and relations are contained in a graph. They also can be contained in layers, which define kinds of sub-graphs. A layer itself is also contained in a graph. Each element can be labeled, even labels can have labels.
 
