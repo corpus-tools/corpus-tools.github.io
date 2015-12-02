@@ -203,14 +203,18 @@ subpages:
             <h1>Download</h1>
         </div>
         <div class="content">
-            <p>Salt is published in the maven central repository. To use Salt via maven, just add
+            <p>Salt is published in the <a href="http://search.maven.org/#search|ga|1|g%3A%22org.corpus-tools%22">maven central repository</a>. To use Salt via maven, just add
                 the following lines to your pom.xml:</p>
             <pre>
-&lt;groupId>de.hu_berlin.german.korpling.saltnpepper&lt;/groupId>
-&lt;artifactId>salt&lt;/artifactId>
+&lt;groupId>corpus-tools&lt;/groupId>
+&lt;artifactId>salt-api&lt;/artifactId>
 &lt;version>VERSION&lt;/version>
 </pre>
-            The Salt source code can be downloaded from GitHub at <a href="{{ site.github_salt }}">{{ site.github_salt }}</a>. </div>
+<p>Replace <i>VERSION</i> with a version of your choice. Available versions can be found at <a href="http://search.maven.org/#search|ga|1|g%3A%22org.corpus-tools%22">maven central repository</a>.</p>
+
+			<p>A sample project to demonstrate the power of Salt can be downloaded from <a href="https://github.com/korpling/salt-demo">https://github.com/korpling/salt-demo</a>.</p>
+            <p>The Salt source code can be downloaded from GitHub at <a href="{{ site.github_salt }}">{{ site.github_salt }}</a>.</p>          
+            </div>
     </article>
     <article class="anchor" id="documentation">
         <div class="page-header">
@@ -218,7 +222,9 @@ subpages:
         </div>
         <div class="content">
             <ul>
-                <li><a href="..{{site.site_salt}}userGuide.html"> Salt quick user guide</a> - a short
+                <li><a href="https://korpling.github.io/salt/doc/"> Salt user guide</a> - a
+                    guide introducing the Salt API</li>
+                <li><a href="https://korpling.github.io/salt/doc/"> Salt user guide (Snapshot)</a> - a
                     guide introducing the Salt API</li>
                 <li><a class="fa fa-file-pdf-o" href="https://github.com/korpling/salt/raw/master/gh-site/doc/salt_modelGuide.pdf"> Salt model guide</a>
                     - a guide describing the model of Salt</li>
