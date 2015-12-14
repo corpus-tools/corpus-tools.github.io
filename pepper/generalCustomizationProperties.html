@@ -1,0 +1,52 @@
+---
+layout: default
+title: General customization properties
+category: Pepper
+description: "List and short description of general customization properties."
+---
+<article>
+  <div class="page-header">
+    <h1>General customization properties</h1>
+  </div>
+  <div class="content">
+    <p>Each Pepper module comes with a set of predefined customization properties.</p> 
+    <table class="table" class="table" style="margin-top:20px">
+      <tr>
+        <th>Customization property</th>
+        <th>Property desciption</th>
+      </tr>
+      <tr>
+        <td>pepper.after.addSLayer</td>
+        <td>Consumes a semicolon separated list of names for {@link SLayer} objects. For each list element, one layer is created and added to all nodes and relations of a document-structure after the mapping was processed. </td>
+      </tr>
+      <tr>
+        <td>pepper.after.copyRes</td> 
+        <td>Copies one or more source files to one or more target files after processing. This is very helpful, in case of customizations should be done in target format. If you use relative paths, the are anchored to either the location of the workflow description file or where Pepper was started. The syntax is as follows: SOURCE_FILE -> TARGET_FILE (; SOURCE_FILE -> TARGET_FILE)*. </td>
+      </tr>
+      <tr>
+       <td>pepper.after.removeAnnos</td>
+       <td>Removes all annotations matching the search template. Several templates are separated by a semicolon. To remove annoattions use the following syntax: 'namespace::name=value (;namespace::name=value) := new_namespace::new_name=new_value'</td> 
+      <tr>
+	  <tr>
+        <td>pepper.after.renameAnnos</td>
+        <td>Renames all annotations matching the search template to the new namespace, name or value. To rename an annotation, use the following syntax: 'old_namespace::old_name=old_value := new_namespace::new_name=new_value', determining the name is mandatory whereas the namespace and value are optional. For instance a pos annotation can be renamed as follows: 'salt::pos:=part-of-speech'. A list of renamings must be separated with ';'. </td>
+      </tr>
+      <tr>
+		<td>pepper.after.reportCorpusGraph</td> 
+		<td>When set to true, prints the corpus graph to standard out after a module has processed it. This property is mainly used for importers, to visualize the created corpus structure. The default value is 'false'.</td>
+      </tr>
+      <tr>
+		<td>pepper.after.tokenize</td>
+		<td>Tokenizes all primary data in the document structrue. </td>
+      </tr>
+      <tr>
+		  <td>pepper.before.addSLayer</td>
+		  <td>Consumes a semicolon separated list of names for {@link SLayer} objects. For each list element, one layer is created and added to all nodes and relations of a document-structure before the mapping was processed. </td>
+	  </tr>	  
+      <tr>
+		  <td>pepper.before.readMeta</td>
+		  <td>Reads meta data for corpora and subcorpora in a very simple attribute-value format like: a=b. To enable the reading of meta data set this property to the file ending of the metadata file. For instance in case of the file is named data.meta: pepper.before.readMeta=meta</td>
+      </tr>
+    </table>
+  </div>
+</article>

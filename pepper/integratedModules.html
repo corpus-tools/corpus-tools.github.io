@@ -1,0 +1,154 @@
+---
+layout: default
+title: Integrated Pepper modules
+category: Pepper
+description: "List and short description of modules which comes with Pepper."
+---
+<article>
+  <div class="page-header">
+    <h1>Pepper modules</h1>
+  </div>
+  <div class="content">
+    <p>Pepper comes with a set of integrated modules. Their functionality is described in this article.</p> 
+  </div>
+</article>
+<article id="DoNothingImporter">
+	<div class="page-header">
+		<h1>DoNothingImporter</h1>
+	</div>
+	<div class="content">
+		This is a dummy importer which imports nothing.
+	</div>
+	<div class="content">
+		<h2>Properties</h2>
+		This module does not define specific customization properties. The list of general customization properties can be found under <a href="./generalCustomizationProperties.html">general customization properties</a>.
+	</div>
+</article>
+<article id="DoNothingExporter">
+	<div class="page-header">
+		<h1>DoNothingExporter</h1>
+	</div>
+	<div class="content">
+		This is a dummy exporter which exports nothing. This exporter can be used to check if a corpus is importable.
+	</div>
+	<div class="content">
+		<h2>Properties</h2>
+		This module does not define specific customization properties. The list of general customization properties can be found under <a href="./generalCustomizationProperties.html">general customization properties</a>.
+	</div>
+</article>
+
+<article id="DOTManipulator">
+	<div class="page-header">
+		<h1>DOTManipulator</h1>
+	</div>
+	<div class="content">
+		This manipulator exports a Salt model to the dot syntax. This can be used to create a graphical representation of the Salt model.
+	</div>
+	<div class="content">
+		<h2>Properties</h2>
+		<table class="table">
+			<tr>
+			<th>Customization property</th>
+			<th>Property desciption</th>
+		  </tr>
+		  <tr>
+			<td>fileEnding</td>
+			<td>The file ending of dot files. </td>
+		  </tr>
+		  <tr>
+			<td>outputDir</td>
+			<td>The location to where the output shall be written to as File object. </td>
+		  </tr>
+		</table>
+		More customization properties can be found under <a href="./generalCustomizationProperties.html">general customization properties</a>.
+	</div>
+</article>
+<article id="DOTExporter">
+	<div class="page-header">
+		<h1>DOTExporter</h1>
+	</div>
+	<div class="content">
+		This exporter exports a Salt model to the dot syntax. This can be used to create a graphical representation of the Salt model.
+	</div>
+	<div class="content">
+		<h2>Properties</h2>
+		This module does not define specific customization properties. The list of general customization properties can be found under <a href="./generalCustomizationProperties.html">general customization properties</a>.
+	</div>
+</article>
+
+<article id="SaltXMLImporter">
+	<div class="page-header">
+		<h1>SaltXMLImporter</h1>
+	</div>
+	<div class="content">
+		This importer imports a Salt model from a SaltXML representation. SaltXML is the native format to persist Salt.
+	</div>
+	<div class="content">
+		<h2>Properties</h2>
+		This module does not define specific customization properties. The list of general customization properties can be found under <a href="./generalCustomizationProperties.html">general customization properties</a>.
+	</div>
+</article>
+<article id="SaltXMLExporter">
+	<div class="page-header">
+		<h1>SaltXMLExporter</h1>
+	</div>
+	<div class="content">
+		This exporter exports a Salt model to a SaltXML representation. SaltXML is the native format to persist Salt. 
+	</div>
+	<div class="content">
+		<h2>Properties</h2>
+		This module does not define specific customization properties. The list of general customization properties can be found under <a href="./generalCustomizationProperties.html">general customization properties</a>.
+	</div>
+</article>
+
+<article id="SaltValidator">
+	<div class="page-header">
+		<h1>SaltValidator</h1>
+	</div>
+	<div class="content">
+		The aim of the SaltValidator is to check a Salt model and to detect possible problems for further modules. This might be very helpful, when developing an importer or a manipulator, to check their output. This could also be used by end users, to check if a module produces a processable output. 
+	</div>
+	<div class="content">
+		<h2>Properties</h2>
+		<table class="table">
+			<tr>
+			<th>Customization property</th>
+			<th>Property desciption</th>
+		  </tr>
+		  <tr>
+			<td>clean</td>
+			<td> This property determines, if the validator should try to repair the salt model in case it is invalid. Attention: Handle this property with care, since  repairing could mean to remove invalid objects. </td>
+		  </tr>
+		  <tr>
+			<td>selfRelation</td>
+			<td>This property determines, if relations which have the same node as source and target should be removed. </td>
+		  </tr>
+		</table>
+		More customization properties can be found under <a href="./generalCustomizationProperties.html">general customization properties</a>.
+	</div>
+</article>
+
+<article id="TextImporter">
+	<div class="page-header">
+		<h1>TextImporter</h1>
+	</div>
+	<div class="content">
+		This importer imports a simple text document like .txt etc. . Even other documents can be imported as simple text.
+	</div>
+	<div class="content">
+		<h2>Properties</h2>
+		This module does not define specific customization properties. The list of general customization properties can be found under <a href="./generalCustomizationProperties.html">general customization properties</a>.
+	</div>
+</article>
+<article id="TextExporter">
+	<div class="page-header">
+		<h1>TextExporter</h1>
+	</div>
+	<div class="content">
+		This is a PepperExporter which extracts and exports the primary text of a Salt model and stores it into a text file. 
+	</div>
+	<div class="content">
+		<h2>Properties</h2>
+		This module does not define specific customization properties. The list of general customization properties can be found under <a href="./generalCustomizationProperties.html">general customization properties</a>.
+	</div>
+</article>
