@@ -44,9 +44,9 @@ Source
       <td>
       GUM<br/>
 [<a
- href="https://github.com/amir-zeldes/gum/blob/master/GUM_PAULA.zip?raw=true">PAULA</a>,
+ href="https://github.com/amir-zeldes/gum/tree/master/paula">PAULA</a>,
       <a
- href="https://github.com/amir-zeldes/gum/blob/master/GUM_relANNIS.zip?raw=true">ANNIS</a>]
+ href="https://github.com/amir-zeldes/gum/tree/master/annis">ANNIS</a>]
       </td>
       <td>
   Georgetown University Multilayer Corpus
