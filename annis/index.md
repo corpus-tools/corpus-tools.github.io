@@ -171,6 +171,7 @@ For enquiries or to subscribe to the <b>ANNIS mailing list</b>, e-mail us at: <a
 
 <div class="page-header">
 # Reference
+</div>
 If you use ANNIS in your scientific work, please cite it as follows.
 
 <strong>Krause, Thomas & Zeldes, Amir</strong> (2014): <em>ANNIS3: A new architecture for generic corpus query and visualization.</em> in: Digital Scholarship in the Humanities 2014 <a href="http://dsh.oxfordjournals.org/cgi/content/abstract/fqu057?ijkey=GJBr0LhNfKW1g8i&keytype=ref">http://dsh.oxfordjournals.org/cgi/content/abstract/fqu057?ijkey=GJBr0LhNfKW1g8i&keytype=ref</strong>
