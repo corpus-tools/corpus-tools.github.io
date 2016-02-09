@@ -169,9 +169,13 @@ as well as native RegEx support.
 
 For enquiries or to subscribe to the <b>ANNIS mailing list</b>, e-mail us at: <a href="mailto:annis-admin@ling.uni-potsdam.de">annis-admin@ling.uni-potsdam.de</a>
 
-</article>
+<div class="page-header">
+# Reference
+If you use ANNIS in your scientific work, please cite it as follows.
 
-<article>
+<strong>Krause, Thomas & Zeldes, Amir</strong> (2014): <em>ANNIS3: A new architecture for generic corpus query and visualization.</em> in: Digital Scholarship in the Humanities 2014 <a href="http://dsh.oxfordjournals.org/cgi/content/abstract/fqu057?ijkey=GJBr0LhNfKW1g8i&keytype=ref">http://dsh.oxfordjournals.org/cgi/content/abstract/fqu057?ijkey=GJBr0LhNfKW1g8i&keytype=ref</strong>
+</div>
+
 <div class="page-header">
 # Credits
 </div>
