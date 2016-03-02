@@ -3,7 +3,7 @@ layout: default
 title: Cooperations
 description: "Projects using ANNIS."
 --- 
-##Research Projects Employing ANNIS and PAULA
+## Research Projects Employing ANNIS and PAULA
 
 * Cooperations within [SFB 632](http://www.sfb632.uni-potsdam.de/) "Information Structure":
   * [A5](http://www.sfb632.uni-potsdam.de/en/cprojects/a5.html): "Focus realization, focus interpretation, and focus use from a cross-linguistic perspective"
@@ -50,4 +50,5 @@ description: "Projects using ANNIS."
 * University of Regensburg [DFG project on Grammaticalization of Peripheral Subjects in Slavic Languages](http://rhssl1.uni-regensburg.de/SlavKo): 
   * [RRuDi](http://www-korpus.uni-r.de/diakorp/index.php) - Regensburg Russian Diachronic Corpus
   * [PolDi](http://rhssl1.uni-regensburg.de/SlavKo/korpus/poldi) - Regensburg Polish Diachronic Corpus
+* [What's up, Switzerland?](http://www.whatsup-switzerland.ch) - a corpus project using WhatsApp chats
   
