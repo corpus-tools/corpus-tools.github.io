@@ -37,6 +37,7 @@ description: "Projects using ANNIS."
 * [KOMPOST](https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/forschung/kompost) - BMBF project on identification of competence indicators in school children's writing
 * [LAUDATIO](http://www.laudatio-repository.org/laudatio/) - Long-term Access and Usage of Deeply Annotated Information - A project working on sustainable [repository}(http://www.laudatio-repository.org/repository/) storage for historical corpora at Humboldt-Universität zu Berlin
 * [MASC](http://www.anc.org/data/masc/) - The Manually Annotated SubCorpus of the Open American National Corpus (OANC) 
+* [MATAS](http://tekstynas.vdu.lt/) - Morphologically Annotated Corpus of the Lithuanian Language at the Centre for Computational Linguistics (Vytautas Magnus University)
 * [PROIEL](http://www.hf.uio.no/ifikk/english/research/projects/proiel/) (Oslo) - Pragmatic Resources in Old Indo-European Languages
 * [Perseus Latin and Ancient Greek Treebank](http://annis.perseus.tufts.edu/) - Dependency Treebanks of Ancient Greek and Latin Classics
 * [Ramsès](http://www.egypto.ulg.ac.be/Ramses.htm) - an Egyptological project at the Université de Liège producing corpora and annotation tools for Late Egyptian texts
