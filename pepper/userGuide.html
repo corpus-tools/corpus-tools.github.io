@@ -21,7 +21,7 @@ description: "User guide on howto get started using the Pepper corpus conversion
 			merging data from different sources. <br/> The import phase handles the mapping from a
 			format <i>X</i> to Salt, the export phase handles the mapping from Salt to a format <i>Y</i>. During the
 			manipulation phase, the data in Salt can be enhanced, reduced or manipulated. A phase is
-			divided into several steps. The import and export phase must contain at least one step each, whereas the manipulation phase can contain any number of steps. Each Pepper module realizes
+			divided into several steps. Each step is done by exactly one module. A module handling an import phase step is called importer, a module handling a manipulation phase step is called manipulator and a module handling an export phase step is called exporter. The import and export phase must contain at least one step each, whereas the manipulation phase can contain any number of steps. Each Pepper module realizes
 			exactly one step. 
 		</div>
 		<div style="text-align:center;margin-bottom:10px;margin-top:10px;">
