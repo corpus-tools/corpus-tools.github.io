@@ -167,7 +167,7 @@ as well as native RegEx support.
 # Contact
 </div>
 
-For enquiries or to subscribe to the <b>ANNIS mailing list</b>, e-mail us at: <a href="mailto:annis-admin@ling.uni-potsdam.de">annis-admin@ling.uni-potsdam.de</a>
+For enquiries or to subscribe to the <b>ANNIS mailing list</b>, e-mail us at: <a href="mailto:annis@corpus-tools.org">annis@corpus-tools.org</a>
 
 <div class="page-header">
 # Reference
