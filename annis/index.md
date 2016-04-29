@@ -181,14 +181,14 @@ If you use ANNIS in your scientific work, please cite it as follows.
 # Credits
 </div>
 
-Current team:
+Current team members:
 
 * [Thomas Krause](http://u.hu-berlin.de/korpling-thomaskrause) (LAUDATIO, Humboldt-Universität zu Berlin)
 * [Amir Zeldes](http://corpling.uis.georgetown.edu/amir) (Georgetown University)
 * [Shuo Zhang](http://zangsir.weebly.com/) (Georgetown University)
 * [Florian Zipser](http://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/mitarbeiter-innen/florian/) (LAUDATIO, Humboldt-Universität zu Berlin)
 
-Former developers:
+Former team members:
 
 * Benjamin Weißenfels
 * Karsten Hütter
