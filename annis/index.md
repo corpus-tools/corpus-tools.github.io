@@ -187,12 +187,16 @@ Current team members:
 * [Amir Zeldes](http://corpling.uis.georgetown.edu/amir) (Georgetown University)
 * [Shuo Zhang](http://zangsir.weebly.com/) (Georgetown University)
 * [Florian Zipser](http://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/mitarbeiter-innen/florian/) (LAUDATIO, Humboldt-Universität zu Berlin)
+* Martin Klotz
 
 Former team members:
 
+* [Arne Neumann](https://github.com/arne-cl)
 * Benjamin Weißenfels
+* [Christian Chiarcos](http://acoli.informatik.uni-frankfurt.de/~chiarcos)
 * Karsten Hütter
-* Martin Klotz
+* Michael Götze
+* [Stefanie Dipper](https://www.linguistics.ruhr-uni-bochum.de/~dipper/)
 * Tom Ruette
 * Viktor Rosenfeld
 * and several other [contributors](https://github.com/korpling/ANNIS/graphs/contributors)
