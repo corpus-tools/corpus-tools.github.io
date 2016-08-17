@@ -8,7 +8,7 @@ toppage_idx: 5
 subpages:
 - "Download" : "#download"
 - "Documentation" : "#documentation"
-- "Contributaion and License": "#contributaion"
+- "Contribution and License": "#contribution"
 - "|"
 - knownModules.html
 - integratedModules.html
@@ -115,7 +115,7 @@ To learn more about integrating Pepper as a library in other software products g
 </article>
 
 
-<article class="anchor" id="contributaion">
+<article class="anchor" id="contribution">
 <div class="page-header">
    <h1>Contribution and License</h1>
 </div>
