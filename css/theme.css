@@ -113,6 +113,15 @@ background-color: #222;
 	border-width: 1px;
 }
 
+div.center-image-80 {
+	text-align:center;
+}
+
+.center-image-80 img {
+	width: 80%;
+}
+
+
 .thumbnail
 {
 float: left;
