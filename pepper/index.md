@@ -125,7 +125,7 @@ Pepper is published under the Open Source license {{site.apache_license}}. We wa
 #### Found a bug or have any feature request?
 
 Please let us know what you have found, or which ideas for enhancements you have. Please leave us an issue on
-GitHub at <a href="{{ site.github_pepper }}/pepper/issues"><i class="fa fa-github"></i> Pepper</a>
+GitHub at <a href="{{ site.github_pepper }}/issues"><i class="fa fa-github"></i> Pepper</a>
 or write us an e-mail: <a href="mailto:{{ site.email_snp }}">{{ site.email_snp }}</a>.
  
 
