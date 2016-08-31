@@ -190,6 +190,7 @@ Current team members:
 * [Shuo Zhang](http://zangsir.weebly.com/) (Georgetown University)
 * [Florian Zipser](http://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/mitarbeiter-innen/florian/) (LAUDATIO, Humboldt-Universität zu Berlin)
 * Martin Klotz
+* [Anke Lüdeling](https://www.linguistik.hu-berlin.de/en/institut-en/professuren-en/korpuslinguistik/mitarbeiter-innen-en/anke/standardseite?set_language=en) (Humboldt-Universität zu Berlin)
 
 Former team members:
 
