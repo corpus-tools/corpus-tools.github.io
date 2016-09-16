@@ -7,6 +7,7 @@ icon: icon-pepper-o
 toppage_idx: 5
 subpages:
 - "Download" : "#download"
+- "How to cite": "#howtocite"
 - "Documentation" : "#documentation"
 - "Contribution and License": "#contribution"
 - "|"
@@ -62,17 +63,6 @@ and to easily plug in new ones.
 <img onclick="window.open('./images/pepper_architecture.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();" class="enlarge" src="./images/pepper_architecture.svg" alt="Pepper architecture"/>
 </div>
 
-<div class="page-header">
-# How to cite
-</div>
-If you use Pepper in your scientific work, please cite it as follows.
-
-F. Zipser &amp; L. Romary (2010). <strong>A model oriented approach to the mapping of annotation formats using
-standards</strong>. In: <em>Proceedings of the Workshop on Language
-Resource and Language Technology Standards, LREC 2010. Malta.</em> URL: <a
-href="http://hal.archives-ouvertes.fr/inria-00527799/en/"
->http://hal.archives-ouvertes.fr/inria-00527799/en/</a>
-
 <article class="anchor" id="download">
 <div class="page-header">
 <h1>Download</h1>
@@ -94,6 +84,21 @@ is running, open a command line and run:
 java -version 
 </pre>
 You need at least version 1.7.
+</article>
+
+
+<article class="anchor" id="howtocite">
+<div class="page-header">
+# How to cite
+</div>
+If you use Pepper in your scientific work, please cite it as follows.
+
+F. Zipser &amp; L. Romary (2010). <strong>A model oriented approach to the mapping of annotation formats using
+standards</strong>. In: <em>Proceedings of the Workshop on Language
+Resource and Language Technology Standards, LREC 2010. Malta.</em> URL: <a
+href="http://hal.archives-ouvertes.fr/inria-00527799/en/"
+>http://hal.archives-ouvertes.fr/inria-00527799/en/</a>
+
 </article>
 
 <article class="anchor" id="documentation">

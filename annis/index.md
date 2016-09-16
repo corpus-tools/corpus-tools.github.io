@@ -6,6 +6,7 @@ toppage_idx: 2
 icon: icon-annis
 subpages:
 - download.html
+- "How to cite": "#howtocite"
 - "Public ANNIS Installations": "#access"
 - corpora.html
 - "|"
@@ -56,6 +57,7 @@ ANNIS provides the means for visualizing and retrieving this data.
 
 **For detailed information on the latest version of ANNIS see the User Guide under [documentation](documentation.html)**
 
+<article class="anchor" id="howtocite">
 <div class="page-header">
 # How to cite
 </div>
@@ -64,7 +66,7 @@ If you use ANNIS in your scientific work, please cite it as follows.
 
 <strong>Krause, Thomas &amp; Zeldes, Amir </strong>(2016): <em>ANNIS3: A new architecture for generic corpus query and visualization.</em>   in: Digital Scholarship in the Humanities  2016 (31).
  <a href="http://dsh.oxfordjournals.org/content/31/1/118" target="_blank">http://dsh.oxfordjournals.org/content/31/1/118</a>
-
+</article>
 
 
 <article class="anchor" id="access">
