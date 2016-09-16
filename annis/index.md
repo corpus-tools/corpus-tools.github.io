@@ -56,6 +56,17 @@ ANNIS provides the means for visualizing and retrieving this data.
 
 **For detailed information on the latest version of ANNIS see the User Guide under [documentation](documentation.html)**
 
+<div class="page-header">
+# How to cite
+</div>
+If you use ANNIS in your scientific work, please cite it as follows.
+
+
+<strong>Krause, Thomas &amp; Zeldes, Amir </strong>(2016): <em>ANNIS3: A new architecture for generic corpus query and visualization.</em>   in: Digital Scholarship in the Humanities  2016 (31).
+ <a href="http://dsh.oxfordjournals.org/content/31/1/118" target="_blank">http://dsh.oxfordjournals.org/content/31/1/118</a>
+
+
+
 <article class="anchor" id="access">
 <div class="page-header">
 # Public ANNIS installations 
@@ -168,16 +179,6 @@ as well as native RegEx support.
 </div>
 
 For enquiries or to subscribe to the <b>ANNIS mailing list</b>, e-mail us at: <a href="mailto:annis@corpus-tools.org">annis@corpus-tools.org</a>
-
-<div class="page-header">
-# Reference
-</div>
-If you use ANNIS in your scientific work, please cite it as follows.
-
-
-<strong>Krause, Thomas &amp; Zeldes, Amir </strong>(2016): <em>ANNIS3: A new architecture for generic corpus query and visualization.</em>   in: Digital Scholarship in the Humanities  2016 (31).
- <a href="http://dsh.oxfordjournals.org/content/31/1/118" target="_blank">http://dsh.oxfordjournals.org/content/31/1/118</a>
-
 
 <div class="page-header">
 # Credits
