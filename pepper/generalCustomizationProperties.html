@@ -45,7 +45,7 @@ description: "List and short description of general customization properties."
 	  </tr>	  
       <tr>
 		  <td>pepper.before.readMeta</td>
-		  <td>Reads meta data for corpora and subcorpora in a very simple attribute-value format like: a=b. To enable the reading of meta data set this property to the file ending of the metadata file. For instance in case of the file is named data.meta: pepper.before.readMeta=meta</td>
+		  <td>Reads meta data for corpora and subcorpora in a very simple attribute-value format like: a=b. To enable the reading of meta data set this property to the file ending of the metadata file. The name of the file itself should match the object being annotated (e.g. the name of the corpus, subcorpus, or document being annotated). For instance in the case of a corpus named my_corpus and an extension .meta, the file is named my_corpus.meta, and the property should be set to: pepper.before.readMeta=meta</td>
       </tr>
     </table>
   </div>
