@@ -15,6 +15,7 @@ site_atomic: /atomic/index.html
 css_url: ../css
 github_pepper: https://github.com/korpling/pepper
 github_salt: https://github.com/korpling/salt
+pepper_doc_moduleDev: http://korpling.github.io/pepper/doc/moduleDevelopers.html
 apache_license: <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>
 
 module_paula: https://github.com/korpling/pepperModules-PAULAModules

@@ -33,7 +33,7 @@ When your annotation tool produces a different data format from the one your ana
 * Pepper comes with a plug-in mechanism which makes it easy to extend it for further formats and data manipulations.
 * Pepper is module-based, each mapping is done by a separate module. This enables each module to be combined with every other module in one single workflow.
 * Pepper uses the intermediate model [Salt](..{{site.site_salt_main}}) which reduces the number of mappings to convert _n_ into _m_ formats.
-* Pepper modules, such as the [MergingModule](https://github.com/korpling/pepperModules-MergingModule), allow to merge the data from different annotation tools together and create multi-layer corpora.
+* Pepper modules, such as the [MergingModule]({{site.pepper_doc_moduleDev}}), allow to merge the data from different annotation tools together and create multi-layer corpora.
 * Pepper can be used as an interactive command line tool, as a command to be included in scripts, or as an API to be integrated in other software products.
 * Pepper is written in [Java](https://java.com/de/download/) and can be run on all operation systems which are ready to run Java (Windows, Mac, Linux, Unix, ...).
 * Pepper is free and open source software. It is distributed under the {{site.apache_license}}.
@@ -116,7 +116,7 @@ f there is no [existing module](..{{site.site_pepper}}knownModules.html) which f
 implement your own module. With Pepper's plug-in mechanism your module can
 easily be integrated into the Pepper plattform. The possibility of combining
 your new module with already existing ones lets you create completely new workflows.
-Please read the [Module Developer's Guide](http://korpling.github.io/pepper/doc/module_developers.html) to get a detailed documentation of how to implement a Pepper module.
+Please read the [Module Developer's Guide](http://korpling.github.io/pepper/doc/moduleDevelopers.html) to get a detailed documentation of how to implement a Pepper module.
 
 ## Using Pepper as a library
 With the Pepper library, we provide a programmatic access to the Pepper framework,
