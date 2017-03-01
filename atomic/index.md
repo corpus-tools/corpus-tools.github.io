@@ -70,6 +70,8 @@ To receive updates about releases, please subscribe to the Atomic users mailing 
 
 {% include_relative {{ page.VAR_license }} %}
 
+--------------
+
 <article>
 <div class="row">
 <div class="col-md-6">
