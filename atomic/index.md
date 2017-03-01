@@ -69,3 +69,63 @@ To receive updates about releases, please subscribe to the Atomic users mailing 
 </article>
 
 {% include_relative {{ page.VAR_license }} %}
+
+<article>
+<div class="row">
+<div class="col-md-6">
+## <i class="fa fa-envelope"></i> Contact
+
+### Atomic
+
+For Atomic-related questions, please write a message to the atomic-user mailing list:
+
+<span class="fa fa-envelope-o"></span><a onmouseover="setEmailStatus('atomic-user', 'listserv.uni-jena', 'de'); return true;" onmouseout="status=''; return true;" onclick="sendEmail('atomic-user', 'listserv.uni-jena', 'de', ''); return false;" href="javascript:sendEmail('atomic-user',%20'listserv.uni-jena',%20'de',%20'')" target="_self"> atomic-user &#x40; listserv · uni-jena · de</a>
+
+### LinkType
+
+For questions related to the LinkType research project, please consult the project website:
+[http://linktype.iaa.uni-jena.de/](http://linktype.iaa.uni-jena.de/)
+
+## <i class="fa fa-fast-forward"></i> Keep up to date
+
+Subscribe to the Atomic users mailing list: <a class="fa fa-envelope-o" href="https://lserv.uni-jena.de/mailman/listinfo/atomic-user"> atomic-user</a>.
+
+Subscribe to the Atomic developers mailing list: <a class="fa fa-envelope-o" href="https://lserv.uni-jena.de/mailman/listinfo/atomic-dev"> atomic-dev</a>.
+</div><!--/.col-md-3-->
+
+<div class="col-md-6">
+## <i class="fa fa-info-circle"></i> Impressum
+
+<div>
+The following information (Impressum) is required under German law.
+
+Responsible for the content of this site:  
+Volker Gast  
+Friedrich Schiller University Jena  
+Institut für Anglistik und Amerikanistik  
+Ernst-Abbe-Platz 8  
+07743 Jena  
+Germany  
+Tel: +49 (0)3641 944500  
+<span class="fa fa-envelope-o"></span> <a onmouseover="setEmailStatus('atomic', 'corpus-tools', 'org'); return true;" onmouseout="status=''; return true;" onclick="sendEmail('atomic', 'corpus-tools', 'org', ''); return false;" href="javascript:sendEmail('atomic',%20'corpus-tools',%20'org',%20'')" target="_self">atomic &#x40; corpus-tools · org</a>
+</div>
+</div><!--/.col-md-3-->
+</div>
+</article>
+
+<article id="supporters">
+<div class="page-header">
+<h1>Supported by</h1>
+  </div>
+<div class="funders">
+<a href="http://www.uni-jena.de/en/start.html">
+<img width="100" src=".././images/logos/fsu-trans.png" alt="Universität Jena" />
+  </a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.dfg.de/en/">
+<img width="250" src=".././images/logos/dfg_logo_schriftzug_blau.png" alt="Deutsche Forschungsgemeinschaft (DFG)" />
+  </a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&amp;cl=en">
+<img width="100" src=".././images/logos/husiegel_bw_gross.png" alt="Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology"/>
+  </a>
+</div>
+</article>
