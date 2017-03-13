@@ -31,7 +31,7 @@ description: "Projects using ANNIS."
   * [Frühneuzeitliche Fürstinnenkorrespondenz im mitteldeutschen Raum](http://dwee.eu/Rosemarie_Luehr/?Projekte___DFG-Projekte___Fruehneuzeitliche_Fuerstinnenkorrespondenz_im_mitteldeutschen_Raum)
 * [Forschungsverbund Linguistik - Bioinformatik](https://www.linguistik.hu-berlin.de/de/forschung/abgeschlossene-projekte/forschungsverbund/) - Syntactic annotation of diachronic German language stages for the calculation of linguistic distance and phylogeny, HU Berlin (project completed)
 * [GUM](http://corpling.uis.georgetown.edu/gum/) - Georgetown University Multilayer Corpus - a collaborative multilayer annotation project as part of the Computational Linguistics curriculum at Georgetown University.
-* [Kobalt-DaF](http://www.uni-konstanz.de/Kobalt/) - Korpusbasierte Analyse von Lernertexten für Deutsch als Fremdsprache - a research network on German learner language
+* [Kobalt-DaF](http://web.archive.org/web/20161008095131/http://kobalt-daf.de/) - Korpusbasierte Analyse von Lernertexten für Deutsch als Fremdsprache - a research network on German learner language
 * [KOMeT](http://korpling.german.hu-berlin.de/komet/) - Korpuslinguistische Methoden für e-Philologie mit TEI - a junior researcher group in the Digital Humanities funded by the German Ministry of Education and Science ([BMBF](http://www.bmbf.de/en/))
 * [KOMPOST](https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/forschung/kompost) - BMBF project on identification of competence indicators in school children's writing
 * [LAUDATIO](http://www.laudatio-repository.org/laudatio/) - Long-term Access and Usage of Deeply Annotated Information - A project working on sustainable [repository}(http://www.laudatio-repository.org/repository/) storage for historical corpora at Humboldt-Universität zu Berlin
@@ -48,7 +48,7 @@ description: "Projects using ANNIS."
 * [The Anselm Project](http://www.linguistics.ruhr-uni-bochum.de/anselm/) - "Questions by Saint Anselm about the Lord's Passion" - an interdisciplinary research project on a 14th-16th century German text at the Ruhr University Bochum
 * [The Language Archive](http://tla.mpi.nl/) at the Max Planck Institute for Psycholinguistics (Nijmegen, NL), with discourse-annotated corpora of Dutch in ANNIS
 * University of Regensburg [DFG project on Grammaticalization of Peripheral Subjects in Slavic Languages](http://rhssl1.uni-regensburg.de/SlavKo): 
-  * [RRuDi](http://www-korpus.uni-r.de/diakorp/index.php) - Regensburg Russian Diachronic Corpus
+  * [RRuDi](http://rhssl1.uni-regensburg.de/SlavKo/korpus/rrudi-new/) - Regensburg Russian Diachronic Corpus
   * [PolDi](http://rhssl1.uni-regensburg.de/SlavKo/korpus/poldi) - Regensburg Polish Diachronic Corpus
 * [What's up, Switzerland?](http://www.whatsup-switzerland.ch) - a corpus project using WhatsApp chats
   
