@@ -26,7 +26,7 @@ module_tei: https://github.com/korpling/pepperModules-TEIModules
 
 
 link_tigerxml: <a href="http://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/TIGERSearch/doc/html/TigerXML.html">Tiger XML</a>
-link_ptb: <a href="https://www.cis.upenn.edu/~treebank/">Penn Treebank</a>
+link_ptb: <a href="http://web.archive.org/web/20161118112727/http://www.cis.upenn.edu/~treebank/">Penn Treebank</a>
 link_mmax2: <a href="http://mmax2.sourceforge.net/">MMAX2</a>
 link_exmaralda: <a href="http://exmaralda.org/">EXMARaLDA</a>
 link_elan: <a href="https://tla.mpi.nl/tools/tla-tools/elan/">ELAN</a>

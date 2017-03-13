@@ -397,7 +397,7 @@ Mambrini / <a href="http://www.perseus.tufts.edu/hopper/"
                  Courtesy
                       of the 
                                 Lehrstuhl f&uuml;r Indogermanistik, Universit&auml;t Jena <a
-                           href="http://www.indogermanistik.uni-jena.de/Web/Projekte/Fuerstinnenkorr.htm"
+                           href="http://dwee.eu/Rosemarie_Luehr/?Projekte___DFG-Projekte___Fruehneuzeitliche_Fuerstinnenkorrespondenz_im_mitteldeutschen_Raum"
                            >[website]</a>
             </td>
        </tr>
@@ -430,9 +430,9 @@ Mambrini / <a href="http://www.perseus.tufts.edu/hopper/"
             <td>
                  Courtesy
                       of <a
-                           href="http://www.uni-regensburg.de/Fakultaeten/phil_Fak_IV/Korpuslinguistik/meyer/index.php"
+                           href="https://www.slawistik.hu-berlin.de/de/member/meyerrol"
                            >Roland Meyer /
-                                Institut f&uuml;r Slavistik, Universit&auml;t Regensburg</a>
+                                 Institut für Slawistik , Humboldt-Universität zu Berlin</a>
             </td>
        </tr>
 

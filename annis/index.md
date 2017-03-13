@@ -48,7 +48,7 @@ for audio / video annotations is also required.
 
 Data is often annotated using both automatic taggers/parsers 
 and a growing set of manual annotation tools 
-(e.g. [EXMARaLDA](http://exmaralda.org/), [ELAN](http://www.lat-mpi.eu/tools/elan/), 
+(e.g. [EXMARaLDA](http://exmaralda.org/), [ELAN](https://tla.mpi.nl/tools/tla-tools/elan/), 
 [annotate](http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/annotate.html)/[Synpathy](http://www.mpi.nl/tools/synpathy.html), 
 [MMAX](http://mmax2.sourceforge.net/), [RSTTool](http://www.wagsoft.com/RSTTool/), 
 [Arborator](http://arborator.ilpga.fr/), [WebAnno](https://code.google.com/p/webanno/), [Atomic]({{site.site_atomic}})),
