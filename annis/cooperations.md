@@ -9,15 +9,15 @@ description: "Projects using ANNIS."
   * [A5](http://www.sfb632.uni-potsdam.de/en/cprojects/a5.html): "Focus realization, focus interpretation, and focus use from a cross-linguistic perspective"
   * [A6](http://www.sfb632.uni-potsdam.de/en/cprojects/a6.html): "A constraint-based analysis of information structure in German, Spanish and French"
   * [A8](http://www.sfb632.uni-potsdam.de/en/cprojects/a8.html): "Structuring linguistic information using discourse particles"
-  * [B1](http://www.sfb632.uni-potsdam.de/en/cprojects/b1.html): "The Interaction of Information Structure and Grammar in Gur and Kwa Languages" (data elicited with [QUIS](https://www.sfb632.uni-potsdam.de/quis.html); project completed)
-  * [B2](http://www.sfb632.uni-potsdam.de/en/cprojects/b2.html): "Information Structuring in Chadic Languages" (data elicited with [QUIS](https://www.sfb632.uni-potsdam.de/quis.html); project completed)
+  * [B1](http://www.sfb632.uni-potsdam.de/en/eprojects/b1.html): "The Interaction of Information Structure and Grammar in Gur and Kwa Languages" (data elicited with [QUIS](https://www.sfb632.uni-potsdam.de/quis.html); project completed)
+  * [B2](http://www.sfb632.uni-potsdam.de/en/eprojects/b2.html): "Information Structuring in Chadic Languages" (data elicited with [QUIS](https://www.sfb632.uni-potsdam.de/quis.html); project completed)
   * [B4](http://www.sfb632.uni-potsdam.de/en/cprojects/b4.html): "The Role of Information Structure in the Development of Word Order Regularities in Germanic"
   * [B6](http://www.sfb632.uni-potsdam.de/en/cprojects/b6.html): "Grammatical Reduction and Information Structural Preferences in a Contact Variety of German: Kiezdeutsch"
   * [B7](http://www.sfb632.uni-potsdam.de/en/cprojects/b7.html): "Predicate-centered focus types: A sample-based typological study in African languages"
-  * [C1](http://www.sfb632.uni-potsdam.de/en/cprojects/c1.html): "Contextually Licensed Non-canonical Word Order in Language Comprehension" (completed)
-  * [C6](http://www.sfb632.uni-potsdam.de/en/cprojects/c6.html): "Experimental and Corpus Investigations of Information Structure in Hindi" (completed)
+  * [C1](http://www.sfb632.uni-potsdam.de/en/eprojects/c1.html): "Contextually Licensed Non-canonical Word Order in Language Comprehension" (completed)
+  * [C6](http://www.sfb632.uni-potsdam.de/en/eprojects/c6.html): "Experimental and Corpus Investigations of Information Structure in Hindi" (completed)
   * [D1](http://www.sfb632.uni-potsdam.de/en/cprojects/d1.html): "Linguistic Database for Information Structure: Annotation and Retrieval"
-  * [D2](http://www.sfb632.uni-potsdam.de/en/cprojects/d2.html): "Typology of Information Structure" (completed)
+  * [D2](http://www.sfb632.uni-potsdam.de/en/eprojects/d2.html): "Typology of Information Structure" (completed)
 * [Argument Structure in Texts](https://sites.google.com/site/argumentstructureintexts/home/) - A comparative-typological joint project at the universities of Erfurt (Germany) and Pavia (Italy), working on a quantitative investigation of argument structure in Classical Greek and Yucatec Maya (ANNIS integration in progress)
 * [Atomic](http://linktype.iaa.uni-jena.de/atomic/) - A versatile and platform-independent annotation tool with connection to ANNIS via SaltNPepper developed at the University of Zurich and Friedrich Schiller University Jena
 * [BeMaTaC](https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/forschung/bematac) - The Berlin Map Task Corpus: A deeply annotated multimodal map-task corpus of spoken learner and native German
@@ -27,10 +27,9 @@ description: "Projects using ANNIS."
 * [DDD - Deutsche Diachron Digital](http://www.deutschdiachrondigital.de/) - Referenzkorpus Altdeutsch - a reference corpus of historical German texts (8th-13th century)
 * [Falko](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/forschung/falko) - Fehlerannotiertes Lernerkorpus des Deutschen als Fremdsprache / An error-annotated learner corpus of German as a foreign language, HU Berlin
 * Friedrich-Schiller-Universität Jena:
-  * [Informationsstruktur in älteren indogermanischen Sprachen](http://www.indogermanistik.uni-jena.de/index.php?auswahl=183&ident=LE)
-  * [Referenzkorpus Altdeutsch](http://www.indogermanistik.uni-jena.de/index.php?auswahl=180&ident=LE)
-  * [Frühneuzeitliche Fürstinnenkorrespondenz im mitteldeutschen Raum](http://www.indogermanistik.uni-jena.de/index.php?auswahl=184&ident=LE)
-* [Forschungsverbund Linguistik - Bioinformatik](http://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/forschung/forschungsverbund_ling_bioinf) - Syntactic annotation of diachronic German language stages for the calculation of linguistic distance and phylogeny, HU Berlin (project completed)
+  * [Informationsstruktur in älteren indogermanischen Sprachen](http://dwee.eu/Rosemarie_Luehr/?Projekte___DFG-Projekte___Informationsstruktur_in_aelteren_indogermanischen_Sprachen)
+  * [Frühneuzeitliche Fürstinnenkorrespondenz im mitteldeutschen Raum](http://dwee.eu/Rosemarie_Luehr/?Projekte___DFG-Projekte___Fruehneuzeitliche_Fuerstinnenkorrespondenz_im_mitteldeutschen_Raum)
+* [Forschungsverbund Linguistik - Bioinformatik](https://www.linguistik.hu-berlin.de/de/forschung/abgeschlossene-projekte/forschungsverbund/) - Syntactic annotation of diachronic German language stages for the calculation of linguistic distance and phylogeny, HU Berlin (project completed)
 * [GUM](http://corpling.uis.georgetown.edu/gum/) - Georgetown University Multilayer Corpus - a collaborative multilayer annotation project as part of the Computational Linguistics curriculum at Georgetown University.
 * [Kobalt-DaF](http://www.uni-konstanz.de/Kobalt/) - Korpusbasierte Analyse von Lernertexten für Deutsch als Fremdsprache - a research network on German learner language
 * [KOMeT](http://korpling.german.hu-berlin.de/komet/) - Korpuslinguistische Methoden für e-Philologie mit TEI - a junior researcher group in the Digital Humanities funded by the German Ministry of Education and Science ([BMBF](http://www.bmbf.de/en/))
