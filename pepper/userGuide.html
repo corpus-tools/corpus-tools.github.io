@@ -69,9 +69,9 @@ description: "User guide on howto get started using the Pepper corpus conversion
     </div>
     <div class="content">
        To run Pepper open a command line and enter (for Windows):
-        <pre>pepperStart.bat COMMAND</pre>
+        <pre>pepperStart.bat</pre>
         or (for Linux, Unix and Mac OS):
-        <pre>bash pepperStart.sh COMMAND</pre>
+        <pre>bash pepperStart.sh</pre>
         Now Pepper starts the interactive command line and welcomes you with the prompt
         <pre>pepper></pre>
         To get a list of all available commands, enter 'help':
@@ -231,4 +231,13 @@ pepper.removeSDocumentAfterProcessing=true
         <pre>C:/format1/corpus1/</pre>
     </div>
     <p>Some real life workflows can be found under <a href="..{{site.site_pepper}}demos.html">Demos</a>.</p>
+
+    <h3>Executing a workflow file</h3>
+
+    <p>
+    When you created the workflow file you can start the conversion process by executing Pepper with the path of the workflow file as argument, e.g. (for Windows)
+    <pre>pepperStart.bat /home/user/corpus/myworkflow.pepper</pre> or (for Linux, Unix and Mac OS)
+    <pre>bash pepperStart.sh /home/user/corpus/myworkflow.pepper</pre> 
+    </p>
+
 </article>
