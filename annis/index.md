@@ -201,6 +201,7 @@ Former team members:
 * Benjamin Weißenfels
 * [Christian Chiarcos](http://acoli.informatik.uni-frankfurt.de/~chiarcos)
 * Karsten Hütter
+* [Manfred Stede](http://www.ling.uni-potsdam.de/~stede/)
 * Michael Götze
 * [Stefanie Dipper](https://www.linguistics.ruhr-uni-bochum.de/~dipper/)
 * Tom Ruette
