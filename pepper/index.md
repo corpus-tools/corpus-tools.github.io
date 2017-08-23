@@ -95,8 +95,7 @@ If you use Pepper in your scientific work, please cite it as follows.
 
 F. Zipser &amp; L. Romary (2010). <strong>A model oriented approach to the mapping of annotation formats using
 standards</strong>. In: <em>Proceedings of the Workshop on Language
-Resource and Language Technology Standards, LREC 2010. Malta.</em> URL: 
-http://hal.archives-ouvertes.fr/inria-00527799/en/
+Resource and Language Technology Standards, LREC 2010. Malta.</em> URL: [http://hal.archives-ouvertes.fr/inria-00527799/en/](http://hal.archives-ouvertes.fr/inria-00527799/en/)
 
 </article>
 
