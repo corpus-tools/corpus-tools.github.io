@@ -7,7 +7,6 @@ subpages:
 - "Download" : "#download"
 - "User Documentation" : "#documentation"
 - "How to cite" : "#how-to-cite"
-- "FAQ" : "#faq"
 - "Contribution and License" : "#license"
 custom_js:
 - mail
