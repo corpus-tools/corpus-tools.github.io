@@ -147,15 +147,12 @@ To use this, assign class "anchor" to targeted element. */
 .anchor:before { 
   display: block; 
   content: " "; 
-  margin-top: -30px; 
-  height: 30px;
+  margin-top: -50px; 
+  height: 50px;
   visibility: hidden; 
 }
 
 /* This class defines a FAQ entry */
-.faqentry>h4::before{
-  content:"Q: "
-}
 .faqanswer{
   margin-left:20px;
   margin-bottom:40px;
