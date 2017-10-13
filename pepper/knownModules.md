@@ -33,7 +33,6 @@ workflows. Please read the [Module Developer's Guide]({{site.pepper_doc_moduleDe
 
 Importers are modules which map data from a format X to a Salt model. For more information about a Pepper's workflow please take a look into [Pepper's user guide](userGuide.html).
 
-{: .table}
 | Module name   | Module description | formats |
 |---------------|--------------------|---------|
 | [AldtImporter](https://github.com/korpling/pepperModules-PerseusModules/tree/master#usage)  | The AldtImporter importer transforms data in aldt format used in the Perseus project to a Salt model. | aldt, 1.0; aldt, 1.5 |
@@ -57,11 +56,11 @@ Importers are modules which map data from a format X to a Salt model. For more i
 | [Tiger2Importer](https://github.com/korpling/pepperModules-TigerModules/tree/master#usage) | This importer transforms data in TigerXML and tiger2 format to a Salt model. | tiger2, 2.0.5; tigerXML, 1.0 |
 | [TreetaggerImporter](https://github.com/korpling/pepperModules-TreetaggerModules/tree/master#usage) | This importer transforms data in TreeTagger format produced by the TreeTagger tool (see [http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/) to a Salt model. |treetagger, 1.0 |
 | [UAMImporter](https://github.com/korpling/pepperModules-UAMModules/tree/master#usage) | This importer transforms data in UAM format produced by the UAM corpus tool to a Salt model. | UAM, 1.0 |
+{: .table}
 
 # Manipulators 
 With manipulators, the imported data can be extended for further annotations, merged together or processed in other ways. For more information about the architecture of Pepper please read [Pepper's user guide](./userGuide.html).
 
-{: .table}
 | Module name   | Module description |
 |---------------|--------------------|
 | [DOTManipulator](https://github.com/korpling/pepper) | This manipulator exports a Salt model to the dot syntax. This can be used to create a graphical representation of the Salt model.|
@@ -73,12 +72,12 @@ With manipulators, the imported data can be extended for further annotations, me
 | [Timeline2Token](https://github.com/korpling/pepperModules-ModuleBox/tree/master#usage) | The Timeline2Token manipulator converts all primary text tokens to spans of an newly created artifical primary text which represents the timeline. |
 | [Tokenizer](https://github.com/korpling/pepperModules-nlpModules/tree/master#usage) |       The tokenizer tokenizes a document using the tokenizer provided by Salt. The tokenizer uses abbreviation lists and is implemented along the Treetaggers tokenizer by Helmut Schmid (see: [http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/). |
 | [TueBaDZManipulator](https://github.com/korpling/pepperModules-TueBaDZModules/tree/master#usage) | This manipulator was developed especially for the TueBaDZ Corpus. It creates a SSpan-objects for every SToken object in the document. All annotations for STokens will be duplicated and added to the spans. The annotations of the tokens will be renamed from 'annoName' to 'annoName.' For example a 'pos'-annotation of SToken-object will be renamedto a 'pos.'-annotation. All spans, tokens and spanning relations will be added to an artificial layer named 'TueBaDZ'. |
+{: .table}
 
 # Exporters
 
 Exporters are modules which map data from a Salt model to a format Y. For more information about the architecture of Pepper please read [Pepper's user guide](userGuide.html).
 
-{: .table}
 | Module name   | Module description | formats |
 |---------------|--------------------|---------|
 | [ANNISExporter](https://github.com/korpling/pepperModules-ANNISModules/tree/master#usage) | This exporter transforms a Salt model into the annis format. | relANNIS, 3.3; annis, 3.3 |
@@ -94,3 +93,4 @@ Exporters are modules which map data from a Salt model to a format Y. For more i
 | [TCFExporter](https://github.com/korpling/pepperModules-TCFModules/tree/master#usage) |  This exporter transforms a Salt model into the TCF format produced for instance by WebLicht (see: [http://weblicht.sfs.uni-tuebingen.de/](http://weblicht.sfs.uni-tuebingen.de/)) or WebAnno (see [https://www.ukp.tu-darmstadt.de/software/webanno/](https://www.ukp.tu-darmstadt.de/software/webanno/)). | TCF, 0.4 |
 | [TextExporter](https://github.com/korpling/pepper) | This is a PepperExporter which extracts and exports the primary text of a Salt model and stores it into a text file. | txt, 1.0 |
 | [TreetaggerExporter](https://github.com/korpling/pepperModules-TreetaggerModules/tree/master#usage) | This exporter transforms a Salt model into the annis format. | treetagger, 1.0 |
+{: .table}
