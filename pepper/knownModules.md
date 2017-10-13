@@ -33,8 +33,8 @@ workflows. Please read the [Module Developer's Guide]({{site.pepper_doc_moduleDe
 
 Importers are modules which map data from a format X to a Salt model. For more information about a Pepper's workflow please take a look into [Pepper's user guide](userGuide.html).
 
-| Module name   | Module description | formats |
-|---------------|--------------------|---------|
+| Module name   | Module description | Format names and versions |
+|---------------|--------------------|---------------------------|
 | [AldtImporter](https://github.com/korpling/pepperModules-PerseusModules/tree/master#usage)  | The AldtImporter importer transforms data in aldt format used in the Perseus project to a Salt model. | aldt, 1.0; aldt, 1.5 |
 | [CoNLLImporter](https://github.com/korpling/pepperModules-CoNLLModules/tree/master#usage) | The CoNLLImporter importer transforms data in CoNLL format to a Salt model. | CoNLL, 1.0 |
 | [CoraXMLImporter](https://github.com/korpling/CoraXMLModules/tree/master#usage) | The CoraXMLImporter importer transforms data in cora xml format to a Salt model. | coraXML, 1.0 |
@@ -78,8 +78,8 @@ With manipulators, the imported data can be extended for further annotations, me
 
 Exporters are modules which map data from a Salt model to a format Y. For more information about the architecture of Pepper please read [Pepper's user guide](userGuide.html).
 
-| Module name   | Module description | formats |
-|---------------|--------------------|---------|
+| Module name   | Module description | Format names and versions |
+|---------------|--------------------|---------------------------|
 | [ANNISExporter](https://github.com/korpling/pepperModules-ANNISModules/tree/master#usage) | This exporter transforms a Salt model into the annis format. | relANNIS, 3.3; annis, 3.3 |
 | [DOTExporter](https://github.com/korpling/pepper) | This exporter exports a Salt model to the dot syntax. This can be used to create a graphical representation of the Salt model. | dot, 1.0 |
 | [DoNothingExporter](https://github.com/korpling/pepper) | This is a dummy exporter which exports nothing. This exporter can be used to check if a corpus is importable. | -- |
