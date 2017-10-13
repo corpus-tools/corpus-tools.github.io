@@ -112,7 +112,7 @@ pepper/wizard/importer>C:\myCorpus\
 |   2  | SaltXMLImporter               | (SaltXML, 1.0)                           |
 |   3  | DoNothingImporter             | (doNothing, 0.0)                         |
 ```
-A '*' next to the number of the importer shows, that this importer is recommended. Recommended means that the passed path contains files in a format the importer is able to process. To choose an importer, just enter its number or its name.
+A ```*``` next to the number of the importer shows, that this importer is recommended. Recommended means that the passed path contains files in a format the importer is able to process. To choose an importer, just enter its number or its name.
 ```
 pepper/wizard/importer>1
 ```
@@ -209,7 +209,7 @@ In Pepper you have the chance to store a workflow in a workflow file (.pepper). 
 ```
 The importer - in contrast to the exporter - is identified by the format's name (FORMAT_NAME) and the format's version (FORMAT_VERSION). The exporter and the manipulator are identified by the module names (MANIPULATOR_NAME and EXPORTER_NAME). To customize the workflow, some modules provide a set of properties. A property consists of a name-value pair. A description of properties can be found on the modules site or when entering the command 'list' followed by the module name in the pepper console, for instance:
 ```
-pepper>list MANIPULATOR_NAME<
+pepper>list MANIPULATOR_NAME
 ```
 An importer and an exporter need a source or a target path to address where to find the corpus or where to store it. Such a path can be addressed relative or absolute. A relative path can start with ```./``` for current directory or ```../``` for the parent directory, for instance:
 ```
