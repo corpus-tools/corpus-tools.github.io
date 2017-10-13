@@ -99,9 +99,10 @@ Resource and Language Technology Standards, LREC 2010. Malta.</em> URL: [http://
 
 </article>
 
-<article class="anchor" id="documentation">
+<article>
 <div class="page-header">
-<h1>Documentation</h1>
+# Documentation
+{: #documentation .anchor}
 </div>
 
 ## User documentation

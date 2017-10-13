@@ -7,10 +7,15 @@ description: "Answers to frequently asked questions about the Pepper conversion 
 
 <div class="page-header">
 # FAQ
+{: .no_toc}
 </div>
 
+* TOC 
+{:toc}
 
 #### Q: How can i speed up Pepper?
+{: .anchor}
+
 You can speed up Pepper by processing multiple documents in parallel. The property 'pepper.maxAmountOfProcessedSDocuments' in the [Pepper configuration](./userGuide.html#configurtion) determines the number of parallel processed documents. When you increase the number of documents, take care, that enough memory is available on your mashine. The more documents are processed in parallel the more memory is consumed (see [other FAQ entry](#memory)).
 {: .faqanswer}
 
@@ -21,6 +26,8 @@ With the property 'pepper.maxAmountOfProcessedSDocuments' in the <a href="./user
 {: .faqanswer}
 
 #### Q: Can I add meta data, when my source format does not support meta data?
+{: .anchor}
+
 <div class="faqanswer">
 Yes, each importer provides a mechanism to read meta data from a meta data file. To enable this mechanism set the Pepper module's property 'pepper.before.readMeta' to the ending of the meta data file. This file has to foolw the following form (sample.meta):
 ```
@@ -37,6 +44,8 @@ pepper.before.readMeta=meta
 
 
 #### Q: How do I know which customizations are provided by a module?
+{: .anchor}
+
 <div class="faqanswer">
 A module can provide a huge set of properties to customize its mapping behavior. In most cases a detailed description of the property can be found on the module's homepage. A short description is directly available in Pepper, just type:
 ```
@@ -45,6 +54,8 @@ pepper>list MY_MODULE
 </div>
 
 #### Q: Which formats does Pepper support?
+{: .anchor}
+
 <div class="faqanswer">
 Pepper itself only supports SaltXML, the huge set of supported formats comes from the modules included in Pepper. Therefore it is not possible to give a static list of supported formats. But to know which formats are supported by your Pepper instance ask Pepper:
 ```
@@ -54,11 +65,14 @@ A list of known modules can be found [here](knownModules.html).
 </div>
 
 #### Q: How can I extend Pepper for further formats/tasks?
+{: .anchor}
 
 Since Pepper is a pluggable plattform, you can create your own module and plug it into a Pepper instance. A guide how to write a Pepper module can be found in [Module Developer's Guide]({{site.pepper_doc_moduleDev}}). When you devide to implement your own module, please think about making it accessible for others. Open source software lives from its community. When you agree, please inform us about it and we are happy to include your module in our list of [Pepper modules](knownModules.html).
 {: .faqanswer}
 
 #### Q: How can I preserve customized files when exporting a corpus?
+{: .anchor}
+
 <div class="faqanswer">
 In general files can not be preserved, but you can create an instance of those files and put them to a place which won't be touched by an exporter. After the export they can be automatically copied to a location of your choice for instance to the export folder. To enable this mechanism use the property 'pepper.after.copyRes'. The following gives an example of how to copy two files from an untouched location to the export folder.
 ```
@@ -68,6 +82,8 @@ In general files can not be preserved, but you can create an instance of those f
 
 
 #### Q: How can I exchange my Pepper workflow with others or between different computers?
+{: .anchor}
+
 <div class="faqanswer">
 We recommand to store the Pepper workflow file at the same location as the corpus. This allows you to use relative pathes in your workflow file and you can exchange the entire corpus folder. Imagine the folling file structure:
 ```
