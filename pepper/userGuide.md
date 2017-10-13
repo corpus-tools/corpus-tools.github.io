@@ -112,7 +112,10 @@ pepper/wizard/importer>C:\myCorpus\
 |   2  | SaltXMLImporter               | (SaltXML, 1.0)                           |
 |   3  | DoNothingImporter             | (doNothing, 0.0)                         |
 ```
-A ```*``` next to the number of the importer shows, that this importer is recommended. Recommended means that the passed path contains files in a format the importer is able to process. To choose an importer, just enter its number or its name.
+A ```*``` next to the number of the importer shows, that this importer is recommended. Recommended means that the passed path contains files in a format the importer is able to process.
+Importers have both a name and a list of supported formats.
+E.g. the importer with the number 1 has the module name ```TextImporter``` and supports a single format identified by the format name ```txt``` and the format version ```0.0```.
+To choose an importer, just enter its number or its module name.
 ```
 pepper/wizard/importer>1
 ```
@@ -188,7 +191,8 @@ pepper.removeSDocumentAfterProcessing=true
 ## Workflow File
 {: #workflow_file .anchor}
 
-In Pepper you have the chance to store a workflow in a workflow file (.pepper). This allows you to redo and reuse a configured workflow. You can also add this file to a version control system, to persist the details of how a corpus was processed. A workflow is stored in an xml file following the Pepper scheme. A workflow consists of three phases: import phase, manipulation phase and export phase. The notation of the workflow file follows this structure. To identify a Pepper module realizing a step, you have to describe that module by its name or the format's name and version. The following sample consists of three steps, one importer, one manipulator and one exporter:
+In Pepper you have the chance to store a workflow in a workflow file (.pepper). This allows you to redo and reuse a configured workflow. You can also add this file to a version control system, to persist the details of how a corpus was processed. A workflow is stored in an xml file following the Pepper scheme. A workflow consists of three phases: import phase, manipulation phase and export phase. The notation of the workflow file follows this structure. To identify a Pepper module realizing a step, you have to describe that module either by its name or the format's name and version.
+The following sample consists of three steps, one importer, one manipulator and one exporter:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/schema/10/pepper.rnc" type="application/relax-ng-compact-syntax"?>
@@ -207,7 +211,8 @@ In Pepper you have the chance to store a workflow in a workflow file (.pepper). 
 <exporter name="EXPORTER_NAME" path="TARGET_PATH"/>
 </pepper-job>
 ```
-The importer - in contrast to the exporter - is identified by the format's name (FORMAT_NAME) and the format's version (FORMAT_VERSION). The exporter and the manipulator are identified by the module names (MANIPULATOR_NAME and EXPORTER_NAME). To customize the workflow, some modules provide a set of properties. A property consists of a name-value pair. A description of properties can be found on the modules site or when entering the command 'list' followed by the module name in the pepper console, for instance:
+The importer - in contrast to the exporter - is identified in this example by the format's name (```FORMAT_NAME```) and the format's version (```FORMAT_VERSION```). 
+The exporter and the manipulator are identified by their module names (```MANIPULATOR_NAME``` and ```EXPORTER_NAME```). To customize the workflow, some modules provide a set of properties. A property consists of a name-value pair. A description of properties can be found on the modules site or when entering the command 'list' followed by the module name in the pepper console, for instance:
 ```
 pepper>list MANIPULATOR_NAME
 ```
