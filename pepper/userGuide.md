@@ -218,11 +218,11 @@ pepper>list MANIPULATOR_NAME
 ```
 An importer and an exporter need a source or a target path to address where to find the corpus or where to store it. Such a path can be addressed relative or absolute. A relative path can start with ```./``` for current directory or ```../``` for the parent directory, for instance:
 ```
-./corpus
+./corpus/
 ```
 or
 ```
-../corpus
+../corpus/
 ```
 An absolute path could start with the file scheme, e.g.:
 ```
