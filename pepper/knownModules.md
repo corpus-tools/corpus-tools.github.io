@@ -39,7 +39,7 @@ Importers are modules which map data from a format X to a Salt model. For more i
 | [CoNLLImporter](https://github.com/korpling/pepperModules-CoNLLModules/tree/master#usage) | The CoNLLImporter importer transforms data in CoNLL format to a Salt model. | CoNLL, 1.0 |
 | [CoraXMLImporter](https://github.com/korpling/CoraXMLModules/tree/master#usage) | The CoraXMLImporter importer transforms data in cora xml format to a Salt model. | coraXML, 1.0 |
 | [DoNothingImporter](https://github.com/korpling/pepper) | This is a dummy importer which imports nothing. | -- |
-| [EXMARaLDAImporter](https://github.com/korpling/pepperModules-EXMARaLDAModules/tree/master#usage) | The EXMARaLDAImporter transforms data in the exb format of EXMARaLDA to a Salt model. | EXMARaLDA, 1.0 |
+| [EXMARaLDAImporter](https://github.com/korpling/pepperModules-EXMARaLDAModules/tree/master#exmaraldaimporter) | The EXMARaLDAImporter transforms data in the exb format of EXMARaLDA to a Salt model. | EXMARaLDA, 1.0 |
 | [ElanImporter](https://github.com/korpling/pepperModules-ELANModules/tree/master#usage) | The ElanImporter transforms data in ELAN format to a Salt model. | elan, 4.5.0 |
 | [GateImporter](https://github.com/korpling/pepperModules-GATEModules/tree/master#usage) | The GateImporter transforms data in GATE's xml format to a Salt model |  GateDocument, 2.0; ateDocument, 3.0 |
 | [GenericXMLImporter](https://github.com/korpling/pepperModules-GenericXMLModules/tree/master#usage) | Imports data coming from any XML file. The textual content of an element will be interpreted as a sequence of primary data. When processing the file, the importer will concatenate all these texts to an entire primary text. | xml, 1.0|
@@ -83,6 +83,7 @@ Exporters are modules which map data from a Salt model to a format Y. For more i
 | [ANNISExporter](https://github.com/korpling/pepperModules-ANNISModules/tree/master#usage) | This exporter transforms a Salt model into the annis format. | relANNIS, 3.3; annis, 3.3 |
 | [DOTExporter](https://github.com/korpling/pepper) | This exporter exports a Salt model to the dot syntax. This can be used to create a graphical representation of the Salt model. | dot, 1.0 |
 | [DoNothingExporter](https://github.com/korpling/pepper) | This is a dummy exporter which exports nothing. This exporter can be used to check if a corpus is importable. | -- |
+| [EXMARaLDAExporter](https://github.com/korpling/pepperModules-EXMARaLDAModules/tree/master#usage) | The EXMARaLDAExporter transforms data to the exb format of EXMARaLDA| EXMARaLDA, 1.0 |
 | [GraphAnnoExporter](https://github.com/korpling/pepperModules-GraphAnnoModules/tree/master#usage) | This exporter transforms a Salt model into a format for the GraphAnno tool ([https://github.com/LBierkandt/graph-anno](https://github.com/LBierkandt/graph-anno)). | Jason, 1.0 |
 | [MMAX2Exporter](https://github.com/korpling/pepperModules-MMAX2Modules/tree/master#usage) | The MMAX2Exporter maps a Salt model to the MMAX2 format. | mmax2, 1.0 |
 | [PAULAExporter](https://github.com/korpling/pepperModules-PAULAModules/tree/master#usage) | The PAULA exporter exports data comming a Salt model to the PAULA format. | paula, 1.0 |
