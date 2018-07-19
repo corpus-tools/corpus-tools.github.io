@@ -68,7 +68,7 @@ To run Pepper open a command line and enter (for Windows):
 
 or (for Linux, Unix and Mac OS):
 
-    bash pepperStart.sh
+    ./pepperStart.sh
 
 Now Pepper starts the interactive command line and welcomes you with the prompt
     
