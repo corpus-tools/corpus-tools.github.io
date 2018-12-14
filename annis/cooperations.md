@@ -22,7 +22,7 @@ description: "Projects using ANNIS."
 * [Atomic](http://linktype.iaa.uni-jena.de/atomic/) - A versatile and platform-independent annotation tool with connection to ANNIS via SaltNPepper developed at the University of Zurich and Friedrich Schiller University Jena
 * [BeMaTaC](https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/forschung/bematac) - The Berlin Map Task Corpus: A deeply annotated multimodal map-task corpus of spoken learner and native German
 * [Modelling Textual Organisation: Coherence and Cohesion](http://www.let.rug.nl/mto/) - project at CLCG (Center for Language and Cognition, Groningen, NL), hosting a multilayer annotated text corpus of Dutch in ANNIS
-* [Coptic SCRIPTORIUM](http://www.carrieschroeder.com/scriptorium/) (HU Berlin/University of the Pacific): A digital humanities project on resources for Sahidic Coptic manuscripts
+* [Coptic SCRIPTORIUM](http://copticscriptorium.org/) (Georgetown University/HU Berlin/University of the Pacific): A digital humanities project on resources for Sahidic Coptic texts
 * [DDB - Deutsch Diachrone Baumbank](http://korpling.german.hu-berlin.de/ddb-doku/index.htm) - A comparable treebank of Old, Middle and Early New High German
 * [DDD - Deutsche Diachron Digital](http://www.deutschdiachrondigital.de/) - Referenzkorpus Altdeutsch - a reference corpus of historical German texts (8th-13th century)
 * [Falko](https://www.linguistik.hu-berlin.de/de/institut/professuren/korpuslinguistik/forschung/falko) - Fehlerannotiertes Lernerkorpus des Deutschen als Fremdsprache / An error-annotated learner corpus of German as a foreign language, HU Berlin
@@ -30,6 +30,7 @@ description: "Projects using ANNIS."
   * [Informationsstruktur in älteren indogermanischen Sprachen](http://dwee.eu/Rosemarie_Luehr/?Projekte___DFG-Projekte___Informationsstruktur_in_aelteren_indogermanischen_Sprachen)
   * [Frühneuzeitliche Fürstinnenkorrespondenz im mitteldeutschen Raum](http://dwee.eu/Rosemarie_Luehr/?Projekte___DFG-Projekte___Fruehneuzeitliche_Fuerstinnenkorrespondenz_im_mitteldeutschen_Raum)
 * [Forschungsverbund Linguistik - Bioinformatik](https://www.linguistik.hu-berlin.de/de/forschung/abgeschlossene-projekte/forschungsverbund/) - Syntactic annotation of diachronic German language stages for the calculation of linguistic distance and phylogeny, HU Berlin (project completed)
+* [GME](https://faculty.georgetown.edu/portnerp/GrantGme.html) - Gradable Modal Expressions -  semantic analysis of expressions such as 'probable', 'permissible' and 'likelihood', called Gradable Modal Expressions (GMEs)
 * [GUM](http://corpling.uis.georgetown.edu/gum/) - Georgetown University Multilayer Corpus - a collaborative multilayer annotation project as part of the Computational Linguistics curriculum at Georgetown University.
 * [Kobalt-DaF](http://web.archive.org/web/20161008095131/http://kobalt-daf.de/) - Korpusbasierte Analyse von Lernertexten für Deutsch als Fremdsprache - a research network on German learner language
 * [KOMeT](http://korpling.german.hu-berlin.de/komet/) - Korpuslinguistische Methoden für e-Philologie mit TEI - a junior researcher group in the Digital Humanities funded by the German Ministry of Education and Science ([BMBF](http://www.bmbf.de/en/))
