@@ -82,6 +82,7 @@ Exporters are modules which map data from a Salt model to a format Y. For more i
 | Module name   | Module description | Format names and versions |
 |---------------|--------------------|---------------------------|
 | [ANNISExporter](https://github.com/korpling/pepperModules-ANNISModules/tree/master#usage) | This exporter transforms a Salt model into the annis format. | relANNIS, 3.3; annis, 3.3 |
+| [CoNLLExporter](https://github.com/korpling/pepperModules-CoNLLModules/tree/master#usage) | The CoNLLExporter  transforms a Salt model into the CoNLL tabular format. | CoNLL, 1.0 |
 | [DOTExporter](https://github.com/korpling/pepper) | This exporter exports a Salt model to the dot syntax. This can be used to create a graphical representation of the Salt model. | dot, 1.0 |
 | [DoNothingExporter](https://github.com/korpling/pepper) | This is a dummy exporter which exports nothing. This exporter can be used to check if a corpus is importable. | -- |
 | [EXMARaLDAExporter](https://github.com/korpling/pepperModules-EXMARaLDAModules/tree/master#usage) | The EXMARaLDAExporter transforms data to the exb format of EXMARaLDA| EXMARaLDA, 1.0 |
