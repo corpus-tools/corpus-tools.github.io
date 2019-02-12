@@ -31,7 +31,7 @@ There are two editions of ANNIS, one for the local use on a standard computer (A
   - [annis-service-{{site.data.annis.version}}-distribution.tar.gz](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-service-{{site.data.annis.version}}-distribution.tar.gz) (server service distribution)  
 
 
-See the [change log]("https://raw.githubusercontent.com/korpling/ANNIS/master/CHANGELOG) for detailled information on what was changed in this version.
+See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/master/CHANGELOG) for detailled information on what was changed in this version.
 
 
 ## Source code
