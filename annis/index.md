@@ -190,8 +190,6 @@ Current team members:
 
 * [Thomas Krause](http://u.hu-berlin.de/korpling-thomaskrause) (LAUDATIO, Humboldt-Universität zu Berlin)
 * [Amir Zeldes](http://corpling.uis.georgetown.edu/amir) (Georgetown University)
-* [Shuo Zhang](http://zangsir.weebly.com/) (Georgetown University)
-* [Florian Zipser](http://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/mitarbeiter-innen/florian/) (LAUDATIO, Humboldt-Universität zu Berlin)
 * Martin Klotz
 * [Anke Lüdeling](https://www.linguistik.hu-berlin.de/en/institut-en/professuren-en/korpuslinguistik/mitarbeiter-innen-en/anke/standardseite?set_language=en) (Humboldt-Universität zu Berlin)
 
@@ -200,9 +198,12 @@ Former team members:
 * [Arne Neumann](https://github.com/arne-cl)
 * Benjamin Weißenfels
 * [Christian Chiarcos](http://acoli.informatik.uni-frankfurt.de/~chiarcos)
+* [Florian Zipser](http://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/mitarbeiter-innen/florian/) (LAUDATIO, Humboldt-Universität zu Berlin)
 * Karsten Hütter
 * [Manfred Stede](http://www.ling.uni-potsdam.de/~stede/)
 * Michael Götze
+* [Ulf Leser](https://www2.informatik.hu-berlin.de/~leser/)
+* [Shuo Zhang](http://zangsir.weebly.com/) (Georgetown University)
 * [Stefanie Dipper](https://www.linguistics.ruhr-uni-bochum.de/~dipper/)
 * Tom Ruette
 * Viktor Rosenfeld
