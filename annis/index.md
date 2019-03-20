@@ -202,7 +202,7 @@ Former team members:
 * Karsten Hütter
 * [Manfred Stede](http://www.ling.uni-potsdam.de/~stede/)
 * Michael Götze
-* [Ulf Leser](https://www2.informatik.hu-berlin.de/~leser/)
+* [Ulf Leser](https://www2.informatik.hu-berlin.de/~leser/) (Humboldt-Universität zu Berlin)
 * [Shuo Zhang](http://zangsir.weebly.com/) (Georgetown University)
 * [Stefanie Dipper](https://www.linguistics.ruhr-uni-bochum.de/~dipper/)
 * Tom Ruette
