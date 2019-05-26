@@ -31,7 +31,25 @@ There are two editions of ANNIS, one for the local use on a standard computer (A
   - [annis-service-{{site.data.annis.version}}-distribution.tar.gz](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-service-{{site.data.annis.version}}-distribution.tar.gz) (server service distribution)  
 
 
-See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/master/CHANGELOG) for detailled information on what was changed in this version.
+See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/annis3/master/CHANGELOG) for detailled information on what was changed in this version.
+
+## Experimental Beta Version {{site.data.annis.beta-version}}
+
+This **beta** pre-release is a complete overhaul of the ANNIS service backend.
+Instead of using the relational database PostgreSQL, a custom AQL implementation based on graph called [graphANNIS](https://github.com/korpling/graphANNIS) is used.
+
+ANNIS 4 currently only supports a sub-set of the ANNIS Query Langugage (AQL) compared to ANNIS 3.
+Full support is planned, but some backward-compatible features of AQL will only be available in a compatibility mode.
+See the chapter ["Differences in Compatibility Mode"](http://korpling.github.io/ANNIS/4.0/user-guide/aql-compatibility-mode.html) of the User Guide in in the Tutorial for more information.
+For adminstrators, there are [instructions](http://korpling.github.io/ANNIS/4.0/user-guide/installation-migrate-annis3.html) on how to migrate from ANNIS 3 to 4 in the User Guide.
+
+Since the whole backend has been replaced, we expect more bugs that need to be fixed than in usual feature-releases. 
+Please report any issues in the [GitHub issue tracker](https://github.com/korpling/ANNIS/issues).
+
+- ANNIS Kickstarter: [annis-kickstarter-{{site.data.annis.beta-version}}-distribution.zip](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.beta-version}}/annis-kickstarter-{{site.data.annis.beta-version}}-distribution.zip) (local installation for Windows, Linux and Mac)
+- ANNIS server:
+  - [annis-gui-{{site.data.annis.beta-version}}.war](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.beta-version}}/annis-gui-{{site.data.annis.beta-version}}.war) (server GUI distribution)
+  - [annis-service-{{site.data.annis.beta-version}}-distribution.tar.gz](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.beta-version}}/annis-service-{{site.data.annis.beta-version}}-distribution.tar.gz) (server service distribution)  
 
 
 ## Source code

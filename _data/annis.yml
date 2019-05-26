@@ -1,2 +1,4 @@
 version: 3.6.0
 short-version: 3.6
+beta-version: 4.0.0-beta.1
+beta-short-version: 4.0
