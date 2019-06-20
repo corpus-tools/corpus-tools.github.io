@@ -115,7 +115,7 @@ f there is no [existing module](..{{site.site_pepper}}knownModules.html) which f
 implement your own module. With Pepper's plug-in mechanism your module can
 easily be integrated into the Pepper plattform. The possibility of combining
 your new module with already existing ones lets you create completely new workflows.
-Please read the [Module Developer's Guide](http://korpling.github.io/pepper/doc/moduleDevelopers.html) to get a detailed documentation of how to implement a Pepper module.
+Please read the [Module Developer's Guide](http://korpling.github.io/pepper/doc/module_developers.html) to get a detailed documentation of how to implement a Pepper module.
 
 ## Using Pepper as a library
 With the Pepper library, we provide a programmatic access to the Pepper framework,
