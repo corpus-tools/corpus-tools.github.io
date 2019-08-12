@@ -32,7 +32,7 @@ subpages:
             <div class="row">
                 <div class="col-md-4">
                     <h2><i class="icon-open-source"></i> open source</h2>
-                    <p>Salt is licensed under the {{site.apache_license}} and published on Github.</p>
+                    <p>Salt is licensed under the {{site.apache_license}} and published as a Java library on Github.</p>
                 </div>
                 <div class="col-md-4">
                     <h2><i class="fa fa-video-camera"></i> multimedia support</h2>
@@ -52,7 +52,7 @@ subpages:
         </div>
         <div class="content">
 			<p> With Salt we provide an easily understandable meta model for
-            linguistic data and an open source API for storing, manipulating and representing data. Salt is
+            linguistic data and an open source Java API for storing, manipulating and representing data. Salt is
             an abstract model, poor in linguistic semantics. As a result, it is independent of any
             linguistic schools or theories. The core model is graph-based, thereby keeping the
             structural restrictions very low and allowing for a wide range of possible linguistic
@@ -62,7 +62,7 @@ subpages:
             Furthermore, Salt does not depend on a specific linguistic tagset which allows you to
             use every tagset you like. 
             </p>
-            <p>Salt serves as an underlying model for the tools <a href="../annis">ANNIS</a>, <a href="../atomic">Atomic</a> and <a href="../pepper">Pepper</a>.</p>
+            <p>Salt serves as an underlying model for the tools <a href="../annis">ANNIS</a> (a multi-layer corpus search and visualization tool), <a href="../pepper">Pepper</a> (which uses Salt to map from and too various annotation data formats) and <a href="../atomic">Atomic</a> (a prototype of a multi-layer annotation editor) .</p>
             </div>
     </article>
     <article class="anchor" id="how-to-cite">
@@ -213,7 +213,8 @@ subpages:
             <h1>Download</h1>
         </div>
         <div class="content">
-            <p>Salt is published in the <a href="http://search.maven.org/#search|ga|1|g%3A%22org.corpus-tools%22">maven central repository</a>. To use Salt via maven, just add
+            <p>Salt is published in the <a href="http://search.maven.org/#search|ga|1|g%3A%22org.corpus-tools%22">maven central repository</a>. 
+                To use Salt in a Java-based application via maven, just add
                 the following lines to your pom.xml:</p>
             <pre>
 &lt;groupId>corpus-tools&lt;/groupId>
