@@ -21,16 +21,24 @@ VAR_license: _includes/license.html
 
 {% include_relative {{ page.VAR_head }} %}
 
+<p/>
+<p class="alert alert-info">
+    <span style="font-size:2rem;"><i class="fa fa-info-circle"/> **NOTE: Atomic >> Hexatomic**</span><br/>
+    <span style="font-size:2rem;">Atomic development has come to an end. The resulting prototype platform is currently used to develop
+    <b>Hexatomic</b>, a fully-featured multiy-layer annotation software. For more info, go to the <a href="https://hexatomic.github.io"><strong>Hexatomic project website</strong></a>.
+</p>
+
 <div class="page-header">
 # About Atomic
 </div>
 
 <div class="content">
+
 Atomic originates in the research project **Towards a corpus-based typology of clause linkage - An analytical framework and case studies on non-local dependencies** ([**LinkType**](http://linktype.iaa.uni-jena.de/)) at the universities of [Zurich](http://www.linguistik.uzh.ch/index_en.html) and [Jena](http://www.anglistik.uni-jena.de/en/).
 
-Atomic is an architectural prototype for an extensible multi-layer annotation platform for linguistic data. It will be developed into **Hexatomic**, a stable, production-ready software product, in a research project funded by the [DFG](www.dfg.de/en/) as part of the ["Research Software Sustainability"](http://www.dfg.de/en/research_funding/programmes/infrastructure/lis/funding_opportunities/call_proposal_software/) programme, starting in autumn 2018.
+Atomic is an architectural prototype for an extensible multi-layer annotation platform for linguistic data. It will be developed into **Hexatomic**, a stable, production-ready software product, in a research project funded by the [DFG](www.dfg.de/en/) as part of the ["Research Software Sustainability"](http://www.dfg.de/en/research_funding/programmes/infrastructure/lis/funding_opportunities/call_proposal_software/) programme, running from 2018-2021.
 
-Atomic and Hexatomic work on a concrete implementation of the generic graph-based meta model [Salt]({{site.site_salt}}), and embeds its complementary conversion framework [Pepper]({{ site.site_pepper }}), allowing for n : m mapping between data formats. Hexatomic will also embed the [ANNIS]({{site.site_annis}}) search engine for linguistic data as well as an interface to its query language AQL.
+Atomic and Hexatomic work on a concrete implementation of the generic graph-based meta model [Salt]({{site.site_salt}}), and embed its complementary conversion framework [Pepper]({{ site.site_pepper }}), allowing for n : m mapping between data formats. Hexatomic will also embed the [ANNIS]({{site.site_annis}}) search engine for linguistic data as well as an interface to its query language AQL.
 
 <article class="anchor" id="how-to-cite">
 <div class="page-header">
@@ -51,15 +59,16 @@ Atomic and Hexatomic work on a concrete implementation of the generic graph-base
 
 <div class="content">
 Atomic is an architectural prototype. 
-It will be released for reference before the start of the Hexatomic project in autumn 2018.
 
 Past experimental releases have been removed.
 
-To receive updates about releases, please subscribe to the Atomic users mailing list: <a class="fa fa-envelope-o" href="https://lserv.uni-jena.de/mailman/listinfo/atomic-user"> atomic-user</a>. Subscribers to the list will be notified of any releases.
+Current development of a stable annotation software is under way in the <a href="https://hexatomic.github.io">Hexatomic research project</a>.
+
+<!--To receive updates about releases, please subscribe to the Atomic users mailing list: <a class="fa fa-envelope-o" href="https://lserv.uni-jena.de/mailman/listinfo/atomic-user"> atomic-user</a>. Subscribers to the list will be notified of any releases.-->
 </div>
 </article>
 
-{% include_relative {{ page.VAR_license }} %}
+<!--{% include_relative {{ page.VAR_license }} %}-->
 
 --------------
 
