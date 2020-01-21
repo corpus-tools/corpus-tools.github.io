@@ -188,7 +188,7 @@ For enquiries or to subscribe to the <b>ANNIS mailing list</b>, e-mail us at: <a
 
 Current team members:
 
-* [Thomas Krause](http://u.hu-berlin.de/korpling-thomaskrause) (LAUDATIO, Humboldt-Universität zu Berlin)
+* [Thomas Krause](http://u.hu-berlin.de/korpling-thomaskrause) (Humboldt-Universität zu Berlin)
 * [Amir Zeldes](http://corpling.uis.georgetown.edu/amir) (Georgetown University)
 * Martin Klotz
 * [Anke Lüdeling](https://www.linguistik.hu-berlin.de/en/institut-en/professuren-en/korpuslinguistik/mitarbeiter-innen-en/anke/standardseite?set_language=en) (Humboldt-Universität zu Berlin)
