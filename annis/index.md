@@ -197,6 +197,7 @@ Former team members:
 
 * [Arne Neumann](https://github.com/arne-cl)
 * Benjamin Weißenfels
+* [Carolin Odebrecht](https://www.linguistik.hu-berlin.de/en/institut-en/professuren-en/korpuslinguistik/mitarbeiter-innen-en/carolin/standardseite)
 * [Christian Chiarcos](http://acoli.informatik.uni-frankfurt.de/~chiarcos)
 * [Florian Zipser](http://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/mitarbeiter-innen/florian/) (LAUDATIO, Humboldt-Universität zu Berlin)
 * Karsten Hütter
