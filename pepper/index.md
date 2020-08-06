@@ -83,7 +83,7 @@ is running, open a command line and run:
 <pre>
 java -version 
 </pre>
-You need at least version 1.7.
+You need at least version 1.8, also called "Java 8".
 </article>
 
 
