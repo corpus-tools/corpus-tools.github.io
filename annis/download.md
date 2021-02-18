@@ -52,7 +52,7 @@ For administrators, there are [instructions](http://korpling.github.io/ANNIS/4.0
 
 
 For the server version, this release completely changes the way users are authenticated, but it should be much easier to integrate Single-Sign-On systems like Shibboleth or other institutional accounts.
-See the user guide for [installation](http://korpling.github.io/ANNIS/4.0/user-guide/installation/server.html) and [configuration](http://korpling.github.io/ANNIS/4.0/user-guide//configuration/) instructions for the server (e.g. how to [add user accounts](http://korpling.github.io/ANNIS/4.0/user-guide/configuration/user.html) or run the graphANNIS backend on a different server).
+See the user guide for [installation](http://korpling.github.io/ANNIS/4.0/user-guide/installation/server.html) and [configuration](http://korpling.github.io/ANNIS/4.0/user-guide//configuration/) instructions for the server (e.g. how to [add user accounts](http://korpling.github.io/ANNIS/4.0/user-guide/configuration/user.html) or [run the graphANNIS backend on a different server](http://korpling.github.io/ANNIS/4.0/user-guide/advanced/backend-frontend-separation.html)).
 
 
 
