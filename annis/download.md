@@ -20,7 +20,7 @@ distributed under the Apache Public License, Version 2.0.
 ## Current stable ANNIS distribution: Version {{site.data.annis.version}}
 
 This version requires a [PostgreSQL](http://www.postgresql.org/) installation to run. 
-**PostgreSQL versions 9 to 12 are supported** but there are known issues with PostgreSQL 13. 
+**PostgreSQL versions 9.4 to 12 are supported** but there are known issues with PostgreSQL 13. 
 The ANNIS the server version (but not the desktop kickstarter) also requires a running web-server (e.g. [Apache Tomcat](http://tomcat.apache.org/) or [Jetty](https://www.eclipse.org/jetty/)).
 Both versions require the Installation of **Java OpenJDK 8**. If your operating system does already include Java. we recommend the installation of the open-source and free of charge installers provided at [https://adoptopenjdk.net/](https://adoptopenjdk.net/).
 
