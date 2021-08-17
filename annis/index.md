@@ -5,14 +5,11 @@ description: "ANNIS is an open source, cross platform (Linux, Mac, Windows), web
 toppage_idx: 2
 icon: icon-annis
 subpages:
-- download.html
-- "How to cite": "#howtocite"
-- "Public ANNIS Installations": "#access"
-- corpora.html
-- "|"
 - documentation.html
-- aql.html
+- download.html
+- "|"
 - visualizations.html
+- corpora.html
 - "|"
 - cooperations.html
 redirect_from: 
@@ -150,7 +147,7 @@ information, e.g. morphemic transcription, grammatical functions, pitch
 accents, etc. Queries must be able to simultaneously constrain all
 these layers and the relationships between them, making operators for
 the description of topological tree structures as well as span overlap
-necessary (see [ANNIS Query Language - AQL](aql.html)).
+necessary.
 The system also supports parallel corpora aligned at all levels (i.e. words, sentences, syntactic phrases etc. can be aligned), and each aligned language may have its own annotation layers.
 
 <div class="image_wrap" style="text-align:center;">

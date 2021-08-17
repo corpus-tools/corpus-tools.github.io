@@ -1,4 +1,4 @@
-version: 3.6.0
-short-version: 3.6
-beta-version: 4.0.0-beta.6
-beta-short-version: 4.0
+version: 4.0.0
+short-version: 4.0
+legacy-version: 3.6.0
+legacy-short-version: 3.6
