@@ -14,9 +14,9 @@ redirect_from: "/documentation.html"
 ## User Guide
 
 - [<i class="fa fa-book"></i> Online User Guide](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/)
-- Tutorial for the [ANNIS Query Language AQL](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/aql/)
+- Tutorial for the [ANNIS Query Language AQL](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/aql/)
 
-Users new to ANNIS should begin by reading the [<i class="fa fa-book"></i> Online User Guide](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/), which also has has a tutorial for the [ANNIS Query Language AQL](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/aql/).
+Users new to ANNIS should begin by reading the [<i class="fa fa-book"></i> Online User Guide](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/), which also has has a tutorial for the [ANNIS Query Language AQL](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/aql/).
 It also includes in depth reference on installation and customizing settings for administrators.
 
 ## Advanced topics
