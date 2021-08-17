@@ -26,6 +26,8 @@ ANNIS requires the Installation of **Java OpenJDK 8**. If your operating system 
 
 
 Please report any issues in the [GitHub issue tracker](https://github.com/korpling/ANNIS/issues).
+See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/master/CHANGELOG.md) for detailled information on what was changed in this version.
+
 
 This is a complete overhaul of the ANNIS service backend.
 Instead of using the relational database PostgreSQL, a custom AQL implementation based on graphs called [graphANNIS](https://github.com/korpling/graphANNIS) is used.
