@@ -21,8 +21,8 @@ distributed under the Apache Public License, Version 2.0.
 
 ANNIS requires the Installation of **Java OpenJDK 8**. If your operating system does already include Java. we recommend the installation of the open-source and free of charge installers provided at [https://adoptopenjdk.net/](https://adoptopenjdk.net/).
 
-- ANNIS Desktop: [<i class="fa fa-download"></i> annis-{{site.data.annis.version}}-desktop.jar](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-{{site.data.annis.version}}-desktop.jar) (local installation for Windows, Linux and Mac, just double-click on the downloaded file to start the application)
-- ANNIS Server: [<i class="fa fa-download"></i> annis-{{site.data.annis.version}}-server.jar](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.version}}/annis-{{site.data.annis.version}}-server.jar) (an executable file which starts both the user interface and the backend service, see the [user guide](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/installation/) for installation and configuration instructions)
+- ANNIS Desktop: [<i class="fa fa-download"></i> annis-{{site.data.annis.version}}-desktop.jar](https://github.com/korpling/ANNIS/releases/download/v{{site.data.annis.version}}/annis-{{site.data.annis.version}}-desktop.jar) (local installation for Windows, Linux and Mac, just double-click on the downloaded file to start the application)
+- ANNIS Server: [<i class="fa fa-download"></i> annis-{{site.data.annis.version}}-server.jar](https://github.com/korpling/ANNIS/releases/download/v{{site.data.annis.version}}/annis-{{site.data.annis.version}}-server.jar) (an executable file which starts both the user interface and the backend service, see the [user guide](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/installation/) for installation and configuration instructions)
 
 
 Please report any issues in the [GitHub issue tracker](https://github.com/korpling/ANNIS/issues).
