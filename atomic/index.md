@@ -10,3 +10,4 @@ icon: fa-atomic
         <b>Hexatomic</b>, a fully-featured multiy-layer annotation software. For more info, go to the <a
             href="https://hexatomic.github.io"><strong>Hexatomic project website</strong></a>.
 </p>
+
