@@ -1,6 +1,5 @@
 # Site settings
 email_snp: saltnpepper@lists.hu-berlin.de
-email_atomic: atomic-user@listserv.uni-jena.de
 baseurl: ""
 url: "http://corpus-tools.org"
 bootstrap_dist: ../bootstrap/dist
@@ -11,7 +10,7 @@ site_corpora: /corpora/
 site_pepper: /pepper/
 site_pepper_main: /pepper/index.html
 site_annis: /annis/
-site_atomic: /atomic/index.html
+site_hexatomic: /hexatomic/index.html
 css_url: ../css
 github_pepper: https://github.com/korpling/pepper
 github_salt: https://github.com/korpling/salt

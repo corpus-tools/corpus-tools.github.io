@@ -3,7 +3,10 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>
-		{% if page.url == site.site_home %} {{site.title}} {% elsif {{path[1]}} == 'salt' %} <span class="icon-salt"></span> Salt {% elsif {{path[1]}} == 'pepper' %} <span class="icon-pepper-o"></span> Pepper {% elsif {{path[1]}} == 'annis' %}<span class="icon-annis"></span> ANNIS {% elsif {{path[1]}}  ==  'atomic' %}<i class="icon-atomic"></i> Atomic{%else%}{{site.title}}{% endif %}
+            {% if page.url == site.site_home %} {{site.title}} {% elsif {{path[1]}} == 'salt' %} <span class="icon-salt"></span>
+            Salt {% elsif {{path[1]}} == 'pepper' %} <span class="icon-pepper-o"></span> Pepper {% elsif {{path[1]}} == 'annis'
+            %}<span class="icon-annis"></span> ANNIS {% elsif {{path[1]}} == 'hexatomic' %}<i class="icon-atomic"></i>
+            Hexatomic{%else%}{{site.title}}{% endif %}
         </h1>
         <p>
 {% if page.url == site.site_home %}
@@ -14,7 +17,7 @@ A powerful, tagset-independent and theory-neutral meta model and API for storing
 A highly extensible plattform for conversion and manipulation of linguistic data between an unbound set of formats. Pepper can be used stand-alone as a command line interface, or be integrated as an API into other software products.
 {% elsif {{path[1]}} == 'annis' %}
 A web browser-based search and visualization architecture for complex multilayer linguistic corpora with diverse types of annotation. 
-{% elsif {{path[1]}} == 'atomic' %}
+{% elsif {{path[1]}} == 'hexatomic' %}
 A cross-platform multi-layer corpus annotation tool – and extensible platform – for the desktop.
 {% endif %}
 
