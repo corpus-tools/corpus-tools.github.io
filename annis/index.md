@@ -48,7 +48,7 @@ and a growing set of manual annotation tools
 (e.g. [EXMARaLDA](http://exmaralda.org/), [ELAN](https://tla.mpi.nl/tools/tla-tools/elan/), 
 [annotate](http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/annotate.html)/[Synpathy](http://www.mpi.nl/tools/synpathy.html), 
 [MMAX](http://mmax2.sourceforge.net/), [RSTTool](http://www.wagsoft.com/RSTTool/), 
-[Arborator](http://arborator.ilpga.fr/), [WebAnno](https://code.google.com/p/webanno/), [Atomic]({{site.site_atomic}})),
+[Arborator](http://arborator.ilpga.fr/), [WebAnno](https://code.google.com/p/webanno/), [Hexatomic]({{site.site_hexatomic}})),
 ANNIS provides the means for visualizing and retrieving this data. 
 [Pepper]({{site.site_pepper}}) is used to import the multiple annotation formats into ANNIS. 
 

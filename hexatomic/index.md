@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Atomic
+title: Hexatomic
 icon: icon-atomic
 toppage_idx: 3
 subpages:
@@ -11,7 +11,7 @@ subpages:
 custom_js:
 - mail
 keywords: linguistics, annotation, tool, software, multilevel, corpus, corpora, corpus linguistics, eclipse, eclipse rcp, saltnpepper, jena, friedrich schiller university, research, linktype, open source, java, graphical, visual, editor, console, command line
-description: Atomic is a cross-platform multi-layer corpus annotation tool – and extensible platform – prototype for the desktop.
+description: Hexatomic is a cross-platform multi-layer corpus annotation tool – and extensible platform – prototype for the desktop.
 publisher: Friedrich Schiller University Jena, Institute of English and American Studies
 author: Stephan Druskat
 VAR_github: https://github.com/infraling/atomic
@@ -29,7 +29,7 @@ VAR_license: _includes/license.html
 </p>
 
 <div class="page-header">
-# About Atomic
+# About Hexatomic
 </div>
 
 <div class="content">
