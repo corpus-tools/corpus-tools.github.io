@@ -4,10 +4,8 @@ title: Hexatomic
 icon: icon-atomic
 toppage_idx: 3
 subpages:
-- "Download" : "#download"
-- "User Documentation" : "#documentation"
-- "How to cite" : "#how-to-cite"
-- "Contribution and License" : "#license"
+- "Download" : "https://github.com/hexatomic/hexatomic/releases/latest"
+- "User Documentation" : "https://hexatomic.github.io/hexatomic/user/"
 keywords: linguistics, annotation, tool, software, multilevel, corpus, corpora, corpus linguistics, eclipse, eclipse rcp, saltnpepper, jena, friedrich schiller university, research, linktype, open source, java, graphical, visual, editor, console, command line
 description: Hexatomic is a cross-platform multi-layer corpus annotation tool – and extensible platform – prototype for the desktop.
 author: Stephan Druskat
@@ -31,10 +29,19 @@ Hexatomic is funded by [Deutsche Forschungsgemeinschaft (DFG)](https://www.dfg.d
 
 Development is based at the [Department of English Studies (Friedrich Schiller University Jena)](https://www.iaa.uni-jena.de/en/) and the [Department for German Studies and Linguistics (Humboldt-Universität zu Berlin)](https://www.linguistik.hu-berlin.de/de).
 
+---
 
 <div style="text-align:center">
 
-**Project Homepage**: <https://hexatomic.github.io/>
+[<i class="fa fa-home" /> Homepage](https://hexatomic.github.io/) &nbsp;
+[<i class="fa fa-download" /> Download](https://github.com/hexatomic/hexatomic/releases/latest)  &nbsp;
+[<i class="fa fa-book" /> User Documentation](https://hexatomic.github.io/hexatomic/user/)
+
+</div>
+---
+
+<div style="text-align:center">
+
 
 
 ![](images/graph-viewer.png){:style="height:300px"} 
