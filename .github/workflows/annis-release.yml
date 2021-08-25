@@ -31,20 +31,14 @@ jobs:
           pattern: '([0-9]+\.[0-9]+)\.[0-9]+'
           replace-with: '$1'
           string: ${{ steps.version.outputs.replaced }}
-      - name: Replace long version
-        uses: mingjun97/file-regex-replace@v1
+      - name: Replace version file
+        uses: DamianReeves/write-file-action@v1.0
         with:
-           regex: 'version: ([0-9\.]*),'
-           replacement: 'version: ${{ steps.version.outputs.replaced }},'
-           include: 'annis\.yml'
-           path: '_data'
-      - name: Replace short version
-        uses: mingjun97/file-regex-replace@v1
-        with:
-           regex: 'short-version": ([0-9\.]*),'
-           replacement: 'short-version: ${{ steps.short-version.outputs.replaced }},'
-           include: 'annis\.yml'
-           path: '_data'
+          path: _includes/annis-release-notes.md
+          contents: |
+            version: ${{ steps.version.outputs.replaced }}
+            short-version: ${{ steps.short-version.outputs.replaced }}
+          write-mode: overwrite
       - name: Replace release notes
         uses: DamianReeves/write-file-action@v1.0
         with:

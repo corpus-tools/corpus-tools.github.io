@@ -30,7 +30,7 @@ Please report any issues in the [GitHub issue tracker](https://github.com/korpli
 
 This is a complete overhaul of the ANNIS service backend.
 Instead of using the relational database PostgreSQL, a custom AQL implementation based on graphs called [graphANNIS](https://github.com/korpling/graphANNIS) is used.
-ANNIS {{site.data.annis.short-version}} currently only supports a sub-set of the ANNIS Query language (AQL) compared to the legacy ANNIS version {{site.data.annis.legacy-short-version}}.
+ANNIS {{site.data.annis.short-version}} currently only supports a sub-set of the ANNIS Query language (AQL) compared to the legacy ANNIS version {{site.data.annis-legacy.short-version}}.
 Full support is planned, but some backward-compatible features of AQL will only be available in a compatibility mode.
 See the chapter ["Differences in Compatibility Mode"](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/aql/compatibility-mode.html) of the User Guide in the Tutorial for more information.
 For administrators, there are [instructions](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/installation/migrate-annis3.html) on how to migrate from ANNIS 3 to 4 in the User Guide. 
@@ -49,23 +49,20 @@ See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/main/CHANG
 ---
 
 
-## Legacy version: ANNIS {{site.data.annis.legacy-version}}
+## Legacy version: ANNIS {{site.data.annis-legacy.version}}
 
 This version requires a [PostgreSQL](http://www.postgresql.org/) installation to run. 
 **PostgreSQL versions 9.4 to 12 are supported** but there are known issues with PostgreSQL 13. 
 The ANNIS the server version (but not the desktop kickstarter) also requires a running web-server (e.g. [Apache Tomcat](http://tomcat.apache.org/) or [Jetty](https://www.eclipse.org/jetty/)).
 Both versions require the Installation of **Java OpenJDK 8**. If your operating system does already include Java. we recommend the installation of the open-source and free of charge installers provided at [https://adoptopenjdk.net/](https://adoptopenjdk.net/).
 
-For installation instructions see the [<i class="fa fa-book"></i> Installation section in the User Guide](http://korpling.github.io/ANNIS/{{site.data.annis.legacy-short-version}}/user-guide/installation.html). 
+For installation instructions see the [<i class="fa fa-book"></i> Installation section in the User Guide](http://korpling.github.io/ANNIS/{{site.data.annis-legacy.short-version}}/user-guide/installation.html). 
 There are two editions of ANNIS, one for the local use on a standard computer (ANNIS Kickstarter) and one which is only needed when running a web-server.
 
-- ANNIS Kickstarter: [annis-kickstarter-{{site.data.annis.legacy-version}}-distribution.zip](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.legacy-version}}/annis-kickstarter-{{site.data.annis.legacy-version}}-distribution.zip) (local installation for Windows, Linux and Mac)
+- ANNIS Kickstarter: [annis-kickstarter-{{site.data.annis-legacy.version}}-distribution.zip](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis-legacy.version}}/annis-kickstarter-{{site.data.annis-legacy.version}}-distribution.zip) (local installation for Windows, Linux and Mac)
 - ANNIS server:
-  - [annis-gui-{{site.data.annis.legacy-version}}.war](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.legacy-version}}/annis-gui-{{site.data.annis.legacy-version}}.war) (server GUI distribution)
-  - [annis-service-{{site.data.annis.legacy-version}}-distribution.tar.gz](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis.legacy-version}}/annis-service-{{site.data.annis.legacy-version}}-distribution.tar.gz) (server service distribution)  
-
-
-See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/annis3/master/CHANGELOG) for detailled information on what was changed in this version.
+  - [annis-gui-{{site.data.annis-legacy.version}}.war](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis-legacy.version}}/annis-gui-{{site.data.annis-legacy.version}}.war) (server GUI distribution)
+  - [annis-service-{{site.data.annis-legacy.version}}-distribution.tar.gz](https://github.com/korpling/ANNIS/releases/download/annis-{{site.data.annis-legacy.version}}/annis-service-{{site.data.annis-legacy.version}}-distribution.tar.gz) (server service distribution)  
 
 
 ## Source code
