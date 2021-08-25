@@ -44,7 +44,7 @@ jobs:
       - name: Replace release notes
         run: echo "${{ steps.release.outputs.body }}" > _includes/annis-release-notes.md
       - run: git add _data/annis.yml
-      - run: git -c user.name='gh-actions' -c user.email='gh-actions' commit --allow-empty -m "New ANNIS version ${{ github.event.client_payload.version }} released"
+      - run: git -c user.name='gh-actions' -c user.email='gh-actions' commit -m "New ANNIS version ${{ github.event.client_payload.version }} released"
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
