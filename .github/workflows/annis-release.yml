@@ -1,7 +1,7 @@
-name: New ANNIS release
+name: Check for new ANNIS release
 on:
-  repository_dispatch:
-    types: [annis-release]
+  schedule:
+     - cron: "*/2 * * * *"
 jobs:
   update-annis-links:
     runs-on: ubuntu-latest
@@ -9,13 +9,18 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: ${{ github.event.client_payload.ref }}
+      - name: Fetch Latest ANNIS Release
+        id: release
+        uses: gregziegan/fetch-latest-release@v2.0.0
+        with:
+          repo_path: korpling/ANNIS
       - name: Remove "v" prefix from version
         uses: frabert/replace-string-action@v2.0
         id: version
         with:
           pattern: 'v(.+)'
           replace-with: '$1'
-          string: ${{ github.event.client_payload.version }}
+          string: ${{ steps.release.outputs.tag_name  }}
       - name: Prepare short-version
         uses: frabert/replace-string-action@v2.0
         id: short-version
@@ -40,7 +45,7 @@ jobs:
         uses: mingjun97/file-regex-replace@v1
         with:
            regex: '"release_notes": "([0-9\.]*)",'
-           replacement: '"release_notes": "${{ github.event.client_payload.release_notes }}",'
+           replacement: '"release_notes": "${{ steps.release.outputs.body }}",'
            include: '_data/annis\.yml'
       - run: git add _data/annis.yml
       - run: git -c user.name='gh-actions' -c user.email='gh-actions' commit --allow-empty -m "New ANNIS version ${{ github.event.client_payload.version }} released"
