@@ -1,7 +1,7 @@
 name: Check for new ANNIS release
 on:
   schedule:
-     - cron: "29 21 * * *"
+     - cron: "32 21 * * *"
 jobs:
   update-annis-links:
     runs-on: ubuntu-latest
@@ -31,15 +31,15 @@ jobs:
       - name: Replace long version
         uses: mingjun97/file-regex-replace@v1
         with:
-           regex: '"version": ([0-9\.]*),'
-           replacement: '"version": ${{ steps.version.outputs.replaced }},'
+           regex: 'version: ([0-9\.]*),'
+           replacement: 'version: ${{ steps.version.outputs.replaced }},'
            include: 'annis\.yml'
            path: '_data'
       - name: Replace short version
         uses: mingjun97/file-regex-replace@v1
         with:
-           regex: '"short-version": ([0-9\.]*),'
-           replacement: '"short-version": ${{ steps.short-version.outputs.replaced }},'
+           regex: 'short-version": ([0-9\.]*),'
+           replacement: 'short-version: ${{ steps.short-version.outputs.replaced }},'
            include: 'annis\.yml'
            path: '_data'
       - name: Replace release notes
