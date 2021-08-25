@@ -1,7 +1,7 @@
 name: Check for new ANNIS release
 on:
   schedule:
-     - cron: "21 21 * * *"
+     - cron: "21 26 * * *"
 jobs:
   update-annis-links:
     runs-on: ubuntu-latest
@@ -41,7 +41,11 @@ jobs:
            replacement: '"short-version": ${{ steps.short-version.outputs.replaced }},'
            include: '_data/annis\.yml'
       - name: Replace release notes
-        run: echo "${{ steps.release.outputs.body }}" > _includes/annis-release-notes.md
+        uses: DamianReeves/write-file-action@v1.0
+        with:
+          path: _includes/annis-release-notes.md
+          contents: ${{ steps.release.outputs.body  }}
+          write-mode: overwrite
       - run: git add _data/annis.yml _includes/annis-release-notes.md
       - run: git -c user.name='gh-actions' -c user.email='gh-actions' commit -m "New ANNIS version ${{ github.event.client_payload.version }} released" || true
       - name: Push changes
