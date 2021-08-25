@@ -44,7 +44,7 @@ There are two editions of ANNIS, one for the local use on a standard computer (A
 
 {% include annis-release-notes.md %}
 
-See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/main/CHANGELOG.md) the changes of all previous versions.
+See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/main/CHANGELOG.md) for changes of all previous versions.
 
 ---
 
