@@ -30,10 +30,12 @@ See the chapter ["Differences in Compatibility Mode"](http://korpling.github.io/
 Please report any issues in the [GitHub issue tracker](https://github.com/korpling/ANNIS/issues).
 
 
-### Files
+### Downloads
 
-- ANNIS Desktop: [<i class="fa fa-download"></i> annis-{{site.data.annis.version}}-desktop.jar](https://github.com/korpling/ANNIS/releases/download/v{{site.data.annis.version}}/annis-{{site.data.annis.version}}-desktop.jar) (local installation for Windows, Linux and Mac, just double-click on the downloaded file to start the application)
-- ANNIS Server: [<i class="fa fa-download"></i> annis-{{site.data.annis.version}}-server.jar](https://github.com/korpling/ANNIS/releases/download/v{{site.data.annis.version}}/annis-{{site.data.annis.version}}-server.jar) (an executable file which starts both the user interface and the backend service, see the [user guide](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/installation/) for installation and configuration instructions)
+There are two editions of ANNIS, one for the local use on a standard computer (ANNIS Desktop) and one which is only needed when running ANNIS on  a server.
+
+- ANNIS Desktop: [<i class="fa fa-download"></i> annis-{{site.data.annis.version}}-desktop.jar](https://github.com/korpling/ANNIS/releases/download/v{{site.data.annis.version}}/annis-{{site.data.annis.version}}-desktop.jar) (local installation for Windows, Linux and Mac, see the user guide for [installation instructions](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/installation/desktop.html))
+- ANNIS Server: [<i class="fa fa-download"></i> annis-{{site.data.annis.version}}-server.jar](https://github.com/korpling/ANNIS/releases/download/v{{site.data.annis.version}}/annis-{{site.data.annis.version}}-server.jar) (an executable file which starts both the user interface and the backend service, see the user guide for [installation](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/installation/server.html) and [configuration](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/configuration/index.html) instructions)
 
 
 ### Whats new in version {{site.data.annis.version}}?
