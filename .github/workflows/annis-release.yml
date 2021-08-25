@@ -28,7 +28,6 @@ jobs:
           pattern: '([0-9]+\.[0-9]+)\.[0-9]+'
           replace-with: '$1'
           string: ${{ steps.version.outputs.replaced }}
-      - run: echo "ANNIS version ${{ steps.version.outputs.replaced }} released (short version is ${{ steps.short-version.outputs.replaced }}")"
       - name: Replace long version
         uses: mingjun97/file-regex-replace@v1
         with:
