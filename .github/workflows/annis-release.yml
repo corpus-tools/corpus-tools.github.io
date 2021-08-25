@@ -1,0 +1,50 @@
+name: New ANNIS release
+on:
+  repository_dispatch:
+    types: [annis-release]
+jobs:
+  update-annis-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.client_payload.ref }}
+      - name: Remove "v" prefix from version
+        uses: frabert/replace-string-action@v2.0
+        id: version
+        with:
+          pattern: 'v(.+)'
+          replace-with: '$1'
+          string: ${{ github.event.client_payload.version }}
+      - name: Prepare short-version
+        uses: frabert/replace-string-action@v2.0
+        id: short-version
+        with:
+          pattern: '([0-9]+\.[0-9]+)\.[0-9]+'
+          replace-with: '$1'
+          string: ${{ steps.version.outputs.replaced }}
+      - run: echo "ANNIS version ${{ steps.version.outputs.replaced }} released (short version is ${{ steps.short-version.outputs.replaced }}")"
+      - name: Replace long version
+        uses: mingjun97/file-regex-replace@v1
+        with:
+           regex: '"version": ([0-9\.]*),'
+           replacement: '"version": ${{ steps.version.outputs.replaced }},'
+           include: '_data/annis\.yml'
+      - name: Replace short version
+        uses: mingjun97/file-regex-replace@v1
+        with:
+           regex: '"short-version": ([0-9\.]*),'
+           replacement: '"short-version": ${{ steps.short-version.outputs.replaced }},'
+           include: '_data/annis\.yml'
+      - name: Replace release notes
+        uses: mingjun97/file-regex-replace@v1
+        with:
+           regex: '"release_notes": "([0-9\.]*)",'
+           replacement: '"release_notes": "${{ github.event.client_payload.release_notes }}",'
+           include: '_data/annis\.yml'
+      - run: git add _data/annis.yml
+      - run: git -c user.name='gh-actions' -c user.email='gh-actions' commit --allow-empty -m "New ANNIS version ${{ github.event.client_payload.version }} released"
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
