@@ -1,7 +1,10 @@
 name: Check for new ANNIS release
 on:
+  push:
+    branches:
+      - master
   schedule:
-     - cron: "32 21 * * *"
+     - cron: "0 */1 * * *"
 jobs:
   update-annis-links:
     runs-on: ubuntu-latest
