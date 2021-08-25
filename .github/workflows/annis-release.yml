@@ -34,7 +34,7 @@ jobs:
       - name: Replace version file
         uses: DamianReeves/write-file-action@v1.0
         with:
-          path: _includes/annis-release-notes.md
+          path: _data/annis.yml
           contents: |
             version: ${{ steps.version.outputs.replaced }}
             short-version: ${{ steps.short-version.outputs.replaced }}
