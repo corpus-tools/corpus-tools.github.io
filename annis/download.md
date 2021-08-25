@@ -17,6 +17,7 @@ redirect_from:
 ANNIS is an open source project
 distributed under the Apache Public License, Version 2.0. 
 
+
 ## Current version: ANNIS {{site.data.annis.version}}
 
 ANNIS requires the Installation of **Java OpenJDK 8**. If your operating system does already include Java. we recommend the installation of the open-source and free of charge installers provided at [https://adoptopenjdk.net/](https://adoptopenjdk.net/).
@@ -26,8 +27,6 @@ ANNIS requires the Installation of **Java OpenJDK 8**. If your operating system 
 
 
 Please report any issues in the [GitHub issue tracker](https://github.com/korpling/ANNIS/issues).
-See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/master/CHANGELOG.md) for detailled information on what was changed in this version.
-
 
 This is a complete overhaul of the ANNIS service backend.
 Instead of using the relational database PostgreSQL, a custom AQL implementation based on graphs called [graphANNIS](https://github.com/korpling/graphANNIS) is used.
@@ -37,6 +36,18 @@ See the chapter ["Differences in Compatibility Mode"](http://korpling.github.io/
 For administrators, there are [instructions](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/installation/migrate-annis3.html) on how to migrate from ANNIS 3 to 4 in the User Guide. 
 For the server version, this release completely changes the way users are authenticated, but it should be much easier to integrate Single-Sign-On systems like Shibboleth or other institutional accounts.
 See the user guide for [installation](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/installation/server.html) and [configuration](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide//configuration/) instructions for the server (e.g. how to [add user accounts](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/configuration/user.html) or [run the graphANNIS backend on a different server](http://korpling.github.io/ANNIS/{{site.data.annis.short-version}}/user-guide/advanced/backend-frontend-separation.html)).
+
+
+### Whats new in version {{site.data.annis.version}}?
+
+---
+
+{% include annis-release-notes.md %}
+
+See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/main/CHANGELOG.md) the changes of all previous versions.
+
+---
+
 
 ## Legacy version: ANNIS {{site.data.annis.legacy-version}}
 
