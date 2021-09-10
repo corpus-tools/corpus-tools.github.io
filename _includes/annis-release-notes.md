@@ -1,3 +1,4 @@
-### Fixed
+### Added
 
-- Fetching the segmentation span in CSVExporter could fail if only one token was covered.
+- Add operator negation with existance assumption to AQL
+  by upgrading to graphANNIS 1.1.0
