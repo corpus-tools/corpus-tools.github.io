@@ -53,7 +53,7 @@ See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/main/CHANG
 ## Legacy version: ANNIS {{site.data.annis-legacy.version}}
 
 This version requires a [PostgreSQL](http://www.postgresql.org/) installation to run. 
-**PostgreSQL versions 9.4 to 12 are supported** but there are known issues with PostgreSQL 13. 
+**PostgreSQL versions 9.4 to 14 are supported**.
 The ANNIS the server version (but not the desktop kickstarter) also requires a running web-server (e.g. [Apache Tomcat](http://tomcat.apache.org/) or [Jetty](https://www.eclipse.org/jetty/)).
 Both versions require the Installation of **Java OpenJDK 8**. If your operating system does already include Java. we recommend the installation of the open-source and free of charge installers provided at [https://adoptopenjdk.net/](https://adoptopenjdk.net/).
 
