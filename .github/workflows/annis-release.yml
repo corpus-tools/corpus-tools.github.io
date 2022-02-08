@@ -33,7 +33,7 @@ jobs:
           string: ${{ steps.version.outputs.replaced }}
       - name: Replace version file
         uses: DamianReeves/write-file-action@v1.0
-        if: !startsWith("${{ steps.short-version.outputs.replaced }}", "annis-") 
+        if: startsWith(${{ steps.version.outputs.replaced }}, "annis-") == false
         with:
           path: _data/annis.yml
           contents: |
@@ -42,17 +42,17 @@ jobs:
           write-mode: overwrite
       - name: Replace release notes
         uses: DamianReeves/write-file-action@v1.0
-        if: !startsWith("${{ steps.short-version.outputs.replaced }}," "annis-")
+        if: startsWith(${{ steps.version.outputs.replaced }}, "annis-") == false
         with:
           path: _includes/annis-release-notes.md
           contents: ${{ steps.release.outputs.body  }}
           write-mode: overwrite
       - run: git add _data/annis.yml _includes/annis-release-notes.md
-	if: !startsWith("${{ steps.short-version.outputs.replaced }}", "annis-")
+        if: startsWith(${{ steps.version.outputs.replaced }}, "annis-") == false
       - run: git -c user.name='gh-actions' -c user.email='gh-actions' commit -m "New ANNIS version ${{ github.event.client_payload.version }} released" || true
-        if: !startsWith(${{ steps.short-version.outputs.replaced }}, "annis-")
+        if: startsWith(${{ steps.version.outputs.replaced }}, "annis-") == false
       - name: Push changes
-        if: !startsWith("${{ steps.short-version.outputs.replaced }}", "annis-")
+        if: startsWith("${{ steps.short-version.outputs.replaced }}", "annis-")
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
