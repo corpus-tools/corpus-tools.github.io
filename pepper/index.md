@@ -35,7 +35,7 @@ When your annotation tool produces a different data format from the one your ana
 * Pepper uses the intermediate model [Salt](..{{site.site_salt_main}}) which reduces the number of mappings to convert _n_ into _m_ formats.
 * Pepper modules, such as the [MergingModule]({{site.pepper_doc_moduleDev}}), allow to merge the data from different annotation tools together and create multi-layer corpora.
 * Pepper can be used as an interactive command line tool, as a command to be included in scripts, or as an API to be integrated in other software products.
-* Pepper is written in [Java](https://adoptium.net/) and can be run on all operation systems which are ready to run Java (Windows, Mac, Linux, Unix, ...).
+* Pepper is written in [Java](https://adoptium.net/?variant=openjdk11&jvmVariant=hotspot) and can be run on all operation systems which are ready to run Java (Windows, Mac, Linux, Unix, ...).
 * Pepper is free and open source software. It is distributed under the {{site.apache_license}}.
 
 To decrease the number of conceptual mappings, Pepper uses an intermediate model, which means that a conversion consists of two mappings. First, the data coming
