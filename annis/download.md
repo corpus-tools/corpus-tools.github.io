@@ -21,7 +21,7 @@ distributed under the Apache Public License, Version 2.0.
 ## Current version: ANNIS {{site.data.annis.version}}
 
 ANNIS requires the Installation of **Java OpenJDK 11**. If your operating system does not already include Java, 
-we recommend the installation of the open-source and free of charge installers provided at <https://adoptium.net/>.
+we recommend the installation of the open-source and free of charge installers provided at [https://adoptium.net/](https://adoptium.net/?variant=openjdk11&jvmVariant=hotspot).
 Starting from ANNIS 4.0.0, instead of using the relational database PostgreSQL, a custom AQL implementation based on graphs called [graphANNIS](https://github.com/korpling/graphANNIS) is used.
 ANNIS {{site.data.annis.short-version}} currently only supports a sub-set of the ANNIS Query language (AQL) compared to the legacy ANNIS version {{site.data.annis-legacy.short-version}}.
 Full support is planned, but some backward-compatible features of AQL will only be available in a compatibility mode.
