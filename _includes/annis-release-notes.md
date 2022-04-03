@@ -1,7 +1,4 @@
 ### Fixed
 
-- Fix several issues with corpora containing an Umlaut or other special
-  characters. There is often now a distinction between using the decoded corpus
-  name or the "raw" node names, e.g. to get the corpus or HTML visualizer
-  configuration. This also updates graphANNIS to 2.0.3 which includes the
-  corresponding fixes.
+- Mitigate against security issue [CVE-2022-22965](https://tanzu.vmware.com/security/cve-2022-22965) by upgrading Spring boot
+  dependency to 2.5.12 See  <https://spring.io/blog/2022/03/31/spring-framework-rce-early-announcement> for more information.
