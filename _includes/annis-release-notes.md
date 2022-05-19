@@ -1,5 +1,3 @@
-### Fixed
+### Added
 
-- Upgraded to graphANNIS 2.0.5. 
-  Fix timeout handling for queries with a lot of intermediate results, but less
-  than 1000 matches.
+- Show corpus metadata with corpus hits and not only the document metadata (#768)
