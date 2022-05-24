@@ -21,7 +21,7 @@ distributed under the Apache Public License, Version 2.0.
 ## Current version: ANNIS {{site.data.annis.version}}
 
 ANNIS requires the Installation of **Java OpenJDK 11**. If your operating system does not already include Java, 
-we recommend the installation of the open-source and free of charge installers provided at [https://adoptium.net/](https://adoptium.net/?variant=openjdk11&jvmVariant=hotspot).
+we recommend the installation of the open-source and free of charge installers provided at [https://adoptium.net/]([https://adoptium.net/?variant=openjdk11&jvmVariant=hotspot](https://adoptium.net/de/temurin/releases?version=11)).
 Starting from ANNIS 4.0.0, instead of using the relational database PostgreSQL, a custom AQL implementation based on graphs called [graphANNIS](https://github.com/korpling/graphANNIS) is used.
 ANNIS {{site.data.annis.short-version}} currently only supports a sub-set of the ANNIS Query language (AQL) compared to the legacy ANNIS version {{site.data.annis-legacy.short-version}}.
 Full support is planned, but some backward-compatible features of AQL will only be available in a compatibility mode.
@@ -55,7 +55,7 @@ See the [change log](https://raw.githubusercontent.com/korpling/ANNIS/main/CHANG
 This version requires a [PostgreSQL](http://www.postgresql.org/) installation to run. 
 **PostgreSQL versions 9.4 to 14 are supported**.
 The ANNIS the server version (but not the desktop kickstarter) also requires a running web-server (e.g. [Apache Tomcat](http://tomcat.apache.org/) or [Jetty](https://www.eclipse.org/jetty/)).
-Both versions require the Installation of **Java OpenJDK 8**. If your operating system does already include Java. we recommend the installation of the open-source and free of charge installers provided at [https://adoptopenjdk.net/](https://adoptopenjdk.net/).
+Both versions require the Installation of **Java OpenJDK 8**. If your operating system does already include Java. we recommend the installation of the open-source and free of charge installers provided at [https://adoptium.net/]([https://adoptium.net](https://adoptium.net/de/temurin/releases?version=8)).
 
 For installation instructions see the [<i class="fa fa-book"></i> Installation section in the User Guide](http://korpling.github.io/ANNIS/{{site.data.annis-legacy.short-version}}/user-guide/installation.html). 
 There are two editions of ANNIS, one for the local use on a standard computer (ANNIS Kickstarter) and one which is only needed when running a web-server.
