@@ -73,7 +73,9 @@ information status, TEI structure
 [<a
  href="../corpora/pcc2_PAULA.zip">PAULA</a>,
       <a
- href="../corpora/pcc2_v7_relANNIS.zip" >ANNIS</a>]
+ href="../corpora/pcc2_v7_relANNIS.zip" >ANNIS</a>,
+      <a
+ href="../corpora/pcc2_v7_graphml.zip" >GraphML</a>]
       </td>
       <td>
   Potsdam
