@@ -1,12 +1,7 @@
-###  Added
-
-- Allow to change the displayed order of corpus metadata annotations using the
-  `corpus_annotation_order` configuration in the `corpus-config.toml`
-  file. (#500)
-- Automatically restart the bundled web service when it crashed.
-
 ### Fixed
 
-- Only show warning on MacOS with M1 processor instead if exiting.
-- Use several lines for showing the MacOS M1 warning, because there is no
-  automatic line brake.
+- Addressed some non-security issues confusing static code analyzers (#782)
+- Bumps commons-email from 1.3.2 to 1.5.
+- Update Kotlin test dependency to 1.6 and also Karibu Testing
+  (which needs the Kotlin dependency)
+- Do not restart possible crashed graphANNIS service in integration tests.
