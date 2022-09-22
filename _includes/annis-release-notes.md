@@ -1,10 +1,12 @@
 ### Fixed
 
-- No `Row outside dataProvider size` error message when the corpus list is
-  empty.
-- The segmentation context was automatically reset to its default value from
-  configuration when changed manually.
-- Update to graphANNIS 2.3.0 which has various bug fixes, including fixing
-  broken result ordering for certain queries.
-- Fixed order of subgraphs when there are gaps in the result
-- Update jsoup dependency to 1.15.3
+- Fixed handling of virtual tokenization in exporters when relANNIS corpora had
+  an explicit mapping defined. ANNIS3 had the `virtual_tokenization_mapping` and
+  `virtual_tokenization_from_namespace` fields in the
+  `ExtData/corpus.properties` file which allowed to configure which span
+  annotation belonged to which segmentation. In the exporters, this was used to
+  reconstruct a Salt graph where the virtual token are replace with timeline
+  items and the segmentation spans become actual SToken. There are several
+  corpora that depend on this functionality and where the exporters failed to
+  generated proper text spans because of this.
+- The context defined in the exporter panel was not taken into account.
