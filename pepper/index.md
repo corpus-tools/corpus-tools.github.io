@@ -68,11 +68,10 @@ and to easily plug in new ones.
 <h1>Download</h1>
 </div>
 
-Here you will find the current stable release, snapshots, and also
+Here you will find the current stable release and also
 older versions of Pepper, including a set of Pepper modules.
 
 * [Stable Releases](https://korpling.german.hu-berlin.de/saltnpepper/pepper/download/stable/)
-* [Snapshot Releases](https://korpling.german.hu-berlin.de/saltnpepper/pepper/download/snapshot/)
 
 Pepper is system-independent and comes as a ready-to-run zip archive, so you do
 not need any installation. But since Pepper is Java-based, you need to have Java
