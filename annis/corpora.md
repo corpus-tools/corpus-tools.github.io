@@ -522,7 +522,7 @@ Mambrini / <a href="http://www.perseus.tufts.edu/hopper/"
                  <a href="http://nlp.indiana.edu/~obscrivn/">Olga Scrivner, Indiana University</a>
             </td>
        </tr>
-
+<!-- broken links
    <tr>
             <td>
                  abraham.our.father<br>
@@ -577,7 +577,7 @@ Mambrini / <a href="http://www.perseus.tufts.edu/hopper/"
                  <a href="http://coptic.pacific.edu/">Coptic SCRIPTORIUM</a>
             </td>
        </tr>
-
+-->
   </tbody>
 </table>
 </div>
