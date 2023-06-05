@@ -37,7 +37,7 @@ link_pcc: <a href="http://angcl.ling.uni-potsdam.de/resources/pcc.html">PCC</a>
 link_tuebadz: <a href="http://www.sfs.uni-tuebingen.de/en/ascl/resources/corpora/tueba-dz.html">TUEBA-D/Z corpus</a>
 
 # Site settings
-email: "annis@corpus-tools.org"
+email: "annis-support@lists.hu-berlin.de"
 title: "corpus-tools.org"
 description: "A collection of tools for processing your linguistic data: annotation, conversion, analysis"
 github_username:  korpling

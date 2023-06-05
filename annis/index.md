@@ -177,7 +177,7 @@ as well as native RegEx support.
 # Contact
 </div>
 
-For enquiries, e-mail us at: <a href="mailto:annis@corpus-tools.org">annis@corpus-tools.org</a>
+For enquiries, e-mail us at: <a href="mailto:annis-support@lists.hu-berlin.de">annis-support@lists.hu-berlin.de</a>
 
 <div class="page-header">
 # Credits
