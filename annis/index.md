@@ -25,7 +25,7 @@ redirect_from:
 </div>
 
 <div class="image_wrap">
-<a href="https://korpling.org/annis3/?id=2aec4d6c-1097-4462-8c66-347e2516b11e" target="_blank">
+<a href="https://korpling.org/annis/#_q=IlBoYXJtYWtvbnplcm4iIHwgCigKcG9zPS9WLkZJTi8gLT5kZXBbZnVuYz0ic2JqIl0gIkp1Z2VuZGxpY2hlIiAKJiBjYXQ9IlMiICYgIzQgPnNlY2VkZ2UgIzMKKQ&ql=aql&_c=cGNjMg&cl=5&cr=5&s=0&l=10" target="_blank">
 ![screenshot of ANNIS main user interface](images/annis3_full.png){:style="width:75%"}
 </a>
 </div>
