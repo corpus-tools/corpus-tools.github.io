@@ -1,5 +1,6 @@
 ### Fixed
 
-- Audio visualizer for .wav types was not playing the file due to a MIME type
-  mixup (#815)
-- Updated to graphANNIS bugfix version 2.4.3
+- Ignore pointing relations when traversing the graph in the RST visualizer. If
+we include pointing relations and they create cycles, this would result in an
+error.
+- Delete temporary files when exporting/fetching results.
