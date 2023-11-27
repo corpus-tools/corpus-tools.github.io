@@ -1,6 +1,5 @@
 ### Fixed
 
-- Ignore pointing relations when traversing the graph in the RST visualizer. If
-we include pointing relations and they create cycles, this would result in an
-error.
-- Delete temporary files when exporting/fetching results.
+- Update to graphANNIS 2.4.8 with various bugfixes.
+- When an optional node (for negation without existence) was not at the end of
+  the query, find queries could give an empty output.
