@@ -1,5 +1,4 @@
 ### Fixed
 
-- Update to graphANNIS 2.4.8 with various bugfixes.
-- When an optional node (for negation without existence) was not at the end of
-  the query, find queries could give an empty output.
+- Update to graphANNIS 3.0.0 with various bugfixes.
+- Polling the import status in the adminstration view fixed.
