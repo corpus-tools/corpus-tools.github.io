@@ -1,4 +1,5 @@
 ### Fixed
 
-- Update to graphANNIS 3.0.0 with various bugfixes.
-- Polling the import status in the adminstration view fixed.
+- Updated to graphANNIS 3.1.0 which has improvements in memory handling. This
+  should fix some situations where ANNIS becomes unresponsive in a enviroment
+  with a lot of different corpora.
