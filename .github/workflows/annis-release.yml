@@ -9,7 +9,7 @@ jobs:
   update-annis-links:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.client_payload.ref }}
       - name: Fetch Latest ANNIS Release
