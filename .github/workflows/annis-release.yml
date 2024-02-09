@@ -18,14 +18,14 @@ jobs:
         with:
           repo_path: korpling/ANNIS
       - name: Remove "v" prefix from version
-        uses: frabert/replace-string-action@v2.0
+        uses: frabert/replace-string-action@v2.5
         id: version
         with:
           pattern: 'v(.+)'
           replace-with: '$1'
           string: ${{ steps.release.outputs.tag_name  }}
       - name: Prepare short-version
-        uses: frabert/replace-string-action@v2.0
+        uses: frabert/replace-string-action@v2.5
         id: short-version
         with:
           pattern: '([0-9]+\.[0-9]+)\.[0-9]+'
@@ -41,7 +41,7 @@ jobs:
             short-version: "${{ steps.short-version.outputs.replaced }}"
           write-mode: overwrite
       - name: Replace release notes
-        uses: DamianReeves/write-file-action@v1.0
+        uses: DamianReeves/write-file-action@v1.3
         if: ${{ !startsWith(steps.version.outputs.replaced , 'annis-') }}
         with:
           path: _includes/annis-release-notes.md
