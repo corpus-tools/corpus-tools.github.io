@@ -32,7 +32,7 @@ jobs:
           replace-with: '$1'
           string: ${{ steps.version.outputs.replaced }}
       - name: Replace version file
-        uses: DamianReeves/write-file-action@v1.0
+        uses: DamianReeves/write-file-action@v1.3
         if: ${{ !startsWith(steps.version.outputs.replaced , 'annis-') }}
         with:
           path: _data/annis.yml
@@ -53,6 +53,6 @@ jobs:
         if: ${{ !startsWith(steps.version.outputs.replaced , 'annis-') }}
       - name: Push changes
         if: ${{ !startsWith(steps.version.outputs.replaced , 'annis-') }}
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@v0.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
