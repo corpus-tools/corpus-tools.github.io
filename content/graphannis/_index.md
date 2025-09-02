@@ -8,6 +8,6 @@ menus:
     identifier: graphannis
 ---
 
-# GraphANNIS
+# graphANNIS
 
  This is a new backend implementation of the ANNIS linguistic search and visualization system.

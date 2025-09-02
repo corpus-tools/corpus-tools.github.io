@@ -20,5 +20,5 @@ ANNIS, which stands for ANNotation of Information Structure, was originally desi
    alt="A screenshot of the ANNIS user interface."
    link="https://korpling.org/annis/#_q=IlBoYXJtYWtvbnplcm4iIHwgCigKcG9zPS9WLkZJTi8gLT5kZXBbZnVuYz0ic2JqIl0gIkp1Z2VuZGxpY2hlIiAKJiBjYXQ9IlMiICYgIzQgPnNlY2VkZ2UgIzMKKQ&ql=aql&_c=cGNjMg&cl=5&cr=5&s=0&l=10"
    caption="ANNIS user interface"
-   width="600px"
+   width="400px"
  >}}
