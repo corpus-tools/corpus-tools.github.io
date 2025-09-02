@@ -1,5 +1,7 @@
 ---
 title: "Annatomic"
+weight: 100
+bookcase_cover_src: '/images/cover/annatomic.png'
 menu:
   navbar:
     weight: 100
