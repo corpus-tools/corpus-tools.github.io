@@ -5,7 +5,7 @@ weight: 3
 bookcase_cover_src: '/images/cover/annatomic.png'
 menu:
   navbar:
-    weight: 3
+    identifier: annatomic
 ---
 
 # Annatomic (work in progress)

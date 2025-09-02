@@ -2,3 +2,8 @@ baseURL = 'https://corpus-tools.org/'
 languageCode = 'en-us'
 title = 'corpus-tools.org'
 theme = "hugo-theme-monochrome"
+
+
+[params]
+hide_navbar_on_scroll = false
+toc_position = "right"

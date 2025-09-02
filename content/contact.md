@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+bookcase_hidden: true
 menus:
   navbar:
     weight: 200
