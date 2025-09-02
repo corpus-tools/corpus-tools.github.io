@@ -19,7 +19,7 @@ subpages:
 ---
 
 <div class="center-image-80">
-![The knight Sir Pepper fighting against the format monster]({{ site.url }}/pepper/images/sir_pepper.svg)
+![The knight Sir Pepper fighting against the format monster]({{ "/pepper/images/sir_pepper.svg" | absolute_url }})
 </div>
 
 <div class="page-header">

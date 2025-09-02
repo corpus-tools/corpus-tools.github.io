@@ -1,7 +1,7 @@
 # Site settings
 email_snp: saltnpepper@lists.hu-berlin.de
-baseurl: ""
-url: "http://corpus-tools.org/archive-2015-2025/"
+baseurl: "/archive-2015-2024"
+url: "https://corpus-tools.org"
 bootstrap_dist: ../bootstrap/dist
 site_home: /home/index.html
 site_salt: /salt/
