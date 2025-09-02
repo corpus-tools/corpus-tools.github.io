@@ -1,0 +1,4 @@
+baseURL = 'https://corpus-tools.org/'
+languageCode = 'en-us'
+title = 'corpus-tools.org'
+theme = "hugo-theme-monochrome"

@@ -1,0 +1,11 @@
++++
+title = 'Annatto'
+[menus]
+    [menus.navbar]
+    weight = 2
++++
+
+
+# Annatto
+
+Converts linguistic data formats based on the graphANNIS data model as intermediate representation and can apply consistency tests.
