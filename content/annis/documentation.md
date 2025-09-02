@@ -6,6 +6,8 @@ menus:
     parent: annis
 ---
 
+# Documentation for ANNIS
+
 ## User Guide
 
 
