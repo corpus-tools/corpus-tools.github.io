@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg version="1.2" baseProfile="tiny" width="90.7mm" height="80mm" viewBox="0 0 9070 8000" preserveAspectRatio="xMidYMid" fill-rule="evenodd" clip-path="url(#presentation_clip_path)" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+ <defs class="ClipPathGroup">
+  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+   <rect x="0" y="0" width="9070" height="8000"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <font id="EmbeddedFont_1" horiz-adv-x="2048">
+   <font-face font-family="Rufscript embedded" units-per-em="2048" font-weight="normal" font-style="normal" ascent="1935" descent="514"/>
+   <missing-glyph horiz-adv-x="2048" d="M 0,0 L 2047,0 2047,2047 0,2047 0,0 Z"/>
+   <glyph unicode="x" horiz-adv-x="1150" d="M 1124,1120 L 719,575 1145,0 928,0 602,440 276,0 59,0 494,586 96,1120 313,1120 610,721 907,1120 1124,1120 Z"/>
+   <glyph unicode="t" horiz-adv-x="757" d="M 375,1438 L 375,1120 754,1120 754,977 375,977 375,369 C 375,278 388,219 413,193 438,167 488,154 565,154 L 754,154 754,0 565,0 C 423,0 325,27 271,80 217,133 190,229 190,369 L 190,977 55,977 55,1120 190,1120 190,1438 375,1438 Z"/>
+   <glyph unicode="s" horiz-adv-x="908" d="M 907,1087 L 907,913 C 855,940 801,960 745,973 689,986 631,993 571,993 480,993 411,979 366,951 320,923 297,881 297,825 297,782 313,749 346,725 379,700 444,677 543,655 L 606,641 C 737,613 830,574 885,523 940,472 967,400 967,309 967,205 926,123 844,62 761,1 648,-29 504,-29 444,-29 382,-23 317,-12 252,0 183,18 111,41 L 111,231 C 179,196 246,169 312,152 378,134 443,125 508,125 595,125 661,140 708,170 755,199 778,241 778,295 778,345 761,383 728,410 694,437 620,462 506,487 L 442,502 C 328,526 246,563 195,613 144,662 119,730 119,817 119,922 156,1004 231,1061 306,1118 412,1147 549,1147 617,1147 681,1142 741,1132 801,1122 856,1107 907,1087 Z"/>
+   <glyph unicode="p" horiz-adv-x="1030" d="M 371,168 L 371,-426 186,-426 186,1120 371,1120 371,950 C 410,1017 459,1066 518,1099 577,1131 647,1147 729,1147 865,1147 976,1093 1061,985 1146,877 1188,735 1188,559 1188,383 1146,241 1061,133 976,25 865,-29 729,-29 647,-29 577,-13 518,20 459,52 410,101 371,168 Z M 997,559 C 997,694 969,801 914,878 858,955 781,993 684,993 587,993 510,955 455,878 399,801 371,694 371,559 371,424 399,318 455,241 510,164 587,125 684,125 781,125 858,164 914,241 969,318 997,424 997,559 Z"/>
+   <glyph unicode="n" horiz-adv-x="969" d="M 1124,676 L 1124,0 940,0 940,670 C 940,776 919,855 878,908 837,961 775,987 692,987 593,987 514,955 457,892 400,829 371,742 371,633 L 371,0 186,0 186,1120 371,1120 371,946 C 415,1013 467,1064 527,1097 586,1130 655,1147 733,1147 862,1147 959,1107 1025,1028 1091,948 1124,831 1124,676 Z"/>
+   <glyph unicode="m" horiz-adv-x="1665" d="M 1065,905 C 1111,988 1166,1049 1230,1088 1294,1127 1369,1147 1456,1147 1573,1147 1663,1106 1726,1025 1789,943 1821,827 1821,676 L 1821,0 1636,0 1636,670 C 1636,777 1617,857 1579,909 1541,961 1483,987 1405,987 1310,987 1234,955 1179,892 1124,829 1096,742 1096,633 L 1096,0 911,0 911,670 C 911,778 892,858 854,910 816,961 757,987 678,987 584,987 509,955 454,892 399,828 371,742 371,633 L 371,0 186,0 186,1120 371,1120 371,946 C 413,1015 463,1065 522,1098 581,1131 650,1147 731,1147 812,1147 882,1126 939,1085 996,1044 1038,984 1065,905 Z"/>
+   <glyph unicode="l" horiz-adv-x="213" d="M 193,1556 L 377,1556 377,0 193,0 193,1556 Z"/>
+   <glyph unicode="i" horiz-adv-x="213" d="M 193,1120 L 377,1120 377,0 193,0 193,1120 Z M 193,1556 L 377,1556 377,1323 193,1323 193,1556 Z"/>
+   <glyph unicode="h" horiz-adv-x="969" d="M 1124,676 L 1124,0 940,0 940,670 C 940,776 919,855 878,908 837,961 775,987 692,987 593,987 514,955 457,892 400,829 371,742 371,633 L 371,0 186,0 186,1556 371,1556 371,946 C 415,1013 467,1064 527,1097 586,1130 655,1147 733,1147 862,1147 959,1107 1025,1028 1091,948 1124,831 1124,676 Z"/>
+   <glyph unicode="e" horiz-adv-x="1089" d="M 1151,606 L 1151,516 305,516 C 313,389 351,293 420,227 488,160 583,127 705,127 776,127 844,136 911,153 977,170 1043,196 1108,231 L 1108,57 C 1042,29 974,8 905,-7 836,-22 765,-29 694,-29 515,-29 374,23 270,127 165,231 113,372 113,549 113,732 163,878 262,986 361,1093 494,1147 662,1147 813,1147 932,1099 1020,1002 1107,905 1151,773 1151,606 Z M 967,659 C 966,760 938,841 883,901 828,961 755,991 664,991 561,991 479,962 418,904 356,846 320,764 311,659 L 967,659 Z"/>
+   <glyph unicode="a" horiz-adv-x="969" d="M 702,563 C 553,563 450,546 393,512 336,478 307,420 307,338 307,273 329,221 372,183 415,144 473,125 547,125 649,125 731,161 793,234 854,306 885,402 885,522 L 885,563 702,563 Z M 1069,639 L 1069,0 885,0 885,170 C 843,102 791,52 728,20 665,-13 589,-29 498,-29 383,-29 292,3 225,68 157,132 123,218 123,326 123,452 165,547 250,611 334,675 460,707 627,707 L 885,707 885,725 C 885,810 857,875 802,922 746,968 668,991 567,991 503,991 441,983 380,968 319,953 261,930 205,899 L 205,1069 C 272,1095 338,1115 401,1128 464,1141 526,1147 586,1147 748,1147 869,1105 949,1021 1029,937 1069,810 1069,639 Z"/>
+   <glyph unicode="." horiz-adv-x="243" d="M 219,254 L 430,254 430,0 219,0 219,254 Z"/>
+  </font>
+ </defs>
+ <defs class="TextShapeIndex">
+  <g ooo:slide="id1" ooo:id-list="id3 id4 id5 id6 id7 id8 id9 id10 id11 id12 id13 id14 id15 id16 id17 id18 id19 id20 id21 id22 id23 id24"/>
+ </defs>
+ <defs class="EmbeddedBulletChars">
+  <g id="bullet-char-template(57356)" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 580,1141 L 1163,571 580,0 -4,571 580,1141 Z"/>
+  </g>
+  <g id="bullet-char-template(57354)" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 8,1128 L 1137,1128 1137,0 8,0 8,1128 Z"/>
+  </g>
+  <g id="bullet-char-template(10146)" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 174,0 L 602,739 174,1481 1456,739 174,0 Z M 1358,739 L 309,1346 659,739 1358,739 Z"/>
+  </g>
+  <g id="bullet-char-template(10132)" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 2015,739 L 1276,0 717,0 1260,543 174,543 174,936 1260,936 717,1481 1274,1481 2015,739 Z"/>
+  </g>
+  <g id="bullet-char-template(10007)" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 0,-2 C -7,14 -16,27 -25,37 L 356,567 C 262,823 215,952 215,954 215,979 228,992 255,992 264,992 276,990 289,987 310,991 331,999 354,1012 L 381,999 492,748 772,1049 836,1024 860,1049 C 881,1039 901,1025 922,1006 886,937 835,863 770,784 769,783 710,716 594,584 L 774,223 C 774,196 753,168 711,139 L 727,119 C 717,90 699,76 672,76 641,76 570,178 457,381 L 164,-76 C 142,-110 111,-127 72,-127 30,-127 9,-110 8,-76 1,-67 -2,-52 -2,-32 -2,-23 -1,-13 0,-2 Z"/>
+  </g>
+  <g id="bullet-char-template(10004)" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 285,-33 C 182,-33 111,30 74,156 52,228 41,333 41,471 41,549 55,616 82,672 116,743 169,778 240,778 293,778 328,747 346,684 L 369,508 C 377,444 397,411 428,410 L 1163,1116 C 1174,1127 1196,1133 1229,1133 1271,1133 1292,1118 1292,1087 L 1292,965 C 1292,929 1282,901 1262,881 L 442,47 C 390,-6 338,-33 285,-33 Z"/>
+  </g>
+  <g id="bullet-char-template(9679)" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 813,0 C 632,0 489,54 383,161 276,268 223,411 223,592 223,773 276,916 383,1023 489,1130 632,1184 813,1184 992,1184 1136,1130 1245,1023 1353,916 1407,772 1407,592 1407,412 1353,268 1245,161 1136,54 992,0 813,0 Z"/>
+  </g>
+  <g id="bullet-char-template(8226)" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 346,457 C 273,457 209,483 155,535 101,586 74,649 74,723 74,796 101,859 155,911 209,963 273,989 346,989 419,989 480,963 531,910 582,859 608,796 608,723 608,648 583,586 532,535 482,483 420,457 346,457 Z"/>
+  </g>
+  <g id="bullet-char-template(8211)" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M -4,459 L 1135,459 1135,606 -4,606 -4,459 Z"/>
+  </g>
+ </defs>
+ <defs class="TextEmbeddedBitmaps"/>
+ <g>
+  <g id="id2" class="Master_Slide">
+   <g id="bg-id2" class="Background"/>
+   <g id="bo-id2" class="BackgroundObjects"/>
+  </g>
+ </g>
+ <g class="SlideGroup">
+  <g>
+   <g id="id1" class="Slide" clip-path="url(#presentation_clip_path)">
+    <g class="Page">
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id3">
+       <path fill="rgb(0,0,0)" fill-opacity="0.2" stroke="rgb(255,255,255)" stroke-opacity="0.2" d="M 3494,1459 L 3340,1497 1588,1459 1627,2419 1588,2977 1782,3015 3494,2977 3531,2321 3494,1459 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id4">
+       <g>
+        <defs>
+         <linearGradient id="gradient1" x1="2561" y1="1459" x2="2561" y2="3015" gradientUnits="userSpaceOnUse">
+          <stop offset="0" style="stop-color:rgb(255,255,255)"/>
+          <stop offset="1" style="stop-color:rgb(220,220,220)"/>
+         </linearGradient>
+        </defs>
+        <path style="fill:url(#gradient1)" d="M 3494,1459 L 2236,1497 1588,1459 1624,2168 1588,2977 1690,3015 3494,2977 3534,2132 3494,1459 Z"/>
+       </g>
+       <path fill="none" stroke="rgb(0,0,0)" stroke-width="35" stroke-linejoin="miter" d="M 3494,1459 L 2236,1497 1588,1459 1624,2168 1588,2977 1690,3015 3494,2977 3534,2132 3494,1459 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id5">
+       <path fill="rgb(0,0,0)" fill-opacity="0.2" stroke="rgb(255,255,255)" stroke-opacity="0.2" d="M 2047,6186 L 1995,6224 141,6186 172,6332 141,7704 740,7742 2047,7704 2078,7713 2047,6186 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id6">
+       <g>
+        <defs>
+         <linearGradient id="gradient2" x1="1111" y1="6186" x2="1111" y2="7742" gradientUnits="userSpaceOnUse">
+          <stop offset="0" style="stop-color:rgb(255,255,255)"/>
+          <stop offset="1" style="stop-color:rgb(220,220,220)"/>
+         </linearGradient>
+        </defs>
+        <path style="fill:url(#gradient2)" d="M 2047,6186 L 1632,6224 141,6186 172,6300 141,7704 381,7742 2047,7704 2081,7149 2047,6186 Z"/>
+       </g>
+       <path fill="none" stroke="rgb(0,0,0)" stroke-width="35" stroke-linejoin="miter" d="M 2047,6186 L 1632,6224 141,6186 172,6300 141,7704 381,7742 2047,7704 2081,7149 2047,6186 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.OpenBezierShape">
+      <g id="id7">
+       <path fill="none" stroke="rgb(0,0,0)" stroke-width="35" stroke-linejoin="miter" d="M 2315,2980 C 2078,3745 1701,4956 1429,5831"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.OpenBezierShape">
+      <g id="id8">
+       <defs>
+        <mask id="mask1">
+         <g>
+          <defs>
+           <linearGradient id="gradient3" x1="1872" y1="2975" x2="1872" y2="5836" gradientUnits="userSpaceOnUse">
+            <stop offset="0.5" style="stop-color:rgb(230,230,230)"/>
+            <stop offset="0.5" style="stop-color:rgb(230,230,230)"/>
+            <stop offset="1" style="stop-color:rgb(230,230,230)"/>
+            <stop offset="1" style="stop-color:rgb(230,230,230)"/>
+           </linearGradient>
+          </defs>
+          <path style="fill:url(#gradient3)" d="M 1412,2975 L 2332,2975 2332,5836 1412,5836 1412,2975 Z"/>
+         </g>
+        </mask>
+       </defs>
+       <g style="mask:url(#mask1)">
+        <path fill="none" stroke="rgb(0,0,0)" stroke-width="35" stroke-linejoin="miter" d="M 2315,2980 C 2078,3745 1701,4956 1429,5831"/>
+       </g>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id9">
+       <path fill="rgb(0,0,0)" fill-opacity="0.2" stroke="rgb(255,255,255)" stroke-opacity="0.2" d="M 1323,6172 L 1459,6048 1580,5881 1582,5888 1376,6003 1413,5932 1428,5834 1441,5843 1428,5834 1435,5843 1428,5834 1431,5839 1376,6003 1350,5936 1276,5787 1325,6082 1323,6172 1325,6173 1323,6172 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id10">
+       <defs>
+        <mask id="mask2">
+         <g>
+          <defs>
+           <linearGradient id="gradient4" x1="1428" y1="5787" x2="1428" y2="6178" gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color:rgb(1,1,1)"/>
+            <stop offset="1" style="stop-color:rgb(1,1,1)"/>
+           </linearGradient>
+          </defs>
+          <path style="fill:url(#gradient4)" d="M 1276,5787 L 1580,5787 1580,6178 1276,6178 1276,5787 Z"/>
+         </g>
+        </mask>
+       </defs>
+       <g style="mask:url(#mask2)">
+        <g>
+         <defs>
+          <linearGradient id="gradient5" x1="1428" y1="5787" x2="1428" y2="6178" gradientUnits="userSpaceOnUse">
+           <stop offset="0" style="stop-color:rgb(150,150,150)"/>
+           <stop offset="1" style="stop-color:rgb(0,0,0)"/>
+          </linearGradient>
+         </defs>
+         <path style="fill:url(#gradient5)" d="M 1323,6172 L 1570,5938 1580,5881 1439,5992 1376,6003 1399,5959 1428,5834 1435,5842 1428,5834 1429,5835 1428,5834 1430,5846 1376,6003 1307,5839 1276,5787 1287,5813 1323,6172 1329,6178 1323,6172 Z"/>
+        </g>
+       </g>
+       <path fill="none" stroke="rgb(0,0,0)" stroke-width="35" stroke-linejoin="miter" d="M 1323,6172 L 1570,5938 1580,5881 1439,5992 1376,6003 1399,5959 1428,5834 1435,5842 1428,5834 1429,5835 1428,5834 1430,5846 1376,6003 1307,5839 1276,5787 1287,5813 1323,6172 1329,6178 1323,6172 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id11">
+       <path fill="rgb(0,0,0)" fill-opacity="0.2" stroke="rgb(255,255,255)" stroke-opacity="0.2" d="M 5337,6186 L 4748,6239 2708,6186 2747,7086 2708,7704 3903,7757 5337,7704 5377,6846 5337,6186 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id12">
+       <g>
+        <defs>
+         <linearGradient id="gradient6" x1="4040" y1="6186" x2="4040" y2="7757" gradientUnits="userSpaceOnUse">
+          <stop offset="0" style="stop-color:rgb(255,255,255)"/>
+          <stop offset="1" style="stop-color:rgb(220,220,220)"/>
+         </linearGradient>
+        </defs>
+        <path style="fill:url(#gradient6)" d="M 5337,6186 L 4576,6239 2708,6186 2752,7600 2708,7704 5315,7757 5337,7704 5372,7210 5337,6186 Z"/>
+       </g>
+       <path fill="none" stroke="rgb(0,0,0)" stroke-width="35" stroke-linejoin="miter" d="M 5337,6186 L 4576,6239 2708,6186 2752,7600 2708,7704 5315,7757 5337,7704 5372,7210 5337,6186 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.OpenBezierShape">
+      <g id="id13">
+       <path fill="none" stroke="rgb(0,0,0)" stroke-width="35" stroke-linejoin="miter" d="M 2772,2980 C 3015,3745 3401,4956 3680,5831"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.OpenBezierShape">
+      <g id="id14">
+       <defs>
+        <mask id="mask3">
+         <g>
+          <defs>
+           <linearGradient id="gradient7" x1="3226" y1="2975" x2="3226" y2="5836" gradientUnits="userSpaceOnUse">
+            <stop offset="0.5" style="stop-color:rgb(230,230,230)"/>
+            <stop offset="0.5" style="stop-color:rgb(230,230,230)"/>
+            <stop offset="1" style="stop-color:rgb(230,230,230)"/>
+            <stop offset="1" style="stop-color:rgb(230,230,230)"/>
+           </linearGradient>
+          </defs>
+          <path style="fill:url(#gradient7)" d="M 2755,2975 L 3697,2975 3697,5836 2755,5836 2755,2975 Z"/>
+         </g>
+        </mask>
+       </defs>
+       <g style="mask:url(#mask3)">
+        <path fill="none" stroke="rgb(0,0,0)" stroke-width="35" stroke-linejoin="miter" d="M 2772,2980 C 3015,3745 3401,4956 3680,5831"/>
+       </g>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id15">
+       <path fill="rgb(0,0,0)" fill-opacity="0.2" stroke="rgb(255,255,255)" stroke-opacity="0.2" d="M 3788,6172 L 3820,6020 3833,5787 3804,5882 3734,6004 3727,5967 3681,5835 3685,5840 3681,5835 3681,5836 3681,5835 3684,5839 3734,6004 3647,5955 3529,5884 3748,6126 3788,6172 3792,6178 3788,6172 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id16">
+       <defs>
+        <mask id="mask4">
+         <g>
+          <defs>
+           <linearGradient id="gradient8" x1="3681" y1="5787" x2="3681" y2="6175" gradientUnits="userSpaceOnUse">
+            <stop offset="0" style="stop-color:rgb(1,1,1)"/>
+            <stop offset="1" style="stop-color:rgb(1,1,1)"/>
+           </linearGradient>
+          </defs>
+          <path style="fill:url(#gradient8)" d="M 3529,5787 L 3833,5787 3833,6175 3529,6175 3529,5787 Z"/>
+         </g>
+        </mask>
+       </defs>
+       <g style="mask:url(#mask4)">
+        <g>
+         <defs>
+          <linearGradient id="gradient9" x1="3681" y1="5787" x2="3681" y2="6175" gradientUnits="userSpaceOnUse">
+           <stop offset="0" style="stop-color:rgb(150,150,150)"/>
+           <stop offset="1" style="stop-color:rgb(0,0,0)"/>
+          </linearGradient>
+         </defs>
+         <path style="fill:url(#gradient9)" d="M 3788,6172 L 3804,6127 3833,5787 3811,5868 3734,6004 3734,5992 3681,5835 3683,5837 3681,5835 3684,5838 3681,5835 3707,5900 3734,6004 3712,5993 3529,5884 3594,5956 3788,6172 3790,6175 3788,6172 Z"/>
+        </g>
+       </g>
+       <path fill="none" stroke="rgb(0,0,0)" stroke-width="35" stroke-linejoin="miter" d="M 3788,6172 L 3804,6127 3833,5787 3811,5868 3734,6004 3734,5992 3681,5835 3683,5837 3681,5835 3684,5838 3681,5835 3707,5900 3734,6004 3712,5993 3529,5884 3594,5956 3788,6172 3790,6175 3788,6172 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.TextShape">
+      <g id="id17">
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Rufscript" font-size="459px" font-weight="400"><tspan class="TextPosition" x="2040" y="2399"><tspan fill="rgb(0,0,0)" stroke="none">span</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.TextShape">
+      <g id="id18">
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Rufscript" font-size="459px" font-weight="400"><tspan class="TextPosition" x="694" y="7127"><tspan fill="rgb(0,0,0)" stroke="none">the</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.TextShape">
+      <g id="id19">
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Rufscript" font-size="459px" font-weight="400"><tspan class="TextPosition" x="3022" y="7127"><tspan fill="rgb(0,0,0)" stroke="none">example</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.ConnectorShape">
+      <g id="id20">
+       <path fill="none" stroke="rgb(0,0,0)" stroke-width="50" stroke-linejoin="round" d="M 7630,6200 C 7630,-1690 4462,138 3135,869"/>
+       <path fill="rgb(0,0,0)" stroke="none" d="M 3325,1013 L 3330,1008 3334,1003 3343,987 3344,969 3339,952 3328,939 3317,933 3303,930 3288,931 3275,937 2738,1279 3075,745 3083,729 3085,711 3079,694 3068,681 3053,672 3035,671 3016,677 3005,689 3002,692 3004,692 2560,1393 2550,1407 2547,1426 2550,1444 2560,1458 2575,1468 2593,1472 2611,1468 2626,1458 3325,1013 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id21">
+       <path fill="rgb(0,0,0)" fill-opacity="0.2" stroke="rgb(255,255,255)" stroke-opacity="0.2" d="M 8568,6200 L 7513,6238 6662,6200 6693,6251 6662,7718 6746,7756 8568,7718 8600,7482 8568,6200 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.PolyPolygonShape">
+      <g id="id22">
+       <g>
+        <defs>
+         <linearGradient id="gradient10" x1="7630" y1="6200" x2="7630" y2="7756" gradientUnits="userSpaceOnUse">
+          <stop offset="0" style="stop-color:rgb(255,255,255)"/>
+          <stop offset="1" style="stop-color:rgb(220,220,220)"/>
+         </linearGradient>
+        </defs>
+        <path style="fill:url(#gradient10)" d="M 8568,6200 L 7658,6238 6662,6200 6693,6352 6662,7718 6904,7756 8568,7718 8599,7678 8568,6200 Z"/>
+       </g>
+       <path fill="none" stroke="rgb(0,0,0)" stroke-width="35" stroke-linejoin="miter" d="M 8568,6200 L 7658,6238 6662,6200 6693,6352 6662,7718 6904,7756 8568,7718 8599,7678 8568,6200 Z"/>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.TextShape">
+      <g id="id23">
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Rufscript" font-size="459px" font-weight="400"><tspan class="TextPosition" x="7215" y="7140"><tspan fill="rgb(0,0,0)" stroke="none">this</tspan></tspan></tspan></text>
+      </g>
+     </g>
+     <g class="com.sun.star.drawing.TextShape">
+      <g id="id24">
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Rufscript" font-size="459px" font-weight="400"><tspan class="TextPosition" x="5800" y="7128"><tspan fill="rgb(0,0,0)" stroke="none">...</tspan></tspan></tspan></text>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

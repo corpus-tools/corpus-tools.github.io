@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- conditional meta tags -->
+    
+     <meta name="description" content="List and short description of known modules for the Pepper corpus conversion framework." />
+        
+    <meta name="publisher" content="Humboldt-Universität zu Berlin, Friedrich Schiller University Jena">
+    <meta name="author" content="Stephan Druskat, Thomas Krause, Amir Zeldes, Florian Zipser" />
+    <meta name="content-language" content="en">
+    <meta name="page-topic" content="Linguistics, Software, Research, Corpus, Annotation, Analysis">
+    <meta name="revisit-after" content="2 days">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="http://corpus-tools.org/" /> 
+    <title>Pepper: Pepper modules (corpus-tools.org) </title>
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <!-- Bootstrap theme -->
+    <link href="../bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <!-- Custom styles for this template -->
+    <link href="../css/aql_code.css" rel="stylesheet"/>
+    <link href="../css/theme.css" rel="stylesheet"/>
+    <!-- Includes Salt and Pepper and (Hex)-Atomic icons -->
+    <link rel="stylesheet" href="../css/fonts.css"/>
+    
+</head>
+
+
+  <body role="document">
+
+    
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/home/">corpus-tools.org</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+                <li ><a href="/home/"> <i class="fa fa-home"></i> Home</a>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/annis/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-annis"></i> ANNIS<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/annis/">ANNIS</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/documentation.html">Documentation</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/download.html">Download</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/visualizations.html">Visualizations</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+          <li><a href="/annis/corpora.html">Corpora</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+          <li><a href="/annis/cooperations.html">Cooperations</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/hexatomic/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-atomic"></i> Hexatomic<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/hexatomic/">Hexatomic</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="https://github.com/hexatomic/hexatomic/releases/latest">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="https://hexatomic.github.io/hexatomic/user/">User Documentation</a></li>
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/salt/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-salt"></i> Salt<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/salt/">Salt</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#download">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#documentation">Documentation</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#how-to-cite">How to cite</a></li>
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li class="active"><a href="/pepper/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-pepper-o"></i> Pepper<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/pepper/">Pepper</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#download">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#howtocite">How to cite</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#documentation">Documentation</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#contribution">Contribution and License</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/knownModules.html">Pepper modules</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/integratedModules.html">Integrated Pepper modules</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/generalCustomizationProperties.html">General customization properties</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/demos.html">Demos</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/faq.html">FAQ</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+        
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+
+    <div class="container theme-showcase" role="main">
+    
+
+<div class="alert alert-warning" role="alert">
+    This is an <strong>outdated and archived</strong> version of this site. Go
+    to <a href="https://corpus-tools.org/">https://corpus-tools.org/</a> for the
+    current version.
+</div>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <h1>
+         <span class="icon-pepper-o"></span> Pepper 
+    </h1>
+    <p>
+         A highly extensible plattform for
+        conversion and manipulation of linguistic data between an unbound set of
+        formats. Pepper can be used stand-alone as a command line interface, or
+        be integrated as an API into other software products. 
+    </p>
+</div>
+
+	 <div class="page-header">
+  <h1 id="pepper-modules">Pepper modules</h1>
+</div>
+
+<p>There are many modules for Pepper out there. Here we try to list all these modules we know about. If you have further modules or know about further modules, please let us know and write an email to <a href="mailto:saltnpepper@lists.hu-berlin.de">saltnpepper@lists.hu-berlin.de</a>.</p>
+
+<p>To install further modules into an existing Pepper instance open the Pepper console and use command ‘is’:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper&gt;is PATH_TO_PLUGIN
+</code></pre></div></div>
+<p>To update a module, open the Pepper console and
+            use command ‘update’</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>update GROUP_ID::ARTIFACT_ID::REPOSITORY
+</code></pre></div></div>
+
+<p>If there is no existing module which fulfills your needs, you are free to
+implement your own module. With Pepper’s plug-in mechanism your module can
+easily be integrated into the Pepper plattform. The possibility of combining
+your new module with already existing ones lets you create completely new
+workflows. Please read the <a href="http://korpling.github.io/pepper/doc/moduleDevelopers.html">Module Developer’s Guide</a> to get a detailed documentation of how to implement a Pepper module.</p>
+
+<h1 id="importers">Importers</h1>
+
+<p>Importers are modules which map data from a format X to a Salt model. For more information about a Pepper’s workflow please take a look into <a href="userGuide.html">Pepper’s user guide</a>.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Module name</th>
+      <th>Module description</th>
+      <th>Format names and versions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-PerseusModules/tree/master#usage">AldtImporter</a></td>
+      <td>The AldtImporter importer transforms data in aldt format used in the Perseus project to a Salt model.</td>
+      <td>aldt, 1.0; aldt, 1.5</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-CoNLLModules/tree/master#usage">CoNLLImporter</a></td>
+      <td>The CoNLLImporter importer transforms data in CoNLL format to a Salt model.</td>
+      <td>CoNLL, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/CoraXMLModules/tree/master#usage">CoraXMLImporter</a></td>
+      <td>The CoraXMLImporter importer transforms data in cora xml format to a Salt model.</td>
+      <td>coraXML, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepper">DoNothingImporter</a></td>
+      <td>This is a dummy importer which imports nothing.</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-EXMARaLDAModules/tree/master#exmaraldaimporter">EXMARaLDAImporter</a></td>
+      <td>The EXMARaLDAImporter transforms data in the exb format of EXMARaLDA to a Salt model.</td>
+      <td>EXMARaLDA, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-ELANModules/tree/master#usage">ElanImporter</a></td>
+      <td>The ElanImporter transforms data in ELAN format to a Salt model.</td>
+      <td>elan, 4.5.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-GATEModules/tree/master#usage">GateImporter</a></td>
+      <td>The GateImporter transforms data in GATE’s xml format to a Salt model</td>
+      <td>GateDocument, 2.0; ateDocument, 3.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-GenericXMLModules/tree/master#usage">GenericXMLImporter</a></td>
+      <td>Imports data coming from any XML file. The textual content of an element will be interpreted as a sequence of primary data. When processing the file, the importer will concatenate all these texts to an entire primary text.</td>
+      <td>xml, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-GrAFModules/tree/master#usage">GrAFImporter</a></td>
+      <td>The GrAFImporter transforms data in the GrAF format to a Salt model.</td>
+      <td>GrAF, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-MMAX2Modules/tree/master#usage">MMAX2Importer</a></td>
+      <td>The MMAX2Importer maps files produced by the MMAX2 tool to a Salt model.</td>
+      <td>mmax2, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-PAULAModules/tree/master#usage">PAULAImporter</a></td>
+      <td>The PAULA importer imports data comming from the PAULA format to a Salt model.</td>
+      <td>paula, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-PTBModules/tree/master#usage">PTBImporter</a></td>
+      <td>The Penn Treebank importer transforms data in Penn Trebank bracketing format (ptb). to a Salt model.</td>
+      <td>PTB, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-RSTModules/tree/master#usage">RSTImporter</a></td>
+      <td>This importer transforms data in rs3 format produced by the RST Tool (see: <a href="http://www.wagsoft.com/RSTTool/">http://www.wagsoft.com/RSTTool/</a>) to a Salt model.</td>
+      <td>rs3, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepper">SaltXMLImporter</a></td>
+      <td>This importer imports a Salt model from a SaltXML representation. SaltXML is the native format to persist Salt.</td>
+      <td>SaltXML, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-SpreadsheetModules#usage">SpreadsheetImporter</a></td>
+      <td>This importer transforms data in the Excel format to a Salt model.</td>
+      <td>xls, 97-2008; xlsx, 2007+</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-TCFModules/tree/master#tcfimporter">TCFImporter</a></td>
+      <td>This importer transforms data in TCF format produced for instance by WebLicht (see <a href="http://weblicht.sfs.uni-tuebingen.de/">http://weblicht.sfs.uni-tuebingen.de/</a>) or WebAnno (see <a href="https://www.ukp.tu-darmstadt.de/software/webanno/">https://www.ukp.tu-darmstadt.de/software/webanno/</a>) to a Salt model.</td>
+      <td>TCF, 0.4</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-TEIModules/tree/master#usage">TEIImporter</a></td>
+      <td>This importer transforms data in TEI format (see <a href="http://www.tei-c.org/index.xml">http://www.tei-c.org/index.xml</a>) to a Salt model. Please note that this module only supports a subset of the TEI P5 guidelines.</td>
+      <td>TEI, P5 2.6.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepper">TextImporter</a></td>
+      <td>This importer imports a simple text document like .txt etc. . Even other documents can be imported as simple text.</td>
+      <td>txt, 0.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-TigerModules/tree/master#usage">Tiger2Importer</a></td>
+      <td>This importer transforms data in TigerXML and tiger2 format to a Salt model.</td>
+      <td>tiger2, 2.0.5; tigerXML, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-TreetaggerModules/tree/master#usage">TreetaggerImporter</a></td>
+      <td>This importer transforms data in TreeTagger format produced by the TreeTagger tool (see <a href="http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/">http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/</a> to a Salt model.</td>
+      <td>treetagger, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-UAMModules/tree/master#usage">UAMImporter</a></td>
+      <td>This importer transforms data in UAM format produced by the UAM corpus tool to a Salt model.</td>
+      <td>UAM, 1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="manipulators">Manipulators</h1>
+<p>With manipulators, the imported data can be extended for further annotations, merged together or processed in other ways. For more information about the architecture of Pepper please read <a href="./userGuide.html">Pepper’s user guide</a>.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Module name</th>
+      <th>Module description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/korpling/pepper">DOTManipulator</a></td>
+      <td>This manipulator exports a Salt model to the dot syntax. This can be used to create a graphical representation of the Salt model.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-FALKOModules/tree/master#usage">FALKOManipulator</a></td>
+      <td>This manipulator was developed especially for the FALKO Corpus. It creates a SSpan-objects for every SToken object in the document. All annotations for STokens will be duplicated and added to the spans. The annotations of the tokens will be renamed from ‘annoName’ to ‘annoName.’. For example a ‘pos’-annotation of SToken-object will be renamed to a ‘pos.’-annotation. All spans, tokens and spanning relations will be added to an artificial layer named ‘falko’.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-nlpModules/tree/master#usage">Lemmatizer</a></td>
+      <td>The lemmatizer adds lemmas to a document based on a list mapping words to lemmas, or word and pos tag combinations to lemmas. A built-in lemma list is included for English, but user-defined lemma lookup files can be used as well.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-MergingModule/tree/master#usage">Merger</a></td>
+      <td>The Merger allows to merge an unbound number of corpora to a single corpus.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-ModuleBox/tree/master#usage">OrderRelationAdder</a></td>
+      <td>The OrderRelationAdder connects tokens or spans via an order relation with each other. This manipulator can be customized to connect spans having a specific annotation or to connect all tokens.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepper">SaltValidator</a></td>
+      <td>The aim of the SaltValidator is to check a Salt model and to detect possible problems for further modules. This might be very helpful, when developing an importer or a manipulator, to check their output. This could also be used by end users, to check if a module produces a processable output.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-nlpModules/tree/master#usage">Sentencer</a></td>
+      <td>The sentencer is a Pepper module to bundle tokens to sentences. Therefore it creates a span object for each sentence and connects that sentence with a set of tokens, belonging to the sentence. A sentence is identified as being determined by punctuations (‘.’, ‘!’ and * ‘?’). The sentencer uses the abbreviation lists of Salt to identify abbreviations.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-ModuleBox/tree/master#usage">Timeline2Token</a></td>
+      <td>The Timeline2Token manipulator converts all primary text tokens to spans of an newly created artifical primary text which represents the timeline.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-nlpModules/tree/master#usage">Tokenizer</a></td>
+      <td>The tokenizer tokenizes a document using the tokenizer provided by Salt. The tokenizer uses abbreviation lists and is implemented along the Treetaggers tokenizer by Helmut Schmid (see: <a href="http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/">http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-TueBaDZModules/tree/master#usage">TueBaDZManipulator</a></td>
+      <td>This manipulator was developed especially for the TueBaDZ Corpus. It creates a SSpan-objects for every SToken object in the document. All annotations for STokens will be duplicated and added to the spans. The annotations of the tokens will be renamed from ‘annoName’ to ‘annoName.’ For example a ‘pos’-annotation of SToken-object will be renamedto a ‘pos.’-annotation. All spans, tokens and spanning relations will be added to an artificial layer named ‘TueBaDZ’.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="exporters">Exporters</h1>
+
+<p>Exporters are modules which map data from a Salt model to a format Y. For more information about the architecture of Pepper please read <a href="userGuide.html">Pepper’s user guide</a>.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Module name</th>
+      <th>Module description</th>
+      <th>Format names and versions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-ANNISModules/tree/master#usage">ANNISExporter</a></td>
+      <td>This exporter transforms a Salt model into the annis format.</td>
+      <td>relANNIS, 3.3; annis, 3.3</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-CoNLLModules/tree/master#usage">CoNLLExporter</a></td>
+      <td>The CoNLLExporter  transforms a Salt model into the CoNLL tabular format.</td>
+      <td>CoNLL, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepper">DOTExporter</a></td>
+      <td>This exporter exports a Salt model to the dot syntax. This can be used to create a graphical representation of the Salt model.</td>
+      <td>dot, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepper">DoNothingExporter</a></td>
+      <td>This is a dummy exporter which exports nothing. This exporter can be used to check if a corpus is importable.</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-EXMARaLDAModules/tree/master#usage">EXMARaLDAExporter</a></td>
+      <td>The EXMARaLDAExporter transforms data to the exb format of EXMARaLDA</td>
+      <td>EXMARaLDA, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-GraphAnnoModules/tree/master#usage">GraphAnnoExporter</a></td>
+      <td>This exporter transforms a Salt model into a format for the GraphAnno tool (<a href="https://github.com/LBierkandt/graph-anno">https://github.com/LBierkandt/graph-anno</a>).</td>
+      <td>Jason, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-MMAX2Modules/tree/master#usage">MMAX2Exporter</a></td>
+      <td>The MMAX2Exporter maps a Salt model to the MMAX2 format.</td>
+      <td>mmax2, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-PAULAModules/tree/master#usage">PAULAExporter</a></td>
+      <td>The PAULA exporter exports data comming a Salt model to the PAULA format.</td>
+      <td>paula, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-PTBModules/tree/master#usage">PTBExporter</a></td>
+      <td>This exporter transforms a Salt model into the Penn Trebank bracketing format (ptb).</td>
+      <td>PTB, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-RelANNISModules/tree/master#usage">RelANNISExporter</a></td>
+      <td><strong>Outdated</strong>: This module has been replaced by the ANNISExporter. <del>This exporter transforms a Salt model into the relANNIS format.</del></td>
+      <td><del>relANNIS, 3.1; relANNIS, 3.2</del></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-SaltInfoModules/tree/master#usage">SaltInfoExporter</a></td>
+      <td>This module produces a corpus-site of a corpus. A corpus-site is a homepage for the corpus containing all annotation names and their values and the frequencies of annotations. The corpus site can be extended for further description, to be used as a documentation.</td>
+      <td>xml, 1.0, html 5.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepper/tree/master">SaltXMLExporter</a></td>
+      <td>This exporter exports a Salt model to a SaltXML representation. SaltXML is the native format to persist Salt.</td>
+      <td>SaltXML, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-TCFModules/tree/master#usage">TCFExporter</a></td>
+      <td>This exporter transforms a Salt model into the TCF format produced for instance by WebLicht (see: <a href="http://weblicht.sfs.uni-tuebingen.de/">http://weblicht.sfs.uni-tuebingen.de/</a>) or WebAnno (see <a href="https://www.ukp.tu-darmstadt.de/software/webanno/">https://www.ukp.tu-darmstadt.de/software/webanno/</a>).</td>
+      <td>TCF, 0.4</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepper">TextExporter</a></td>
+      <td>This is a PepperExporter which extracts and exports the primary text of a Salt model and stores it into a text file.</td>
+      <td>txt, 1.0</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/korpling/pepperModules-TreetaggerModules/tree/master#usage">TreetaggerExporter</a></td>
+      <td>This exporter transforms a Salt model into the annis format.</td>
+      <td>treetagger, 1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+	<footer class="site-footer text-center jumbotron">
+<a href="mailto:annis-support@lists.hu-berlin.de">Contact</a>&nbsp;|&nbsp;<a href="/home/legal.html">Impressum (legal notice)</a>
+<br/>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<br/>
+© 2021 Humboldt-Universität zu Berlin, Corpus Linguistics and Morphology &amp;<br />Friedrich Schiller University Jena,
+Dept. of English and American Studies
+
+</footer>
+
+</div>
+	<script src="/js/jquery-1.11.3.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- 
+    For using custom .js files for only one page, simply copy the .js file to ../js/
+    and include the following in the templates yaml head, where 'example' references
+    a javascript file called example.js:
+    custom_js:
+      - example
+    -->
+     
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--<script src="../bootstrap/dist/assets/js/docs.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../bootstrap/dist/assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>
+

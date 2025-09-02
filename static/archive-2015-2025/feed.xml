@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>corpus-tools.org</title>
+    <description>A collection of tools for processing your linguistic data: annotation, conversion, analysis</description>
+    <link>http://corpus-tools.org/archive-2015-2025//</link>
+    <atom:link href="http://corpus-tools.org/archive-2015-2025//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 02 Sep 2025 13:46:59 +0200</pubDate>
+    <lastBuildDate>Tue, 02 Sep 2025 13:46:59 +0200</lastBuildDate>
+    <generator>Jekyll v3.9.5</generator>
+    
+  </channel>
+</rss>

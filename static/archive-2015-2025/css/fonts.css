@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'annistools';
+	src:url('../fonts/annistools.eot?-528qpn');
+	src:url('../fonts/annistools.eot?#iefix-528qpn') format('embedded-opentype'),
+		url('../fonts/annistools.ttf?-528qpn') format('truetype'),
+		url('../fonts/annistools.woff?-528qpn') format('woff'),
+		url('../fonts/annistools.svg?-528qpn#annistools') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'annistools';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-open-source:before {
+	content: "\e800";
+}
+.icon-annis:before {
+	content: "\e608";
+}
+.icon-atomic:before {
+	content: "\e600";
+}
+.icon-github:before {
+	content: "\e601";
+}
+.icon-pepper-o:before {
+	content: "\e602";
+}
+.icon-salt:before {
+	content: "\e603";
+}
+.icon-pepper-wide-o:before {
+	content: "\e604";
+}
+.icon-pepper:before {
+	content: "\e605";
+}
+.icon-linktype:before {
+	content: "\e60a";
+}
+.icon-github-cat:before {
+	content: "\e60d";
+}
+.icon-github-o:before {
+	content: "\e60e";
+}
+.icon-linux:before {
+	content: "\e60f";
+}
+.icon-mac:before {
+	content: "\e610";
+}
+.icon-windows:before {
+	content: "\e611";
+}

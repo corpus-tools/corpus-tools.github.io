@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- conditional meta tags -->
+    
+     <meta name="description" content="User guide on howto get started using the Pepper corpus conversion framework." />
+        
+    <meta name="publisher" content="Humboldt-Universität zu Berlin, Friedrich Schiller University Jena">
+    <meta name="author" content="Stephan Druskat, Thomas Krause, Amir Zeldes, Florian Zipser" />
+    <meta name="content-language" content="en">
+    <meta name="page-topic" content="Linguistics, Software, Research, Corpus, Annotation, Analysis">
+    <meta name="revisit-after" content="2 days">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="http://corpus-tools.org/" /> 
+    <title>Pepper: Getting started (corpus-tools.org) </title>
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <!-- Bootstrap theme -->
+    <link href="../bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <!-- Custom styles for this template -->
+    <link href="../css/aql_code.css" rel="stylesheet"/>
+    <link href="../css/theme.css" rel="stylesheet"/>
+    <!-- Includes Salt and Pepper and (Hex)-Atomic icons -->
+    <link rel="stylesheet" href="../css/fonts.css"/>
+    
+</head>
+
+
+  <body role="document">
+
+    
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/home/">corpus-tools.org</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+                <li ><a href="/home/"> <i class="fa fa-home"></i> Home</a>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/annis/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-annis"></i> ANNIS<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/annis/">ANNIS</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/documentation.html">Documentation</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/download.html">Download</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/visualizations.html">Visualizations</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+          <li><a href="/annis/corpora.html">Corpora</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+          <li><a href="/annis/cooperations.html">Cooperations</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/hexatomic/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-atomic"></i> Hexatomic<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/hexatomic/">Hexatomic</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="https://github.com/hexatomic/hexatomic/releases/latest">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="https://hexatomic.github.io/hexatomic/user/">User Documentation</a></li>
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/salt/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-salt"></i> Salt<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/salt/">Salt</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#download">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#documentation">Documentation</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#how-to-cite">How to cite</a></li>
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li class="active"><a href="/pepper/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-pepper-o"></i> Pepper<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/pepper/">Pepper</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#download">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#howtocite">How to cite</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#documentation">Documentation</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#contribution">Contribution and License</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/knownModules.html">Pepper modules</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/integratedModules.html">Integrated Pepper modules</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/generalCustomizationProperties.html">General customization properties</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/demos.html">Demos</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/faq.html">FAQ</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+        
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+
+    <div class="container theme-showcase" role="main">
+    
+
+<div class="alert alert-warning" role="alert">
+    This is an <strong>outdated and archived</strong> version of this site. Go
+    to <a href="https://corpus-tools.org/">https://corpus-tools.org/</a> for the
+    current version.
+</div>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <h1>
+         <span class="icon-pepper-o"></span> Pepper 
+    </h1>
+    <p>
+         A highly extensible plattform for
+        conversion and manipulation of linguistic data between an unbound set of
+        formats. Pepper can be used stand-alone as a command line interface, or
+        be integrated as an API into other software products. 
+    </p>
+</div>
+
+	 <div class="page-header">
+  <h1 class="no_toc" id="user-guide">User Guide</h1>
+</div>
+
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#first-steps" id="markdown-toc-first-steps">First steps</a></li>
+  <li><a href="#conversion-wizard" id="markdown-toc-conversion-wizard">Conversion Wizard</a></li>
+  <li><a href="#configurtion" id="markdown-toc-configurtion">Configuring Pepper</a></li>
+  <li><a href="#workflow_file" id="markdown-toc-workflow_file">Workflow File</a>    <ul>
+      <li><a href="#executing-a-workflow-file" id="markdown-toc-executing-a-workflow-file">Executing a workflow file</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 class="anchor" id="overview">Overview</h2>
+
+<p>The conversion process in Pepper is defined by a workflow. Such a workflow is normally stored in an xml file and is separated into three different
+phases:</p>
+<ul>
+  <li>the import phase (mapping data from a given format to Salt),</li>
+  <li>the optional manipulation phase (manipulating or enhancing data in Salt) and the</li>
+  <li>export phase (mapping data from Salt to a given format).</li>
+</ul>
+
+<p>The three-phase process makes it feasible to influence and manipulate data during
+conversion, for example by adding additional information or linguistic annotations, or by
+merging data from different sources.</p>
+
+<p>The import phase handles the mapping from a format <em>X</em> to Salt, the export phase handles the mapping from Salt to a format <em>Y</em>. During the
+manipulation phase, the data in Salt can be enhanced, reduced or manipulated. A phase is
+divided into several steps. Each step is done by exactly one module. A module handling an import phase step is called importer, a module handling a manipulation phase step is called manipulator and a module handling an export phase step is called exporter. The import and export phase must contain at least one step each, whereas the manipulation phase can contain any number of steps. Each Pepper module realizes
+exactly one step.</p>
+
+<p><img src="./images/pepper_workflow01.svg" alt="Pepper workflow importer -&gt; exporter" width="60%" class="center-block" /></p>
+
+<p>A Pepper module can be identified by specifying
+its name or the format’s name and version of the corpus to be converted.
+For instance the import of data in the EXMARaLDA format is done by a
+module called EXMARaLDAImporter and the export into the ANNIS format is done by a module called ANNISExporter.</p>
+
+<p><img src="./images/pepper_workflow02.svg" alt="Pepper workflow EXMARaLDAImporter -&gt; ANNISExporter" width="60%" class="center-block" /></p>
+
+<p>The orchestration of Pepper modules can be persisted by the
+Pepper workflow description file (.pepper).</p>
+
+<p>The modules can be freely combined, e.g., we can exchange the EXMARaLDAImporter with the TigerImporter and still export the data to ANNIS. <strong>But</strong> you have to take care, that the target format can handle those data, otherwise they will be ignored. For instance converting data coming from the Tiger format to EXMARaLDA does not make a lot of sense, since EXMARaLDA can not handle syntax trees. Nevertheless, even such transformations are allowed in Pepper.</p>
+
+<p>As described above, a Pepper workflow contains three phases: the import phase, the manipulation phase and the export phase. During the manipulation phase you can choose modules (“manipulators”), for instance to enhance the data for further information, such as creating sentences.</p>
+
+<p><img src="./images/pepper_workflow03.svg" alt="Pepper workflow with manipulator" width="60%" class="center-block" /></p>
+
+<p>A Pepper workflow can get very complex, for instance when multiple source formats are included, a long manipulation chain is used and/or the data shall be exported to multiple formats at once.</p>
+
+<p><img src="./images/pepper_workflow04.svg" alt="Pepper workflow with merge" width="60%" class="center-block" /></p>
+
+<div>
+  <p>A Pepper workflow can be stored to a xml file. The structure of a workflow file is described in <a href="#workflow_file">workflow file</a>. Some real life workflows can be found under <a href="../pepper/demos.html">Demos</a>.</p>
+</div>
+
+<h2 class="anchor" id="first-steps">First steps</h2>
+
+<p>To run Pepper open a command line and enter (for Windows):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepperStart.bat
+</code></pre></div></div>
+
+<p>or (for Linux, Unix and Mac OS):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./pepperStart.sh
+</code></pre></div></div>
+
+<p>Now Pepper starts the interactive command line and welcomes you with the prompt</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper&gt;
+</code></pre></div></div>
+
+<p>To get a list of all available commands, enter ‘help’:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper&gt;help
+</code></pre></div></div>
+
+<p>To get a list of all available modules, enter ‘list’:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper&gt;list
+</code></pre></div></div>
+
+<p>To start a conversion with a predefined workflow, enter ‘convert’ followed by the workflow description file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper&gt;convert myConversion.pepper
+</code></pre></div></div>
+
+<p>To start the interactive conversion wizard, which helps you to define a workflow description, enter just ‘convert’:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper&gt;convert
+</code></pre></div></div>
+
+<h2 id="conversion-wizard" class="anchor">Conversion Wizard</h2>
+
+<p>To run a conversion process with Pepper, you need to define, which modules should be used. This is usually done in a workflow. Remember, the Pepper workflow is separated into three different
+    phases: the import phase (mapping data from a given format to Salt), the optional manipulation phase (manipulating or enhancing data in Salt) and
+            the export phase (mapping data from Salt to a given format).</p>
+
+<p>The conversion wizzard should help you to create a Pepper workflow, but you can also create such a workflow in an xml file as described in <a href="#workflow_file">workflow file</a>. The wizzard will guide you step by step through the creation of a workflow and will let you store the created workflow to disk when you are done.</p>
+
+<ul>
+  <li>Enter the path of the corpus to import e.g. ‘C:\myCorpus':
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper/wizard/importer&gt;C:\myCorpus\
+</code></pre></div>    </div>
+  </li>
+  <li>Now Pepper displays a list of all available importers and asks you to choose one of them.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+------+-------------------------------+------------------------------------------+
+| no   | module name                   | format                                   |
++------+-------------------------------+------------------------------------------+
+| * 1  | TextImporter                  | (txt, 0.0)                               |
+|   2  | SaltXMLImporter               | (SaltXML, 1.0)                           |
+|   3  | DoNothingImporter             | (doNothing, 0.0)                         |
+</code></pre></div>    </div>
+    <p>A <code class="language-plaintext highlighter-rouge">*</code> next to the number of the importer shows, that this importer is recommended. Recommended means that the passed path contains files in a format the importer is able to process.
+Importers have both a name and a list of supported formats.
+E.g. the importer with the number 1 has the module name <code class="language-plaintext highlighter-rouge">TextImporter</code> and supports a single format identified by the format name <code class="language-plaintext highlighter-rouge">txt</code> and the format version <code class="language-plaintext highlighter-rouge">0.0</code>.
+To choose an importer, just enter its number or its module name.</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper/wizard/importer&gt;1
+</code></pre></div>    </div>
+  </li>
+  <li>Some importers provide a list of properties to customize the import. If this is the case, Pepper displays a list of all available customization properties.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+----+-------------------------------+------------------------------------------+
+| no | property name                 | description                              |
++----+-------------------------------+------------------------------------------+
+| 1  | pepper.before.addSLayer       | Consumes a semicolon separated list of   |
+|    |                               | names for {@link SLayer} objects. For    |
+...
+</code></pre></div>    </div>
+    <p>To use a property, enter its number or name, followed by ‘=’ and the value of the property.</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper/wizard/importer&gt;1=anyValue
+</code></pre></div>    </div>
+  </li>
+  <li>Pepper keeps asking you to enter further customization properties until you enter an empty line.</li>
+  <li>Since it is possible to use more than one importer for one workflow, Pepper asks you to enter a further corpus path. To skip that just press ‘enter’.</li>
+  <li>In Pepper you have the possibility to manipulate the data between the im- and the export phase. Therefore Pepper displays a list of all available manipulators and asks you to enter the number or name of a manipulator. To skip adding a manipulator just press ‘enter’.</li>
+  <li>Also, manipulators can be customized. When the chosen manipulator provides properties for customization, Pepper displays them and asks you to enter such a property.</li>
+  <li>To skip adding further manipulators just press ‘enter’.</li>
+  <li>Finally, choose an exporter. Pepper shows a list of all available exporters. To choose one of them enter its number or its name.</li>
+  <li>Again you have the chance to customize the export by adding some customization properties, if provided. To do so, enter the number or name of a property followed by ‘=’ and the value.</li>
+  <li>Along with importers and manipulators, you can add more than one exporter. To stop adding exporters, enter an empty line.</li>
+  <li>To save the workflow, enter ‘save’ followed by a path where to store the file (.pepper).
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper/wizard&gt;C:\myCorpus\myWorkflow.pepper
+</code></pre></div>    </div>
+    <p>A workflow file is stored as an xml file and is structured as described in <a href="#workflow_file">workflow file</a>.</p>
+  </li>
+  <li>To start the conversion enter ‘start’.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper/wizard&gt;start
+</code></pre></div>    </div>
+  </li>
+  <li>To exit and abort the conversion, enter ‘exit’.</li>
+</ul>
+
+<h2 id="configurtion" class="anchor">Configuring Pepper</h2>
+
+<p>The Pepper home folder contains a folder named ‘conf/’, here you find two files to adapt the behavior of Pepper. First you can change the logging behavior by adapting the file logback.xml. The default configuration is configured using the INFO log level:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;root level="info"&gt;
+...
+&lt;/root&gt;
+</code></pre></div></div>
+
+<p>A log level determines which types of log messages are printed. The hierarchy is the following (ascending): trace, debug, info, warn, error. That means, when setting the log level to info, warn and error messages are printed, but no trace and debug messages.</p>
+
+<p>Secondly, by adapting the file ‘pepper.properties’ you can change the processing behavior of Pepper. This file has a key-value notation, which mean an entry has a key, followed by the equal sign and the corresponding value. Here is an excerpt of that file:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##########
+# Determines where to find the plugins for Pepper $PEPPER_HOME points to the pepper home folder (this is not an environment variable)
+##########
+pepper.plugin.path=./plugins/
+
+##########
+# Determines if Pepper shall measure and display the performance of the used PepperModules
+##########
+pepper.computePerformance=true
+
+##########
+# The maximal number of currently processed SDocument-objects
+########## 
+pepper.maxAmountOfProcessedSDocuments=4
+
+##########
+# Determines if an SDocument-object shall be removed after it was processed by all PepperModules
+########## 
+pepper.removeSDocumentAfterProcessing=true
+</code></pre></div></div>
+
+<h2 id="workflow_file" class="anchor">Workflow File</h2>
+
+<p>In Pepper you have the chance to store a workflow in a workflow file (.pepper). This allows you to redo and reuse a configured workflow. You can also add this file to a version control system, to persist the details of how a corpus was processed. A workflow is stored in an xml file following the Pepper scheme. A workflow consists of three phases: import phase, manipulation phase and export phase. The notation of the workflow file follows this structure. To identify a Pepper module realizing a step, you have to describe that module either by its name or the format’s name and version.
+The following sample consists of three steps, one importer, one manipulator and one exporter:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-model href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/schema/10/pepper.rnc" type="application/relax-ng-compact-syntax"?&gt;
+&lt;pepper-job version="1.0"&gt;
+&lt;importer formatName="FORMAT_NAME" formatVersion="FORMAT_VERSION" path="SOURCE_PATH"&gt;
+&lt;customization&gt;
+    &lt;property key="PROPERTY_NAME"&gt;PROPERTY_VALUE&lt;/property&gt;
+&lt;/customization&gt;
+&lt;/importer&gt;
+&lt;manipulator name="MANIPULATOR_NAME"&gt;
+&lt;customization&gt;
+    &lt;property key="PROPERTY_NAME_1"&gt;PROPERTY_VALUE&lt;/property&gt;
+    &lt;property key="PROPERTY_NAME_2"&gt;PROPERTY_VALUE&lt;/property&gt;
+&lt;/customization&gt;
+&lt;/manipulator&gt;
+&lt;exporter name="EXPORTER_NAME" path="TARGET_PATH"/&gt;
+&lt;/pepper-job&gt;
+</code></pre></div></div>
+<p>The importer - in contrast to the exporter - is identified in this example by the format’s name (<code class="language-plaintext highlighter-rouge">FORMAT_NAME</code>) and the format’s version (<code class="language-plaintext highlighter-rouge">FORMAT_VERSION</code>). 
+The exporter and the manipulator are identified by their module names (<code class="language-plaintext highlighter-rouge">MANIPULATOR_NAME</code> and <code class="language-plaintext highlighter-rouge">EXPORTER_NAME</code>). To customize the workflow, some modules provide a set of properties. A property consists of a name-value pair. A description of properties can be found on the modules site or when entering the command ‘list’ followed by the module name in the pepper console, for instance:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepper&gt;list MANIPULATOR_NAME
+</code></pre></div></div>
+<p>An importer and an exporter need a source or a target path to address where to find the corpus or where to store it. Such a path can be addressed relative or absolute. A relative path can start with <code class="language-plaintext highlighter-rouge">./</code> for current directory or <code class="language-plaintext highlighter-rouge">../</code> for the parent directory, for instance:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./corpus/
+</code></pre></div></div>
+<p>or</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>../corpus/
+</code></pre></div></div>
+<p>An absolute path could start with the file scheme, e.g.:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file:/C:/format1/corpus1/
+</code></pre></div></div>
+<p>or</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file:///C:/format1/corpus1/
+</code></pre></div></div>
+<p>or without any scheme:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:/format1/corpus1/
+</code></pre></div></div>
+
+<p>Some real life workflows can be found under <a href="/pepper/demos.html">Demos</a>.</p>
+
+<h3 class="anchor" id="executing-a-workflow-file">Executing a workflow file</h3>
+
+<p>When you created the workflow file you can start the conversion process by executing Pepper with the path of the workflow file as argument, e.g. (for Windows)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pepperStart.bat /home/user/corpus/myworkflow.pepper
+</code></pre></div></div>
+<p>or (for Linux, Unix and Mac OS)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash pepperStart.sh /home/user/corpus/myworkflow.pepper
+</code></pre></div></div>
+
+
+
+	<footer class="site-footer text-center jumbotron">
+<a href="mailto:annis-support@lists.hu-berlin.de">Contact</a>&nbsp;|&nbsp;<a href="/home/legal.html">Impressum (legal notice)</a>
+<br/>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<br/>
+© 2021 Humboldt-Universität zu Berlin, Corpus Linguistics and Morphology &amp;<br />Friedrich Schiller University Jena,
+Dept. of English and American Studies
+
+</footer>
+
+</div>
+	<script src="/js/jquery-1.11.3.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- 
+    For using custom .js files for only one page, simply copy the .js file to ../js/
+    and include the following in the templates yaml head, where 'example' references
+    a javascript file called example.js:
+    custom_js:
+      - example
+    -->
+     
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--<script src="../bootstrap/dist/assets/js/docs.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../bootstrap/dist/assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>
+

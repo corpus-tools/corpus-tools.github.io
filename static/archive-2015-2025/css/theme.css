@@ -1,0 +1,159 @@
+body {
+  padding-top: 70px;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container .footer {
+  width: auto;
+}
+
+.jumbotron{
+ background: #21b384;
+ color: #ffffff;
+ text-shadow: 2px 2px 4px #0d3e2e;
+}
+.jumbotron h1 {
+ background: #21b384;
+ color: #ffffff;
+ text-shadow: 2px 2px 4px #0d3e2e;
+}
+
+footer.jumbotron {
+ margin-top: 10px;
+}
+
+a{
+ color: #21b384;
+}
+
+.page-header > h1, h3, h3, h4, h5, h6{
+ color: #21b384;
+ text-shadow: 2px 2px 4px #EEEBEB;
+}
+
+h1, h3, h3, h4, h5, h6{
+ color: #21b384;
+ text-shadow: 2px 2px 4px #EEEBEB;
+}
+
+img {
+    vertical-align: text-top;
+}
+footer > a{
+ color: #ffffff;
+}
+
+nav{
+# background: #000000;
+ background: #2b6cb0;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-header > a{
+color: #ffffff;
+}
+
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+.dropdown-menu {
+background-color: #222;
+}
+.dropdown-menu > li > a {
+    color: #FFF;
+}
+.salt_sample {
+    box-shadow: 3px 3px 5px grey;
+    border-radius: 5%;
+    border-style: solid;
+    border-width: 1px;
+    min-width: 200px;
+    vertical-align: middle;
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
+} 
+.enlarge{
+	cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
+}
+.content{
+	margin-left:20px;
+	color: #333;
+	font-size: 16px;
+	font-family: RobotoDraft,"Helvetica Neue","Helvetica Neue",Arial,sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+.funders{
+	vertical-align: middle;
+	text-align: center;
+}
+
+.image_wrap {
+	text-align: center;
+}
+.image_wrap img {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+div.center-image-80 {
+	text-align:center;
+}
+
+.center-image-80 img {
+	width: 80%;
+}
+
+
+.thumbnail
+{
+float: left;
+border: 1px solid #999;
+margin: 0 15px 15px 0;
+padding: 5px;
+text-align:center;
+}
+
+.thumbnail img {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.clearboth { clear: both; }
+.note{color: #669; font-size: 12px;}
+
+.code { font-family:monospace;}
+
+/* Use a pseudo-element to add space at the beginning of the element. 
+To use this, assign class "anchor" to targeted element. */
+.anchor:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -50px; 
+  height: 50px;
+  visibility: hidden; 
+}
+
+/* This class defines a FAQ entry */
+.faqanswer{
+  margin-left:20px;
+  margin-bottom:40px;
+}

@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- conditional meta tags -->
+    
+     <meta name="description" content="ANNIS is an open source, cross platform (Linux, Mac, Windows), web browser-based search and visualization architecture for complex multi-layer linguistic corpora with diverse types of annotation." />
+        
+    <meta name="publisher" content="Humboldt-Universität zu Berlin, Friedrich Schiller University Jena">
+    <meta name="author" content="Stephan Druskat, Thomas Krause, Amir Zeldes, Florian Zipser" />
+    <meta name="content-language" content="en">
+    <meta name="page-topic" content="Linguistics, Software, Research, Corpus, Annotation, Analysis">
+    <meta name="revisit-after" content="2 days">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="http://corpus-tools.org/" /> 
+    <title>ANNIS (corpus-tools.org) </title>
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <!-- Bootstrap theme -->
+    <link href="../bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <!-- Custom styles for this template -->
+    <link href="../css/aql_code.css" rel="stylesheet"/>
+    <link href="../css/theme.css" rel="stylesheet"/>
+    <!-- Includes Salt and Pepper and (Hex)-Atomic icons -->
+    <link rel="stylesheet" href="../css/fonts.css"/>
+    
+</head>
+
+
+  <body role="document">
+
+    
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/home/">corpus-tools.org</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+                <li ><a href="/home/"> <i class="fa fa-home"></i> Home</a>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li class="active"><a href="/annis/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-annis"></i> ANNIS<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/annis/">ANNIS</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/documentation.html">Documentation</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/download.html">Download</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/visualizations.html">Visualizations</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+          <li><a href="/annis/corpora.html">Corpora</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+          <li><a href="/annis/cooperations.html">Cooperations</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/hexatomic/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-atomic"></i> Hexatomic<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/hexatomic/">Hexatomic</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="https://github.com/hexatomic/hexatomic/releases/latest">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="https://hexatomic.github.io/hexatomic/user/">User Documentation</a></li>
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/salt/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-salt"></i> Salt<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/salt/">Salt</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#download">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#documentation">Documentation</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#how-to-cite">How to cite</a></li>
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/pepper/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-pepper-o"></i> Pepper<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/pepper/">Pepper</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#download">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#howtocite">How to cite</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#documentation">Documentation</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#contribution">Contribution and License</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/knownModules.html">Pepper modules</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/integratedModules.html">Integrated Pepper modules</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/generalCustomizationProperties.html">General customization properties</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/demos.html">Demos</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/faq.html">FAQ</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+        
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+
+    <div class="container theme-showcase" role="main">
+    
+
+<div class="alert alert-warning" role="alert">
+    This is an <strong>outdated and archived</strong> version of this site. Go
+    to <a href="https://corpus-tools.org/">https://corpus-tools.org/</a> for the
+    current version.
+</div>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <h1>
+        <span class="icon-annis"></span> ANNIS 
+    </h1>
+    <p>
+         A web browser-based search and visualization
+        architecture for complex multilayer linguistic corpora with diverse
+        types of annotation. 
+    </p>
+</div>
+
+	 <div class="page-header">
+  <h1 id="about-annis">About ANNIS</h1>
+</div>
+
+<div class="image_wrap">
+  <p><a href="https://korpling.org/annis/#_q=IlBoYXJtYWtvbnplcm4iIHwgCigKcG9zPS9WLkZJTi8gLT5kZXBbZnVuYz0ic2JqIl0gIkp1Z2VuZGxpY2hlIiAKJiBjYXQ9IlMiICYgIzQgPnNlY2VkZ2UgIzMKKQ&amp;ql=aql&amp;_c=cGNjMg&amp;cl=5&amp;cr=5&amp;s=0&amp;l=10" target="_blank">
+<img src="images/annis3_full.png" alt="screenshot of ANNIS main user interface" style="width:75%" />
+</a></p>
+</div>
+
+<p>ANNIS is an open source, cross platform (Linux, Mac, Windows), 
+web browser-based search and visualization architecture for complex multi-layer 
+linguistic corpora with diverse types of annotation. ANNIS, which stands for ANNotation 
+of Information Structure, was originally designed to provide access to the data of 
+the <a href="http://www.sfb632.uni-potsdam.de/">SFB 632</a> - “Information Structure: The Linguistic Means for Structuring Utterances, 
+Sentences and Texts”. It has since then been extended to a large number of <a href="cooperations.html">projects</a> 
+annotating a variety of phenomena. Since complex linguistic phenomena such as 
+information structure interact on many levels, ANNIS addresses the need 
+to concurrently annotate, query and visualize data from such varied 
+areas as syntax, semantics, morphology, prosody, referentiality, 
+lexis and more. For projects working with spoken language, support 
+for audio / video annotations is also required.</p>
+
+<p>Data is often annotated using both automatic taggers/parsers 
+and a growing set of manual annotation tools 
+(e.g. <a href="http://exmaralda.org/">EXMARaLDA</a>, <a href="https://tla.mpi.nl/tools/tla-tools/elan/">ELAN</a>, 
+<a href="http://www.coli.uni-saarland.de/projects/sfb378/negra-corpus/annotate.html">annotate</a>/<a href="http://www.mpi.nl/tools/synpathy.html">Synpathy</a>, 
+<a href="http://mmax2.sourceforge.net/">MMAX</a>, <a href="http://www.wagsoft.com/RSTTool/">RSTTool</a>, 
+<a href="http://arborator.ilpga.fr/">Arborator</a>, <a href="https://code.google.com/p/webanno/">WebAnno</a>, <a href="/hexatomic/index.html">Hexatomic</a>),
+ANNIS provides the means for visualizing and retrieving this data. 
+<a href="/pepper/">Pepper</a> is used to import the multiple annotation formats into ANNIS.</p>
+
+<p><strong>For detailed information on the latest version of ANNIS see the User Guide under <a href="documentation.html">documentation</a></strong></p>
+
+<article class="anchor" id="howtocite">
+  <div class="page-header">
+    <h1 id="how-to-cite">How to cite</h1>
+  </div>
+  <p>If you use ANNIS in your scientific work, please cite it as follows.</p>
+
+  <p><strong>Krause, Thomas &amp; Zeldes, Amir </strong>(2016): <em>ANNIS3: A new architecture for generic corpus query and visualization.</em>   in: Digital Scholarship in the Humanities  2016 (31).
+ <a href="http://dsh.oxfordjournals.org/content/31/1/118" target="_blank">http://dsh.oxfordjournals.org/content/31/1/118</a></p>
+</article>
+
+<article class="anchor" id="access">
+  <div class="page-header">
+    <h1 id="public-annis-installations">Public ANNIS installations</h1>
+  </div>
+
+  <p>ANNIS can be installed locally on your computer but there are also public available installations which can be used without any installation.</p>
+
+  <ul>
+    <li><a href="https://korpling.german.hu-berlin.de/annis/">Humboldt-Universität zu Berlin, Corpus Linguistics and Morphology </a> has a number of mostly smaller corpora available without a login.</li>
+    <li>The <a href="https://gucorpling.org/annis-corpora/">Georgetown University ANNIS</a> runs some freely
+available corpora</li>
+  </ul>
+
+</article>
+
+<article>
+
+  <div class="page-header">
+    <h1 id="challenges-and-goals">Challenges and Goals</h1>
+  </div>
+
+  <h2 id="diversity-of-primary-data">Diversity of primary data</h2>
+
+  <p>Language data can be very heterogeneous and may come from
+typologically diverse languages. It differs with respect to modality
+(written vs. spoken language, monologue vs. dialogue) and basic unit
+(sentence vs. discourse). In addition, special character sets (e.g.
+for Hindi, Old High German or the African Kwa languages) mean that full
+<strong>Unicode</strong> support is essential, in both visualization and search facilities.
+The system also offers support for <strong>right-to-left</strong>
+script languages, such as Arabic and Hebrew. This includes <strong>right-to-left
+tree layouting</strong> for treebanks in
+these languages.</p>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12 image_wrap" style="text-align:center">
+            <p><img src="images/Hindi.PNG" alt="Hindi data in ANNIS" style="width:100%" /></p>
+
+            <p><strong>ANNIS supports Unicode in both visualization and search,
+including Regular Expressions</strong></p>
+          </div>
+          <div class="col-md-12 image_wrap" style="text-align:center">
+            <p><img src="images/arabic_RTL_KWIC.png" alt="Right-to-left Arabic data in the KWIC view" style="width:100%" /></p>
+
+            <p><strong>Right-to-left Arabic data in the KWIC view</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 image_wrap" style="text-align:center">
+        <p><img src="images/hebrew_RTL_tree.png" alt="Right-to-left layouting for trees in Hebrew" style="width:100%" /></p>
+
+        <p><strong>Right-to-left layouting for trees in Hebrew</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="diversity-of-annotation">Diversity of Annotation</h2>
+
+  <p>Data is annotated on various linguistic levels: phonetics/phonology,
+morpho-syntax, semantics, and information structure.
+The data types of the annotation range from attribute-value pairs to
+set relations (e.g. for annotating co-reference), directed
+relations/pointers (e.g. for annotating anaphoric relations), trees,
+and graphs (see <a href="visualizations.html">Visualizations</a>).
+Furthermore, the annotations are created with the help of different
+tools, i.e. different tool formats have to be supported. In order to ensure
+compatibility with as many formats as possible, we use the <a href="../pepper/index.html">Pepper converter framework</a>,
+which maps a large number of formats via the metamodel Salt into the native format of ANNIS.</p>
+
+  <h2 id="multi-layer-annotation">Multi-layer Annotation</h2>
+  <p>A very central requirement is support for visualizing and querying
+annotations on multiple layers, each layer representing one type of
+information, e.g. morphemic transcription, grammatical functions, pitch
+accents, etc. Queries must be able to simultaneously constrain all
+these layers and the relationships between them, making operators for
+the description of topological tree structures as well as span overlap
+necessary.
+The system also supports parallel corpora aligned at all levels (i.e. words, sentences, syntactic phrases etc. can be aligned), and each aligned language may have its own annotation layers.</p>
+
+  <div class="image_wrap" style="text-align:center;">
+    <p><img src="images/parallel.png" alt="Parallel aligned data with a separate syntax tree for each language" style="width:52%" /><br />
+<strong>Parallel aligned data with a separate syntax tree for each language</strong></p>
+  </div>
+
+  <h2 id="accessibility">Accessibility</h2>
+
+  <p>Data in the database should be easy to access and to query. Software
+and hardware requirements on the client side should be limited to a
+freely available browser (e.g. Mozilla Firefox). As little training as
+possible should be required, making a graphical query builder as well
+as corpus-specific example queries and tutorials necessary.</p>
+
+  <h2 id="performance-and-scalability">Performance and Scalability</h2>
+
+  <p>Queries should return results reasonably quickly, even in large datasets. In order to realize this, the original data from XML and other formats is compiled and stored in the ANNIS backend within a relational database (<a href="http://www.postgresql.org/">PostgreSQL</a>),
+which offers scalability and access speed not feasible for an XML DB,
+as well as native RegEx support.</p>
+
+</article>
+
+<article>
+  <div class="page-header">
+    <h1 id="contact">Contact</h1>
+  </div>
+
+  <p>For enquiries, e-mail us at: <a href="mailto:annis-support@lists.hu-berlin.de">annis-support@lists.hu-berlin.de</a></p>
+
+  <div class="page-header">
+    <h1 id="credits">Credits</h1>
+  </div>
+
+  <p>Current team members:</p>
+
+  <ul>
+    <li><a href="http://u.hu-berlin.de/korpling-thomaskrause">Thomas Krause</a> (Humboldt-Universität zu Berlin)</li>
+    <li><a href="http://corpling.uis.georgetown.edu/amir">Amir Zeldes</a> (Georgetown University)</li>
+    <li>Martin Klotz</li>
+    <li><a href="https://www.linguistik.hu-berlin.de/en/institut-en/professuren-en/korpuslinguistik/mitarbeiter-innen-en/anke/standardseite?set_language=en">Anke Lüdeling</a> (Humboldt-Universität zu Berlin)</li>
+  </ul>
+
+  <p>Former team members:</p>
+
+  <ul>
+    <li><a href="https://github.com/arne-cl">Arne Neumann</a></li>
+    <li>Benjamin Weißenfels</li>
+    <li><a href="https://www.linguistik.hu-berlin.de/en/institut-en/professuren-en/korpuslinguistik/mitarbeiter-innen-en/carolin/standardseite">Carolin Odebrecht</a> (Humboldt-Universität zu Berlin)</li>
+    <li><a href="http://acoli.informatik.uni-frankfurt.de/~chiarcos">Christian Chiarcos</a></li>
+    <li><a href="http://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/mitarbeiter-innen/florian/">Florian Zipser</a> (LAUDATIO, Humboldt-Universität zu Berlin)</li>
+    <li>Karsten Hütter</li>
+    <li><a href="http://www.ling.uni-potsdam.de/~stede/">Manfred Stede</a></li>
+    <li>Michael Götze</li>
+    <li><a href="https://www2.informatik.hu-berlin.de/~leser/">Ulf Leser</a> (Humboldt-Universität zu Berlin)</li>
+    <li><a href="http://zangsir.weebly.com/">Shuo Zhang</a> (Georgetown University)</li>
+    <li><a href="https://www.linguistics.ruhr-uni-bochum.de/~dipper/">Stefanie Dipper</a></li>
+    <li>Tom Ruette</li>
+    <li>Viktor Rosenfeld</li>
+    <li>and several other <a href="https://github.com/korpling/ANNIS/graphs/contributors">contributors</a></li>
+  </ul>
+</article>
+
+<div class="page-header">
+  <h2 id="supported-by">Supported by</h2>
+</div>
+
+<div class="funders">
+  <p><a href="https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&amp;cl=en"><img src=".././images/logos/husiegel_bw_gross.png" alt="Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology" width="100" /></a>
+<a href="https://www.sfb632.uni-potsdam.de/en/"><img src=".././images/logos/sfb_logo_bridge_new.png" alt="Sonderforschungsbereich 632, Information structure: The linguistic means for structuring utterances, sentences and texts" width="150" /></a>
+<a href="http://www.dfg.de/en/"><img src=".././images/logos/dfg_logo_schriftzug_blau.png" alt="Deutsche Forschungsgemeinschaft (DFG)" width="250" /></a>
+<a href="https://corpling.uis.georgetown.edu/"><img src=".././images/logos/georgetownlogo.png" alt="Georgetown University" width="120" /></a></p>
+</div>
+
+
+
+	<footer class="site-footer text-center jumbotron">
+<a href="mailto:annis-support@lists.hu-berlin.de">Contact</a>&nbsp;|&nbsp;<a href="/home/legal.html">Impressum (legal notice)</a>
+<br/>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<br/>
+© 2021 Humboldt-Universität zu Berlin, Corpus Linguistics and Morphology &amp;<br />Friedrich Schiller University Jena,
+Dept. of English and American Studies
+
+</footer>
+
+</div>
+	<script src="/js/jquery-1.11.3.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- 
+    For using custom .js files for only one page, simply copy the .js file to ../js/
+    and include the following in the templates yaml head, where 'example' references
+    a javascript file called example.js:
+    custom_js:
+      - example
+    -->
+     
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--<script src="../bootstrap/dist/assets/js/docs.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../bootstrap/dist/assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>
+

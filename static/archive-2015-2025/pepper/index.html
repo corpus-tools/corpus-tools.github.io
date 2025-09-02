@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- conditional meta tags -->
+    <meta name="keywords" content="Pepper, SaltNPepper, conversion, linguistic, corpora" />
+     <meta name="description" content="Pepper is an swiss-army knife to convert corpora from one linguistic format to another. It used to be called SaltNPepper but it's now only known simply as Pepper" />
+        
+    <meta name="publisher" content="Humboldt-Universität zu Berlin, Friedrich Schiller University Jena">
+    <meta name="author" content="Stephan Druskat, Thomas Krause, Amir Zeldes, Florian Zipser" />
+    <meta name="content-language" content="en">
+    <meta name="page-topic" content="Linguistics, Software, Research, Corpus, Annotation, Analysis">
+    <meta name="revisit-after" content="2 days">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="http://corpus-tools.org/" /> 
+    <title>Pepper (corpus-tools.org) </title>
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <!-- Bootstrap theme -->
+    <link href="../bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <!-- Custom styles for this template -->
+    <link href="../css/aql_code.css" rel="stylesheet"/>
+    <link href="../css/theme.css" rel="stylesheet"/>
+    <!-- Includes Salt and Pepper and (Hex)-Atomic icons -->
+    <link rel="stylesheet" href="../css/fonts.css"/>
+    
+</head>
+
+
+  <body role="document">
+
+    
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/home/">corpus-tools.org</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              
+                <li ><a href="/home/"> <i class="fa fa-home"></i> Home</a>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/annis/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-annis"></i> ANNIS<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/annis/">ANNIS</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/documentation.html">Documentation</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/download.html">Download</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/annis/visualizations.html">Visualizations</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+          <li><a href="/annis/corpora.html">Corpora</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+          <li><a href="/annis/cooperations.html">Cooperations</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/hexatomic/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-atomic"></i> Hexatomic<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/hexatomic/">Hexatomic</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="https://github.com/hexatomic/hexatomic/releases/latest">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="https://hexatomic.github.io/hexatomic/user/">User Documentation</a></li>
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li ><a href="/salt/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-salt"></i> Salt<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/salt/">Salt</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#download">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#documentation">Documentation</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/salt/#how-to-cite">How to cite</a></li>
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+            
+            
+              
+                <li class="active"><a href="/pepper/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa icon-pepper-o"></i> Pepper<span class="caret"></span></a>
+
+                
+                
+                
+                <ul class="dropdown-menu">
+                <li><a href="/pepper/">Pepper</a></li>
+                
+
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#download">Download</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#howtocite">How to cite</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#documentation">Documentation</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+      <li><a href="/pepper/#contribution">Contribution and License</a></li>
+      
+    
+  
+
+  
+  
+  
+    
+      <li role="separator" class="divider"></li>
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/knownModules.html">Pepper modules</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/integratedModules.html">Integrated Pepper modules</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/generalCustomizationProperties.html">General customization properties</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/demos.html">Demos</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+  
+  
+  
+    
+      
+      
+      
+
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+          <li><a href="/pepper/faq.html">FAQ</a></li>
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+          
+      
+    
+  
+
+
+                </ul>
+              
+                </li>
+            
+          
+        
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+
+    <div class="container theme-showcase" role="main">
+    
+
+<div class="alert alert-warning" role="alert">
+    This is an <strong>outdated and archived</strong> version of this site. Go
+    to <a href="https://corpus-tools.org/">https://corpus-tools.org/</a> for the
+    current version.
+</div>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <h1>
+         <span class="icon-pepper-o"></span> Pepper 
+    </h1>
+    <p>
+         A highly extensible plattform for
+        conversion and manipulation of linguistic data between an unbound set of
+        formats. Pepper can be used stand-alone as a command line interface, or
+        be integrated as an API into other software products. 
+    </p>
+</div>
+
+	 <div class="center-image-80">
+  <p><img src="http://corpus-tools.org/archive-2015-2025//pepper/images/sir_pepper.svg" alt="The knight Sir Pepper fighting against the format monster" /></p>
+</div>
+
+<div class="page-header">
+  <h1 id="about-pepper">About Pepper</h1>
+</div>
+
+<p>If you need to convert corpora from one linguistic format into another, Pepper is your swiss-army knife. 
+When your annotation tool produces a different data format from the one your analysis tool can read, Pepper is there to the rescue.</p>
+
+<ul>
+  <li>Pepper can convert documents in a variety of linguistic formats, such as: <a href="http://exmaralda.org/">EXMARaLDA</a>, <a href="http://www.ims.uni-stuttgart.de/forschung/ressourcen/werkzeuge/TIGERSearch/doc/html/TigerXML.html">Tiger XML</a>, <a href="http://mmax2.sourceforge.net/">MMAX2</a>, <a href="http://www.wagsoft.com/RSTTool/">RST</a>, <a href="http://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/The_TCF_Format">TCF</a>, <a href="http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/">TreeTagger</a> format, <a href="http://www.tei-c.org/Guidelines/P5/">TEI</a> (subset), <a href="../annis/">ANNIS</a> format, <a href="https://hal.archives-ouvertes.fr/file/index/docid/783716/filename/PAULA_P1.1.2013.1.21a.pdf">PAULA</a> and <a href="../pepper/knownModules.html">many many more</a>.</li>
+  <li>Pepper comes with a plug-in mechanism which makes it easy to extend it for further formats and data manipulations.</li>
+  <li>Pepper is module-based, each mapping is done by a separate module. This enables each module to be combined with every other module in one single workflow.</li>
+  <li>Pepper uses the intermediate model <a href="../salt/index.html">Salt</a> which reduces the number of mappings to convert <em>n</em> into <em>m</em> formats.</li>
+  <li>Pepper modules, such as the <a href="http://korpling.github.io/pepper/doc/moduleDevelopers.html">MergingModule</a>, allow to merge the data from different annotation tools together and create multi-layer corpora.</li>
+  <li>Pepper can be used as an interactive command line tool, as a command to be included in scripts, or as an API to be integrated in other software products.</li>
+  <li>Pepper is written in <a href="https://adoptium.net/?variant=openjdk11&amp;jvmVariant=hotspot">Java</a> and can be run on all operation systems which are ready to run Java (Windows, Mac, Linux, Unix, …).</li>
+  <li>Pepper is free and open source software. It is distributed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</li>
+</ul>
+
+<p>To decrease the number of conceptual mappings, Pepper uses an intermediate model, which means that a conversion consists of two mappings. First, the data coming
+from format <em>X</em> will be mapped to the intermediate model Salt and second, the data will be
+mapped from Salt to format <em>Y</em>. If you imagine a set of <em>n</em> source and target formats, this
+approach will decrease the number of mappings from <em>n²-n</em> mappings in case of a direct
+mapping approach, to <em>2n</em> mappings.</p>
+
+<div id="formats" style="text-align:center;margin-bottom:20px;">
+  <p><img onclick="window.open('./images/pepper_formats.png', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();" class="salt_sample" src="./images/pepper_formats.png" style="width:40%;" alt="Mapping without Pepper pipeline" />
+<img src="./images/arrow_left2right.svg" style="width:10%;" alt="left to right arrow" />
+<img onclick="window.open('./images/pepper_formats_salt.png', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();" class="salt_sample" src="./images/pepper_formats_salt.png" style="width:40%;" alt="Mapping pipeline with Pepper" /></p>
+</div>
+
+<p>Pepper itself is a platform controlling the workflow of a conversion
+process. The mapping itself is done by a set of Pepper modules. Pepper is a highly pluggable
+platform which offers the possibility to plug-in new modules in order to incorporate
+further formats. The flexible architecture of Pepper allows to combine all existing modules
+and to easily plug in new ones.</p>
+
+<div style="text-align:center;">
+  <p><img onclick="window.open('./images/pepper_architecture.svg', 'popUpWindow', 'height=530,width=530,toolbar=no,menubar=no,location=no,directories=no, status=no,titlebar=no,location=no').focus();" class="enlarge" src="./images/pepper_architecture.svg" alt="Pepper architecture" /></p>
+</div>
+
+<article class="anchor" id="download">
+  <div class="page-header">
+    <h1>Download</h1>
+  </div>
+
+  <p>Here you will find the current stable release and also
+older versions of Pepper, including a set of Pepper modules.</p>
+
+  <ul>
+    <li><a href="https://korpling.german.hu-berlin.de/saltnpepper/pepper/download/stable/">Stable Releases</a></li>
+  </ul>
+
+  <p>Pepper is system-independent and comes as a ready-to-run zip archive, so you do
+not need any installation. But since Pepper is Java-based, you need to have Java
+installed on your system. On most systems, Java is installed by default, but in case it
+is not, please download it from www.oracle.com/technetwork/java/javase/ or
+http://openjdk.java.net/. To check if Java (or more precisly a Java Runtime Environment)
+is running, open a command line and run:</p>
+  <pre>
+java -version 
+</pre>
+  <p>You need at least version 1.8, also called “Java 8”.</p>
+</article>
+
+<article class="anchor" id="howtocite">
+  <div class="page-header">
+    <h1 id="how-to-cite">How to cite</h1>
+  </div>
+  <p>If you use Pepper in your scientific work, please cite it as follows.</p>
+
+  <p>F. Zipser &amp; L. Romary (2010). <strong>A model oriented approach to the mapping of annotation formats using
+standards</strong>. In: <em>Proceedings of the Workshop on Language
+Resource and Language Technology Standards, LREC 2010. Malta.</em> URL: <a href="http://hal.archives-ouvertes.fr/inria-00527799/en/">http://hal.archives-ouvertes.fr/inria-00527799/en/</a></p>
+
+</article>
+
+<article>
+  <div class="page-header">
+    <h1 id="documentation" class="anchor">Documentation</h1>
+  </div>
+
+  <h2 id="user-documentation">User documentation</h2>
+
+  <p>Users new to Pepper should begin by reading the <a href="./userGuide.html">User Guide</a></p>
+
+  <h2 id="create-your-own-pepper-module-module-developerss-guide">Create your own Pepper module (Module Developers’s Guide)</h2>
+
+  <p>f there is no <a href="../pepper/knownModules.html">existing module</a> which fulfills your needs, you are free to
+implement your own module. With Pepper’s plug-in mechanism your module can
+easily be integrated into the Pepper plattform. The possibility of combining
+your new module with already existing ones lets you create completely new workflows.
+Please read the <a href="http://korpling.github.io/pepper/doc/module_developers.html">Module Developer’s Guide</a> to get a detailed documentation of how to implement a Pepper module.</p>
+
+  <h2 id="using-pepper-as-a-library">Using Pepper as a library</h2>
+  <p>With the Pepper library, we provide a programmatic access to the Pepper framework,
+including the configuration of a conversion workflow, the start of a conversion
+and getting information about the registered Pepper modules. Since Pepper is based
+on a plugin structure called OSGi (see: <a href="http://www.osgi.org/">http://www.osgi.org/</a>), each Pepper module is plugged into the framework
+separately, whether running Pepper as CLI, or running it as a
+library.</p>
+
+  <p>To learn more about integrating Pepper as a library in other software products go to <a href="https://korpling.github.io/pepper/doc/library.html">Pepper as a library</a>.</p>
+
+</article>
+
+<article class="anchor" id="contribution">
+  <div class="page-header">
+    <h1>Contribution and License</h1>
+  </div>
+
+  <p>Pepper is published under the Open Source license <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>. We want to enable everyone to use the software without restrictions, and also enable the community to take part in its developement.</p>
+
+  <h4 id="found-a-bug-or-have-any-feature-request">Found a bug or have any feature request?</h4>
+
+  <p>Please let us know what you have found, or which ideas for enhancements you have. Please leave us an issue on
+GitHub at <a href="https://github.com/korpling/pepper/issues"><i class="fa fa-github"></i> Pepper</a>
+or write us an e-mail: <a href="mailto:saltnpepper@lists.hu-berlin.de">saltnpepper@lists.hu-berlin.de</a>.</p>
+
+  <h4 id="want-to-contribute-to-the-project">Want to contribute to the project?</h4>
+
+  <p>For both Salt and Pepper, we have published the source code at the GitHub platform at <a href="https://github.com/korpling/pepper"><i class="fa fa-github"></i> Pepper</a>.
+If you are interested in contributing
+to the project, please feel free to fork or clone it. We are happy about any
+suggestions, bug reports, bug fixes, and so on. It would be nice if you keep us
+informed about your ideas and enhancements: Please write us an e-mail: <a href="mailto:saltnpepper@lists.hu-berlin.de">saltnpepper@lists.hu-berlin.de</a>.</p>
+
+</article>
+
+<article id="publications">
+  <div class="page-header">
+    <h1>Publications</h1>
+  </div>
+  <div>
+    <ul>
+       <li> F. Zipser, A. Röhrig, A. Lüdeling, M. Klotz,T. Krause, S. Druskat &amp; V.
+           Voigt (2015).<br />
+           <strong>SaltNPepper, ANNIS &amp; Atomic: Eine Infrastruktur für
+               Mehrebenenkorpora</strong>.<br />
+           <i>Digital Humanities“-Tag 2015 – Digitale Ressourcen an der Philosophischen
+               Fakultät II.</i> Berlin, 21. Mai 2015. [<a href="http://dx.doi.org/10.5281/zenodo.20714">poster</a>].</li>
+       <li> F. Zipser, T. Krause, A. Lüdeling, A. Neumann, M. Stede, A. Zeldes (2015).<br />
+           <strong>ANNIS, SaltNPepper &amp; PAULA: A multilayer corpus
+               infrastructure</strong>.<br />
+           <i>Final Conference of the SFB 632 Information Structure: Advances in
+               Information Structure Research 2003 - 2015.</i> Berlin, 08. - 09. Mai 2015.
+               [<a href="http://dx.doi.org/10.5281/zenodo.20713">poster</a>].</li>
+       <li> F. Zipser, M. Klotz &amp; A. Röhrig (2015).<br />
+           <strong>From TEI to linguistic corpora using Pepper</strong>.<br />
+           <i>37. Jahrestagung der Deutschen Gesellschaft für Sprachwissenschaft.</i>
+           Leipzig, 04.- 06. März 2015. [<a href="http://dx.doi.org/10.5281/zenodo.16664">poster</a>].</li>
+       <li> Zipser, F. (2014).<br />
+           <strong>SaltNPepper und das Formatpluriversum</strong>.<br />
+           <i>LAUDATIO Workshop 2014</i>. Berlin, 07.- 08.10.2014.<a href="http://dx.doi.org/10.5281/zenodo.17557">[slides]</a>.</li>
+       <li> F. Zipser, M. Frank &amp; J. Schmolling (2014).<br />
+           <strong>Merging data, the essence of creation of multi-layer corpora</strong>.<br />
+           <i>36. Jahrestagung der Deutschen Gesellschaft für Sprachwissenschaft.</i>
+           Marburg, 05.- 07. März 2014. [ <a href="http://dx.doi.org/10.5281/zenodo.15640">poster</a>].</li>
+       <li> C. Odebrecht &amp; F. Zipser (2013).<br />
+           <strong>LAUDATIO - Eine Infrastruktur zur linguistischen Analyse historischer
+               Korpora.</strong><br /> DTA-/CLARIN-D Konferenz und -Workshops: Historische
+           Textkorpora für die Geistes- und Sozialwissenschaften. Fragestellungen und
+           Nutzungsperspektiven, Berlin 2013.</li>
+       <li> F. Zipser, A. Zeldes, J. Ritz, L. Romary &amp; U. Leser (2011).<br />
+           <strong>Pepper: Handling a multiverse of formats</strong>.<br />
+           <i>33. Jahrestagung der Deutschen Gesellschaft für Sprachwissenschaft.</i>
+           Göttingen, 23.- 25. Februar 2011. [ <a href="http://dx.doi.org/10.5281/zenodo.15638">poster</a>].</li>
+       <li> F. Zipser &amp; L. Romary (2010).<br />
+           <strong>A model oriented approach to the mapping of annotation formats using
+               standards</strong>.<br /> In: <i>Proceedings of the Workshop on Language
+               Resource and Language Technology Standards, LREC 2010. Malta.</i> URL: <a href="http://hal.archives-ouvertes.fr/inria-00527799/en/">http://hal.archives-ouvertes.fr/inria-00527799/en/</a></li>
+       <li> F. Zipser (2009).<br />
+           <strong>Entwicklung eines Konverterframeworks für linguistisch annotierte Daten
+               auf Basis eines gemeinsamen (Meta-)modells</strong>.<br /> Diplomarbeit,
+           Humboldt-Universität zu Berlin, Institut für Informatik. URL: <a class="fa fa-file-pdf-o" href="http://hal.archives-ouvertes.fr/docs/00/60/61/02/PDF/Diplomarbeit_FZ_final.pdf"> http://hal.archives-ouvertes.fr/docs/00/60/61/02/PDF/Diplomarbeit_FZ_final.pdf</a></li>
+   </ul>
+  </div>
+</article>
+
+<div class="page-header">
+  <h1 id="supported-by">Supported by</h1>
+</div>
+
+<div class="funders">
+  <p><a href="https://www.sfb632.uni-potsdam.de/en/"><img src=".././images/logos/sfb_logo_bridge_new.png" alt="Sonderforschungsbereich 632, Information structure: The linguistic means for structuring utterances, sentences and texts" width="150" /></a>
+<a href="http://www.dfg.de/en/"><img src=".././images/logos/dfg_logo_schriftzug_blau.png" alt="Deutsche Forschungsgemeinschaft (DFG)" width="250" /></a>
+<a href="https://www.linguistik.hu-berlin.de/institut/professuren/korpuslinguistik/standardseite-en?set_language=en&amp;cl=en"><img src=".././images/logos/husiegel_bw_gross.png" alt="Humboldt-Universität zu Berlin, Department of corpus linguistics and morphology" width="100" /></a>
+<a href="http://www.inria.fr/en"><img src=".././images/logos/inr_logo_corpo_UK_coul.png" alt="INRIA" width="150" /></a></p>
+
+</div>
+
+
+
+
+	<footer class="site-footer text-center jumbotron">
+<a href="mailto:annis-support@lists.hu-berlin.de">Contact</a>&nbsp;|&nbsp;<a href="/home/legal.html">Impressum (legal notice)</a>
+<br/>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<br/>
+© 2021 Humboldt-Universität zu Berlin, Corpus Linguistics and Morphology &amp;<br />Friedrich Schiller University Jena,
+Dept. of English and American Studies
+
+</footer>
+
+</div>
+	<script src="/js/jquery-1.11.3.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- 
+    For using custom .js files for only one page, simply copy the .js file to ../js/
+    and include the following in the templates yaml head, where 'example' references
+    a javascript file called example.js:
+    custom_js:
+      - example
+    -->
+     
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="../bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--<script src="../bootstrap/dist/assets/js/docs.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../bootstrap/dist/assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>
+
