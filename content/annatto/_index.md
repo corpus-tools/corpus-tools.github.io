@@ -1,6 +1,7 @@
 ---
 title: 'Annatto'
 weight: 2
+bookcase_cover_title: "Convert between file formats with Annatto"
 bookcase_cover_src: '/images/cover/annatto.png'
 menus:
   navbar:

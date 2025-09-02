@@ -1,10 +1,11 @@
 ---
 title: "graphANNIS"
-weight: 3
+weight: 4
+bookcase_cover_title: "Embedd corpus search in your own software with graphANNIS"
 bookcase_cover_src: '/images/cover/graphannis.png'
 menus:
   navbar:
-    weight: 3
+    weight: 4
 ---
 
 # GraphANNIS
