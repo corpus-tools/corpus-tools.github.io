@@ -7,3 +7,7 @@ theme = "hugo-theme-monochrome"
 [params]
 hide_navbar_on_scroll = false
 toc_position = "right"
+
+[params.list_layout]
+enable_group_by_year = false
+enable_show_date = false

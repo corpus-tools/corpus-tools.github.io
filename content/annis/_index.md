@@ -3,7 +3,7 @@ title: "ANNIS"
 zooming_js: false
 bookcase_cover_title: "Search and visualization with ANNIS"
 bookcase_cover_src: '/images/cover/annis.png'
-type: 'postcard'
+type: 'list'
 weight: 1
 menus:
   navbar:
