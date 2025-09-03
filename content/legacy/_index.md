@@ -1,5 +1,5 @@
 ---
-title: "Legacy"
+title: "Legacy Tools"
 weight: 5
 bookcase_hidden: true
 aliases:
