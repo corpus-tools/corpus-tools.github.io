@@ -1,0 +1,10 @@
+hide_navbar_on_scroll = false
+toc_position = "right"
+
+[list_layout]
+enable_group_by_year = false
+enable_show_date = false
+
+[annis]
+short_version = "4"
+long_version = "4.15.0"
