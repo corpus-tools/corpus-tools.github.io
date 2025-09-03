@@ -3,6 +3,7 @@ title: "Contribute"
 weight: 4
 menus:
   navbar:
+    identifier: contribute-annis
     parent: annis
 ---
 

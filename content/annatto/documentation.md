@@ -3,6 +3,7 @@ title: "Documentation"
 weight: 2
 menus:
   navbar:
+    identifier: documentation-annatto
     parent: annatto
 ---
 

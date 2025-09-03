@@ -3,6 +3,7 @@ title: "Contribute"
 weight: 4
 menus:
   navbar:
+    identifier: contribution-annatto
     parent: annatto
 ---
 

@@ -3,6 +3,7 @@ title: "Download"
 weight: 1
 menus:
   navbar:
+    identifier: download-annatto
     parent: annatto
 ---
 
