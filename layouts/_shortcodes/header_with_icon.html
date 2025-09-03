@@ -1,0 +1,11 @@
+{{- $icon_src := .Get "src" -}} {{- $header_title := .Get "title" -}}
+
+<div class="header">
+    <img
+        src="{{ $icon_src }}"
+        style="float:left; width='32px'; height='32px'"
+        alt="Logo of the application"
+    />
+
+    <h1 style="position: relative; left: 10px">{{ $header_title }}</h1>
+</div>

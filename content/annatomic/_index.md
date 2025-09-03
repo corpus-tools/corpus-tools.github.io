@@ -8,7 +8,7 @@ menu:
     identifier: annatomic
 ---
 
-# Annatomic annotation editor (work in progress)
+{{< header_with_icon src=images/icon-32.png title="Annatomic annotation editor (work in progress)" >}}
 
 The Annatomic annotation editor is intended to be used for the [RIDGES corpus](https://www.linguistik.hu-berlin.de/en/institut-en/professuren-en/korpuslinguistik/research/ridges-projekt).
 It is based on [graphANNIS](../graphannis) and thus is internal data model is in principle suitable for a wide range of annotation concepts.

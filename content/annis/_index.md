@@ -9,7 +9,7 @@ menus:
     identifier: annis
 ---
 
-# ANNIS
+{{< header_with_icon src=images/annis_32.png title=ANNIS >}}
 
 ANNIS is an open source, cross-platform (Linux, Mac, Windows), browser-based search and visualization architecture for complex multi-layer linguistic corpora with diverse types of annotation.
 
