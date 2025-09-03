@@ -1,6 +1,8 @@
 ---
 title: "Demo corpora"
 weight: 3
+aliases:
+  - "corpora.html"
 menus:
   navbar:
     parent: annis

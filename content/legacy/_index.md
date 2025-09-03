@@ -2,6 +2,10 @@
 title: "Legacy"
 weight: 5
 bookcase_hidden: true
+aliases:
+  - "hexatomic"
+  - "salt"
+  - "pepper"
 menus:
   navbar:
     identifier: legacy
