@@ -3,10 +3,10 @@
   <channel>
     <title>corpus-tools.org</title>
     <description>A collection of tools for processing your linguistic data: annotation, conversion, analysis</description>
-    <link>https://corpus-tools.org/archive-2015-2024/</link>
-    <atom:link href="https://corpus-tools.org/archive-2015-2024/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Sep 2025 15:03:33 +0200</pubDate>
-    <lastBuildDate>Tue, 02 Sep 2025 15:03:33 +0200</lastBuildDate>
+    <link>https://corpus-tools.org/archive-2015-2025/</link>
+    <atom:link href="https://corpus-tools.org/archive-2015-2025/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 03 Sep 2025 20:25:19 +0200</pubDate>
+    <lastBuildDate>Wed, 03 Sep 2025 20:25:19 +0200</lastBuildDate>
     <generator>Jekyll v3.9.5</generator>
     
   </channel>
