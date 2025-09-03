@@ -1,6 +1,6 @@
 ---
 title: "Contribute"
-weight: 3
+weight: 4
 menus:
   navbar:
     parent: annis
