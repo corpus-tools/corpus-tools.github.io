@@ -1,11 +1,12 @@
 ---
 title: "Legacy Tools"
 weight: 5
-bookcase_hidden: true
 aliases:
   - "hexatomic"
   - "salt"
   - "pepper"
+bookcase_cover_title: "Tools that are not activly extended anymore, like Salt and Pepper"
+bookcase_cover_src: '/images/cover/legacy.png'
 menus:
   navbar:
     identifier: legacy
