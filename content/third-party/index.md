@@ -12,12 +12,14 @@ menus:
 
 ## Annimate: Your Friendly ANNIS Match Exporter
 
-![Screenshot of the Annimate user interface](images/annimate-screenshot.png)
 
 Annimate (for ANNIS Match Exporter) is a tool for the convenient export of query results (matches) from the [ANNIS](../annis).
 It is meant as a supplement to the ANNIS web interface and focuses on file export (as opposed to visualization) of the results of an ANNIS query.
 
-Website: <https://matthias-stemmler.github.io/annimate/user-guide/>
+![Screenshot of the Annimate user interface](images/annimate-screenshot.png)
+
+**Website**: <https://matthias-stemmler.github.io/annimate/user-guide/>\
+**Authorship**: Annimate is being developed by [Matthias Stemmler](https://github.com/matthias-stemmler) in cooperation with the [Lehrstuhl für Deutsche Sprachwissenschaft](https://www.uni-augsburg.de/de/fakultaet/philhist/professuren/germanistik/deutsche-sprachwissenschaft/) at the University of Augsburg.
 
 ---
 
