@@ -5,6 +5,7 @@ aliases:
   - "hexatomic"
   - "salt"
   - "pepper"
+  - "pepper/demos.html"
   - "pepper/knownModules.html"
   - "pepper/integratedModules.html"
   - "pepper/generalCustomizationProperties.html"
