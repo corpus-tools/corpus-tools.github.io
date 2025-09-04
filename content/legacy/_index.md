@@ -1,6 +1,6 @@
 ---
 title: "Legacy Tools"
-weight: 5
+weight: 6
 aliases:
   - "hexatomic"
   - "salt"
