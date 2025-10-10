@@ -5,6 +5,8 @@ menus:
   navbar:
     identifier: documentation-annis
     parent: annis
+aliases:
+  - "documentation.html"
 ---
 
 # Documentation for ANNIS
