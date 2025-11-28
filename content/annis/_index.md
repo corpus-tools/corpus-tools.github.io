@@ -1,6 +1,6 @@
 ---
 title: "ANNIS"
-bookcase_cover_title: "Search and visualization with ANNIS"
+bookcase_cover_title: "Search in your corpus and visualize your results with ANNIS"
 bookcase_cover_src: '/images/cover/annis.png'
 type: 'list'
 weight: 1
@@ -19,4 +19,6 @@ ANNIS, which stands for ANNotation of Information Structure, was originally desi
   src="images/annis3_full.png"
   alt="A screenshot of the ANNIS user interface with various types of visualizations for a query, including a video player, spans, dependency and syntax trees."
   caption="ANNIS user interface"
+  link="https://korpling.org/annis/#_q=IlBoYXJtYWtvbnplcm4iIHwgCigKcG9zPS9WLkZJTi8gLT5kZXBbZnVuYz0ic2JqIl0gIkp1Z2VuZGxpY2hlIiAKJiBjYXQ9IlMiICYgIzQgPnNlY2VkZ2UgIzMKKQ&ql=aql&_c=cGNjMg&cl=5&cr=5&s=0&l=10"
+  target="_blank"
 >}}

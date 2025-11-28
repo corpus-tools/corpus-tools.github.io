@@ -1,5 +1,6 @@
 hide_navbar_on_scroll = false
 toc_position = "right"
+enable_zooming_js = false
 
 [list_layout]
 enable_group_by_year = false
