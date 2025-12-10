@@ -1,21 +1,21 @@
 ---
-title: "Annatomic"
-bookcase_cover_title: 'Annotation editor Annatomic (work in progress)'
+title: "Artemisia"
+bookcase_cover_title: 'Annotation editor Artemisia (work in progress)'
 weight: 3
-bookcase_cover_src: '/images/cover/annatomic.png'
+bookcase_cover_src: '/images/cover/artemisia.png'
 menu:
   navbar:
-    identifier: annatomic
+    identifier: artemisia
 ---
 
-{{< header_with_icon src=images/icon-32.png title="Annatomic annotation editor (work in progress)" >}}
+{{< header_with_icon src=images/icon-32.png title="Artemisia annotation editor (work in progress)" >}}
 
-The Annatomic annotation editor is intended to be used for the [RIDGES corpus](https://www.linguistik.hu-berlin.de/en/institut-en/professuren-en/korpuslinguistik/research/ridges-projekt).
+The Artemisia annotation editor is intended to be used for the [RIDGES corpus](https://www.linguistik.hu-berlin.de/en/institut-en/professuren-en/korpuslinguistik/research/ridges-projekt).
 It is based on [graphANNIS](../graphannis) and thus is internal data model is in principle suitable for a wide range of annotation concepts.
 
 It is very much **work in progress**.
 We support Linux, Windows and (with delayed manual relases) macOS, but only activly test on Linux.
-See the [Releases](https://codeberg.org/korpling/annatomic/releases) page to download the files for your operating system.
+See the [Releases](https://codeberg.org/korpling/artemisia/releases) page to download the files for your operating system.
 
 ## Features
 
