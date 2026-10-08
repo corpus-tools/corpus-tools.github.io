@@ -14,7 +14,7 @@ The Artemisia annotation editor is intended to be used for the [RIDGES corpus](h
 It is based on [graphANNIS](../graphannis) and thus is internal data model is in principle suitable for a wide range of annotation concepts.
 
 It is very much **work in progress**.
-We support Linux, Windows and (with delayed manual relases) macOS, but only activly test on Linux.
+We support Linux, Windows and macOS, but only activly test on Linux.
 See the [Releases](https://codeberg.org/korpling/artemisia/releases) page to download the files for your operating system.
 
 ## Features
