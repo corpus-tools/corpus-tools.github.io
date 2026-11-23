@@ -15,7 +15,7 @@ It is based on [graphANNIS](../graphannis) and thus is internal data model is in
 
 It is very much **work in progress**.
 We support Linux, Windows and macOS, but only activly test on Linux.
-See the [Releases](https://codeberg.org/korpling/artemisia/releases) page to download the files for your operating system.
+
 
 ## Features
 
